@@ -1,0 +1,251 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0",
+    "title": "Layouts",
+    "description": "TODO: Add Description",
+    "license": {
+      "name": "MIT",
+      "url": "http://github.com/gruntjs/grunt/blob/master/LICENSE-MIT"
+    }
+  },
+  "host": "localhost:8080",
+  "basePath": "/content",
+  "securityDefinitions": {
+    "auth": {
+      "type": "basic",
+      "x-testValue": []
+    }
+  },
+  "schemes": [
+    "http"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/layouts": {
+      "post": {
+        "description": "TODO: Add Description",
+        "summary": "http://localhost:8080/content/layouts",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "http://localhost:8080/content/layouts",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Http:~1~1localhost:8080~1content~1layoutsrequest"
+            }
+          },
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "auth": []
+          }
+        ],
+        "x-unitTests": [],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Http://localhost:8080/content/layoutsrequest": {
+      "title": "http://localhost:8080/content/layoutsRequest",
+      "type": "object",
+      "properties": {
+        "ContentItem": {
+          "description": "",
+          "$ref": "#/definitions/ContentItem"
+        }
+      },
+      "required": [
+        "ContentItem"
+      ]
+    },
+    "ContentItem": {
+      "title": "ContentItem",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "",
+          "type": "string"
+        },
+        "type": {
+          "description": "",
+          "type": "string"
+        },
+        "path": {
+          "description": "",
+          "type": "string"
+        },
+        "templatePath": {
+          "description": "",
+          "type": "string"
+        },
+        "description": {
+          "description": "",
+          "type": "string"
+        },
+        "contentItemStartDate": {
+          "description": "",
+          "type": "string"
+        },
+        "contentItemEndDate": {
+          "description": "",
+          "type": "string"
+        },
+        "ContentItem": {
+          "description": "",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ContentItem2"
+          }
+        }
+      },
+      "required": [
+        "name",
+        "type",
+        "path",
+        "templatePath",
+        "description",
+        "contentItemStartDate",
+        "contentItemEndDate",
+        "ContentItem"
+      ]
+    },
+    "ContentItem2": {
+      "title": "ContentItem2",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "",
+          "type": "string"
+        },
+        "type": {
+          "description": "",
+          "type": "string"
+        },
+        "path": {
+          "description": "",
+          "type": "string"
+        },
+        "templatePath": {
+          "description": "",
+          "type": "string"
+        },
+        "contentItemStartDate": {
+          "description": "",
+          "type": "string"
+        },
+        "contentItemEndDate": {
+          "description": "",
+          "type": "string"
+        },
+        "ContentItem": {
+          "description": "",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ContentItem3"
+          }
+        }
+      },
+      "required": [
+        "name",
+        "type",
+        "path",
+        "templatePath",
+        "contentItemStartDate",
+        "contentItemEndDate",
+        "ContentItem"
+      ]
+    },
+    "ContentItem3": {
+      "title": "ContentItem3",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "",
+          "type": "string"
+        },
+        "type": {
+          "description": "",
+          "type": "string"
+        },
+        "itemtype": {
+          "description": "",
+          "type": "string"
+        },
+        "path": {
+          "description": "",
+          "type": "string"
+        },
+        "templatePath": {
+          "description": "",
+          "type": "string"
+        },
+        "contentItemStartDate": {
+          "description": "",
+          "type": "string"
+        },
+        "contentItemEndDate": {
+          "description": "",
+          "type": "string"
+        },
+        "position-x": {
+          "description": "",
+          "type": "string"
+        },
+        "position-y": {
+          "description": "",
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "type",
+        "itemtype",
+        "path",
+        "templatePath",
+        "contentItemStartDate",
+        "contentItemEndDate",
+        "position-x",
+        "position-y"
+      ]
+    }
+  }
+}
