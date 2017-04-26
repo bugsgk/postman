@@ -1,0 +1,698 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0",
+    "title": "IRIS",
+    "description": "TODO: Add Description",
+    "license": {
+      "name": "MIT",
+      "url": "http://github.com/gruntjs/grunt/blob/master/LICENSE-MIT"
+    }
+  },
+  "host": "localhost:8080",
+  "basePath": "/content",
+  "securityDefinitions": {
+    "auth": {
+      "type": "basic",
+      "x-testValue": []
+    }
+  },
+  "schemes": [
+    "http"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/jcp/en/layouts/CouponPageLayout.harray.infinity.json": {
+      "get": {
+        "description": "TODO: Add Description",
+        "summary": "Get Layout",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "Get Layout",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [],
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "GET",
+              "uri": "/jcp/en/layouts/CouponPageLayout.harray.infinity.json"
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "NONE",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": true,
+              "headers": {}
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "Get Layout",
+            "x-testDescription": "TODO: Add Description"
+          }
+        ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    },
+    "/jcp/en/coupon/COUPON999.json": {
+      "get": {
+        "description": "TODO: Add Description",
+        "summary": "Get Coupon",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "Get Coupon",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [],
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "GET",
+              "uri": "/jcp/en/coupon/COUPON999.json"
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "NONE",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": true,
+              "headers": {}
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "Get Coupon",
+            "x-testDescription": "TODO: Add Description"
+          }
+        ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    },
+    "/layouts": {
+      "post": {
+        "description": "TODO: Add Description",
+        "summary": "Create Layout",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "Create Layout",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/CreateLayoutrequest"
+            }
+          },
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "auth": []
+          }
+        ],
+        "x-unitTests": [],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    },
+    "/components": {
+      "post": {
+        "description": "TODO: Add Description",
+        "summary": "Create Coupon",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "Create Coupon",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/CreateCouponrequest"
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "auth": []
+          }
+        ],
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "POST",
+              "uri": "/components",
+              "headers": {
+                "Content-Type": "application/json",
+                "Authorization": "Basic YWRtaW46YWRtaW4="
+              },
+              "body": "{\n  \"assetName\": \"COUPON988\",\n  \"parentFolder\":\"/content/jcp/en/coupon\",\n  \"couponStartDate\": \"03/09/2017 12:00:00 AM\",\n  \"couponEndDate\": \"03/30/2017 12:00:00 AM\",\n  \"categoryPage\": \"Category Page\",\n  \"Channel\": \"InStore\",\n  \"Active\": \"Yes\",\n  \"offer1Name\": \"EXTRA 20% OFF\",\n  \"offer1Description\": \"*20% with your JCPenney credit card, 15% with paypal ad 10% with any method of payment\",\n  \"offer2Name\": \"EXTRA 15% OFF\",\n  \"offer2Description\": \" \",\n  \"offer3Name\": \" \",\n  \"offer3Description\": \" \",\n  \"offer4Name\": \" \",\n  \"offer4Description\": \" \",\n  \"validName\": \"VALID THROUGH MARCH 22, 2017\",\n  \"shopTitle\": \" \",\n  \"codeValue\": \"48SHOP\",\n  \"codeSelect\": \"codeAvailable\",\n  \"detailTitle\": \"Get Details Only\",\n  \"displayWithProduct\": \"No\",\n  \"barCode1\": \" \",\n  \"barCode2\": \" \",\n  \"disclaimer\": \" \",\n  \"couponShopUrl\": \" \",\n  \"couponDetailURL\": \" \"\n}"
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "NONE",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": true,
+              "headers": {}
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "Create Coupon",
+            "x-testDescription": "TODO: Add Description"
+          }
+        ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    }
+  },
+  "definitions": {
+    "CreateLayoutrequest": {
+      "title": "Create LayoutRequest",
+      "type": "object",
+      "properties": {
+        "ContentItem": {
+          "description": "",
+          "$ref": "#/definitions/ContentItem"
+        }
+      },
+      "required": [
+        "ContentItem"
+      ]
+    },
+    "ContentItem": {
+      "title": "ContentItem",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "",
+          "type": "string"
+        },
+        "type": {
+          "description": "",
+          "type": "string"
+        },
+        "path": {
+          "description": "",
+          "type": "string"
+        },
+        "templatePath": {
+          "description": "",
+          "type": "string"
+        },
+        "description": {
+          "description": "",
+          "type": "string"
+        },
+        "contentItemStartDate": {
+          "description": "",
+          "type": "string"
+        },
+        "contentItemEndDate": {
+          "description": "",
+          "type": "string"
+        },
+        "ContentItem": {
+          "description": "",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ContentItem2"
+          }
+        }
+      },
+      "required": [
+        "name",
+        "type",
+        "path",
+        "templatePath",
+        "description",
+        "contentItemStartDate",
+        "contentItemEndDate",
+        "ContentItem"
+      ]
+    },
+    "ContentItem2": {
+      "title": "ContentItem2",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "",
+          "type": "string"
+        },
+        "type": {
+          "description": "",
+          "type": "string"
+        },
+        "path": {
+          "description": "",
+          "type": "string"
+        },
+        "templatePath": {
+          "description": "",
+          "type": "string"
+        },
+        "contentItemStartDate": {
+          "description": "",
+          "type": "string"
+        },
+        "contentItemEndDate": {
+          "description": "",
+          "type": "string"
+        },
+        "ContentItem": {
+          "description": "",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ContentItem3"
+          }
+        }
+      },
+      "required": [
+        "name",
+        "type",
+        "path",
+        "templatePath",
+        "contentItemStartDate",
+        "contentItemEndDate",
+        "ContentItem"
+      ]
+    },
+    "ContentItem3": {
+      "title": "ContentItem3",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "",
+          "type": "string"
+        },
+        "type": {
+          "description": "",
+          "type": "string"
+        },
+        "itemtype": {
+          "description": "",
+          "type": "string"
+        },
+        "path": {
+          "description": "",
+          "type": "string"
+        },
+        "templatePath": {
+          "description": "",
+          "type": "string"
+        },
+        "contentItemStartDate": {
+          "description": "",
+          "type": "string"
+        },
+        "contentItemEndDate": {
+          "description": "",
+          "type": "string"
+        },
+        "position-x": {
+          "description": "",
+          "type": "string"
+        },
+        "position-y": {
+          "description": "",
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "type",
+        "itemtype",
+        "path",
+        "templatePath",
+        "contentItemStartDate",
+        "contentItemEndDate",
+        "position-x",
+        "position-y"
+      ]
+    },
+    "CreateComponentrequest": {
+      "title": "Create ComponentRequest",
+      "type": "object",
+      "properties": {
+        "assetName": {
+          "description": "",
+          "type": "string"
+        },
+        "parentFolder": {
+          "description": "",
+          "type": "string"
+        },
+        "couponStartDate": {
+          "description": "",
+          "type": "string"
+        },
+        "couponEndDate": {
+          "description": "",
+          "type": "string"
+        },
+        "categoryPage": {
+          "description": "",
+          "type": "string"
+        },
+        "Channel": {
+          "description": "",
+          "type": "string"
+        },
+        "Active": {
+          "description": "",
+          "type": "string"
+        },
+        "offer1Name": {
+          "description": "",
+          "type": "string"
+        },
+        "offer1Description": {
+          "description": "",
+          "type": "string"
+        },
+        "offer2Name": {
+          "description": "",
+          "type": "string"
+        },
+        "offer2Description": {
+          "description": "",
+          "type": "string"
+        },
+        "offer3Name": {
+          "description": "",
+          "type": "string"
+        },
+        "offer3Description": {
+          "description": "",
+          "type": "string"
+        },
+        "offer4Name": {
+          "description": "",
+          "type": "string"
+        },
+        "offer4Description": {
+          "description": "",
+          "type": "string"
+        },
+        "validName": {
+          "description": "",
+          "type": "string"
+        },
+        "shopTitle": {
+          "description": "",
+          "type": "string"
+        },
+        "codeValue": {
+          "description": "",
+          "type": "string"
+        },
+        "codeSelect": {
+          "description": "",
+          "type": "string"
+        },
+        "detailTitle": {
+          "description": "",
+          "type": "string"
+        },
+        "displayWithProduct": {
+          "description": "",
+          "type": "string"
+        },
+        "barCode1": {
+          "description": "",
+          "type": "string"
+        },
+        "barCode2": {
+          "description": "",
+          "type": "string"
+        },
+        "disclaimer": {
+          "description": "",
+          "type": "string"
+        },
+        "couponShopUrl": {
+          "description": "",
+          "type": "string"
+        },
+        "couponDetailURL": {
+          "description": "",
+          "type": "string"
+        }
+      },
+      "required": [
+        "assetName",
+        "parentFolder",
+        "couponStartDate",
+        "couponEndDate",
+        "categoryPage",
+        "Channel",
+        "Active",
+        "offer1Name",
+        "offer1Description",
+        "offer2Name",
+        "offer2Description",
+        "offer3Name",
+        "offer3Description",
+        "offer4Name",
+        "offer4Description",
+        "validName",
+        "shopTitle",
+        "codeValue",
+        "codeSelect",
+        "detailTitle",
+        "displayWithProduct",
+        "barCode1",
+        "barCode2",
+        "disclaimer",
+        "couponShopUrl",
+        "couponDetailURL"
+      ]
+    },
+    "CreateCouponrequest": {
+      "title": "Create CouponRequest",
+      "type": "object",
+      "properties": {
+        "assetName": {
+          "description": "",
+          "type": "string"
+        },
+        "parentFolder": {
+          "description": "",
+          "type": "string"
+        },
+        "couponStartDate": {
+          "description": "",
+          "type": "string"
+        },
+        "couponEndDate": {
+          "description": "",
+          "type": "string"
+        },
+        "categoryPage": {
+          "description": "",
+          "type": "string"
+        },
+        "Channel": {
+          "description": "",
+          "type": "string"
+        },
+        "Active": {
+          "description": "",
+          "type": "string"
+        },
+        "offer1Name": {
+          "description": "",
+          "type": "string"
+        },
+        "offer1Description": {
+          "description": "",
+          "type": "string"
+        },
+        "offer2Name": {
+          "description": "",
+          "type": "string"
+        },
+        "offer2Description": {
+          "description": "",
+          "type": "string"
+        },
+        "offer3Name": {
+          "description": "",
+          "type": "string"
+        },
+        "offer3Description": {
+          "description": "",
+          "type": "string"
+        },
+        "offer4Name": {
+          "description": "",
+          "type": "string"
+        },
+        "offer4Description": {
+          "description": "",
+          "type": "string"
+        },
+        "validName": {
+          "description": "",
+          "type": "string"
+        },
+        "shopTitle": {
+          "description": "",
+          "type": "string"
+        },
+        "codeValue": {
+          "description": "",
+          "type": "string"
+        },
+        "codeSelect": {
+          "description": "",
+          "type": "string"
+        },
+        "detailTitle": {
+          "description": "",
+          "type": "string"
+        },
+        "displayWithProduct": {
+          "description": "",
+          "type": "string"
+        },
+        "barCode1": {
+          "description": "",
+          "type": "string"
+        },
+        "barCode2": {
+          "description": "",
+          "type": "string"
+        },
+        "disclaimer": {
+          "description": "",
+          "type": "string"
+        },
+        "couponShopUrl": {
+          "description": "",
+          "type": "string"
+        },
+        "couponDetailURL": {
+          "description": "",
+          "type": "string"
+        }
+      },
+      "required": [
+        "assetName",
+        "parentFolder",
+        "couponStartDate",
+        "couponEndDate",
+        "categoryPage",
+        "Channel",
+        "Active",
+        "offer1Name",
+        "offer1Description",
+        "offer2Name",
+        "offer2Description",
+        "offer3Name",
+        "offer3Description",
+        "offer4Name",
+        "offer4Description",
+        "validName",
+        "shopTitle",
+        "codeValue",
+        "codeSelect",
+        "detailTitle",
+        "displayWithProduct",
+        "barCode1",
+        "barCode2",
+        "disclaimer",
+        "couponShopUrl",
+        "couponDetailURL"
+      ]
+    }
+  }
+}
