@@ -27,98 +27,6 @@
     "application/json"
   ],
   "paths": {
-    "/jcp/en/layouts/CouponPageLayout.harray.infinity.json": {
-      "get": {
-        "description": "TODO: Add Description",
-        "summary": "Get Layout",
-        "tags": [
-          "Misc"
-        ],
-        "operationId": "Get Layout",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [],
-        "responses": {
-          "200": {
-            "description": ""
-          }
-        },
-        "security": [],
-        "x-unitTests": [
-          {
-            "request": {
-              "method": "GET",
-              "uri": "/jcp/en/layouts/CouponPageLayout.harray.infinity.json"
-            },
-            "expectedResponse": {
-              "x-allowExtraHeaders": true,
-              "x-bodyMatchMode": "NONE",
-              "x-arrayOrderedMatching": false,
-              "x-arrayCheckCount": false,
-              "x-matchResponseSchema": true,
-              "headers": {}
-            },
-            "x-testShouldPass": true,
-            "x-testEnabled": true,
-            "x-testName": "Get Layout",
-            "x-testDescription": "TODO: Add Description"
-          }
-        ],
-        "x-operation-settings": {
-          "CollectParameters": false,
-          "AllowDynamicQueryParameters": false,
-          "AllowDynamicFormParameters": false,
-          "IsMultiContentStreaming": false
-        }
-      }
-    },
-    "/jcp/en/coupon/COUPON999.json": {
-      "get": {
-        "description": "TODO: Add Description",
-        "summary": "Get Coupon",
-        "tags": [
-          "Misc"
-        ],
-        "operationId": "Get Coupon",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [],
-        "responses": {
-          "200": {
-            "description": ""
-          }
-        },
-        "security": [],
-        "x-unitTests": [
-          {
-            "request": {
-              "method": "GET",
-              "uri": "/jcp/en/coupon/COUPON999.json"
-            },
-            "expectedResponse": {
-              "x-allowExtraHeaders": true,
-              "x-bodyMatchMode": "NONE",
-              "x-arrayOrderedMatching": false,
-              "x-arrayCheckCount": false,
-              "x-matchResponseSchema": true,
-              "headers": {}
-            },
-            "x-testShouldPass": true,
-            "x-testEnabled": true,
-            "x-testName": "Get Coupon",
-            "x-testDescription": "TODO: Add Description"
-          }
-        ],
-        "x-operation-settings": {
-          "CollectParameters": false,
-          "AllowDynamicQueryParameters": false,
-          "AllowDynamicFormParameters": false,
-          "IsMultiContentStreaming": false
-        }
-      }
-    },
     "/layouts": {
       "post": {
         "description": "TODO: Add Description",
@@ -229,7 +137,7 @@
                 "Content-Type": "application/json",
                 "Authorization": "Basic YWRtaW46YWRtaW4="
               },
-              "body": "{\n  \"assetName\": \"COUPON988\",\n  \"parentFolder\":\"/content/jcp/en/coupon\",\n  \"couponStartDate\": \"03/09/2017 12:00:00 AM\",\n  \"couponEndDate\": \"03/30/2017 12:00:00 AM\",\n  \"categoryPage\": \"Category Page\",\n  \"Channel\": \"InStore\",\n  \"Active\": \"Yes\",\n  \"offer1Name\": \"EXTRA 20% OFF\",\n  \"offer1Description\": \"*20% with your JCPenney credit card, 15% with paypal ad 10% with any method of payment\",\n  \"offer2Name\": \"EXTRA 15% OFF\",\n  \"offer2Description\": \" \",\n  \"offer3Name\": \" \",\n  \"offer3Description\": \" \",\n  \"offer4Name\": \" \",\n  \"offer4Description\": \" \",\n  \"validName\": \"VALID THROUGH MARCH 22, 2017\",\n  \"shopTitle\": \" \",\n  \"codeValue\": \"48SHOP\",\n  \"codeSelect\": \"codeAvailable\",\n  \"detailTitle\": \"Get Details Only\",\n  \"displayWithProduct\": \"No\",\n  \"barCode1\": \" \",\n  \"barCode2\": \" \",\n  \"disclaimer\": \" \",\n  \"couponShopUrl\": \" \",\n  \"couponDetailURL\": \" \"\n}"
+              "body": "{\n  \"assetName\": \"COUPON1001\",\n  \"parentFolder\":\"/content/jcp/en/coupon\",\n  \"couponStartDate\": \"03/09/2017 12:00:00 AM\",\n  \"couponEndDate\": \"03/30/2017 12:00:00 AM\",\n  \"categoryPage\": \"Category Page\",\n  \"Channel\": \"InStore\",\n  \"Active\": \"Yes\",\n  \"offer1Name\": \"EXTRA 20% OFF\",\n  \"offer1Description\": \"*20% with your JCPenney credit card, 15% with paypal ad 10% with any method of payment\",\n  \"offer2Name\": \"EXTRA 15% OFF\",\n  \"offer2Description\": \" \",\n  \"offer3Name\": \" \",\n  \"offer3Description\": \" \",\n  \"offer4Name\": \" \",\n  \"offer4Description\": \" \",\n  \"validName\": \"VALID THROUGH MARCH 22, 2017\",\n  \"shopTitle\": \" \",\n  \"codeValue\": \"48SHOP\",\n  \"codeSelect\": \"codeAvailable\",\n  \"detailTitle\": \"Get Details Only\",\n  \"displayWithProduct\": \"No\",\n  \"barCode1\": \" \",\n  \"barCode2\": \" \",\n  \"disclaimer\": \" \",\n  \"couponShopUrl\": \" \",\n  \"couponDetailURL\": \" \"\n}"
             },
             "expectedResponse": {
               "x-allowExtraHeaders": true,
@@ -242,6 +150,177 @@
             "x-testShouldPass": true,
             "x-testEnabled": true,
             "x-testName": "Create Coupon",
+            "x-testDescription": "TODO: Add Description"
+          }
+        ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    },
+    "/jcp/en/coupon/COUPON999.json": {
+      "get": {
+        "description": "TODO: Add Description",
+        "summary": "Get Coupon",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "Get Coupon",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [],
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "GET",
+              "uri": "/jcp/en/coupon/COUPON999.json"
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "NONE",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": true,
+              "headers": {}
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "Get Coupon",
+            "x-testDescription": "TODO: Add Description"
+          }
+        ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    },
+    "/jcp/en/layouts/CouponPageLayout.harray.infinity.json": {
+      "get": {
+        "description": "TODO: Add Description",
+        "summary": "Get Layout",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "Get Layout",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [],
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "GET",
+              "uri": "/jcp/en/layouts/CouponPageLayout.harray.infinity.json"
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "NONE",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": true,
+              "headers": {}
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "Get Layout",
+            "x-testDescription": "TODO: Add Description"
+          }
+        ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    },
+    "/folder": {
+      "put": {
+        "description": "TODO: Add Description",
+        "summary": "Create Folder",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "Create Folder",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/CreateFolderrequest"
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "auth": []
+          }
+        ],
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "PUT",
+              "uri": "/folder",
+              "headers": {
+                "Content-Type": "application/json",
+                "Authorization": "Basic YWRtaW46YWRtaW4="
+              },
+              "body": "{\n\t\"folderName\":\"sampleFolder\",\n\t\"parentFolder\":\"/content/jcp/en/\",\n\t\"operation\":\"CREATE\"\n}"
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "NONE",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": true,
+              "headers": {}
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "Create Folder",
             "x-testDescription": "TODO: Add Description"
           }
         ],
@@ -418,8 +497,8 @@
         "position-y"
       ]
     },
-    "CreateComponentrequest": {
-      "title": "Create ComponentRequest",
+    "CreateSeorequest": {
+      "title": "Create SEORequest",
       "type": "object",
       "properties": {
         "assetName": {
@@ -692,6 +771,29 @@
         "disclaimer",
         "couponShopUrl",
         "couponDetailURL"
+      ]
+    },
+    "CreateFolderrequest": {
+      "title": "Create FolderRequest",
+      "type": "object",
+      "properties": {
+        "folderName": {
+          "description": "",
+          "type": "string"
+        },
+        "parentFolder": {
+          "description": "",
+          "type": "string"
+        },
+        "operation": {
+          "description": "",
+          "type": "string"
+        }
+      },
+      "required": [
+        "folderName",
+        "parentFolder",
+        "operation"
       ]
     }
   }
