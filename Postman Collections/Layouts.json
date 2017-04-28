@@ -30,11 +30,11 @@
     "/layouts": {
       "post": {
         "description": "TODO: Add Description",
-        "summary": "http://localhost:8080/content/layouts",
+        "summary": "Create Layout",
         "tags": [
           "Misc"
         ],
-        "operationId": "http://localhost:8080/content/layouts",
+        "operationId": "Create Layout",
         "produces": [
           "application/json"
         ],
@@ -45,7 +45,7 @@
             "required": true,
             "description": "",
             "schema": {
-              "$ref": "#/definitions/Http:~1~1localhost:8080~1content~1layoutsrequest"
+              "$ref": "#/definitions/CreateLayoutrequest"
             }
           },
           {
@@ -84,8 +84,8 @@
     }
   },
   "definitions": {
-    "Http://localhost:8080/content/layoutsrequest": {
-      "title": "http://localhost:8080/content/layoutsRequest",
+    "CreateLayoutrequest": {
+      "title": "Create LayoutRequest",
       "type": "object",
       "properties": {
         "ContentItem": {
