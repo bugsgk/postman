@@ -137,7 +137,7 @@
                 "Content-Type": "application/json",
                 "Authorization": "Basic YWRtaW46YWRtaW4="
               },
-              "body": "{\n  \"assetName\": \"COUPON1001\",\n  \"parentFolder\":\"/iriscontent/en/components/coupon\",\n  \"couponStartDate\": \"03/09/2017 12:00:00 AM\",\n  \"couponEndDate\": \"03/30/2017 12:00:00 AM\",\n  \"categoryPage\": \"Category Page\",\n  \"Channel\": \"InStore\",\n  \"Active\": \"Yes\",\n  \"offer1Name\": \"EXTRA 20% OFF\",\n  \"offer1Description\": \"*20% with your JCPenney credit card, 15% with paypal ad 10% with any method of payment\",\n  \"offer2Name\": \"EXTRA 15% OFF\",\n  \"offer2Description\": \" \",\n  \"offer3Name\": \" \",\n  \"offer3Description\": \" \",\n  \"offer4Name\": \" \",\n  \"offer4Description\": \" \",\n  \"validName\": \"VALID THROUGH MARCH 22, 2017\",\n  \"shopTitle\": \" \",\n  \"codeValue\": \"48SHOP\",\n  \"codeSelect\": \"codeAvailable\",\n  \"detailTitle\": \"Get Details Only\",\n  \"displayWithProduct\": \"No\",\n  \"barCode1\": \" \",\n  \"barCode2\": \" \",\n  \"disclaimer\": \" \",\n  \"couponShopUrl\": \" \",\n  \"couponDetailURL\": \" \"\n}"
+              "body": "{\n  \"assetName\": \"COUPON1004\",\n  \"assetType\": \"Coupon\",\n  \"parentFolder\":\"/iriscontent/en/components/coupon\",\n  \"couponStartDate\": \"03/09/2017 12:00:00 AM\",\n  \"couponEndDate\": \"03/30/2017 12:00:00 AM\",\n  \"categoryPage\": \"Category Page\",\n  \"Channel\": \"Online\",\n  \"Active\": \"Yes\",\n  \"offer1Name\": \"EXTRA 20% OFF\",\n  \"offer1Description\": \"*20% with your JCPenney credit card, 15% with paypal ad 10% with any method of payment\",\n  \"offer2Name\": \"EXTRA 15% OFF\",\n  \"offer2Description\": \" \",\n  \"offer3Name\": \" \",\n  \"offer3Description\": \" \",\n  \"offer4Name\": \" \",\n  \"offer4Description\": \" \",\n  \"validName\": \"VALID THROUGH MARCH 22, 2017\",\n  \"shopTitle\": \" \",\n  \"codeValue\": \"48SHOP\",\n  \"codeSelect\": \"codeAvailable\",\n  \"detailTitle\": \"Get Details Only\",\n  \"displayWithProduct\": \"No\",\n  \"barCode1\": \" \",\n  \"barCode2\": \" \",\n  \"disclaimer\": \" \",\n  \"couponShopUrl\": \" \",\n  \"couponDetailURL\": \" \"\n}"
             },
             "expectedResponse": {
               "x-allowExtraHeaders": true,
@@ -207,7 +207,7 @@
         }
       }
     },
-    "/content/jcp/en/layouts/CouponPageLayout.harray.infinity.json": {
+    "/iriscontent/en/layouts/SamplePageLayout.harray.infinity.json": {
       "get": {
         "description": "TODO: Add Description",
         "summary": "Get Layout",
@@ -229,7 +229,7 @@
           {
             "request": {
               "method": "GET",
-              "uri": "/content/jcp/en/layouts/CouponPageLayout.harray.infinity.json"
+              "uri": "/iriscontent/en/layouts/SamplePageLayout.harray.infinity.json"
             },
             "expectedResponse": {
               "x-allowExtraHeaders": true,
@@ -368,10 +368,6 @@
           "description": "",
           "type": "string"
         },
-        "templatePath": {
-          "description": "",
-          "type": "string"
-        },
         "description": {
           "description": "",
           "type": "string"
@@ -383,6 +379,13 @@
         "contentItemEndDate": {
           "description": "",
           "type": "string"
+        },
+        "instances": {
+          "description": "",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
         },
         "ContentItem": {
           "description": "",
@@ -396,10 +399,10 @@
         "name",
         "type",
         "path",
-        "templatePath",
         "description",
         "contentItemStartDate",
         "contentItemEndDate",
+        "instances",
         "ContentItem"
       ]
     },
@@ -416,10 +419,6 @@
           "type": "string"
         },
         "path": {
-          "description": "",
-          "type": "string"
-        },
-        "templatePath": {
           "description": "",
           "type": "string"
         },
@@ -443,7 +442,6 @@
         "name",
         "type",
         "path",
-        "templatePath",
         "contentItemStartDate",
         "contentItemEndDate",
         "ContentItem"
@@ -469,10 +467,6 @@
           "description": "",
           "type": "string"
         },
-        "templatePath": {
-          "description": "",
-          "type": "string"
-        },
         "contentItemStartDate": {
           "description": "",
           "type": "string"
@@ -495,7 +489,6 @@
         "type",
         "itemtype",
         "path",
-        "templatePath",
         "contentItemStartDate",
         "contentItemEndDate",
         "position-x",
@@ -507,6 +500,10 @@
       "type": "object",
       "properties": {
         "assetName": {
+          "description": "",
+          "type": "string"
+        },
+        "assetType": {
           "description": "",
           "type": "string"
         },
@@ -613,6 +610,7 @@
       },
       "required": [
         "assetName",
+        "assetType",
         "parentFolder",
         "couponStartDate",
         "couponEndDate",
@@ -648,6 +646,10 @@
           "description": "",
           "type": "string"
         },
+        "assetType": {
+          "description": "",
+          "type": "string"
+        },
         "parentFolder": {
           "description": "",
           "type": "string"
@@ -751,6 +753,7 @@
       },
       "required": [
         "assetName",
+        "assetType",
         "parentFolder",
         "couponStartDate",
         "couponEndDate",
