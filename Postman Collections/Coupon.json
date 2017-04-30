@@ -30,11 +30,11 @@
     "/components": {
       "post": {
         "description": "TODO: Add Description",
-        "summary": "http://localhost:8080/content/coupon",
+        "summary": "Create Coupon",
         "tags": [
           "Misc"
         ],
-        "operationId": "http://localhost:8080/content/coupon",
+        "operationId": "Create Coupon",
         "produces": [
           "application/json"
         ],
@@ -45,7 +45,7 @@
             "required": true,
             "description": "",
             "schema": {
-              "$ref": "#/definitions/Http:~1~1localhost:8080~1content~1couponrequest"
+              "$ref": "#/definitions/CreateCouponrequest"
             }
           },
           {
@@ -94,7 +94,7 @@
             },
             "x-testShouldPass": true,
             "x-testEnabled": true,
-            "x-testName": "http://localhost:8080/content/coupon",
+            "x-testName": "Create Coupon",
             "x-testDescription": "TODO: Add Description"
           }
         ],
@@ -108,8 +108,8 @@
     }
   },
   "definitions": {
-    "Http://localhost:8080/content/couponrequest": {
-      "title": "http://localhost:8080/content/couponRequest",
+    "CreateCouponrequest": {
+      "title": "Create CouponRequest",
       "type": "object",
       "properties": {
         "assetName": {
