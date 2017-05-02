@@ -82,6 +82,52 @@
         }
       }
     },
+    "/iriscontent/en/layouts/SamplePageLayout.harray.infinity.json": {
+      "get": {
+        "description": "TODO: Add Description",
+        "summary": "Get Layout",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "Get Layout",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [],
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "GET",
+              "uri": "/iriscontent/en/layouts/SamplePageLayout.harray.infinity.json"
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "NONE",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": true,
+              "headers": {}
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "Get Layout",
+            "x-testDescription": "TODO: Add Description"
+          }
+        ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    },
     "/content/components": {
       "post": {
         "description": "TODO: Add Description",
@@ -161,6 +207,52 @@
         }
       }
     },
+    "/iriscontent/en/components/seo/SEO1.json": {
+      "get": {
+        "description": "TODO: Add Description",
+        "summary": "Get SEO",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "Get SEO",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [],
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "GET",
+              "uri": "/iriscontent/en/components/seo/SEO1.json"
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "NONE",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": true,
+              "headers": {}
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "Get SEO",
+            "x-testDescription": "TODO: Add Description"
+          }
+        ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    },
     "/iriscontent/en/components/coupon/COUPON1001.json": {
       "get": {
         "description": "TODO: Add Description",
@@ -207,14 +299,69 @@
         }
       }
     },
-    "/iriscontent/en/layouts/SamplePageLayout.harray.infinity.json": {
-      "get": {
+    "/content/instances": {
+      "post": {
         "description": "TODO: Add Description",
-        "summary": "Get Layout",
+        "summary": "Create Instances",
         "tags": [
           "Misc"
         ],
-        "operationId": "Get Layout",
+        "operationId": "Create Instances",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/CreateInstancesrequest"
+            }
+          },
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "auth": []
+          }
+        ],
+        "x-unitTests": [],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    },
+    "/iriscontent/en/instances/CouponPageInstance.harray.infinity.json": {
+      "get": {
+        "description": "TODO: Add Description",
+        "summary": "Get Instance",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "Get Instance",
         "produces": [
           "application/json"
         ],
@@ -229,7 +376,7 @@
           {
             "request": {
               "method": "GET",
-              "uri": "/iriscontent/en/layouts/SamplePageLayout.harray.infinity.json"
+              "uri": "/iriscontent/en/instances/CouponPageInstance.harray.infinity.json"
             },
             "expectedResponse": {
               "x-allowExtraHeaders": true,
@@ -241,7 +388,7 @@
             },
             "x-testShouldPass": true,
             "x-testEnabled": true,
-            "x-testName": "Get Layout",
+            "x-testName": "Get Instance",
             "x-testDescription": "TODO: Add Description"
           }
         ],
@@ -255,6 +402,83 @@
     },
     "/content/folder": {
       "put": {
+        "description": "TODO: Add Description",
+        "summary": "Create Folder",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "Create Folder",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/CreateFolderrequest"
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "auth": []
+          }
+        ],
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "PUT",
+              "uri": "/content/folder",
+              "headers": {
+                "Content-Type": "application/json",
+                "Authorization": "Basic YWRtaW46YWRtaW4="
+              },
+              "body": "{\n\t\"folderName\":\"inner3\",\n\t\"parentFolder\":\"/iriscontent/en/sample/inner\"\n}"
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "NONE",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": true,
+              "headers": {}
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "Create Folder",
+            "x-testDescription": "TODO: Add Description"
+          }
+        ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      },
+      "post": {
         "description": "TODO: Add Description",
         "summary": "Move Folder",
         "tags": [
@@ -302,7 +526,7 @@
         "x-unitTests": [
           {
             "request": {
-              "method": "PUT",
+              "method": "POST",
               "uri": "/content/folder",
               "headers": {
                 "Content-Type": "application/json",
@@ -321,6 +545,83 @@
             "x-testShouldPass": true,
             "x-testEnabled": true,
             "x-testName": "Move Folder",
+            "x-testDescription": "TODO: Add Description"
+          }
+        ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      },
+      "delete": {
+        "description": "TODO: Add Description",
+        "summary": "Delete Folder",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "Delete Folder",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/DeleteFolderrequest"
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "auth": []
+          }
+        ],
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "DELETE",
+              "uri": "/content/folder",
+              "headers": {
+                "Content-Type": "application/json",
+                "Authorization": "Basic YWRtaW46YWRtaW4="
+              },
+              "body": "{\n\t\"folderName\":\"innerfolder\",\n\t\"parentFolder\":\"/iriscontent/en/sample/\"\n}"
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "NONE",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": true,
+              "headers": {}
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "Delete Folder",
             "x-testDescription": "TODO: Add Description"
           }
         ],
@@ -781,6 +1082,174 @@
         "couponDetailURL"
       ]
     },
+    "CreateInstancesrequest": {
+      "title": "Create InstancesRequest",
+      "type": "object",
+      "properties": {
+        "parentFolder": {
+          "description": "",
+          "type": "string"
+        },
+        "ContentItem": {
+          "description": "",
+          "$ref": "#/definitions/ContentItem7"
+        }
+      },
+      "required": [
+        "parentFolder",
+        "ContentItem"
+      ]
+    },
+    "ContentItem7": {
+      "title": "ContentItem7",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "",
+          "type": "string"
+        },
+        "type": {
+          "description": "",
+          "type": "string"
+        },
+        "path": {
+          "description": "",
+          "type": "string"
+        },
+        "templatePath": {
+          "description": "",
+          "type": "string"
+        },
+        "description": {
+          "description": "",
+          "type": "string"
+        },
+        "contentItemStartDate": {
+          "description": "",
+          "type": "string"
+        },
+        "contentItemEndDate": {
+          "description": "",
+          "type": "string"
+        },
+        "ContentItem": {
+          "description": "",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ContentItem8"
+          }
+        }
+      },
+      "required": [
+        "name",
+        "type",
+        "path",
+        "templatePath",
+        "description",
+        "contentItemStartDate",
+        "contentItemEndDate",
+        "ContentItem"
+      ]
+    },
+    "ContentItem8": {
+      "title": "ContentItem8",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "",
+          "type": "string"
+        },
+        "type": {
+          "description": "",
+          "type": "string"
+        },
+        "path": {
+          "description": "",
+          "type": "string"
+        },
+        "templatePath": {
+          "description": "",
+          "type": "string"
+        },
+        "contentItemStartDate": {
+          "description": "",
+          "type": "string"
+        },
+        "contentItemEndDate": {
+          "description": "",
+          "type": "string"
+        },
+        "ContentItem": {
+          "description": "",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ContentItem9"
+          }
+        }
+      },
+      "required": [
+        "name",
+        "type",
+        "path",
+        "templatePath",
+        "contentItemStartDate",
+        "contentItemEndDate",
+        "ContentItem"
+      ]
+    },
+    "ContentItem9": {
+      "title": "ContentItem9",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "",
+          "type": "string"
+        },
+        "type": {
+          "description": "",
+          "type": "string"
+        },
+        "itemtype": {
+          "description": "",
+          "type": "string"
+        },
+        "path": {
+          "description": "",
+          "type": "string"
+        },
+        "templatePath": {
+          "description": "",
+          "type": "string"
+        },
+        "contentItemStartDate": {
+          "description": "",
+          "type": "string"
+        },
+        "contentItemEndDate": {
+          "description": "",
+          "type": "string"
+        },
+        "position-x": {
+          "description": "",
+          "type": "string"
+        },
+        "position-y": {
+          "description": "",
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "type",
+        "itemtype",
+        "path",
+        "templatePath",
+        "contentItemStartDate",
+        "contentItemEndDate",
+        "position-x",
+        "position-y"
+      ]
+    },
     "CreateFolderrequest": {
       "title": "Create FolderRequest",
       "type": "object",
@@ -792,16 +1261,11 @@
         "parentFolder": {
           "description": "",
           "type": "string"
-        },
-        "operation": {
-          "description": "",
-          "type": "string"
         }
       },
       "required": [
         "folderName",
-        "parentFolder",
-        "operation"
+        "parentFolder"
       ]
     },
     "CopyFolderrequest": {
@@ -819,12 +1283,17 @@
         "operation": {
           "description": "",
           "type": "string"
+        },
+        "removeExisting": {
+          "description": "",
+          "type": "string"
         }
       },
       "required": [
         "sourceFolder",
         "destinationFolder",
-        "operation"
+        "operation",
+        "removeExisting"
       ]
     },
     "MoveFolderrequest": {
@@ -848,6 +1317,24 @@
         "sourceFolder",
         "destinationFolder",
         "operation"
+      ]
+    },
+    "DeleteFolderrequest": {
+      "title": "Delete FolderRequest",
+      "type": "object",
+      "properties": {
+        "folderName": {
+          "description": "",
+          "type": "string"
+        },
+        "parentFolder": {
+          "description": "",
+          "type": "string"
+        }
+      },
+      "required": [
+        "folderName",
+        "parentFolder"
       ]
     }
   }
