@@ -3,10 +3,9 @@
   "info": {
     "version": "1.0",
     "title": "IRIS",
-    "description": "TODO: Add Description",
+    "description": "JCP IRIS API DOCUMENTATION",
     "license": {
-      "name": "MIT",
-      "url": "http://github.com/gruntjs/grunt/blob/master/LICENSE-MIT"
+      "name": "JCPenney"
     }
   },
   "host": "localhost:8080",
@@ -29,10 +28,10 @@
   "paths": {
     "/content/layouts": {
       "post": {
-        "description": "TODO: Add Description",
+        "description": "API to Create Page Layout",
         "summary": "Create Layout",
         "tags": [
-          "Misc"
+          "Layout"
         ],
         "operationId": "Create Layout",
         "produces": [
@@ -84,10 +83,10 @@
     },
     "/iriscontent/en/layouts/SamplePageLayout.harray.infinity.json": {
       "get": {
-        "description": "TODO: Add Description",
+        "description": "API to Get Page Layout",
         "summary": "Get Layout",
         "tags": [
-          "Misc"
+          "Layout"
         ],
         "operationId": "Get Layout",
         "produces": [
@@ -130,10 +129,10 @@
     },
     "/content/components": {
       "post": {
-        "description": "TODO: Add Description",
+        "description": "API to create coupon component",
         "summary": "Create Coupon",
         "tags": [
-          "Misc"
+          "Component"
         ],
         "operationId": "Create Coupon",
         "produces": [
@@ -209,10 +208,10 @@
     },
     "/iriscontent/en/components/seo/SEO1.json": {
       "get": {
-        "description": "TODO: Add Description",
+        "description": "API to get SEO component",
         "summary": "Get SEO",
         "tags": [
-          "Misc"
+          "Component"
         ],
         "operationId": "Get SEO",
         "produces": [
@@ -255,10 +254,10 @@
     },
     "/iriscontent/en/components/coupon/COUPON1001.json": {
       "get": {
-        "description": "TODO: Add Description",
+        "description": "API to get Coupon Component",
         "summary": "Get Coupon",
         "tags": [
-          "Misc"
+          "Component"
         ],
         "operationId": "Get Coupon",
         "produces": [
@@ -301,10 +300,10 @@
     },
     "/content/instances": {
       "post": {
-        "description": "TODO: Add Description",
+        "description": "API to create page instance",
         "summary": "Create Instances",
         "tags": [
-          "Misc"
+          "Instance"
         ],
         "operationId": "Create Instances",
         "produces": [
@@ -356,10 +355,10 @@
     },
     "/iriscontent/en/instances/CouponPageInstance.harray.infinity.json": {
       "get": {
-        "description": "TODO: Add Description",
+        "description": "API to get Page instance",
         "summary": "Get Instance",
         "tags": [
-          "Misc"
+          "Instance"
         ],
         "operationId": "Get Instance",
         "produces": [
@@ -402,10 +401,10 @@
     },
     "/content/folder": {
       "put": {
-        "description": "TODO: Add Description",
+        "description": "API to create folder",
         "summary": "Create Folder",
         "tags": [
-          "Misc"
+          "Folder"
         ],
         "operationId": "Create Folder",
         "produces": [
