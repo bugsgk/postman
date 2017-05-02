@@ -30,11 +30,11 @@
     "/components": {
       "post": {
         "description": "TODO: Add Description",
-        "summary": "http://localhost:8080/content/components",
+        "summary": "Create SEO",
         "tags": [
           "Misc"
         ],
-        "operationId": "http://localhost:8080/content/components",
+        "operationId": "Create SEO",
         "produces": [
           "application/json"
         ],
@@ -45,7 +45,7 @@
             "required": true,
             "description": "",
             "schema": {
-              "$ref": "#/definitions/Http:~1~1localhost:8080~1content~1componentsrequest"
+              "$ref": "#/definitions/CreateSeorequest"
             }
           },
           {
@@ -94,7 +94,7 @@
             },
             "x-testShouldPass": true,
             "x-testEnabled": true,
-            "x-testName": "http://localhost:8080/content/components",
+            "x-testName": "Create SEO",
             "x-testDescription": "TODO: Add Description"
           }
         ],
@@ -108,8 +108,8 @@
     }
   },
   "definitions": {
-    "Http://localhost:8080/content/componentsrequest": {
-      "title": "http://localhost:8080/content/componentsRequest",
+    "CreateSeorequest": {
+      "title": "Create SEORequest",
       "type": "object",
       "properties": {
         "assetName": {
