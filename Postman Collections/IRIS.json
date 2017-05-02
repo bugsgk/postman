@@ -478,10 +478,10 @@
         }
       },
       "post": {
-        "description": "TODO: Add Description",
+        "description": "API to Move folder",
         "summary": "Move Folder",
         "tags": [
-          "Misc"
+          "Folder"
         ],
         "operationId": "Move Folder",
         "produces": [
@@ -555,10 +555,10 @@
         }
       },
       "delete": {
-        "description": "TODO: Add Description",
+        "description": "API to delete folder",
         "summary": "Delete Folder",
         "tags": [
-          "Misc"
+          "Folder"
         ],
         "operationId": "Delete Folder",
         "produces": [
