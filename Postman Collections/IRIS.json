@@ -3,9 +3,10 @@
   "info": {
     "version": "1.0",
     "title": "IRIS",
-    "description": "JCP IRIS API DOCUMENTATION",
+    "description": "TODO: Add Description",
     "license": {
-      "name": "JCPenney"
+      "name": "MIT",
+      "url": "http://github.com/gruntjs/grunt/blob/master/LICENSE-MIT"
     }
   },
   "host": "localhost:8080",
@@ -27,11 +28,11 @@
   ],
   "paths": {
     "/content/layouts": {
-      "post": {
-        "description": "API to Create Page Layout",
+      "put": {
+        "description": "TODO: Add Description",
         "summary": "Create Layout",
         "tags": [
-          "Layout"
+          "Misc"
         ],
         "operationId": "Create Layout",
         "produces": [
@@ -79,14 +80,67 @@
           "AllowDynamicFormParameters": false,
           "IsMultiContentStreaming": false
         }
+      },
+      "post": {
+        "description": "TODO: Add Description",
+        "summary": "Edit Layout",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "Edit Layout",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/EditLayoutrequest"
+            }
+          },
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "auth": []
+          }
+        ],
+        "x-unitTests": [],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
       }
     },
     "/iriscontent/en/layouts/SamplePageLayout.harray.infinity.json": {
       "get": {
-        "description": "API to Get Page Layout",
+        "description": "TODO: Add Description",
         "summary": "Get Layout",
         "tags": [
-          "Layout"
+          "Misc"
         ],
         "operationId": "Get Layout",
         "produces": [
@@ -128,13 +182,13 @@
       }
     },
     "/content/components": {
-      "post": {
-        "description": "API to create coupon component",
-        "summary": "Create Coupon",
+      "put": {
+        "description": "TODO: Add Description",
+        "summary": "Create SEO",
         "tags": [
-          "Component"
+          "Misc"
         ],
-        "operationId": "Create Coupon",
+        "operationId": "Create SEO",
         "produces": [
           "application/json"
         ],
@@ -145,7 +199,84 @@
             "required": true,
             "description": "",
             "schema": {
-              "$ref": "#/definitions/CreateCouponrequest"
+              "$ref": "#/definitions/CreateSeorequest"
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "auth": []
+          }
+        ],
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "PUT",
+              "uri": "/content/components",
+              "headers": {
+                "Content-Type": "application/json",
+                "Authorization": "Basic YWRtaW46YWRtaW4="
+              },
+              "body": "{\n  \"assetName\": \"SEO2\",\n  \"assetType\": \"SEO\",\n  \"parentFolder\":\"/iriscontent/en/components/seo\",\n  \"couponStartDate\": \"03/09/2017 12:00:00 AM\",\n  \"couponEndDate\": \"03/30/2017 12:00:00 AM\",\n  \"categoryPage\": \"Category Page\",\n  \"Channel\": \"InStore\",\n  \"Active\": \"Yes\",\n  \"offer1Name\": \"EXTRA 20% OFF\",\n  \"offer1Description\": \"*20% with your JCPenney credit card, 15% with paypal ad 10% with any method of payment\",\n  \"offer2Name\": \"EXTRA 15% OFF\",\n  \"offer2Description\": \" \",\n  \"offer3Name\": \" \",\n  \"offer3Description\": \" \",\n  \"offer4Name\": \" \",\n  \"offer4Description\": \" \",\n  \"validName\": \"VALID THROUGH MARCH 22, 2017\",\n  \"shopTitle\": \" \",\n  \"codeValue\": \"48SHOP\",\n  \"codeSelect\": \"codeAvailable\",\n  \"detailTitle\": \"Get Details Only\",\n  \"displayWithProduct\": \"No\",\n  \"barCode1\": \" \",\n  \"barCode2\": \" \",\n  \"disclaimer\": \" \",\n  \"couponShopUrl\": \" \",\n  \"couponDetailURL\": \" \"\n}"
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "NONE",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": true,
+              "headers": {}
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "Create SEO",
+            "x-testDescription": "TODO: Add Description"
+          }
+        ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      },
+      "post": {
+        "description": "TODO: Add Description",
+        "summary": "Edit Coupon",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "Edit Coupon",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/EditCouponrequest"
             }
           },
           {
@@ -194,7 +325,7 @@
             },
             "x-testShouldPass": true,
             "x-testEnabled": true,
-            "x-testName": "Create Coupon",
+            "x-testName": "Edit Coupon",
             "x-testDescription": "TODO: Add Description"
           }
         ],
@@ -208,10 +339,10 @@
     },
     "/iriscontent/en/components/seo/SEO1.json": {
       "get": {
-        "description": "API to get SEO component",
+        "description": "TODO: Add Description",
         "summary": "Get SEO",
         "tags": [
-          "Component"
+          "Misc"
         ],
         "operationId": "Get SEO",
         "produces": [
@@ -254,10 +385,10 @@
     },
     "/iriscontent/en/components/coupon/COUPON1001.json": {
       "get": {
-        "description": "API to get Coupon Component",
+        "description": "TODO: Add Description",
         "summary": "Get Coupon",
         "tags": [
-          "Component"
+          "Misc"
         ],
         "operationId": "Get Coupon",
         "produces": [
@@ -299,11 +430,11 @@
       }
     },
     "/content/instances": {
-      "post": {
-        "description": "API to create page instance",
+      "put": {
+        "description": "TODO: Add Description",
         "summary": "Create Instances",
         "tags": [
-          "Instance"
+          "Misc"
         ],
         "operationId": "Create Instances",
         "produces": [
@@ -351,14 +482,67 @@
           "AllowDynamicFormParameters": false,
           "IsMultiContentStreaming": false
         }
+      },
+      "post": {
+        "description": "TODO: Add Description",
+        "summary": "Edit Instances",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "Edit Instances",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/EditInstancesrequest"
+            }
+          },
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "auth": []
+          }
+        ],
+        "x-unitTests": [],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
       }
     },
     "/iriscontent/en/instances/CouponPageInstance.harray.infinity.json": {
       "get": {
-        "description": "API to get Page instance",
+        "description": "TODO: Add Description",
         "summary": "Get Instance",
         "tags": [
-          "Instance"
+          "Misc"
         ],
         "operationId": "Get Instance",
         "produces": [
@@ -401,10 +585,10 @@
     },
     "/content/folder": {
       "put": {
-        "description": "API to create folder",
+        "description": "TODO: Add Description",
         "summary": "Create Folder",
         "tags": [
-          "Folder"
+          "Misc"
         ],
         "operationId": "Create Folder",
         "produces": [
@@ -478,10 +662,10 @@
         }
       },
       "post": {
-        "description": "API to Move folder",
+        "description": "TODO: Add Description",
         "summary": "Move Folder",
         "tags": [
-          "Folder"
+          "Misc"
         ],
         "operationId": "Move Folder",
         "produces": [
@@ -555,10 +739,10 @@
         }
       },
       "delete": {
-        "description": "API to delete folder",
+        "description": "TODO: Add Description",
         "summary": "Delete Folder",
         "tags": [
-          "Folder"
+          "Misc"
         ],
         "operationId": "Delete Folder",
         "produces": [
@@ -631,11 +815,213 @@
           "IsMultiContentStreaming": false
         }
       }
+    },
+    "/content/pages": {
+      "put": {
+        "description": "TODO: Add Description",
+        "summary": "Create Page",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "Create Page",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/CreatePagerequest"
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "auth": []
+          }
+        ],
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "PUT",
+              "uri": "/content/pages",
+              "headers": {
+                "Content-Type": "application/json",
+                "Authorization": "Basic YWRtaW46YWRtaW4="
+              },
+              "body": "{\n  \"assetName\": \"CouponPage\",\n  \"assetType\": \"Page\",\n  \"parentFolder\":\"/iriscontent/en/pages/coupon\",\n  \"layouts\": [\"/iriscontent/en/layouts/CouponPage/CouponPageLayout1\", \"/iriscontent/en/layouts/CouponPage/CouponPageLayout2\", \"/iriscontent/en/layouts/CouponPage/CouponPageLayout3\"]\n}"
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "NONE",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": true,
+              "headers": {}
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "Create Page",
+            "x-testDescription": "TODO: Add Description"
+          }
+        ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      },
+      "post": {
+        "description": "TODO: Add Description",
+        "summary": "Edit Page",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "Edit Page",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/EditPagerequest"
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "auth": []
+          }
+        ],
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "POST",
+              "uri": "/content/pages",
+              "headers": {
+                "Content-Type": "application/json",
+                "Authorization": "Basic YWRtaW46YWRtaW4="
+              },
+              "body": "{\n  \"assetName\": \"CouponPage\",\n  \"assetType\": \"Page\",\n  \"parentFolder\":\"/iriscontent/en/pages/coupon\",\n  \"layouts\": [\"/iriscontent/en/layouts/CouponPage/CouponPageLayout1\", \"/iriscontent/en/layouts/CouponPage/CouponPageLayout2\", \"/iriscontent/en/layouts/CouponPage/CouponPageLayout3\"]\n}"
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "NONE",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": true,
+              "headers": {}
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "Edit Page",
+            "x-testDescription": "TODO: Add Description"
+          }
+        ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    },
+    "/iriscontent/en/pages/coupon/CouponPage.json": {
+      "get": {
+        "description": "TODO: Add Description",
+        "summary": "Get Page",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "Get Page",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [],
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "GET",
+              "uri": "/iriscontent/en/pages/coupon/CouponPage.json"
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "NONE",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": true,
+              "headers": {}
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "Get Page",
+            "x-testDescription": "TODO: Add Description"
+          }
+        ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
     }
   },
   "definitions": {
-    "CreateLayoutrequest": {
-      "title": "Create LayoutRequest",
+    "EditLayoutrequest": {
+      "title": "Edit LayoutRequest",
       "type": "object",
       "properties": {
         "parentFolder": {
@@ -643,7 +1029,6 @@
           "type": "string"
         },
         "ContentItem": {
-          "description": "",
           "$ref": "#/definitions/ContentItem"
         }
       },
@@ -795,8 +1180,8 @@
         "position-y"
       ]
     },
-    "CreateSeorequest": {
-      "title": "Create SEORequest",
+    "EditSeorequest": {
+      "title": "Edit SEORequest",
       "type": "object",
       "properties": {
         "assetName": {
@@ -938,8 +1323,8 @@
         "couponDetailURL"
       ]
     },
-    "CreateCouponrequest": {
-      "title": "Create CouponRequest",
+    "EditCouponrequest": {
+      "title": "Edit CouponRequest",
       "type": "object",
       "properties": {
         "assetName": {
@@ -1090,7 +1475,6 @@
           "type": "string"
         },
         "ContentItem": {
-          "description": "",
           "$ref": "#/definitions/ContentItem7"
         }
       },
@@ -1334,6 +1718,388 @@
       "required": [
         "folderName",
         "parentFolder"
+      ]
+    },
+    "CreateLayoutrequest": {
+      "title": "Create LayoutRequest",
+      "type": "object",
+      "properties": {
+        "parentFolder": {
+          "description": "",
+          "type": "string"
+        },
+        "ContentItem": {
+          "$ref": "#/definitions/ContentItem"
+        }
+      },
+      "required": [
+        "parentFolder",
+        "ContentItem"
+      ]
+    },
+    "CreateCouponrequest": {
+      "title": "Create CouponRequest",
+      "type": "object",
+      "properties": {
+        "assetName": {
+          "description": "",
+          "type": "string"
+        },
+        "assetType": {
+          "description": "",
+          "type": "string"
+        },
+        "parentFolder": {
+          "description": "",
+          "type": "string"
+        },
+        "couponStartDate": {
+          "description": "",
+          "type": "string"
+        },
+        "couponEndDate": {
+          "description": "",
+          "type": "string"
+        },
+        "categoryPage": {
+          "description": "",
+          "type": "string"
+        },
+        "Channel": {
+          "description": "",
+          "type": "string"
+        },
+        "Active": {
+          "description": "",
+          "type": "string"
+        },
+        "offer1Name": {
+          "description": "",
+          "type": "string"
+        },
+        "offer1Description": {
+          "description": "",
+          "type": "string"
+        },
+        "offer2Name": {
+          "description": "",
+          "type": "string"
+        },
+        "offer2Description": {
+          "description": "",
+          "type": "string"
+        },
+        "offer3Name": {
+          "description": "",
+          "type": "string"
+        },
+        "offer3Description": {
+          "description": "",
+          "type": "string"
+        },
+        "offer4Name": {
+          "description": "",
+          "type": "string"
+        },
+        "offer4Description": {
+          "description": "",
+          "type": "string"
+        },
+        "validName": {
+          "description": "",
+          "type": "string"
+        },
+        "shopTitle": {
+          "description": "",
+          "type": "string"
+        },
+        "codeValue": {
+          "description": "",
+          "type": "string"
+        },
+        "codeSelect": {
+          "description": "",
+          "type": "string"
+        },
+        "detailTitle": {
+          "description": "",
+          "type": "string"
+        },
+        "displayWithProduct": {
+          "description": "",
+          "type": "string"
+        },
+        "barCode1": {
+          "description": "",
+          "type": "string"
+        },
+        "barCode2": {
+          "description": "",
+          "type": "string"
+        },
+        "disclaimer": {
+          "description": "",
+          "type": "string"
+        },
+        "couponShopUrl": {
+          "description": "",
+          "type": "string"
+        },
+        "couponDetailURL": {
+          "description": "",
+          "type": "string"
+        }
+      },
+      "required": [
+        "assetName",
+        "assetType",
+        "parentFolder",
+        "couponStartDate",
+        "couponEndDate",
+        "categoryPage",
+        "Channel",
+        "Active",
+        "offer1Name",
+        "offer1Description",
+        "offer2Name",
+        "offer2Description",
+        "offer3Name",
+        "offer3Description",
+        "offer4Name",
+        "offer4Description",
+        "validName",
+        "shopTitle",
+        "codeValue",
+        "codeSelect",
+        "detailTitle",
+        "displayWithProduct",
+        "barCode1",
+        "barCode2",
+        "disclaimer",
+        "couponShopUrl",
+        "couponDetailURL"
+      ]
+    },
+    "EditInstancesrequest": {
+      "title": "Edit InstancesRequest",
+      "type": "object",
+      "properties": {
+        "parentFolder": {
+          "description": "",
+          "type": "string"
+        },
+        "ContentItem": {
+          "$ref": "#/definitions/ContentItem7"
+        }
+      },
+      "required": [
+        "parentFolder",
+        "ContentItem"
+      ]
+    },
+    "EditPagerequest": {
+      "title": "Edit PageRequest",
+      "type": "object",
+      "properties": {
+        "assetName": {
+          "description": "",
+          "type": "string"
+        },
+        "assetType": {
+          "description": "",
+          "type": "string"
+        },
+        "parentFolder": {
+          "description": "",
+          "type": "string"
+        },
+        "layouts": {
+          "description": "",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "assetName",
+        "assetType",
+        "parentFolder",
+        "layouts"
+      ]
+    },
+    "CreatePagerequest": {
+      "title": "Create PageRequest",
+      "type": "object",
+      "properties": {
+        "assetName": {
+          "description": "",
+          "type": "string"
+        },
+        "assetType": {
+          "description": "",
+          "type": "string"
+        },
+        "parentFolder": {
+          "description": "",
+          "type": "string"
+        },
+        "layouts": {
+          "description": "",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "assetName",
+        "assetType",
+        "parentFolder",
+        "layouts"
+      ]
+    },
+    "CreateSeorequest": {
+      "title": "Create SEORequest",
+      "type": "object",
+      "properties": {
+        "assetName": {
+          "description": "",
+          "type": "string"
+        },
+        "assetType": {
+          "description": "",
+          "type": "string"
+        },
+        "parentFolder": {
+          "description": "",
+          "type": "string"
+        },
+        "couponStartDate": {
+          "description": "",
+          "type": "string"
+        },
+        "couponEndDate": {
+          "description": "",
+          "type": "string"
+        },
+        "categoryPage": {
+          "description": "",
+          "type": "string"
+        },
+        "Channel": {
+          "description": "",
+          "type": "string"
+        },
+        "Active": {
+          "description": "",
+          "type": "string"
+        },
+        "offer1Name": {
+          "description": "",
+          "type": "string"
+        },
+        "offer1Description": {
+          "description": "",
+          "type": "string"
+        },
+        "offer2Name": {
+          "description": "",
+          "type": "string"
+        },
+        "offer2Description": {
+          "description": "",
+          "type": "string"
+        },
+        "offer3Name": {
+          "description": "",
+          "type": "string"
+        },
+        "offer3Description": {
+          "description": "",
+          "type": "string"
+        },
+        "offer4Name": {
+          "description": "",
+          "type": "string"
+        },
+        "offer4Description": {
+          "description": "",
+          "type": "string"
+        },
+        "validName": {
+          "description": "",
+          "type": "string"
+        },
+        "shopTitle": {
+          "description": "",
+          "type": "string"
+        },
+        "codeValue": {
+          "description": "",
+          "type": "string"
+        },
+        "codeSelect": {
+          "description": "",
+          "type": "string"
+        },
+        "detailTitle": {
+          "description": "",
+          "type": "string"
+        },
+        "displayWithProduct": {
+          "description": "",
+          "type": "string"
+        },
+        "barCode1": {
+          "description": "",
+          "type": "string"
+        },
+        "barCode2": {
+          "description": "",
+          "type": "string"
+        },
+        "disclaimer": {
+          "description": "",
+          "type": "string"
+        },
+        "couponShopUrl": {
+          "description": "",
+          "type": "string"
+        },
+        "couponDetailURL": {
+          "description": "",
+          "type": "string"
+        }
+      },
+      "required": [
+        "assetName",
+        "assetType",
+        "parentFolder",
+        "couponStartDate",
+        "couponEndDate",
+        "categoryPage",
+        "Channel",
+        "Active",
+        "offer1Name",
+        "offer1Description",
+        "offer2Name",
+        "offer2Description",
+        "offer3Name",
+        "offer3Description",
+        "offer4Name",
+        "offer4Description",
+        "validName",
+        "shopTitle",
+        "codeValue",
+        "codeSelect",
+        "detailTitle",
+        "displayWithProduct",
+        "barCode1",
+        "barCode2",
+        "disclaimer",
+        "couponShopUrl",
+        "couponDetailURL"
       ]
     }
   }
