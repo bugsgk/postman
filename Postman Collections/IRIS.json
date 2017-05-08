@@ -135,7 +135,7 @@
         }
       }
     },
-    "/iriscontent/en/layouts/SamplePageLayout.harray.infinity.json": {
+    "/iriscontent/en/layouts/CouponPage/CouponPageLayout.harray.infinity.json": {
       "get": {
         "description": "TODO: Add Description",
         "summary": "Get Layout",
@@ -157,7 +157,7 @@
           {
             "request": {
               "method": "GET",
-              "uri": "/iriscontent/en/layouts/SamplePageLayout.harray.infinity.json"
+              "uri": "/iriscontent/en/layouts/CouponPage/CouponPageLayout.harray.infinity.json"
             },
             "expectedResponse": {
               "x-allowExtraHeaders": true,
