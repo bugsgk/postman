@@ -9,7 +9,7 @@
       "url": "http://github.com/gruntjs/grunt/blob/master/LICENSE-MIT"
     }
   },
-  "host": "localhost:8080",
+  "host": "example.com",
   "basePath": "/",
   "securityDefinitions": {
     "auth": {
@@ -1231,7 +1231,7 @@
         },
         "Active": {
           "description": "",
-          "type": "string"
+          "type": "boolean"
         },
         "offer1Name": {
           "description": "",
