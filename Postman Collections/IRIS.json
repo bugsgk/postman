@@ -337,7 +337,7 @@
         }
       }
     },
-    "/iriscontent/en/components/coupon/COUPON1001.json": {
+    "/iriscontent/en/components/coupon/COUPON1001": {
       "get": {
         "description": "TODO: Add Description",
         "summary": "Get Coupon",
@@ -359,7 +359,7 @@
           {
             "request": {
               "method": "GET",
-              "uri": "/iriscontent/en/components/coupon/COUPON1001.json"
+              "uri": "/iriscontent/en/components/coupon/COUPON1001"
             },
             "expectedResponse": {
               "x-allowExtraHeaders": true,
@@ -537,7 +537,7 @@
         }
       }
     },
-    "/iriscontent/en/instances/CouponPageInstance.harray.infinity.json": {
+    "/iriscontent/en/instances/CouponPageInstance/": {
       "get": {
         "description": "TODO: Add Description",
         "summary": "Get Instance",
@@ -548,7 +548,16 @@
         "produces": [
           "application/json"
         ],
-        "parameters": [],
+        "parameters": [
+          {
+            "name": "maxLevel",
+            "in": "query",
+            "required": true,
+            "type": "integer",
+            "format": "int32",
+            "description": ""
+          }
+        ],
         "responses": {
           "200": {
             "description": ""
@@ -559,7 +568,7 @@
           {
             "request": {
               "method": "GET",
-              "uri": "/iriscontent/en/instances/CouponPageInstance.harray.infinity.json"
+              "uri": "/iriscontent/en/instances/CouponPageInstance/?maxLevel=10"
             },
             "expectedResponse": {
               "x-allowExtraHeaders": true,
@@ -788,83 +797,6 @@
     "/content/folder": {
       "put": {
         "description": "TODO: Add Description",
-        "summary": "Create Folder",
-        "tags": [
-          "Folder"
-        ],
-        "operationId": "Create Folder",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "name": "Body",
-            "in": "body",
-            "required": true,
-            "description": "",
-            "schema": {
-              "$ref": "#/definitions/CreateFolderrequest"
-            }
-          },
-          {
-            "name": "Authorization",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
-          },
-          {
-            "name": "Content-Type",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": ""
-          }
-        },
-        "security": [
-          {
-            "auth": []
-          }
-        ],
-        "x-unitTests": [
-          {
-            "request": {
-              "method": "PUT",
-              "uri": "/content/folder",
-              "headers": {
-                "Content-Type": "application/json",
-                "Authorization": "Basic YWRtaW46YWRtaW4="
-              },
-              "body": "{\n\t\"folderName\":\"inner3\",\n\t\"parentFolder\":\"/iriscontent/en/sample/inner\"\n}"
-            },
-            "expectedResponse": {
-              "x-allowExtraHeaders": true,
-              "x-bodyMatchMode": "NONE",
-              "x-arrayOrderedMatching": false,
-              "x-arrayCheckCount": false,
-              "x-matchResponseSchema": true,
-              "headers": {}
-            },
-            "x-testShouldPass": true,
-            "x-testEnabled": true,
-            "x-testName": "Create Folder",
-            "x-testDescription": "TODO: Add Description"
-          }
-        ],
-        "x-operation-settings": {
-          "CollectParameters": false,
-          "AllowDynamicQueryParameters": false,
-          "AllowDynamicFormParameters": false,
-          "IsMultiContentStreaming": false
-        }
-      },
-      "post": {
-        "description": "TODO: Add Description",
         "summary": "Move Folder",
         "tags": [
           "Folder"
@@ -911,7 +843,7 @@
         "x-unitTests": [
           {
             "request": {
-              "method": "POST",
+              "method": "PUT",
               "uri": "/content/folder",
               "headers": {
                 "Content-Type": "application/json",
@@ -930,6 +862,83 @@
             "x-testShouldPass": true,
             "x-testEnabled": true,
             "x-testName": "Move Folder",
+            "x-testDescription": "TODO: Add Description"
+          }
+        ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      },
+      "post": {
+        "description": "TODO: Add Description",
+        "summary": "Create Folder",
+        "tags": [
+          "Folder"
+        ],
+        "operationId": "Create Folder",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/CreateFolderrequest"
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "auth": []
+          }
+        ],
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "POST",
+              "uri": "/content/folder",
+              "headers": {
+                "Content-Type": "application/json",
+                "Authorization": "Basic YWRtaW46YWRtaW4="
+              },
+              "body": "{\n\t\"folderName\":\"coupon\",\n\t\"parentFolder\":\"/iriscontent/en/components/\"\n}"
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "NONE",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": true,
+              "headers": {}
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "Create Folder",
             "x-testDescription": "TODO: Add Description"
           }
         ],
@@ -1201,7 +1210,12 @@
       "title": "Create CouponRequest",
       "type": "object",
       "properties": {
-        "assetName": {
+        "id": {
+          "description": "",
+          "type": "integer",
+          "format": "int32"
+        },
+        "path": {
           "description": "",
           "type": "string"
         },
@@ -1209,91 +1223,107 @@
           "description": "",
           "type": "string"
         },
-        "parentFolder": {
+        "lastPublishedOn": {
           "description": "",
           "type": "string"
         },
-        "couponStartDate": {
+        "lastPublishedBy": {
           "description": "",
           "type": "string"
         },
-        "couponEndDate": {
+        "lastModifiedOn": {
           "description": "",
           "type": "string"
         },
-        "categoryPage": {
+        "lastModifiedBy": {
           "description": "",
           "type": "string"
         },
-        "Channel": {
+        "createBy": {
           "description": "",
           "type": "string"
         },
-        "Active": {
+        "createdOn": {
+          "description": "",
+          "type": "string"
+        },
+        "name": {
+          "description": "",
+          "type": "string"
+        },
+        "publishingStartDate": {
+          "description": "",
+          "type": "string"
+        },
+        "publishingEndDate": {
+          "description": "",
+          "type": "string"
+        },
+        "content": {
+          "$ref": "#/definitions/Content"
+        }
+      },
+      "required": [
+        "id",
+        "path",
+        "assetType",
+        "lastPublishedOn",
+        "lastPublishedBy",
+        "lastModifiedOn",
+        "lastModifiedBy",
+        "createBy",
+        "createdOn",
+        "name",
+        "publishingStartDate",
+        "publishingEndDate",
+        "content"
+      ]
+    },
+    "Content": {
+      "title": "Content",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "",
+          "type": "string"
+        },
+        "redeemingChannel": {
+          "description": "",
+          "type": "string"
+        },
+        "pubchannelsDesktop": {
           "description": "",
           "type": "boolean"
         },
-        "offer1Name": {
+        "pubchannelMobile": {
+          "description": "",
+          "type": "boolean"
+        },
+        "pubchannelApp": {
+          "description": "",
+          "type": "boolean"
+        },
+        "publish": {
+          "description": "",
+          "type": "boolean"
+        },
+        "offerstartDate": {
           "description": "",
           "type": "string"
         },
-        "offer1Description": {
+        "offerendDate": {
           "description": "",
           "type": "string"
         },
-        "offer2Name": {
+        "promoCode": {
           "description": "",
           "type": "string"
         },
-        "offer2Description": {
+        "barcodeUrl": {
           "description": "",
           "type": "string"
         },
-        "offer3Name": {
-          "description": "",
-          "type": "string"
-        },
-        "offer3Description": {
-          "description": "",
-          "type": "string"
-        },
-        "offer4Name": {
-          "description": "",
-          "type": "string"
-        },
-        "offer4Description": {
-          "description": "",
-          "type": "string"
-        },
-        "validName": {
-          "description": "",
-          "type": "string"
-        },
-        "shopTitle": {
-          "description": "",
-          "type": "string"
-        },
-        "codeValue": {
-          "description": "",
-          "type": "string"
-        },
-        "codeSelect": {
-          "description": "",
-          "type": "string"
-        },
-        "detailTitle": {
-          "description": "",
-          "type": "string"
-        },
-        "displayWithProduct": {
-          "description": "",
-          "type": "string"
-        },
-        "barCode1": {
-          "description": "",
-          "type": "string"
-        },
-        "barCode2": {
+        "disclaimerTemplate": {
           "description": "",
           "type": "string"
         },
@@ -1301,43 +1331,71 @@
           "description": "",
           "type": "string"
         },
-        "couponShopUrl": {
+        "linkText": {
           "description": "",
           "type": "string"
         },
-        "couponDetailURL": {
+        "linkUrl": {
+          "description": "",
+          "type": "string"
+        },
+        "linkAppUrl": {
+          "description": "",
+          "type": "string"
+        },
+        "offers": {
+          "description": "",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Offer"
+          }
+        }
+      },
+      "required": [
+        "name",
+        "redeemingChannel",
+        "pubchannelsDesktop",
+        "pubchannelMobile",
+        "pubchannelApp",
+        "publish",
+        "offerstartDate",
+        "offerendDate",
+        "promoCode",
+        "barcodeUrl",
+        "disclaimerTemplate",
+        "disclaimer",
+        "linkText",
+        "linkUrl",
+        "linkAppUrl",
+        "offers"
+      ]
+    },
+    "Offer": {
+      "title": "Offer",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "",
+          "type": "string"
+        },
+        "barCode": {
+          "description": "",
+          "type": "string"
+        },
+        "headLine": {
+          "description": "",
+          "type": "string"
+        },
+        "bodyCopy": {
           "description": "",
           "type": "string"
         }
       },
       "required": [
-        "assetName",
-        "assetType",
-        "parentFolder",
-        "couponStartDate",
-        "couponEndDate",
-        "categoryPage",
-        "Channel",
-        "Active",
-        "offer1Name",
-        "offer1Description",
-        "offer2Name",
-        "offer2Description",
-        "offer3Name",
-        "offer3Description",
-        "offer4Name",
-        "offer4Description",
-        "validName",
-        "shopTitle",
-        "codeValue",
-        "codeSelect",
-        "detailTitle",
-        "displayWithProduct",
-        "barCode1",
-        "barCode2",
-        "disclaimer",
-        "couponShopUrl",
-        "couponDetailURL"
+        "name",
+        "barCode",
+        "headLine",
+        "bodyCopy"
       ]
     },
     "EditCouponrequest": {
@@ -1778,7 +1836,7 @@
           "type": "string"
         },
         "ContentItem": {
-          "$ref": "#/definitions/ContentItem13"
+          "$ref": "#/definitions/ContentItem15"
         }
       },
       "required": [
@@ -1786,8 +1844,8 @@
         "ContentItem"
       ]
     },
-    "ContentItem13": {
-      "title": "ContentItem13",
+    "ContentItem15": {
+      "title": "ContentItem15",
       "type": "object",
       "properties": {
         "name": {
@@ -1822,7 +1880,7 @@
           "description": "",
           "type": "array",
           "items": {
-            "$ref": "#/definitions/ContentItem14"
+            "$ref": "#/definitions/ContentItem16"
           }
         }
       },
@@ -1837,8 +1895,8 @@
         "ContentItem"
       ]
     },
-    "ContentItem14": {
-      "title": "ContentItem14",
+    "ContentItem16": {
+      "title": "ContentItem16",
       "type": "object",
       "properties": {
         "name": {
@@ -1869,7 +1927,7 @@
           "description": "",
           "type": "array",
           "items": {
-            "$ref": "#/definitions/ContentItem15"
+            "$ref": "#/definitions/ContentItem17"
           }
         }
       },
@@ -1883,8 +1941,8 @@
         "ContentItem"
       ]
     },
-    "ContentItem15": {
-      "title": "ContentItem15",
+    "ContentItem17": {
+      "title": "ContentItem17",
       "type": "object",
       "properties": {
         "name": {
@@ -1945,7 +2003,7 @@
           "type": "string"
         },
         "ContentItem": {
-          "$ref": "#/definitions/ContentItem13"
+          "$ref": "#/definitions/ContentItem15"
         }
       },
       "required": [
