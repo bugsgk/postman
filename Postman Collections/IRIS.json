@@ -236,7 +236,7 @@
                 "Content-Type": "application/json",
                 "Authorization": "Basic YWRtaW46YWRtaW4="
               },
-              "body": "{\n  \"assetType\": \"couponTile\",\n  \"name\": \"COUPON1003\",\n  \"publishingStartDate\": \"2017-05-15T14:34:34+0530\",\n  \"publishingEndDate\": \"2017-06-28T14:34:34+0530\",\n  \"publishingChannelLarge\": true,\n  \"publishingChannelSmall\": true,\n  \"publishingChannelApp\": true,\n  \"publishable\": true,\n  \"active\": true,\n  \"content\": {\n    \"offerstartDate\": \"2017-05-28T14:34:34+0530\",\n    \"offerendDate\": \"2017-10-28T14:34:34+0530\",\n    \"promoCode\": \"adsfa\",\n    \"barcodeUrl\": \"dsfa\",\n    \"disclaimerTemplate\": \"sdas <strong> sdafsdf </strong> [@offerstartdate - @offerenddate]f sfasf\",\n    \"disclaimer\": \"sdas <strong> sdafsdf </strong> 2017-05-09 - 2017-05-10 f sfasf\",\n    \"linkText\": \"sdaf\",\n    \"linkUrl\": \"asdfas\",\n    \"linkAppUrl\": \"fsdafa\"      \n  }\n}"
+              "body": "{\n  \"assetType\": \"couponTile\",\n  \"name\": \"COUPON1005\",\n  \"publishingStartDate\": \"2017-05-25T14:34:34+0530\",\n  \"publishingEndDate\": \"2017-12-28T14:34:34+0530\",\n  \"publishingChannelLarge\": true,\n  \"publishingChannelSmall\": true,\n  \"publishingChannelApp\": true,\n  \"publishable\": true,\n  \"active\": true,\n  \"content\": {\n    \"offerstartDate\": \"2017-05-28T14:34:34+0530\",\n    \"offerendDate\": \"2017-10-28T14:34:34+0530\",\n    \"promoCode\": \"adsfa\",\n    \"barcodeUrl\": \"dsfa\",\n    \"disclaimerTemplate\": \"sdas <strong> sdafsdf </strong> [@offerstartdate - @offerenddate]f sfasf\",\n    \"disclaimer\": \"sdas <strong> sdafsdf </strong> 2017-05-09 - 2017-05-10 f sfasf\",\n    \"linkText\": \"sdaf\",\n    \"linkUrl\": \"asdfas\",\n    \"linkAppUrl\": \"fsdafa\",\n    \"offers\": [\n      {\n        \"barCode\": \"ascfac\",\n        \"headLine\": \"fasas\",\n        \"bodyCopy\": \"asfa\"\n      },\n      {\n        \"barCode\": \"bfa\",\n        \"headLine\": \"bfasf\",\n        \"bodyCopy\": \"bsdfasf\"\n      }\n    ]       \n  }\n}"
             },
             "expectedResponse": {
               "x-allowExtraHeaders": true,
@@ -339,7 +339,7 @@
         }
       }
     },
-    "/content-authoring/content/en_US/JCPenney.com/Coupons/Assets/Content/COUPON1001": {
+    "/content-authoring/content/en_US/JCPenney.com/Coupons/Assets/Content/COUPON1002": {
       "get": {
         "description": "TODO: Add Description",
         "summary": "Get Coupon",
@@ -373,7 +373,7 @@
           {
             "request": {
               "method": "GET",
-              "uri": "/content-authoring/content/en_US/JCPenney.com/Coupons/Assets/Content/COUPON1001",
+              "uri": "/content-authoring/content/en_US/JCPenney.com/Coupons/Assets/Content/COUPON1002",
               "headers": {
                 "Authorization": "Basic YWRtaW46YWRtaW4="
               }
@@ -400,7 +400,7 @@
         }
       }
     },
-    "/content-authoring/content/en_US/JCPenney.com/Coupons/Assets/Content/COUPON1013": {
+    "/content-authoring/content/en_US/JCPenney.com/Coupons/Assets/Content/COUPON1001": {
       "delete": {
         "description": "TODO: Add Description",
         "summary": "Delete Coupon",
@@ -434,7 +434,7 @@
           {
             "request": {
               "method": "DELETE",
-              "uri": "/content-authoring/content/en_US/JCPenney.com/Coupons/Assets/Content/COUPON1013",
+              "uri": "/content-authoring/content/en_US/JCPenney.com/Coupons/Assets/Content/COUPON1001",
               "headers": {
                 "Authorization": "Basic YWRtaW46YWRtaW4="
               }
@@ -492,7 +492,7 @@
           {
             "request": {
               "method": "GET",
-              "uri": "/content-authoring/content/en_US/JCPenney.com/Coupons/Assets/Content?maxLevel=5"
+              "uri": "/content-authoring/content/en_US/JCPenney.com/Coupons/Assets/Content?maxLevel=2"
             },
             "expectedResponse": {
               "x-allowExtraHeaders": true,
@@ -1217,7 +1217,7 @@
                 "Content-Type": "application/json",
                 "Authorization": "Basic YWRtaW46YWRtaW4="
               },
-              "body": "{\n\t\"folderName\":\"coupon\",\n\t\"parentFolder\":\"/iriscontent/en/components/\"\n}"
+              "body": "{\n\t\"folderName\":\"Content\",\n\t\"parentFolder\":\"/content-authoring/content/en_US/JCPenney.com/Coupons/Assets/\"\n}"
             },
             "expectedResponse": {
               "x-allowExtraHeaders": true,
@@ -1593,6 +1593,13 @@
         "linkAppUrl": {
           "description": "",
           "type": "string"
+        },
+        "offers": {
+          "description": "",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Offer"
+          }
         }
       },
       "required": [
@@ -1604,7 +1611,31 @@
         "disclaimer",
         "linkText",
         "linkUrl",
-        "linkAppUrl"
+        "linkAppUrl",
+        "offers"
+      ]
+    },
+    "Offer": {
+      "title": "Offer",
+      "type": "object",
+      "properties": {
+        "barCode": {
+          "description": "",
+          "type": "string"
+        },
+        "headLine": {
+          "description": "",
+          "type": "string"
+        },
+        "bodyCopy": {
+          "description": "",
+          "type": "string"
+        }
+      },
+      "required": [
+        "barCode",
+        "headLine",
+        "bodyCopy"
       ]
     },
     "EditCouponrequest": {
@@ -1644,7 +1675,7 @@
           "type": "string"
         },
         "content": {
-          "$ref": "#/definitions/Content11"
+          "$ref": "#/definitions/Content12"
         }
       },
       "required": [
@@ -1659,8 +1690,8 @@
         "content"
       ]
     },
-    "Content11": {
-      "title": "Content11",
+    "Content12": {
+      "title": "Content12",
       "type": "object",
       "properties": {
         "name": {
@@ -1727,7 +1758,7 @@
           "description": "",
           "type": "array",
           "items": {
-            "$ref": "#/definitions/Offer"
+            "$ref": "#/definitions/Offer13"
           }
         }
       },
@@ -1750,8 +1781,8 @@
         "offers"
       ]
     },
-    "Offer": {
-      "title": "Offer",
+    "Offer13": {
+      "title": "Offer13",
       "type": "object",
       "properties": {
         "name": {
@@ -2077,7 +2108,7 @@
           "type": "string"
         },
         "ContentItem": {
-          "$ref": "#/definitions/ContentItem16"
+          "$ref": "#/definitions/ContentItem17"
         }
       },
       "required": [
@@ -2086,8 +2117,8 @@
         "ContentItem"
       ]
     },
-    "ContentItem16": {
-      "title": "ContentItem16",
+    "ContentItem17": {
+      "title": "ContentItem17",
       "type": "object",
       "properties": {
         "name": {
@@ -2122,7 +2153,7 @@
           "description": "",
           "type": "array",
           "items": {
-            "$ref": "#/definitions/ContentItem17"
+            "$ref": "#/definitions/ContentItem18"
           }
         }
       },
@@ -2137,8 +2168,8 @@
         "ContentItem"
       ]
     },
-    "ContentItem17": {
-      "title": "ContentItem17",
+    "ContentItem18": {
+      "title": "ContentItem18",
       "type": "object",
       "properties": {
         "name": {
@@ -2169,7 +2200,7 @@
           "description": "",
           "type": "array",
           "items": {
-            "$ref": "#/definitions/ContentItem18"
+            "$ref": "#/definitions/ContentItem19"
           }
         }
       },
@@ -2183,8 +2214,8 @@
         "ContentItem"
       ]
     },
-    "ContentItem18": {
-      "title": "ContentItem18",
+    "ContentItem19": {
+      "title": "ContentItem19",
       "type": "object",
       "properties": {
         "name": {
@@ -2249,7 +2280,7 @@
           "type": "string"
         },
         "ContentItem": {
-          "$ref": "#/definitions/ContentItem16"
+          "$ref": "#/definitions/ContentItem17"
         }
       },
       "required": [
