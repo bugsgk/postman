@@ -184,11 +184,11 @@
     "/content-authoring/content/en_US/JCPenney.com/Coupons/Assets/Content/": {
       "post": {
         "description": "TODO: Add Description",
-        "summary": "Create Coupon",
+        "summary": "Create Page Instance",
         "tags": [
           "Coupon"
         ],
-        "operationId": "Create Coupon",
+        "operationId": "Create Page Instance",
         "produces": [
           "application/json"
         ],
@@ -199,7 +199,7 @@
             "required": true,
             "description": "",
             "schema": {
-              "$ref": "#/definitions/CreateCouponrequest"
+              "$ref": "#/definitions/CreatePageInstancerequest"
             }
           },
           {
@@ -248,7 +248,7 @@
             },
             "x-testShouldPass": true,
             "x-testEnabled": true,
-            "x-testName": "Create Coupon",
+            "x-testName": "Create Page Instance",
             "x-testDescription": "TODO: Add Description"
           }
         ],
@@ -1809,6 +1809,63 @@
         "bodyCopy"
       ]
     },
+    "CreatePageInstancerequest": {
+      "title": "Create Page InstanceRequest",
+      "type": "object",
+      "properties": {
+        "assetType": {
+          "description": "",
+          "type": "string"
+        },
+        "name": {
+          "description": "",
+          "type": "string"
+        },
+        "publishingStartDate": {
+          "description": "",
+          "type": "string"
+        },
+        "publishingEndDate": {
+          "description": "",
+          "type": "string"
+        },
+        "publishingChannelLarge": {
+          "description": "",
+          "type": "boolean"
+        },
+        "publishingChannelSmall": {
+          "description": "",
+          "type": "boolean"
+        },
+        "publishingChannelApp": {
+          "description": "",
+          "type": "boolean"
+        },
+        "publishable": {
+          "description": "",
+          "type": "boolean"
+        },
+        "active": {
+          "description": "",
+          "type": "boolean"
+        },
+        "content": {
+          "$ref": "#/definitions/Content"
+        }
+      },
+      "required": [
+        "assetType",
+        "name",
+        "publishingStartDate",
+        "publishingEndDate",
+        "publishingChannelLarge",
+        "publishingChannelSmall",
+        "publishingChannelApp",
+        "publishable",
+        "active",
+        "content"
+      ]
+    },
     "CreateSeorequest": {
       "title": "Create SEORequest",
       "type": "object",
@@ -2108,7 +2165,7 @@
           "type": "string"
         },
         "ContentItem": {
-          "$ref": "#/definitions/ContentItem17"
+          "$ref": "#/definitions/ContentItem20"
         }
       },
       "required": [
@@ -2117,8 +2174,8 @@
         "ContentItem"
       ]
     },
-    "ContentItem17": {
-      "title": "ContentItem17",
+    "ContentItem20": {
+      "title": "ContentItem20",
       "type": "object",
       "properties": {
         "name": {
@@ -2153,7 +2210,7 @@
           "description": "",
           "type": "array",
           "items": {
-            "$ref": "#/definitions/ContentItem18"
+            "$ref": "#/definitions/ContentItem21"
           }
         }
       },
@@ -2168,8 +2225,8 @@
         "ContentItem"
       ]
     },
-    "ContentItem18": {
-      "title": "ContentItem18",
+    "ContentItem21": {
+      "title": "ContentItem21",
       "type": "object",
       "properties": {
         "name": {
@@ -2200,7 +2257,7 @@
           "description": "",
           "type": "array",
           "items": {
-            "$ref": "#/definitions/ContentItem19"
+            "$ref": "#/definitions/ContentItem22"
           }
         }
       },
@@ -2214,8 +2271,8 @@
         "ContentItem"
       ]
     },
-    "ContentItem19": {
-      "title": "ContentItem19",
+    "ContentItem22": {
+      "title": "ContentItem22",
       "type": "object",
       "properties": {
         "name": {
@@ -2280,7 +2337,7 @@
           "type": "string"
         },
         "ContentItem": {
-          "$ref": "#/definitions/ContentItem17"
+          "$ref": "#/definitions/ContentItem20"
         }
       },
       "required": [
