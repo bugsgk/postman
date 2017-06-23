@@ -181,14 +181,74 @@
         }
       }
     },
-    "/content-authoring/content/en_US/JCPenney.com/Coupons/Assets/Content/": {
-      "post": {
+    "/content-authoring/content/couponTile": {
+      "get": {
         "description": "TODO: Add Description",
-        "summary": "Create Page Instance",
+        "summary": "Get All Coupons - Date Filter",
         "tags": [
           "Coupon"
         ],
-        "operationId": "Create Page Instance",
+        "operationId": "Get All Coupons - Date Filter",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "parent",
+            "in": "query",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "startDate",
+            "in": "query",
+            "required": true,
+            "type": "string",
+            "format": "date-time",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [],
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "GET",
+              "uri": "/content-authoring/content/couponTile?parent=/content/en_US/JCPenney.com/Coupons/Assets/Content&startDate=2017-10-15"
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "NONE",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": true,
+              "headers": {}
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "Get All Coupons - Date Filter",
+            "x-testDescription": "TODO: Add Description"
+          }
+        ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      },
+      "post": {
+        "description": "TODO: Add Description",
+        "summary": "Create Coupon",
+        "tags": [
+          "Coupon"
+        ],
+        "operationId": "Create Coupon",
         "produces": [
           "application/json"
         ],
@@ -199,7 +259,7 @@
             "required": true,
             "description": "",
             "schema": {
-              "$ref": "#/definitions/CreatePageInstancerequest"
+              "$ref": "#/definitions/CreateCouponrequest"
             }
           },
           {
@@ -231,12 +291,12 @@
           {
             "request": {
               "method": "POST",
-              "uri": "/content-authoring/content/en_US/JCPenney.com/Coupons/Assets/Content/",
+              "uri": "/content-authoring/content/couponTile",
               "headers": {
                 "Content-Type": "application/json",
                 "Authorization": "Basic YWRtaW46YWRtaW4="
               },
-              "body": "{\n  \"assetType\": \"couponTile\",\n  \"name\": \"COUPON1005\",\n  \"publishingStartDate\": \"2017-05-25T14:34:34+0530\",\n  \"publishingEndDate\": \"2017-12-28T14:34:34+0530\",\n  \"publishingChannelLarge\": true,\n  \"publishingChannelSmall\": true,\n  \"publishingChannelApp\": true,\n  \"publishable\": true,\n  \"active\": true,\n  \"content\": {\n    \"offerstartDate\": \"2017-05-28T14:34:34+0530\",\n    \"offerendDate\": \"2017-10-28T14:34:34+0530\",\n    \"promoCode\": \"adsfa\",\n    \"barcodeUrl\": \"dsfa\",\n    \"disclaimerTemplate\": \"sdas <strong> sdafsdf </strong> [@offerstartdate - @offerenddate]f sfasf\",\n    \"disclaimer\": \"sdas <strong> sdafsdf </strong> 2017-05-09 - 2017-05-10 f sfasf\",\n    \"linkText\": \"sdaf\",\n    \"linkUrl\": \"asdfas\",\n    \"linkAppUrl\": \"fsdafa\",\n    \"offers\": [\n      {\n        \"barCode\": \"ascfac\",\n        \"headLine\": \"fasas\",\n        \"bodyCopy\": \"asfa\"\n      },\n      {\n        \"barCode\": \"bfa\",\n        \"headLine\": \"bfasf\",\n        \"bodyCopy\": \"bsdfasf\"\n      }\n    ]       \n  }\n}"
+              "body": "{\n  \"parent\": \"/content/en_US/JCPenney.com/Coupons/Assets/Content\",\n  \"contentType\": \"couponTile\",\n  \"name\": \"COUPON1001\",\n  \"publishingStartDate\": \"2017-06-20T18:00:00+00:00\",\n  \"publishingEndDate\": \"2017-06-21T20:00:00+00:00\",\n  \"publishingChannelLarge\": true,\n  \"publishingChannelSmall\": true,\n  \"publishingChannelApp\": true,\n  \"publishable\": true,\n  \"active\": true,\n  \"validated\":true,\n  \"priority\": 5,\n  \"content\": {\n    \"offerstartDate\": \"2017-06-15T14:34:34+0530\",\n    \"offerendDate\": \"2018-06-25T14:34:34+0530\",\n    \"promoCode\": \"BIGSAVE8\",\n    \"barcodeUrl\": \"https://e.jcpenney.com/bca/z/image?ct=CODE128&st=N&bh=3&bc=MC4560120002000000016210\",\n    \"disclaimerTemplate\": \"disclaimer Text\",\n    \"disclaimer\": \"sdas <strong> sdafsdf </strong> 2017-05-09 - 2017-05-10 f sfasf\",\n    \"linkText\": \"sdaf\",\n    \"linkUrl\": \"asdfas\",\n    \"linkAppUrl\": \"fsdafa\",\n    \"offers\": [\n      {\n        \"barCode\": \"ascfac\",\n        \"headLine\": \"fasas\",\n        \"bodyCopy\": \"asfa\"\n      },\n      {\n        \"barCode\": \"bfa\",\n        \"headLine\": \"bfasf\",\n        \"bodyCopy\": \"bsdfasf\"\n      }\n    ]       \n  }\n}"
             },
             "expectedResponse": {
               "x-allowExtraHeaders": true,
@@ -248,7 +308,7 @@
             },
             "x-testShouldPass": true,
             "x-testEnabled": true,
-            "x-testName": "Create Page Instance",
+            "x-testName": "Create Coupon",
             "x-testDescription": "TODO: Add Description"
           }
         ],
@@ -339,7 +399,7 @@
         }
       }
     },
-    "/content-authoring/content/en_US/JCPenney.com/Coupons/Assets/Content/COUPON1002": {
+    "/content-authoring/content/eaf925fa-12f5-47f3-a310-b96a7daf4249": {
       "get": {
         "description": "TODO: Add Description",
         "summary": "Get Coupon",
@@ -373,7 +433,7 @@
           {
             "request": {
               "method": "GET",
-              "uri": "/content-authoring/content/en_US/JCPenney.com/Coupons/Assets/Content/COUPON1002",
+              "uri": "/content-authoring/content/eaf925fa-12f5-47f3-a310-b96a7daf4249",
               "headers": {
                 "Authorization": "Basic YWRtaW46YWRtaW4="
               }
@@ -461,24 +521,39 @@
         }
       }
     },
-    "/content-authoring/content/en_US/JCPenney.com/Coupons/Assets/Content": {
-      "get": {
+    "/content-authoring/content/en_US/JCPenney.com/Coupons/Assets/Content/": {
+      "post": {
         "description": "TODO: Add Description",
-        "summary": "Get All Coupons",
+        "summary": "Create Page Instance",
         "tags": [
           "Coupon"
         ],
-        "operationId": "Get All Coupons",
+        "operationId": "Create Page Instance",
         "produces": [
           "application/json"
         ],
         "parameters": [
           {
-            "name": "maxLevel",
-            "in": "query",
+            "name": "Body",
+            "in": "body",
             "required": true,
-            "type": "integer",
-            "format": "int32",
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/CreatePageInstancerequest"
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
             "description": ""
           }
         ],
@@ -487,12 +562,21 @@
             "description": ""
           }
         },
-        "security": [],
+        "security": [
+          {
+            "auth": []
+          }
+        ],
         "x-unitTests": [
           {
             "request": {
-              "method": "GET",
-              "uri": "/content-authoring/content/en_US/JCPenney.com/Coupons/Assets/Content?maxLevel=2"
+              "method": "POST",
+              "uri": "/content-authoring/content/en_US/JCPenney.com/Coupons/Assets/Content/",
+              "headers": {
+                "Content-Type": "application/json",
+                "Authorization": "Basic YWRtaW46YWRtaW4="
+              },
+              "body": "{\n  \"assetType\": \"couponTile\",\n  \"name\": \"COUPON1005\",\n  \"publishingStartDate\": \"2017-05-25T14:34:34+0530\",\n  \"publishingEndDate\": \"2017-12-28T14:34:34+0530\",\n  \"publishingChannelLarge\": true,\n  \"publishingChannelSmall\": true,\n  \"publishingChannelApp\": true,\n  \"publishable\": true,\n  \"active\": true,\n  \"content\": {\n    \"offerstartDate\": \"2017-05-28T14:34:34+0530\",\n    \"offerendDate\": \"2017-10-28T14:34:34+0530\",\n    \"promoCode\": \"adsfa\",\n    \"barcodeUrl\": \"dsfa\",\n    \"disclaimerTemplate\": \"sdas <strong> sdafsdf </strong> [@offerstartdate - @offerenddate]f sfasf\",\n    \"disclaimer\": \"sdas <strong> sdafsdf </strong> 2017-05-09 - 2017-05-10 f sfasf\",\n    \"linkText\": \"sdaf\",\n    \"linkUrl\": \"asdfas\",\n    \"linkAppUrl\": \"fsdafa\",\n    \"offers\": [\n      {\n        \"barCode\": \"ascfac\",\n        \"headLine\": \"fasas\",\n        \"bodyCopy\": \"asfa\"\n      },\n      {\n        \"barCode\": \"bfa\",\n        \"headLine\": \"bfasf\",\n        \"bodyCopy\": \"bsdfasf\"\n      }\n    ]       \n  }\n}"
             },
             "expectedResponse": {
               "x-allowExtraHeaders": true,
@@ -504,7 +588,7 @@
             },
             "x-testShouldPass": true,
             "x-testEnabled": true,
-            "x-testName": "Get All Coupons",
+            "x-testName": "Create Page Instance",
             "x-testDescription": "TODO: Add Description"
           }
         ],
@@ -1317,6 +1401,418 @@
           "IsMultiContentStreaming": false
         }
       }
+    },
+    "/content-authoring/getAllUsers": {
+      "post": {
+        "description": "TODO: Add Description",
+        "summary": "Get All Users",
+        "tags": [
+          "Users"
+        ],
+        "operationId": "Get All Users",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [],
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "POST",
+              "uri": "/content-authoring/getAllUsers"
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "NONE",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": true,
+              "headers": {}
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "Get All Users",
+            "x-testDescription": "TODO: Add Description"
+          }
+        ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    },
+    "/content-authoring/logout": {
+      "post": {
+        "description": "TODO: Add Description",
+        "summary": "Logout",
+        "tags": [
+          "Users"
+        ],
+        "operationId": "Logout",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "j_username",
+            "in": "formData",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "j_password",
+            "in": "formData",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [],
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "POST",
+              "uri": "/content-authoring/logout",
+              "headers": {
+                "Content-Type": "application/x-www-form-urlencoded"
+              },
+              "body": "j_username=admin&j_password=admin"
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "NONE",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": true,
+              "headers": {}
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "Logout",
+            "x-testDescription": "TODO: Add Description"
+          }
+        ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    },
+    "/content-authoring/login": {
+      "post": {
+        "description": "TODO: Add Description",
+        "summary": "SSO Login",
+        "tags": [
+          "Users"
+        ],
+        "operationId": "SSO Login",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/SsoLoginrequest"
+            }
+          },
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [],
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "POST",
+              "uri": "/content-authoring/login",
+              "headers": {
+                "Content-Type": "application/json"
+              },
+              "body": "{\n\t\"j_username\":\"karthik\",\n\t\"groupnames\":[\"couponGroup\"]\n}\n"
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "NONE",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": true,
+              "headers": {}
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "SSO Login",
+            "x-testDescription": "TODO: Add Description"
+          }
+        ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    },
+    "/content-authoring/getAllGroup": {
+      "post": {
+        "description": "TODO: Add Description",
+        "summary": "Get All Groups",
+        "tags": [
+          "Users"
+        ],
+        "operationId": "Get All Groups",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [],
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "POST",
+              "uri": "/content-authoring/getAllGroup"
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "NONE",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": true,
+              "headers": {}
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "Get All Groups",
+            "x-testDescription": "TODO: Add Description"
+          }
+        ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    },
+    "/content-authoring/adminlogin": {
+      "post": {
+        "description": "TODO: Add Description",
+        "summary": "Admin Login",
+        "tags": [
+          "Users"
+        ],
+        "operationId": "Admin Login",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "j_username",
+            "in": "formData",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "j_password",
+            "in": "formData",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [],
+        "x-unitTests": [],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    },
+    "/content-authoring/setUserGroupAndNodesWithAcl": {
+      "post": {
+        "description": "TODO: Add Description",
+        "summary": "CreateUsersAndGroupsAndPrivileges",
+        "tags": [
+          "Users"
+        ],
+        "operationId": "CreateUsersAndGroupsAndPrivileges",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/CreateUsersAndGroupsAndPrivilegesRequest"
+            }
+          },
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [],
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "POST",
+              "uri": "/content-authoring/setUserGroupAndNodesWithAcl",
+              "headers": {
+                "Content-Type": "application/json"
+              },
+              "body": "{  \n   \"groupList\":[  \n      {  \n         \"groupname\":\"couponGroup\",\n         \"users\":[  \n            \"karthik\",\n            \"remi\",\n            \"ajit\"\n         ],\n         \"groupPrivilege\":[  \n            \"all\"\n         ],\n         \"groupPaths\":[  \n            {  \n               \"path\":\"/content/en_US/JCPenney.com/Coupons\",\n               \"pathPrivileges\":[  \n                  \"read\",\n                  \"write\"\n               ]\n            },\n            {  \n               \"path\":\"/content/en_US/JCPenney.com/Seo\",\n               \"pathPrivileges\":[  \n                  \"read\"\n               ]\n            },\n            {  \n               \"path\":\"/content/en_US/JCPenney.com/Coupons/Assets/Content\",\n               \"pathPrivileges\":[  \n                  \"all\"\n               ]\n            }\n         ]\n      },\n      {  \n         \"groupname\":\"seogroup\",\n         \"users\":[  \n            \"vajpai\",\n            \"raja\"\n         ],\n         \"groupPrivilege\":[  \n            \"read\",\n            \"write\"\n         ],\n         \"groupPaths\":[  \n            {  \n               \"path\":\"/content/en_US/JCPenney.com/Coupons\",\n               \"pathPrivileges\":[  \n                  \"read\"\n               ]\n            },\n            {  \n               \"path\":\"/content/en_US/JCPenney.com/Seo\",\n               \"pathPrivileges\":[  \n                  \"all\"\n               ]\n            }\n         ]\n      }\n   ]\n}"
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "NONE",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": true,
+              "headers": {}
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "CreateUsersAndGroupsAndPrivileges",
+            "x-testDescription": "TODO: Add Description"
+          }
+        ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    },
+    "/content-authoring/applyAclToNode": {
+      "post": {
+        "description": "TODO: Add Description",
+        "summary": "Apply ACL to Node",
+        "tags": [
+          "Users"
+        ],
+        "operationId": "Apply ACL to Node",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "groupname",
+            "in": "formData",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "privileges",
+            "in": "formData",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "path",
+            "in": "formData",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [],
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "POST",
+              "uri": "/content-authoring/applyAclToNode",
+              "headers": {
+                "Content-Type": "application/x-www-form-urlencoded"
+              },
+              "body": "groupname=seogroup&privileges=read&path=/content/en_US/JCPenney.com/Coupons"
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "NONE",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": true,
+              "headers": {}
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "Apply ACL to Node",
+            "x-testDescription": "TODO: Add Description"
+          }
+        ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
     }
   },
   "definitions": {
@@ -1501,7 +1997,11 @@
       "title": "Create CouponRequest",
       "type": "object",
       "properties": {
-        "assetType": {
+        "parent": {
+          "description": "",
+          "type": "string"
+        },
+        "contentType": {
           "description": "",
           "type": "string"
         },
@@ -1537,12 +2037,22 @@
           "description": "",
           "type": "boolean"
         },
+        "validated": {
+          "description": "",
+          "type": "boolean"
+        },
+        "priority": {
+          "description": "",
+          "type": "integer",
+          "format": "int32"
+        },
         "content": {
           "$ref": "#/definitions/Content"
         }
       },
       "required": [
-        "assetType",
+        "parent",
+        "contentType",
         "name",
         "publishingStartDate",
         "publishingEndDate",
@@ -1551,6 +2061,8 @@
         "publishingChannelApp",
         "publishable",
         "active",
+        "validated",
+        "priority",
         "content"
       ]
     },
@@ -2493,6 +3005,101 @@
       "required": [
         "folderName",
         "parentFolder"
+      ]
+    },
+    "SsoLoginrequest": {
+      "title": "SSO LoginRequest",
+      "type": "object",
+      "properties": {
+        "j_username": {
+          "description": "",
+          "type": "string"
+        },
+        "groupnames": {
+          "description": "",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "j_username",
+        "groupnames"
+      ]
+    },
+    "CreateUsersAndGroupsAndPrivilegesRequest": {
+      "title": "CreateUsersAndGroupsAndPrivilegesRequest",
+      "type": "object",
+      "properties": {
+        "groupList": {
+          "description": "",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/GroupList"
+          }
+        }
+      },
+      "required": [
+        "groupList"
+      ]
+    },
+    "GroupList": {
+      "title": "GroupList",
+      "type": "object",
+      "properties": {
+        "groupname": {
+          "description": "",
+          "type": "string"
+        },
+        "users": {
+          "description": "",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "groupPrivilege": {
+          "description": "",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "groupPaths": {
+          "description": "",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/GroupPath"
+          }
+        }
+      },
+      "required": [
+        "groupname",
+        "users",
+        "groupPrivilege",
+        "groupPaths"
+      ]
+    },
+    "GroupPath": {
+      "title": "GroupPath",
+      "type": "object",
+      "properties": {
+        "path": {
+          "description": "",
+          "type": "string"
+        },
+        "pathPrivileges": {
+          "description": "",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "path",
+        "pathPrivileges"
       ]
     }
   }
