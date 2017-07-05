@@ -1813,6 +1813,137 @@
           "IsMultiContentStreaming": false
         }
       }
+    },
+    "/content-authoring/file": {
+      "get": {
+        "description": "TODO: Add Description",
+        "summary": "Get Schema File",
+        "tags": [
+          "Schema"
+        ],
+        "operationId": "Get Schema File",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "path",
+            "in": "query",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [],
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "GET",
+              "uri": "/content-authoring/file?path=/content/en_US/schema/couponTile"
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "NONE",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": true,
+              "headers": {}
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "Get Schema File",
+            "x-testDescription": "TODO: Add Description"
+          }
+        ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      },
+      "post": {
+        "description": "TODO: Add Description",
+        "summary": "Create Schema File",
+        "tags": [
+          "Schema"
+        ],
+        "operationId": "Create Schema File",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/CreateSchemaFilerequest"
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "auth": []
+          }
+        ],
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "POST",
+              "uri": "/content-authoring/file",
+              "headers": {
+                "Content-Type": "application/json",
+                "Authorization": "Basic YWRtaW46YWRtaW4="
+              },
+              "body": "{\n  \"name\":\"couponTile\",\n  \"parentFolder\":\"/content/en_US/schema\",\n  \"mimeType\":\"application/json\",\n  \"templateContent\":\"path:/Users/karthikeyangirijanandan/Documents/Karthik/work/JCP/IRIS/couponSchema.json\"\n  \n}"
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "NONE",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": true,
+              "headers": {}
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "Create Schema File",
+            "x-testDescription": "TODO: Add Description"
+          }
+        ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
     }
   },
   "definitions": {
@@ -3100,6 +3231,34 @@
       "required": [
         "path",
         "pathPrivileges"
+      ]
+    },
+    "CreateSchemaFilerequest": {
+      "title": "Create Schema FileRequest",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "",
+          "type": "string"
+        },
+        "parentFolder": {
+          "description": "",
+          "type": "string"
+        },
+        "mimeType": {
+          "description": "",
+          "type": "string"
+        },
+        "templateContent": {
+          "description": "",
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "parentFolder",
+        "mimeType",
+        "templateContent"
       ]
     }
   }
