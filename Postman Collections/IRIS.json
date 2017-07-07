@@ -1459,6 +1459,9 @@
         "produces": [
           "application/json"
         ],
+        "consumes": [
+          "application/x-www-form-urlencoded"
+        ],
         "parameters": [
           {
             "name": "j_username",
@@ -1637,6 +1640,9 @@
         "produces": [
           "application/json"
         ],
+        "consumes": [
+          "application/x-www-form-urlencoded"
+        ],
         "parameters": [
           {
             "name": "j_username",
@@ -1752,6 +1758,9 @@
         "operationId": "Apply ACL to Node",
         "produces": [
           "application/json"
+        ],
+        "consumes": [
+          "application/x-www-form-urlencoded"
         ],
         "parameters": [
           {
