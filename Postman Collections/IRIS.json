@@ -1953,6 +1953,85 @@
           "IsMultiContentStreaming": false
         }
       }
+    },
+    "/content-authoring/schema": {
+      "post": {
+        "description": "TODO: Add Description",
+        "summary": "Create Schema JSON",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "Create Schema JSON",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/CreateSchemaJsonrequest"
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "auth": []
+          }
+        ],
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "POST",
+              "uri": "/content-authoring/schema",
+              "headers": {
+                "Content-Type": "application/json",
+                "Authorization": "Basic YWRtaW46YWRtaW4="
+              },
+              "body": "{  \n   \"parent\":\"/content/en_US/schema\",\n   \"contentType\":\"couponTile\",\n   \"schemaContent\":\"{ \\\"notnull\\\":{\\\"name\\\":\\\"Name is Mandatory\\\",\\\"content.offerstartDate\\\":\\\"Offer Start Date is Mandatory\\\",\\\"content.offerendDate\\\":\\\"Offer End Date is Mandatory\\\",\\\"publishingStartDate\\\":\\\"Publishing Start Date is Mandatory\\\",\\\"publishingEndDate\\\":\\\"Publishing End Date is Mandatory\\\",\\\"content.offers0.headLine\\\":\\\"Headline is Mandatory\\\"},\\\"functional\\\":{\\\"content.offerstartDate\\\":[ {\\\"condition\\\":\\\"lessThan\\\",\\\"compareWith\\\":\\\"content.offerendDate\\\",\\\"failureMessage\\\":\\\"Offer Start Date should be less than Offer End Date\\\" }],\\\"publishingStartDate\\\":[ {\\\"condition\\\":\\\"lessThan\\\",\\\"compareWith\\\":\\\"content.offerendDate\\\",\\\"failureMessage\\\":\\\"Publishing Start Date should be less than Offer End Date\\\" }],\\\"content.offerendDate\\\":[ {\\\"condition\\\":\\\"greaterThan\\\",\\\"compareWith\\\":\\\"content.offerstartDate\\\",\\\"failureMessage\\\":\\\"Offer End Date should be greater than Offer Start Date\\\" }],\\\"publishingEndDate\\\":[ {\\\"condition\\\":\\\"greaterThan\\\",\\\"compareWith\\\":\\\"content.offerstartDate\\\",\\\"failureMessage\\\":\\\"Publishing End Date should be greater than Offer Start Date\\\" }, {\\\"condition\\\":\\\"greaterThan\\\",\\\"compareWith\\\":\\\"publishingStartDate\\\",\\\"failureMessage\\\":\\\"Publishing End Date should be greater than Publishing Start Date\\\"}]}}\"\n}"
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "NONE",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": true,
+              "headers": {}
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "Create Schema JSON",
+            "x-testDescription": "TODO: Add Description"
+          }
+        ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
     }
   },
   "definitions": {
@@ -3268,6 +3347,29 @@
         "parentFolder",
         "mimeType",
         "templateContent"
+      ]
+    },
+    "CreateSchemaJsonrequest": {
+      "title": "Create Schema JSONRequest",
+      "type": "object",
+      "properties": {
+        "parent": {
+          "description": "",
+          "type": "string"
+        },
+        "contentType": {
+          "description": "",
+          "type": "string"
+        },
+        "schemaContent": {
+          "description": "",
+          "type": "string"
+        }
+      },
+      "required": [
+        "parent",
+        "contentType",
+        "schemaContent"
       ]
     }
   }
