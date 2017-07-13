@@ -86,6 +86,218 @@
   "definitions": {
     "CreateLayoutrequest": {
       "title": "Create LayoutRequest",
+      "example": {
+        "ContentItem": {
+          "name": "CouponPageLayout",
+          "type": "Page",
+          "path": "CouponPageLayout",
+          "templatePath": "/content/jcp/en/templates/pages/CouponPage",
+          "description": "Page template for Coupon Page",
+          "contentItemStartDate": "02/25/2017 12:00:00",
+          "contentItemEndDate": "03/25/2017 12:00:00",
+          "ContentItem": [
+            {
+              "name": "HeaderSection",
+              "type": "Section",
+              "path": "CouponPageLayout/HeaderSection",
+              "templatePath": "/content/jcp/en/templates/Sections/Header/HeaderSection",
+              "contentItemStartDate": "02/25/2017 12:00:00",
+              "contentItemEndDate": "03/25/2017 12:00:00",
+              "ContentItem": [
+                {
+                  "name": "HeaderContent",
+                  "type": "item",
+                  "itemtype": "HeaderContent",
+                  "path": "CouponPageLayout/HeaderSection/HeaderContent",
+                  "templatePath": "/content/jcp/en/header/HeaderContent",
+                  "contentItemStartDate": "02/25/2017 12:00:00",
+                  "contentItemEndDate": "03/25/2017 12:00:00",
+                  "position-x": "1",
+                  "position-y": "1"
+                }
+              ]
+            },
+            {
+              "name": "BodySection",
+              "type": "Section",
+              "path": "CouponPageLayout/BodySection",
+              "templatePath": "/content/jcp/en/templates/Sections/Body/BodySection",
+              "contentItemStartDate": "02/25/2017 12:00:00",
+              "contentItemEndDate": "03/25/2017 12:00:00",
+              "ContentItem": [
+                {
+                  "name": "ColumnLayout1",
+                  "type": "ColumnLayout",
+                  "path": "CouponPageLayout/BodySection/ColumnLayout1",
+                  "templatePath": "/content/jcp/en/templates/Layouts/Column/ColumnLayout1",
+                  "contentItemStartDate": "02/25/2017 12:00:00",
+                  "contentItemEndDate": "03/25/2017 12:00:00",
+                  "position-x": "1",
+                  "position-y": "1",
+                  "ContentItem": [
+                    {
+                      "name": "RowLayout1",
+                      "type": "RowLayout",
+                      "path": "CouponPageLayout/BodySection/ColumnLayout1/RowLayout1",
+                      "templatePath": "/content/jcp/en/templates/Layouts/Row/RowLayout1",
+                      "contentItemStartDate": "02/25/2017 12:00:00",
+                      "contentItemEndDate": "03/25/2017 12:00:00",
+                      "position-x": "1",
+                      "position-y": "3",
+                      "ContentItem": [
+                        {
+                          "name": "CouponContent1",
+                          "type": "item",
+                          "itemtype": "CouponContent",
+                          "path": "CouponPageLayout/BodySection/ColumnLayout1/RowLayout1/CouponContent1",
+                          "templatePath": "/content/jcp/en/coupon/Coupon1",
+                          "contentItemStartDate": "02/25/2017 12:00:00",
+                          "contentItemEndDate": "03/25/2017 12:00:00",
+                          "position-x": "1",
+                          "position-y": "1"
+                        },
+                        {
+                          "name": "CouponContent2",
+                          "type": "item",
+                          "itemtype": "CouponContent",
+                          "path": "CouponPageLayout/BodySection/ColumnLayout1/RowLayout1/CouponContent2",
+                          "templatePath": "/content/jcp/en/coupon/Coupon2",
+                          "contentItemStartDate": "02/25/2017 12:00:00",
+                          "contentItemEndDate": "03/25/2017 12:00:00",
+                          "position-x": "2",
+                          "position-y": "1"
+                        },
+                        {
+                          "name": "CouponContent3",
+                          "type": "item",
+                          "itemtype": "CouponContent",
+                          "path": "CouponPageLayout/BodySection/ColumnLayout1/RowLayout1/CouponContent3",
+                          "templatePath": "/content/jcp/en/coupon/Coupon3",
+                          "contentItemStartDate": "02/25/2017 12:00:00",
+                          "contentItemEndDate": "03/25/2017 12:00:00",
+                          "position-x": "3",
+                          "position-y": "1"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "RowLayout2",
+                      "type": "RowLayout",
+                      "path": "CouponPageLayout/BodySection/ColumnLayout1/RowLayout2",
+                      "templatePath": "/content/jcp/en/templates/Layouts/Row/RowLayout2",
+                      "contentItemStartDate": "02/25/2017 12:00:00",
+                      "contentItemEndDate": "03/25/2017 12:00:00",
+                      "position-x": "1",
+                      "position-y": "2",
+                      "ContentItem": [
+                        {
+                          "name": "CouponContent4",
+                          "type": "item",
+                          "itemtype": "CouponContent",
+                          "path": "CouponPageLayout/BodySection/ColumnLayout1/RowLayout2/CouponContent4",
+                          "templatePath": "/content/jcp/en/coupon/Coupon4",
+                          "contentItemStartDate": "02/25/2017 12:00:00",
+                          "contentItemEndDate": "03/25/2017 12:00:00",
+                          "position-x": "1",
+                          "position-y": "1"
+                        },
+                        {
+                          "name": "CouponContent5",
+                          "type": "item",
+                          "itemtype": "CouponContent",
+                          "path": "CouponPageLayout/BodySection/ColumnLayout1/RowLayout2/CouponContent5",
+                          "templatePath": "/content/jcp/en/coupon/Coupon5",
+                          "contentItemStartDate": "02/25/2017 12:00:00",
+                          "contentItemEndDate": "03/25/2017 12:00:00",
+                          "position-x": "2",
+                          "position-y": "1"
+                        },
+                        {
+                          "name": "CouponContent6",
+                          "type": "item",
+                          "itemtype": "CouponContent",
+                          "path": "CouponPageLayout/BodySection/ColumnLayout1/RowLayout2/CouponContent6",
+                          "templatePath": "/content/jcp/en/coupon/Coupon6",
+                          "contentItemStartDate": "02/25/2017 12:00:00",
+                          "contentItemEndDate": "03/25/2017 12:00:00",
+                          "position-x": "3",
+                          "position-y": "1"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "RowLayout3",
+                      "type": "RowLayout",
+                      "path": "CouponPageLayout/BodySection/ColumnLayout1/RowLayout3",
+                      "templatePath": "/content/jcp/en/templates/Layouts/Row/RowLayout3",
+                      "contentItemStartDate": "02/25/2017 12:00:00",
+                      "contentItemEndDate": "03/25/2017 12:00:00",
+                      "position-x": "1",
+                      "position-y": "1",
+                      "ContentItem": [
+                        {
+                          "name": "CouponContent7",
+                          "type": "item",
+                          "itemtype": "CouponContent",
+                          "path": "CouponPageLayout/BodySection/ColumnLayout1/RowLayout3/CouponContent7",
+                          "templatePath": "/content/jcp/en/coupon/Coupon7",
+                          "contentItemStartDate": "02/25/2017 12:00:00",
+                          "contentItemEndDate": "03/25/2017 12:00:00",
+                          "position-x": "1",
+                          "position-y": "1"
+                        },
+                        {
+                          "name": "CouponContent8",
+                          "type": "item",
+                          "itemtype": "CouponContent",
+                          "path": "CouponPageLayout/BodySection/ColumnLayout1/RowLayout3/CouponContent8",
+                          "templatePath": "/content/jcp/en/coupon/Coupon8",
+                          "contentItemStartDate": "02/25/2017 12:00:00",
+                          "contentItemEndDate": "03/25/2017 12:00:00",
+                          "position-x": "2",
+                          "position-y": "1"
+                        },
+                        {
+                          "name": "CouponContent9",
+                          "type": "item",
+                          "itemtype": "CouponContent",
+                          "path": "CouponPageLayout/BodySection/ColumnLayout1/RowLayout3/CouponContent9",
+                          "templatePath": "/content/jcp/en/coupon/Coupon9",
+                          "contentItemStartDate": "02/25/2017 12:00:00",
+                          "contentItemEndDate": "03/25/2017 12:00:00",
+                          "position-x": "3",
+                          "position-y": "1"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "FooterSection",
+              "type": "Section",
+              "path": "CouponPageLayout/FooterSection",
+              "templatePath": "/content/jcp/en/templates/Sections/Footer/FooterSection",
+              "contentItemStartDate": "02/25/2017 12:00:00",
+              "contentItemEndDate": "03/25/2017 12:00:00",
+              "ContentItem": [
+                {
+                  "name": "FooterContent",
+                  "type": "item",
+                  "itemtype": "FooterContent",
+                  "path": "CouponPageLayout/FooterSection/FooterContent",
+                  "templatePath": "/content/jcp/en/footer/FooterContent",
+                  "contentItemStartDate": "02/25/2017 12:00:00",
+                  "contentItemEndDate": "03/25/2017 12:00:00",
+                  "position-x": "1",
+                  "position-y": "1"
+                }
+              ]
+            }
+          ]
+        }
+      },
       "type": "object",
       "properties": {
         "ContentItem": {
