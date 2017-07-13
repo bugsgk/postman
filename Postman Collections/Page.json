@@ -110,6 +110,16 @@
   "definitions": {
     "CreatePagerequest": {
       "title": "Create PageRequest",
+      "example": {
+        "assetName": "CouponPage",
+        "assetType": "Page",
+        "parentFolder": "/iriscontent/en/pages/coupon",
+        "layouts": [
+          "/iriscontent/en/layouts/CouponPage/CouponPageLayout1",
+          "/iriscontent/en/layouts/CouponPage/CouponPageLayout2",
+          "/iriscontent/en/layouts/CouponPage/CouponPageLayout3"
+        ]
+      },
       "type": "object",
       "properties": {
         "assetName": {
