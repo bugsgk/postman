@@ -110,6 +110,34 @@
   "definitions": {
     "CreateCouponrequest": {
       "title": "Create CouponRequest",
+      "example": {
+        "assetName": "",
+        "parentFolder": "/content/jcp/en/coupon",
+        "couponStartDate": "03/09/2017 12:00:00 AM",
+        "couponEndDate": "03/30/2017 12:00:00 AM",
+        "categoryPage": "Category Page",
+        "Channel": "InStore",
+        "Active": "Yes",
+        "offer1Name": "EXTRA 20% OFF",
+        "offer1Description": "*20% with your JCPenney credit card, 15% with paypal ad 10% with any method of payment",
+        "offer2Name": "EXTRA 15% OFF",
+        "offer2Description": " ",
+        "offer3Name": " ",
+        "offer3Description": " ",
+        "offer4Name": " ",
+        "offer4Description": " ",
+        "validName": "VALID THROUGH MARCH 22, 2017",
+        "shopTitle": " ",
+        "codeValue": "48SHOP",
+        "codeSelect": "codeAvailable",
+        "detailTitle": "Get Details Only",
+        "displayWithProduct": "No",
+        "barCode1": " ",
+        "barCode2": " ",
+        "disclaimer": " ",
+        "couponShopUrl": " ",
+        "couponDetailURL": " "
+      },
       "type": "object",
       "properties": {
         "assetName": {
