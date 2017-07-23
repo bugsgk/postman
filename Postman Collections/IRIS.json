@@ -27,160 +27,6 @@
     "application/json"
   ],
   "paths": {
-    "/content/layouts": {
-      "put": {
-        "description": "TODO: Add Description",
-        "summary": "Create Layout",
-        "tags": [
-          "Layout"
-        ],
-        "operationId": "Create Layout",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "name": "Body",
-            "in": "body",
-            "required": true,
-            "description": "",
-            "schema": {
-              "$ref": "#/definitions/CreateLayoutrequest"
-            }
-          },
-          {
-            "name": "Content-Type",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
-          },
-          {
-            "name": "Authorization",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": ""
-          }
-        },
-        "security": [
-          {
-            "auth": []
-          }
-        ],
-        "x-unitTests": [],
-        "x-operation-settings": {
-          "CollectParameters": false,
-          "AllowDynamicQueryParameters": false,
-          "AllowDynamicFormParameters": false,
-          "IsMultiContentStreaming": false
-        }
-      },
-      "post": {
-        "description": "TODO: Add Description",
-        "summary": "Edit Layout",
-        "tags": [
-          "Layout"
-        ],
-        "operationId": "Edit Layout",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "name": "Body",
-            "in": "body",
-            "required": true,
-            "description": "",
-            "schema": {
-              "$ref": "#/definitions/EditLayoutrequest"
-            }
-          },
-          {
-            "name": "Content-Type",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
-          },
-          {
-            "name": "Authorization",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": ""
-          }
-        },
-        "security": [
-          {
-            "auth": []
-          }
-        ],
-        "x-unitTests": [],
-        "x-operation-settings": {
-          "CollectParameters": false,
-          "AllowDynamicQueryParameters": false,
-          "AllowDynamicFormParameters": false,
-          "IsMultiContentStreaming": false
-        }
-      }
-    },
-    "/iriscontent/en/layouts/CouponPage/CouponPageLayout.harray.infinity.json": {
-      "get": {
-        "description": "TODO: Add Description",
-        "summary": "Get Layout",
-        "tags": [
-          "Layout"
-        ],
-        "operationId": "Get Layout",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [],
-        "responses": {
-          "200": {
-            "description": ""
-          }
-        },
-        "security": [],
-        "x-unitTests": [
-          {
-            "request": {
-              "method": "GET",
-              "uri": "/iriscontent/en/layouts/CouponPage/CouponPageLayout.harray.infinity.json"
-            },
-            "expectedResponse": {
-              "x-allowExtraHeaders": true,
-              "x-bodyMatchMode": "NONE",
-              "x-arrayOrderedMatching": false,
-              "x-arrayCheckCount": false,
-              "x-matchResponseSchema": true,
-              "headers": {}
-            },
-            "x-testShouldPass": true,
-            "x-testEnabled": true,
-            "x-testName": "Get Layout",
-            "x-testDescription": "TODO: Add Description"
-          }
-        ],
-        "x-operation-settings": {
-          "CollectParameters": false,
-          "AllowDynamicQueryParameters": false,
-          "AllowDynamicFormParameters": false,
-          "IsMultiContentStreaming": false
-        }
-      }
-    },
     "/content-authoring/content/couponTile": {
       "get": {
         "description": "TODO: Add Description",
@@ -600,575 +446,6 @@
         }
       }
     },
-    "/content/components": {
-      "put": {
-        "description": "TODO: Add Description",
-        "summary": "Create SEO",
-        "tags": [
-          "SEO"
-        ],
-        "operationId": "Create SEO",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "name": "Body",
-            "in": "body",
-            "required": true,
-            "description": "",
-            "schema": {
-              "$ref": "#/definitions/CreateSeorequest"
-            }
-          },
-          {
-            "name": "Authorization",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
-          },
-          {
-            "name": "Content-Type",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": ""
-          }
-        },
-        "security": [
-          {
-            "auth": []
-          }
-        ],
-        "x-unitTests": [
-          {
-            "request": {
-              "method": "PUT",
-              "uri": "/content/components",
-              "headers": {
-                "Content-Type": "application/json",
-                "Authorization": "Basic YWRtaW46YWRtaW4="
-              },
-              "body": "{\n  \"assetName\": \"SEO2\",\n  \"assetType\": \"SEO\",\n  \"parentFolder\":\"/iriscontent/en/components/seo\",\n  \"couponStartDate\": \"03/09/2017 12:00:00 AM\",\n  \"couponEndDate\": \"03/30/2017 12:00:00 AM\",\n  \"categoryPage\": \"Category Page\",\n  \"Channel\": \"InStore\",\n  \"Active\": \"Yes\",\n  \"offer1Name\": \"EXTRA 20% OFF\",\n  \"offer1Description\": \"*20% with your JCPenney credit card, 15% with paypal ad 10% with any method of payment\",\n  \"offer2Name\": \"EXTRA 15% OFF\",\n  \"offer2Description\": \" \",\n  \"offer3Name\": \" \",\n  \"offer3Description\": \" \",\n  \"offer4Name\": \" \",\n  \"offer4Description\": \" \",\n  \"validName\": \"VALID THROUGH MARCH 22, 2017\",\n  \"shopTitle\": \" \",\n  \"codeValue\": \"48SHOP\",\n  \"codeSelect\": \"codeAvailable\",\n  \"detailTitle\": \"Get Details Only\",\n  \"displayWithProduct\": \"No\",\n  \"barCode1\": \" \",\n  \"barCode2\": \" \",\n  \"disclaimer\": \" \",\n  \"couponShopUrl\": \" \",\n  \"couponDetailURL\": \" \"\n}"
-            },
-            "expectedResponse": {
-              "x-allowExtraHeaders": true,
-              "x-bodyMatchMode": "NONE",
-              "x-arrayOrderedMatching": false,
-              "x-arrayCheckCount": false,
-              "x-matchResponseSchema": true,
-              "headers": {}
-            },
-            "x-testShouldPass": true,
-            "x-testEnabled": true,
-            "x-testName": "Create SEO",
-            "x-testDescription": "TODO: Add Description"
-          }
-        ],
-        "x-operation-settings": {
-          "CollectParameters": false,
-          "AllowDynamicQueryParameters": false,
-          "AllowDynamicFormParameters": false,
-          "IsMultiContentStreaming": false
-        }
-      },
-      "post": {
-        "description": "TODO: Add Description",
-        "summary": "Edit SEO",
-        "tags": [
-          "SEO"
-        ],
-        "operationId": "Edit SEO",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "name": "Body",
-            "in": "body",
-            "required": true,
-            "description": "",
-            "schema": {
-              "$ref": "#/definitions/EditSeorequest"
-            }
-          },
-          {
-            "name": "Authorization",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
-          },
-          {
-            "name": "Content-Type",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": ""
-          }
-        },
-        "security": [
-          {
-            "auth": []
-          }
-        ],
-        "x-unitTests": [
-          {
-            "request": {
-              "method": "POST",
-              "uri": "/content/components",
-              "headers": {
-                "Content-Type": "application/json",
-                "Authorization": "Basic YWRtaW46YWRtaW4="
-              },
-              "body": "{\n  \"assetName\": \"SEO1\",\n  \"assetType\": \"SEO\",\n  \"parentFolder\":\"/iriscontent/en/components/seo\",\n  \"couponStartDate\": \"03/09/2017 12:00:00 AM\",\n  \"couponEndDate\": \"03/30/2017 12:00:00 AM\",\n  \"categoryPage\": \"Category Page\",\n  \"Channel\": \"InStore\",\n  \"Active\": \"Yes\",\n  \"offer1Name\": \"EXTRA 20% OFF\",\n  \"offer1Description\": \"*20% with your JCPenney credit card, 15% with paypal ad 10% with any method of payment\",\n  \"offer2Name\": \"EXTRA 15% OFF\",\n  \"offer2Description\": \" \",\n  \"offer3Name\": \" \",\n  \"offer3Description\": \" \",\n  \"offer4Name\": \" \",\n  \"offer4Description\": \" \",\n  \"validName\": \"VALID THROUGH MARCH 22, 2017\",\n  \"shopTitle\": \" \",\n  \"codeValue\": \"48SHOP\",\n  \"codeSelect\": \"codeAvailable\",\n  \"detailTitle\": \"Get Details Only\",\n  \"displayWithProduct\": \"No\",\n  \"barCode1\": \" \",\n  \"barCode2\": \" \",\n  \"disclaimer\": \" \",\n  \"couponShopUrl\": \" \",\n  \"couponDetailURL\": \" \"\n}"
-            },
-            "expectedResponse": {
-              "x-allowExtraHeaders": true,
-              "x-bodyMatchMode": "NONE",
-              "x-arrayOrderedMatching": false,
-              "x-arrayCheckCount": false,
-              "x-matchResponseSchema": true,
-              "headers": {}
-            },
-            "x-testShouldPass": true,
-            "x-testEnabled": true,
-            "x-testName": "Edit SEO",
-            "x-testDescription": "TODO: Add Description"
-          }
-        ],
-        "x-operation-settings": {
-          "CollectParameters": false,
-          "AllowDynamicQueryParameters": false,
-          "AllowDynamicFormParameters": false,
-          "IsMultiContentStreaming": false
-        }
-      }
-    },
-    "/iriscontent/en/components/seo/SEO1.json": {
-      "get": {
-        "description": "TODO: Add Description",
-        "summary": "Get SEO",
-        "tags": [
-          "SEO"
-        ],
-        "operationId": "Get SEO",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [],
-        "responses": {
-          "200": {
-            "description": ""
-          }
-        },
-        "security": [],
-        "x-unitTests": [
-          {
-            "request": {
-              "method": "GET",
-              "uri": "/iriscontent/en/components/seo/SEO1.json"
-            },
-            "expectedResponse": {
-              "x-allowExtraHeaders": true,
-              "x-bodyMatchMode": "NONE",
-              "x-arrayOrderedMatching": false,
-              "x-arrayCheckCount": false,
-              "x-matchResponseSchema": true,
-              "headers": {}
-            },
-            "x-testShouldPass": true,
-            "x-testEnabled": true,
-            "x-testName": "Get SEO",
-            "x-testDescription": "TODO: Add Description"
-          }
-        ],
-        "x-operation-settings": {
-          "CollectParameters": false,
-          "AllowDynamicQueryParameters": false,
-          "AllowDynamicFormParameters": false,
-          "IsMultiContentStreaming": false
-        }
-      }
-    },
-    "/iriscontent/en/instances/": {
-      "post": {
-        "description": "TODO: Add Description",
-        "summary": "Create Instances",
-        "tags": [
-          "Instance"
-        ],
-        "operationId": "Create Instances",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "name": "Body",
-            "in": "body",
-            "required": true,
-            "description": "",
-            "schema": {
-              "$ref": "#/definitions/CreateInstancesrequest"
-            }
-          },
-          {
-            "name": "Content-Type",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
-          },
-          {
-            "name": "Authorization",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": ""
-          }
-        },
-        "security": [
-          {
-            "auth": []
-          }
-        ],
-        "x-unitTests": [],
-        "x-operation-settings": {
-          "CollectParameters": false,
-          "AllowDynamicQueryParameters": false,
-          "AllowDynamicFormParameters": false,
-          "IsMultiContentStreaming": false
-        }
-      }
-    },
-    "/content/instances/CouponPage": {
-      "put": {
-        "description": "TODO: Add Description",
-        "summary": "Edit Instances",
-        "tags": [
-          "Instance"
-        ],
-        "operationId": "Edit Instances",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "name": "Body",
-            "in": "body",
-            "required": true,
-            "description": "",
-            "schema": {
-              "$ref": "#/definitions/EditInstancesrequest"
-            }
-          },
-          {
-            "name": "Content-Type",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
-          },
-          {
-            "name": "Authorization",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": ""
-          }
-        },
-        "security": [
-          {
-            "auth": []
-          }
-        ],
-        "x-unitTests": [],
-        "x-operation-settings": {
-          "CollectParameters": false,
-          "AllowDynamicQueryParameters": false,
-          "AllowDynamicFormParameters": false,
-          "IsMultiContentStreaming": false
-        }
-      }
-    },
-    "/iriscontent/en/instances/CouponPage/": {
-      "get": {
-        "description": "TODO: Add Description",
-        "summary": "Get Instance",
-        "tags": [
-          "Instance"
-        ],
-        "operationId": "Get Instance",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "name": "maxLevel",
-            "in": "query",
-            "required": true,
-            "type": "integer",
-            "format": "int32",
-            "description": ""
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": ""
-          }
-        },
-        "security": [],
-        "x-unitTests": [
-          {
-            "request": {
-              "method": "GET",
-              "uri": "/iriscontent/en/instances/CouponPage/?maxLevel=10"
-            },
-            "expectedResponse": {
-              "x-allowExtraHeaders": true,
-              "x-bodyMatchMode": "NONE",
-              "x-arrayOrderedMatching": false,
-              "x-arrayCheckCount": false,
-              "x-matchResponseSchema": true,
-              "headers": {}
-            },
-            "x-testShouldPass": true,
-            "x-testEnabled": true,
-            "x-testName": "Get Instance",
-            "x-testDescription": "TODO: Add Description"
-          }
-        ],
-        "x-operation-settings": {
-          "CollectParameters": false,
-          "AllowDynamicQueryParameters": false,
-          "AllowDynamicFormParameters": false,
-          "IsMultiContentStreaming": false
-        }
-      }
-    },
-    "/content/pages": {
-      "put": {
-        "description": "TODO: Add Description",
-        "summary": "Create Page",
-        "tags": [
-          "Page"
-        ],
-        "operationId": "Create Page",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "name": "Body",
-            "in": "body",
-            "required": true,
-            "description": "",
-            "schema": {
-              "$ref": "#/definitions/CreatePagerequest"
-            }
-          },
-          {
-            "name": "Authorization",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
-          },
-          {
-            "name": "Content-Type",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": ""
-          }
-        },
-        "security": [
-          {
-            "auth": []
-          }
-        ],
-        "x-unitTests": [
-          {
-            "request": {
-              "method": "PUT",
-              "uri": "/content/pages",
-              "headers": {
-                "Content-Type": "application/json",
-                "Authorization": "Basic YWRtaW46YWRtaW4="
-              },
-              "body": "{\n  \"assetName\": \"CouponPage\",\n  \"assetType\": \"Page\",\n  \"parentFolder\":\"/iriscontent/en/pages/coupon\",\n  \"layouts\": [\"/iriscontent/en/layouts/CouponPage/CouponPageLayout1\", \"/iriscontent/en/layouts/CouponPage/CouponPageLayout2\", \"/iriscontent/en/layouts/CouponPage/CouponPageLayout3\"]\n}"
-            },
-            "expectedResponse": {
-              "x-allowExtraHeaders": true,
-              "x-bodyMatchMode": "NONE",
-              "x-arrayOrderedMatching": false,
-              "x-arrayCheckCount": false,
-              "x-matchResponseSchema": true,
-              "headers": {}
-            },
-            "x-testShouldPass": true,
-            "x-testEnabled": true,
-            "x-testName": "Create Page",
-            "x-testDescription": "TODO: Add Description"
-          }
-        ],
-        "x-operation-settings": {
-          "CollectParameters": false,
-          "AllowDynamicQueryParameters": false,
-          "AllowDynamicFormParameters": false,
-          "IsMultiContentStreaming": false
-        }
-      },
-      "post": {
-        "description": "TODO: Add Description",
-        "summary": "Edit Page",
-        "tags": [
-          "Page"
-        ],
-        "operationId": "Edit Page",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "name": "Body",
-            "in": "body",
-            "required": true,
-            "description": "",
-            "schema": {
-              "$ref": "#/definitions/EditPagerequest"
-            }
-          },
-          {
-            "name": "Authorization",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
-          },
-          {
-            "name": "Content-Type",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": ""
-          }
-        },
-        "security": [
-          {
-            "auth": []
-          }
-        ],
-        "x-unitTests": [
-          {
-            "request": {
-              "method": "POST",
-              "uri": "/content/pages",
-              "headers": {
-                "Content-Type": "application/json",
-                "Authorization": "Basic YWRtaW46YWRtaW4="
-              },
-              "body": "{\n  \"assetName\": \"CouponPage\",\n  \"assetType\": \"Page\",\n  \"parentFolder\":\"/iriscontent/en/pages/coupon\",\n  \"layouts\": [\"/iriscontent/en/layouts/CouponPage/CouponPageLayout1\", \"/iriscontent/en/layouts/CouponPage/CouponPageLayout2\", \"/iriscontent/en/layouts/CouponPage/CouponPageLayout3\"]\n}"
-            },
-            "expectedResponse": {
-              "x-allowExtraHeaders": true,
-              "x-bodyMatchMode": "NONE",
-              "x-arrayOrderedMatching": false,
-              "x-arrayCheckCount": false,
-              "x-matchResponseSchema": true,
-              "headers": {}
-            },
-            "x-testShouldPass": true,
-            "x-testEnabled": true,
-            "x-testName": "Edit Page",
-            "x-testDescription": "TODO: Add Description"
-          }
-        ],
-        "x-operation-settings": {
-          "CollectParameters": false,
-          "AllowDynamicQueryParameters": false,
-          "AllowDynamicFormParameters": false,
-          "IsMultiContentStreaming": false
-        }
-      }
-    },
-    "/iriscontent/en/pages/coupon/CouponPage.json": {
-      "get": {
-        "description": "TODO: Add Description",
-        "summary": "Get Page",
-        "tags": [
-          "Page"
-        ],
-        "operationId": "Get Page",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [],
-        "responses": {
-          "200": {
-            "description": ""
-          }
-        },
-        "security": [],
-        "x-unitTests": [
-          {
-            "request": {
-              "method": "GET",
-              "uri": "/iriscontent/en/pages/coupon/CouponPage.json"
-            },
-            "expectedResponse": {
-              "x-allowExtraHeaders": true,
-              "x-bodyMatchMode": "NONE",
-              "x-arrayOrderedMatching": false,
-              "x-arrayCheckCount": false,
-              "x-matchResponseSchema": true,
-              "headers": {}
-            },
-            "x-testShouldPass": true,
-            "x-testEnabled": true,
-            "x-testName": "Get Page",
-            "x-testDescription": "TODO: Add Description"
-          }
-        ],
-        "x-operation-settings": {
-          "CollectParameters": false,
-          "AllowDynamicQueryParameters": false,
-          "AllowDynamicFormParameters": false,
-          "IsMultiContentStreaming": false
-        }
-      }
-    },
     "/content-authoring/folder": {
       "put": {
         "description": "TODO: Add Description",
@@ -1391,6 +668,860 @@
             "x-testShouldPass": true,
             "x-testEnabled": true,
             "x-testName": "Delete Folder",
+            "x-testDescription": "TODO: Add Description"
+          }
+        ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    },
+    "/iriscontent/en/instances/": {
+      "post": {
+        "description": "TODO: Add Description",
+        "summary": "Create Instances",
+        "tags": [
+          "Instance"
+        ],
+        "operationId": "Create Instances",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/CreateInstancesrequest"
+            }
+          },
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "auth": []
+          }
+        ],
+        "x-unitTests": [],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    },
+    "/content/instances/CouponPage": {
+      "put": {
+        "description": "TODO: Add Description",
+        "summary": "Edit Instances",
+        "tags": [
+          "Instance"
+        ],
+        "operationId": "Edit Instances",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/EditInstancesrequest"
+            }
+          },
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "auth": []
+          }
+        ],
+        "x-unitTests": [],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    },
+    "/iriscontent/en/instances/CouponPage/": {
+      "get": {
+        "description": "TODO: Add Description",
+        "summary": "Get Instance",
+        "tags": [
+          "Instance"
+        ],
+        "operationId": "Get Instance",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "maxLevel",
+            "in": "query",
+            "required": true,
+            "type": "integer",
+            "format": "int32",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [],
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "GET",
+              "uri": "/iriscontent/en/instances/CouponPage/?maxLevel=10"
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "NONE",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": true,
+              "headers": {}
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "Get Instance",
+            "x-testDescription": "TODO: Add Description"
+          }
+        ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    },
+    "/content/layouts": {
+      "put": {
+        "description": "TODO: Add Description",
+        "summary": "Create Layout",
+        "tags": [
+          "Layout"
+        ],
+        "operationId": "Create Layout",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/CreateLayoutrequest"
+            }
+          },
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "auth": []
+          }
+        ],
+        "x-unitTests": [],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      },
+      "post": {
+        "description": "TODO: Add Description",
+        "summary": "Edit Layout",
+        "tags": [
+          "Layout"
+        ],
+        "operationId": "Edit Layout",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/EditLayoutrequest"
+            }
+          },
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "auth": []
+          }
+        ],
+        "x-unitTests": [],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    },
+    "/iriscontent/en/layouts/CouponPage/CouponPageLayout.harray.infinity.json": {
+      "get": {
+        "description": "TODO: Add Description",
+        "summary": "Get Layout",
+        "tags": [
+          "Layout"
+        ],
+        "operationId": "Get Layout",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [],
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "GET",
+              "uri": "/iriscontent/en/layouts/CouponPage/CouponPageLayout.harray.infinity.json"
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "NONE",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": true,
+              "headers": {}
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "Get Layout",
+            "x-testDescription": "TODO: Add Description"
+          }
+        ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    },
+    "/content/pages": {
+      "put": {
+        "description": "TODO: Add Description",
+        "summary": "Create Page",
+        "tags": [
+          "Page"
+        ],
+        "operationId": "Create Page",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/CreatePagerequest"
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "auth": []
+          }
+        ],
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "PUT",
+              "uri": "/content/pages",
+              "headers": {
+                "Content-Type": "application/json",
+                "Authorization": "Basic YWRtaW46YWRtaW4="
+              },
+              "body": "{\n  \"assetName\": \"CouponPage\",\n  \"assetType\": \"Page\",\n  \"parentFolder\":\"/iriscontent/en/pages/coupon\",\n  \"layouts\": [\"/iriscontent/en/layouts/CouponPage/CouponPageLayout1\", \"/iriscontent/en/layouts/CouponPage/CouponPageLayout2\", \"/iriscontent/en/layouts/CouponPage/CouponPageLayout3\"]\n}"
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "NONE",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": true,
+              "headers": {}
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "Create Page",
+            "x-testDescription": "TODO: Add Description"
+          }
+        ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      },
+      "post": {
+        "description": "TODO: Add Description",
+        "summary": "Edit Page",
+        "tags": [
+          "Page"
+        ],
+        "operationId": "Edit Page",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/EditPagerequest"
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "auth": []
+          }
+        ],
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "POST",
+              "uri": "/content/pages",
+              "headers": {
+                "Content-Type": "application/json",
+                "Authorization": "Basic YWRtaW46YWRtaW4="
+              },
+              "body": "{\n  \"assetName\": \"CouponPage\",\n  \"assetType\": \"Page\",\n  \"parentFolder\":\"/iriscontent/en/pages/coupon\",\n  \"layouts\": [\"/iriscontent/en/layouts/CouponPage/CouponPageLayout1\", \"/iriscontent/en/layouts/CouponPage/CouponPageLayout2\", \"/iriscontent/en/layouts/CouponPage/CouponPageLayout3\"]\n}"
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "NONE",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": true,
+              "headers": {}
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "Edit Page",
+            "x-testDescription": "TODO: Add Description"
+          }
+        ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    },
+    "/iriscontent/en/pages/coupon/CouponPage.json": {
+      "get": {
+        "description": "TODO: Add Description",
+        "summary": "Get Page",
+        "tags": [
+          "Page"
+        ],
+        "operationId": "Get Page",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [],
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "GET",
+              "uri": "/iriscontent/en/pages/coupon/CouponPage.json"
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "NONE",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": true,
+              "headers": {}
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "Get Page",
+            "x-testDescription": "TODO: Add Description"
+          }
+        ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    },
+    "/content/components": {
+      "put": {
+        "description": "TODO: Add Description",
+        "summary": "Create SEO",
+        "tags": [
+          "SEO"
+        ],
+        "operationId": "Create SEO",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/CreateSeorequest"
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "auth": []
+          }
+        ],
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "PUT",
+              "uri": "/content/components",
+              "headers": {
+                "Content-Type": "application/json",
+                "Authorization": "Basic YWRtaW46YWRtaW4="
+              },
+              "body": "{\n  \"assetName\": \"SEO2\",\n  \"assetType\": \"SEO\",\n  \"parentFolder\":\"/iriscontent/en/components/seo\",\n  \"couponStartDate\": \"03/09/2017 12:00:00 AM\",\n  \"couponEndDate\": \"03/30/2017 12:00:00 AM\",\n  \"categoryPage\": \"Category Page\",\n  \"Channel\": \"InStore\",\n  \"Active\": \"Yes\",\n  \"offer1Name\": \"EXTRA 20% OFF\",\n  \"offer1Description\": \"*20% with your JCPenney credit card, 15% with paypal ad 10% with any method of payment\",\n  \"offer2Name\": \"EXTRA 15% OFF\",\n  \"offer2Description\": \" \",\n  \"offer3Name\": \" \",\n  \"offer3Description\": \" \",\n  \"offer4Name\": \" \",\n  \"offer4Description\": \" \",\n  \"validName\": \"VALID THROUGH MARCH 22, 2017\",\n  \"shopTitle\": \" \",\n  \"codeValue\": \"48SHOP\",\n  \"codeSelect\": \"codeAvailable\",\n  \"detailTitle\": \"Get Details Only\",\n  \"displayWithProduct\": \"No\",\n  \"barCode1\": \" \",\n  \"barCode2\": \" \",\n  \"disclaimer\": \" \",\n  \"couponShopUrl\": \" \",\n  \"couponDetailURL\": \" \"\n}"
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "NONE",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": true,
+              "headers": {}
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "Create SEO",
+            "x-testDescription": "TODO: Add Description"
+          }
+        ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      },
+      "post": {
+        "description": "TODO: Add Description",
+        "summary": "Edit SEO",
+        "tags": [
+          "SEO"
+        ],
+        "operationId": "Edit SEO",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/EditSeorequest"
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "auth": []
+          }
+        ],
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "POST",
+              "uri": "/content/components",
+              "headers": {
+                "Content-Type": "application/json",
+                "Authorization": "Basic YWRtaW46YWRtaW4="
+              },
+              "body": "{\n  \"assetName\": \"SEO1\",\n  \"assetType\": \"SEO\",\n  \"parentFolder\":\"/iriscontent/en/components/seo\",\n  \"couponStartDate\": \"03/09/2017 12:00:00 AM\",\n  \"couponEndDate\": \"03/30/2017 12:00:00 AM\",\n  \"categoryPage\": \"Category Page\",\n  \"Channel\": \"InStore\",\n  \"Active\": \"Yes\",\n  \"offer1Name\": \"EXTRA 20% OFF\",\n  \"offer1Description\": \"*20% with your JCPenney credit card, 15% with paypal ad 10% with any method of payment\",\n  \"offer2Name\": \"EXTRA 15% OFF\",\n  \"offer2Description\": \" \",\n  \"offer3Name\": \" \",\n  \"offer3Description\": \" \",\n  \"offer4Name\": \" \",\n  \"offer4Description\": \" \",\n  \"validName\": \"VALID THROUGH MARCH 22, 2017\",\n  \"shopTitle\": \" \",\n  \"codeValue\": \"48SHOP\",\n  \"codeSelect\": \"codeAvailable\",\n  \"detailTitle\": \"Get Details Only\",\n  \"displayWithProduct\": \"No\",\n  \"barCode1\": \" \",\n  \"barCode2\": \" \",\n  \"disclaimer\": \" \",\n  \"couponShopUrl\": \" \",\n  \"couponDetailURL\": \" \"\n}"
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "NONE",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": true,
+              "headers": {}
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "Edit SEO",
+            "x-testDescription": "TODO: Add Description"
+          }
+        ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    },
+    "/iriscontent/en/components/seo/SEO1.json": {
+      "get": {
+        "description": "TODO: Add Description",
+        "summary": "Get SEO",
+        "tags": [
+          "SEO"
+        ],
+        "operationId": "Get SEO",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [],
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "GET",
+              "uri": "/iriscontent/en/components/seo/SEO1.json"
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "NONE",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": true,
+              "headers": {}
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "Get SEO",
+            "x-testDescription": "TODO: Add Description"
+          }
+        ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    },
+    "/content-authoring/file": {
+      "get": {
+        "description": "TODO: Add Description",
+        "summary": "Get Schema File",
+        "tags": [
+          "Schema"
+        ],
+        "operationId": "Get Schema File",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "path",
+            "in": "query",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [],
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "GET",
+              "uri": "/content-authoring/file?path=/content/en_US/schema/couponTile"
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "NONE",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": true,
+              "headers": {}
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "Get Schema File",
+            "x-testDescription": "TODO: Add Description"
+          }
+        ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      },
+      "post": {
+        "description": "TODO: Add Description",
+        "summary": "Create Schema File",
+        "tags": [
+          "Schema"
+        ],
+        "operationId": "Create Schema File",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/CreateSchemaFilerequest"
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "auth": []
+          }
+        ],
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "POST",
+              "uri": "/content-authoring/file",
+              "headers": {
+                "Content-Type": "application/json",
+                "Authorization": "Basic YWRtaW46YWRtaW4="
+              },
+              "body": "{\n  \"name\":\"couponTile\",\n  \"parentFolder\":\"/content/en_US/schema\",\n  \"mimeType\":\"application/json\",\n  \"templateContent\":\"path:/Users/karthikeyangirijanandan/Documents/Karthik/work/JCP/IRIS/couponSchema.json\"\n  \n}"
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "NONE",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": true,
+              "headers": {}
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "Create Schema File",
             "x-testDescription": "TODO: Add Description"
           }
         ],
@@ -1823,137 +1954,6 @@
         }
       }
     },
-    "/content-authoring/file": {
-      "get": {
-        "description": "TODO: Add Description",
-        "summary": "Get Schema File",
-        "tags": [
-          "Schema"
-        ],
-        "operationId": "Get Schema File",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "name": "path",
-            "in": "query",
-            "required": true,
-            "type": "string",
-            "description": ""
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": ""
-          }
-        },
-        "security": [],
-        "x-unitTests": [
-          {
-            "request": {
-              "method": "GET",
-              "uri": "/content-authoring/file?path=/content/en_US/schema/couponTile"
-            },
-            "expectedResponse": {
-              "x-allowExtraHeaders": true,
-              "x-bodyMatchMode": "NONE",
-              "x-arrayOrderedMatching": false,
-              "x-arrayCheckCount": false,
-              "x-matchResponseSchema": true,
-              "headers": {}
-            },
-            "x-testShouldPass": true,
-            "x-testEnabled": true,
-            "x-testName": "Get Schema File",
-            "x-testDescription": "TODO: Add Description"
-          }
-        ],
-        "x-operation-settings": {
-          "CollectParameters": false,
-          "AllowDynamicQueryParameters": false,
-          "AllowDynamicFormParameters": false,
-          "IsMultiContentStreaming": false
-        }
-      },
-      "post": {
-        "description": "TODO: Add Description",
-        "summary": "Create Schema File",
-        "tags": [
-          "Schema"
-        ],
-        "operationId": "Create Schema File",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "name": "Body",
-            "in": "body",
-            "required": true,
-            "description": "",
-            "schema": {
-              "$ref": "#/definitions/CreateSchemaFilerequest"
-            }
-          },
-          {
-            "name": "Authorization",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
-          },
-          {
-            "name": "Content-Type",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": ""
-          }
-        },
-        "security": [
-          {
-            "auth": []
-          }
-        ],
-        "x-unitTests": [
-          {
-            "request": {
-              "method": "POST",
-              "uri": "/content-authoring/file",
-              "headers": {
-                "Content-Type": "application/json",
-                "Authorization": "Basic YWRtaW46YWRtaW4="
-              },
-              "body": "{\n  \"name\":\"couponTile\",\n  \"parentFolder\":\"/content/en_US/schema\",\n  \"mimeType\":\"application/json\",\n  \"templateContent\":\"path:/Users/karthikeyangirijanandan/Documents/Karthik/work/JCP/IRIS/couponSchema.json\"\n  \n}"
-            },
-            "expectedResponse": {
-              "x-allowExtraHeaders": true,
-              "x-bodyMatchMode": "NONE",
-              "x-arrayOrderedMatching": false,
-              "x-arrayCheckCount": false,
-              "x-matchResponseSchema": true,
-              "headers": {}
-            },
-            "x-testShouldPass": true,
-            "x-testEnabled": true,
-            "x-testName": "Create Schema File",
-            "x-testDescription": "TODO: Add Description"
-          }
-        ],
-        "x-operation-settings": {
-          "CollectParameters": false,
-          "AllowDynamicQueryParameters": false,
-          "AllowDynamicFormParameters": false,
-          "IsMultiContentStreaming": false
-        }
-      }
-    },
     "/content-authoring/schema": {
       "post": {
         "description": "TODO: Add Description",
@@ -2035,183 +2035,6 @@
     }
   },
   "definitions": {
-    "CreateLayoutrequest": {
-      "title": "Create LayoutRequest",
-      "type": "object",
-      "properties": {
-        "parentFolder": {
-          "description": "",
-          "type": "string"
-        },
-        "ContentItem": {
-          "$ref": "#/definitions/ContentItem"
-        }
-      },
-      "required": [
-        "parentFolder",
-        "ContentItem"
-      ]
-    },
-    "ContentItem": {
-      "title": "ContentItem",
-      "type": "object",
-      "properties": {
-        "name": {
-          "description": "",
-          "type": "string"
-        },
-        "type": {
-          "description": "",
-          "type": "string"
-        },
-        "path": {
-          "description": "",
-          "type": "string"
-        },
-        "description": {
-          "description": "",
-          "type": "string"
-        },
-        "contentItemStartDate": {
-          "description": "",
-          "type": "string"
-        },
-        "contentItemEndDate": {
-          "description": "",
-          "type": "string"
-        },
-        "instances": {
-          "description": "",
-          "type": "array",
-          "items": {
-            "type": "string"
-          }
-        },
-        "ContentItem": {
-          "description": "",
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/ContentItem2"
-          }
-        }
-      },
-      "required": [
-        "name",
-        "type",
-        "path",
-        "description",
-        "contentItemStartDate",
-        "contentItemEndDate",
-        "instances",
-        "ContentItem"
-      ]
-    },
-    "ContentItem2": {
-      "title": "ContentItem2",
-      "type": "object",
-      "properties": {
-        "name": {
-          "description": "",
-          "type": "string"
-        },
-        "type": {
-          "description": "",
-          "type": "string"
-        },
-        "path": {
-          "description": "",
-          "type": "string"
-        },
-        "contentItemStartDate": {
-          "description": "",
-          "type": "string"
-        },
-        "contentItemEndDate": {
-          "description": "",
-          "type": "string"
-        },
-        "ContentItem": {
-          "description": "",
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/ContentItem3"
-          }
-        }
-      },
-      "required": [
-        "name",
-        "type",
-        "path",
-        "contentItemStartDate",
-        "contentItemEndDate",
-        "ContentItem"
-      ]
-    },
-    "ContentItem3": {
-      "title": "ContentItem3",
-      "type": "object",
-      "properties": {
-        "name": {
-          "description": "",
-          "type": "string"
-        },
-        "type": {
-          "description": "",
-          "type": "string"
-        },
-        "itemtype": {
-          "description": "",
-          "type": "string"
-        },
-        "path": {
-          "description": "",
-          "type": "string"
-        },
-        "contentItemStartDate": {
-          "description": "",
-          "type": "string"
-        },
-        "contentItemEndDate": {
-          "description": "",
-          "type": "string"
-        },
-        "position-x": {
-          "description": "",
-          "type": "string"
-        },
-        "position-y": {
-          "description": "",
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "type",
-        "itemtype",
-        "path",
-        "contentItemStartDate",
-        "contentItemEndDate",
-        "position-x",
-        "position-y"
-      ]
-    },
-    "EditLayoutrequest": {
-      "title": "Edit LayoutRequest",
-      "type": "object",
-      "properties": {
-        "parentFolder": {
-          "description": "",
-          "type": "string"
-        },
-        "ContentItem": {
-          "$ref": "#/definitions/ContentItem"
-        }
-      },
-      "required": [
-        "parentFolder",
-        "ContentItem"
-      ]
-    },
     "CreateCouponrequest": {
       "title": "Create CouponRequest",
       "example": {
@@ -2484,7 +2307,7 @@
           "type": "string"
         },
         "content": {
-          "$ref": "#/definitions/Content12"
+          "$ref": "#/definitions/Content4"
         }
       },
       "required": [
@@ -2499,8 +2322,8 @@
         "content"
       ]
     },
-    "Content12": {
-      "title": "Content12",
+    "Content4": {
+      "title": "Content4",
       "type": "object",
       "properties": {
         "name": {
@@ -2567,7 +2390,7 @@
           "description": "",
           "type": "array",
           "items": {
-            "$ref": "#/definitions/Offer13"
+            "$ref": "#/definitions/Offer5"
           }
         }
       },
@@ -2590,8 +2413,8 @@
         "offers"
       ]
     },
-    "Offer13": {
-      "title": "Offer13",
+    "Offer5": {
+      "title": "Offer5",
       "type": "object",
       "properties": {
         "name": {
@@ -2707,6 +2530,565 @@
         "publishable",
         "active",
         "content"
+      ]
+    },
+    "CreateFolderrequest": {
+      "title": "Create FolderRequest",
+      "example": {
+        "folderName": "Content",
+        "parentFolder": "/content-authoring/content/en_US/JCPenney.com/Coupons/Assets/"
+      },
+      "type": "object",
+      "properties": {
+        "folderName": {
+          "description": "",
+          "type": "string"
+        },
+        "parentFolder": {
+          "description": "",
+          "type": "string"
+        }
+      },
+      "required": [
+        "folderName",
+        "parentFolder"
+      ]
+    },
+    "CopyFolderrequest": {
+      "title": "Copy FolderRequest",
+      "example": {
+        "sourceFolder": "/iriscontent/en/sample1/",
+        "destinationFolder": "/iriscontent/en/sample/",
+        "operation": "COPY",
+        "removeExisting": "false"
+      },
+      "type": "object",
+      "properties": {
+        "sourceFolder": {
+          "description": "",
+          "type": "string"
+        },
+        "destinationFolder": {
+          "description": "",
+          "type": "string"
+        },
+        "operation": {
+          "description": "",
+          "type": "string"
+        },
+        "removeExisting": {
+          "description": "",
+          "type": "string"
+        }
+      },
+      "required": [
+        "sourceFolder",
+        "destinationFolder",
+        "operation",
+        "removeExisting"
+      ]
+    },
+    "MoveFolderrequest": {
+      "title": "Move FolderRequest",
+      "example": {
+        "sourceFolder": "/iriscontent/en/sample/innerfolder",
+        "destinationFolder": "/iriscontent/en/sample1/innerfolder",
+        "operation": "MOVE"
+      },
+      "type": "object",
+      "properties": {
+        "sourceFolder": {
+          "description": "",
+          "type": "string"
+        },
+        "destinationFolder": {
+          "description": "",
+          "type": "string"
+        },
+        "operation": {
+          "description": "",
+          "type": "string"
+        }
+      },
+      "required": [
+        "sourceFolder",
+        "destinationFolder",
+        "operation"
+      ]
+    },
+    "DeleteFolderrequest": {
+      "title": "Delete FolderRequest",
+      "example": {
+        "folderName": "innerfolder",
+        "parentFolder": "/iriscontent/en/sample/"
+      },
+      "type": "object",
+      "properties": {
+        "folderName": {
+          "description": "",
+          "type": "string"
+        },
+        "parentFolder": {
+          "description": "",
+          "type": "string"
+        }
+      },
+      "required": [
+        "folderName",
+        "parentFolder"
+      ]
+    },
+    "CreateInstancesrequest": {
+      "title": "Create InstancesRequest",
+      "type": "object",
+      "properties": {
+        "parentFolder": {
+          "description": "",
+          "type": "string"
+        },
+        "name": {
+          "description": "",
+          "type": "string"
+        },
+        "ContentItem": {
+          "$ref": "#/definitions/ContentItem"
+        }
+      },
+      "required": [
+        "parentFolder",
+        "name",
+        "ContentItem"
+      ]
+    },
+    "ContentItem": {
+      "title": "ContentItem",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "",
+          "type": "string"
+        },
+        "type": {
+          "description": "",
+          "type": "string"
+        },
+        "path": {
+          "description": "",
+          "type": "string"
+        },
+        "templatePath": {
+          "description": "",
+          "type": "string"
+        },
+        "description": {
+          "description": "",
+          "type": "string"
+        },
+        "contentItemStartDate": {
+          "description": "",
+          "type": "string"
+        },
+        "contentItemEndDate": {
+          "description": "",
+          "type": "string"
+        },
+        "ContentItem": {
+          "description": "",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ContentItem15"
+          }
+        }
+      },
+      "required": [
+        "name",
+        "type",
+        "path",
+        "templatePath",
+        "description",
+        "contentItemStartDate",
+        "contentItemEndDate",
+        "ContentItem"
+      ]
+    },
+    "ContentItem15": {
+      "title": "ContentItem15",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "",
+          "type": "string"
+        },
+        "type": {
+          "description": "",
+          "type": "string"
+        },
+        "path": {
+          "description": "",
+          "type": "string"
+        },
+        "templatePath": {
+          "description": "",
+          "type": "string"
+        },
+        "contentItemStartDate": {
+          "description": "",
+          "type": "string"
+        },
+        "contentItemEndDate": {
+          "description": "",
+          "type": "string"
+        },
+        "ContentItem": {
+          "description": "",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ContentItem16"
+          }
+        }
+      },
+      "required": [
+        "name",
+        "type",
+        "path",
+        "templatePath",
+        "contentItemStartDate",
+        "contentItemEndDate",
+        "ContentItem"
+      ]
+    },
+    "ContentItem16": {
+      "title": "ContentItem16",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "",
+          "type": "string"
+        },
+        "type": {
+          "description": "",
+          "type": "string"
+        },
+        "itemtype": {
+          "description": "",
+          "type": "string"
+        },
+        "path": {
+          "description": "",
+          "type": "string"
+        },
+        "templatePath": {
+          "description": "",
+          "type": "string"
+        },
+        "contentItemStartDate": {
+          "description": "",
+          "type": "string"
+        },
+        "contentItemEndDate": {
+          "description": "",
+          "type": "string"
+        },
+        "position-x": {
+          "description": "",
+          "type": "string"
+        },
+        "position-y": {
+          "description": "",
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "type",
+        "itemtype",
+        "path",
+        "templatePath",
+        "contentItemStartDate",
+        "contentItemEndDate",
+        "position-x",
+        "position-y"
+      ]
+    },
+    "EditInstancesrequest": {
+      "title": "Edit InstancesRequest",
+      "type": "object",
+      "properties": {
+        "parentFolder": {
+          "description": "",
+          "type": "string"
+        },
+        "name": {
+          "description": "",
+          "type": "string"
+        },
+        "ContentItem": {
+          "$ref": "#/definitions/ContentItem"
+        }
+      },
+      "required": [
+        "parentFolder",
+        "name",
+        "ContentItem"
+      ]
+    },
+    "CreateLayoutrequest": {
+      "title": "Create LayoutRequest",
+      "type": "object",
+      "properties": {
+        "parentFolder": {
+          "description": "",
+          "type": "string"
+        },
+        "ContentItem": {
+          "$ref": "#/definitions/ContentItem22"
+        }
+      },
+      "required": [
+        "parentFolder",
+        "ContentItem"
+      ]
+    },
+    "ContentItem22": {
+      "title": "ContentItem22",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "",
+          "type": "string"
+        },
+        "type": {
+          "description": "",
+          "type": "string"
+        },
+        "path": {
+          "description": "",
+          "type": "string"
+        },
+        "description": {
+          "description": "",
+          "type": "string"
+        },
+        "contentItemStartDate": {
+          "description": "",
+          "type": "string"
+        },
+        "contentItemEndDate": {
+          "description": "",
+          "type": "string"
+        },
+        "instances": {
+          "description": "",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "ContentItem": {
+          "description": "",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ContentItem23"
+          }
+        }
+      },
+      "required": [
+        "name",
+        "type",
+        "path",
+        "description",
+        "contentItemStartDate",
+        "contentItemEndDate",
+        "instances",
+        "ContentItem"
+      ]
+    },
+    "ContentItem23": {
+      "title": "ContentItem23",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "",
+          "type": "string"
+        },
+        "type": {
+          "description": "",
+          "type": "string"
+        },
+        "path": {
+          "description": "",
+          "type": "string"
+        },
+        "contentItemStartDate": {
+          "description": "",
+          "type": "string"
+        },
+        "contentItemEndDate": {
+          "description": "",
+          "type": "string"
+        },
+        "ContentItem": {
+          "description": "",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ContentItem24"
+          }
+        }
+      },
+      "required": [
+        "name",
+        "type",
+        "path",
+        "contentItemStartDate",
+        "contentItemEndDate",
+        "ContentItem"
+      ]
+    },
+    "ContentItem24": {
+      "title": "ContentItem24",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "",
+          "type": "string"
+        },
+        "type": {
+          "description": "",
+          "type": "string"
+        },
+        "itemtype": {
+          "description": "",
+          "type": "string"
+        },
+        "path": {
+          "description": "",
+          "type": "string"
+        },
+        "contentItemStartDate": {
+          "description": "",
+          "type": "string"
+        },
+        "contentItemEndDate": {
+          "description": "",
+          "type": "string"
+        },
+        "position-x": {
+          "description": "",
+          "type": "string"
+        },
+        "position-y": {
+          "description": "",
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "type",
+        "itemtype",
+        "path",
+        "contentItemStartDate",
+        "contentItemEndDate",
+        "position-x",
+        "position-y"
+      ]
+    },
+    "EditLayoutrequest": {
+      "title": "Edit LayoutRequest",
+      "type": "object",
+      "properties": {
+        "parentFolder": {
+          "description": "",
+          "type": "string"
+        },
+        "ContentItem": {
+          "$ref": "#/definitions/ContentItem22"
+        }
+      },
+      "required": [
+        "parentFolder",
+        "ContentItem"
+      ]
+    },
+    "CreatePagerequest": {
+      "title": "Create PageRequest",
+      "example": {
+        "assetName": "CouponPage",
+        "assetType": "Page",
+        "parentFolder": "/iriscontent/en/pages/coupon",
+        "layouts": [
+          "/iriscontent/en/layouts/CouponPage/CouponPageLayout1",
+          "/iriscontent/en/layouts/CouponPage/CouponPageLayout2",
+          "/iriscontent/en/layouts/CouponPage/CouponPageLayout3"
+        ]
+      },
+      "type": "object",
+      "properties": {
+        "assetName": {
+          "description": "",
+          "type": "string"
+        },
+        "assetType": {
+          "description": "",
+          "type": "string"
+        },
+        "parentFolder": {
+          "description": "",
+          "type": "string"
+        },
+        "layouts": {
+          "description": "",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "assetName",
+        "assetType",
+        "parentFolder",
+        "layouts"
+      ]
+    },
+    "EditPagerequest": {
+      "title": "Edit PageRequest",
+      "example": {
+        "assetName": "CouponPage",
+        "assetType": "Page",
+        "parentFolder": "/iriscontent/en/pages/coupon",
+        "layouts": [
+          "/iriscontent/en/layouts/CouponPage/CouponPageLayout1",
+          "/iriscontent/en/layouts/CouponPage/CouponPageLayout2",
+          "/iriscontent/en/layouts/CouponPage/CouponPageLayout3"
+        ]
+      },
+      "type": "object",
+      "properties": {
+        "assetName": {
+          "description": "",
+          "type": "string"
+        },
+        "assetType": {
+          "description": "",
+          "type": "string"
+        },
+        "parentFolder": {
+          "description": "",
+          "type": "string"
+        },
+        "layouts": {
+          "description": "",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "assetName",
+        "assetType",
+        "parentFolder",
+        "layouts"
       ]
     },
     "CreateSeorequest": {
@@ -3053,386 +3435,38 @@
         "couponDetailURL"
       ]
     },
-    "CreateInstancesrequest": {
-      "title": "Create InstancesRequest",
+    "CreateSchemaFilerequest": {
+      "title": "Create Schema FileRequest",
+      "example": {
+        "name": "couponTile",
+        "parentFolder": "/content/en_US/schema",
+        "mimeType": "application/json",
+        "templateContent": "path:/Users/karthikeyangirijanandan/Documents/Karthik/work/JCP/IRIS/couponSchema.json"
+      },
       "type": "object",
       "properties": {
-        "parentFolder": {
-          "description": "",
-          "type": "string"
-        },
         "name": {
           "description": "",
           "type": "string"
         },
-        "ContentItem": {
-          "$ref": "#/definitions/ContentItem20"
+        "parentFolder": {
+          "description": "",
+          "type": "string"
+        },
+        "mimeType": {
+          "description": "",
+          "type": "string"
+        },
+        "templateContent": {
+          "description": "",
+          "type": "string"
         }
       },
       "required": [
+        "name",
         "parentFolder",
-        "name",
-        "ContentItem"
-      ]
-    },
-    "ContentItem20": {
-      "title": "ContentItem20",
-      "type": "object",
-      "properties": {
-        "name": {
-          "description": "",
-          "type": "string"
-        },
-        "type": {
-          "description": "",
-          "type": "string"
-        },
-        "path": {
-          "description": "",
-          "type": "string"
-        },
-        "templatePath": {
-          "description": "",
-          "type": "string"
-        },
-        "description": {
-          "description": "",
-          "type": "string"
-        },
-        "contentItemStartDate": {
-          "description": "",
-          "type": "string"
-        },
-        "contentItemEndDate": {
-          "description": "",
-          "type": "string"
-        },
-        "ContentItem": {
-          "description": "",
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/ContentItem21"
-          }
-        }
-      },
-      "required": [
-        "name",
-        "type",
-        "path",
-        "templatePath",
-        "description",
-        "contentItemStartDate",
-        "contentItemEndDate",
-        "ContentItem"
-      ]
-    },
-    "ContentItem21": {
-      "title": "ContentItem21",
-      "type": "object",
-      "properties": {
-        "name": {
-          "description": "",
-          "type": "string"
-        },
-        "type": {
-          "description": "",
-          "type": "string"
-        },
-        "path": {
-          "description": "",
-          "type": "string"
-        },
-        "templatePath": {
-          "description": "",
-          "type": "string"
-        },
-        "contentItemStartDate": {
-          "description": "",
-          "type": "string"
-        },
-        "contentItemEndDate": {
-          "description": "",
-          "type": "string"
-        },
-        "ContentItem": {
-          "description": "",
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/ContentItem22"
-          }
-        }
-      },
-      "required": [
-        "name",
-        "type",
-        "path",
-        "templatePath",
-        "contentItemStartDate",
-        "contentItemEndDate",
-        "ContentItem"
-      ]
-    },
-    "ContentItem22": {
-      "title": "ContentItem22",
-      "type": "object",
-      "properties": {
-        "name": {
-          "description": "",
-          "type": "string"
-        },
-        "type": {
-          "description": "",
-          "type": "string"
-        },
-        "itemtype": {
-          "description": "",
-          "type": "string"
-        },
-        "path": {
-          "description": "",
-          "type": "string"
-        },
-        "templatePath": {
-          "description": "",
-          "type": "string"
-        },
-        "contentItemStartDate": {
-          "description": "",
-          "type": "string"
-        },
-        "contentItemEndDate": {
-          "description": "",
-          "type": "string"
-        },
-        "position-x": {
-          "description": "",
-          "type": "string"
-        },
-        "position-y": {
-          "description": "",
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "type",
-        "itemtype",
-        "path",
-        "templatePath",
-        "contentItemStartDate",
-        "contentItemEndDate",
-        "position-x",
-        "position-y"
-      ]
-    },
-    "EditInstancesrequest": {
-      "title": "Edit InstancesRequest",
-      "type": "object",
-      "properties": {
-        "parentFolder": {
-          "description": "",
-          "type": "string"
-        },
-        "name": {
-          "description": "",
-          "type": "string"
-        },
-        "ContentItem": {
-          "$ref": "#/definitions/ContentItem20"
-        }
-      },
-      "required": [
-        "parentFolder",
-        "name",
-        "ContentItem"
-      ]
-    },
-    "CreatePagerequest": {
-      "title": "Create PageRequest",
-      "example": {
-        "assetName": "CouponPage",
-        "assetType": "Page",
-        "parentFolder": "/iriscontent/en/pages/coupon",
-        "layouts": [
-          "/iriscontent/en/layouts/CouponPage/CouponPageLayout1",
-          "/iriscontent/en/layouts/CouponPage/CouponPageLayout2",
-          "/iriscontent/en/layouts/CouponPage/CouponPageLayout3"
-        ]
-      },
-      "type": "object",
-      "properties": {
-        "assetName": {
-          "description": "",
-          "type": "string"
-        },
-        "assetType": {
-          "description": "",
-          "type": "string"
-        },
-        "parentFolder": {
-          "description": "",
-          "type": "string"
-        },
-        "layouts": {
-          "description": "",
-          "type": "array",
-          "items": {
-            "type": "string"
-          }
-        }
-      },
-      "required": [
-        "assetName",
-        "assetType",
-        "parentFolder",
-        "layouts"
-      ]
-    },
-    "EditPagerequest": {
-      "title": "Edit PageRequest",
-      "example": {
-        "assetName": "CouponPage",
-        "assetType": "Page",
-        "parentFolder": "/iriscontent/en/pages/coupon",
-        "layouts": [
-          "/iriscontent/en/layouts/CouponPage/CouponPageLayout1",
-          "/iriscontent/en/layouts/CouponPage/CouponPageLayout2",
-          "/iriscontent/en/layouts/CouponPage/CouponPageLayout3"
-        ]
-      },
-      "type": "object",
-      "properties": {
-        "assetName": {
-          "description": "",
-          "type": "string"
-        },
-        "assetType": {
-          "description": "",
-          "type": "string"
-        },
-        "parentFolder": {
-          "description": "",
-          "type": "string"
-        },
-        "layouts": {
-          "description": "",
-          "type": "array",
-          "items": {
-            "type": "string"
-          }
-        }
-      },
-      "required": [
-        "assetName",
-        "assetType",
-        "parentFolder",
-        "layouts"
-      ]
-    },
-    "CreateFolderrequest": {
-      "title": "Create FolderRequest",
-      "example": {
-        "folderName": "Content",
-        "parentFolder": "/content-authoring/content/en_US/JCPenney.com/Coupons/Assets/"
-      },
-      "type": "object",
-      "properties": {
-        "folderName": {
-          "description": "",
-          "type": "string"
-        },
-        "parentFolder": {
-          "description": "",
-          "type": "string"
-        }
-      },
-      "required": [
-        "folderName",
-        "parentFolder"
-      ]
-    },
-    "CopyFolderrequest": {
-      "title": "Copy FolderRequest",
-      "example": {
-        "sourceFolder": "/iriscontent/en/sample1/",
-        "destinationFolder": "/iriscontent/en/sample/",
-        "operation": "COPY",
-        "removeExisting": "false"
-      },
-      "type": "object",
-      "properties": {
-        "sourceFolder": {
-          "description": "",
-          "type": "string"
-        },
-        "destinationFolder": {
-          "description": "",
-          "type": "string"
-        },
-        "operation": {
-          "description": "",
-          "type": "string"
-        },
-        "removeExisting": {
-          "description": "",
-          "type": "string"
-        }
-      },
-      "required": [
-        "sourceFolder",
-        "destinationFolder",
-        "operation",
-        "removeExisting"
-      ]
-    },
-    "MoveFolderrequest": {
-      "title": "Move FolderRequest",
-      "example": {
-        "sourceFolder": "/iriscontent/en/sample/innerfolder",
-        "destinationFolder": "/iriscontent/en/sample1/innerfolder",
-        "operation": "MOVE"
-      },
-      "type": "object",
-      "properties": {
-        "sourceFolder": {
-          "description": "",
-          "type": "string"
-        },
-        "destinationFolder": {
-          "description": "",
-          "type": "string"
-        },
-        "operation": {
-          "description": "",
-          "type": "string"
-        }
-      },
-      "required": [
-        "sourceFolder",
-        "destinationFolder",
-        "operation"
-      ]
-    },
-    "DeleteFolderrequest": {
-      "title": "Delete FolderRequest",
-      "example": {
-        "folderName": "innerfolder",
-        "parentFolder": "/iriscontent/en/sample/"
-      },
-      "type": "object",
-      "properties": {
-        "folderName": {
-          "description": "",
-          "type": "string"
-        },
-        "parentFolder": {
-          "description": "",
-          "type": "string"
-        }
-      },
-      "required": [
-        "folderName",
-        "parentFolder"
+        "mimeType",
+        "templateContent"
       ]
     },
     "SsoLoginrequest": {
@@ -3595,40 +3629,6 @@
       "required": [
         "path",
         "pathPrivileges"
-      ]
-    },
-    "CreateSchemaFilerequest": {
-      "title": "Create Schema FileRequest",
-      "example": {
-        "name": "couponTile",
-        "parentFolder": "/content/en_US/schema",
-        "mimeType": "application/json",
-        "templateContent": "path:/Users/karthikeyangirijanandan/Documents/Karthik/work/JCP/IRIS/couponSchema.json"
-      },
-      "type": "object",
-      "properties": {
-        "name": {
-          "description": "",
-          "type": "string"
-        },
-        "parentFolder": {
-          "description": "",
-          "type": "string"
-        },
-        "mimeType": {
-          "description": "",
-          "type": "string"
-        },
-        "templateContent": {
-          "description": "",
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "parentFolder",
-        "mimeType",
-        "templateContent"
       ]
     },
     "CreateSchemaJsonrequest": {
