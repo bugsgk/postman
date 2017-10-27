@@ -769,7 +769,7 @@
         }
       }
     },
-    "/iriscontent/en/instances/CouponPage/": {
+    "/iriscontent/en/instances/CouponPage": {
       "get": {
         "description": "TODO: Add Description",
         "summary": "Get Instance",
@@ -800,7 +800,7 @@
           {
             "request": {
               "method": "GET",
-              "uri": "/iriscontent/en/instances/CouponPage/?maxLevel=10"
+              "uri": "/iriscontent/en/instances/CouponPage?maxLevel=10"
             },
             "expectedResponse": {
               "x-allowExtraHeaders": true,
