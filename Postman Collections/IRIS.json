@@ -142,7 +142,7 @@
                 "Content-Type": "application/json",
                 "Authorization": "Basic YWRtaW46YWRtaW4="
               },
-              "body": "{\n  \"parent\": \"/content/en_US/JCPenney.com/Coupons/Assets/Content\",\n  \"contentType\": \"couponTile\",\n  \"name\": \"COUPONINDEX20\",\n  \"publishingStartDate\": \"2017-06-20T18:00:00+00:00\",\n  \"publishingEndDate\": \"2017-06-21T20:00:00+00:00\",\n  \"publishingChannelLarge\": true,\n  \"publishingChannelSmall\": true,\n  \"publishingChannelApp\": true,\n  \"publishable\": false,\n  \"active\": false,\n  \"validated\":true,\n  \"priority\": 5,\n  \"content\": {\n    \"offerstartDate\": \"2017-06-15T14:34:34+05:30\",\n    \"offerendDate\": \"2017-06-25T14:34:34+05:30\",\n    \"promoCode\": \"BIGSAVE8\",\n    \"barcodeUrl\": \"https://e.jcpenney.com/bca/z/image?ct=CODE128&st=N&bh=3&bc=MC4560120002000000016210\",\n    \"disclaimerTemplate\": \"{'first':'1', 'second':'2'}\",\n    \"disclaimer\": \"sdas <strong> sdafsdf </strong> 2017-05-09 - 2017-05-10 f sfasf\",\n    \"linkText\": \"sdaf\",\n    \"linkUrl\": \"asdfas\",\n    \"linkAppUrl\": \"fsdafa\",\n    \"offers\": [\n      {\n        \"barCode\": \"nitesh\",\n        \"headLine\": \"head4567\",\n        \"bodyCopy\": \"nitin\"\n      },\n      {\n        \"barCode\": \"kart\",\n        \"headLine\": \"foot234\",\n        \"bodyCopy\": \"new\"\n      }\n    ]       \n  }\n}"
+              "body": "{\n  \"parent\": \"/content/en_US/JCPenney.com/Coupons/Assets/Content\",\n  \"contentType\": \"couponTile\",\n  \"name\": \"COUPONINDEX24\",\n  \"publishingStartDate\": \"2017-06-20T18:00:00+00:00\",\n  \"publishingEndDate\": \"2017-06-21T20:00:00+00:00\",\n  \"publishingChannelLarge\": true,\n  \"publishingChannelSmall\": true,\n  \"publishingChannelApp\": true,\n  \"publishable\": false,\n  \"active\": false,\n  \"validated\":true,\n  \"priority\": 5,\n  \"content\": {\n    \"offerstartDate\": \"2017-06-15T14:34:34+05:30\",\n    \"offerendDate\": \"2017-06-25T14:34:34+05:30\",\n    \"promoCode\": \"BIGSAVE8\",\n    \"barcodeUrl\": \"https://e.jcpenney.com/bca/z/image?ct=CODE128&st=N&bh=3&bc=MC4560120002000000016210\",\n    \"disclaimerTemplate\": \"{'first':'1', 'second':'2'}\",\n    \"disclaimer\": \"sdas <strong> sdafsdf </strong> 2017-05-09 - 2017-05-10 f sfasf\",\n    \"linkText\": \"sdaf\",\n    \"linkUrl\": \"asdfas\",\n    \"linkAppUrl\": \"fsdafa\",\n    \"offers\": [\n      {\n        \"barCode\": \"nitesh\",\n        \"headLine\": \"head4567\",\n        \"bodyCopy\": \"nitin\"\n      },\n      {\n        \"barCode\": \"kart\",\n        \"headLine\": \"foot234\",\n        \"bodyCopy\": \"new\"\n      }\n    ]       \n  }\n}"
             },
             "expectedResponse": {
               "x-allowExtraHeaders": true,
@@ -423,6 +423,84 @@
             "x-testShouldPass": true,
             "x-testEnabled": true,
             "x-testName": "Create Page Instance",
+            "x-testDescription": "TODO: Add Description"
+          }
+        ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    },
+    "/content-authoring/content/updateCouponAssets": {
+      "put": {
+        "description": "TODO: Add Description",
+        "summary": "UpdateAllCoupons",
+        "tags": [
+          "Coupon"
+        ],
+        "operationId": "UpdateAllCoupons",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/UpdateAllCouponsRequest"
+              }
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [],
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "PUT",
+              "uri": "/content-authoring/content/updateCouponAssets",
+              "headers": {
+                "Content-Type": "application/json",
+                "Authorization": "Basic YWRtaW46YWRtaW4="
+              },
+              "body": "[\n    {\n        \"id\": \"60698ac5-9dde-4a7a-a387-485a2c21184a\",\n        \"path\": \"/content/en_US/JCPenney.com/Coupons/Assets/Content/COUPONINDEX1\",\n        \"parent\": \"/content/en_US/JCPenney.com/Coupons/Assets/Content\",\n        \"type\": \"content\",\n        \"name\": \"COUPONINDEX1\",\n        \"createdOn\": \"2017-10-12T19:02:28+05:30\",\n        \"createdBy\": \"admin\",\n        \"lastModifiedBy\": \"admin\",\n        \"publishable\": true,\n        \"publishingStartDate\": \"2017-06-20T23:30:00+05:30\",\n        \"publishingEndDate\": \"2017-06-22T01:30:00+05:30\",\n        \"publishingChannels\": [\n            \"xlarge\",\n            \"large\",\n            \"medium\",\n            \"small\",\n            \"app\"\n        ],\n        \"publishingChannelLarge\": true,\n        \"publishingChannelSmall\": true,\n        \"publishingChannelApp\": true,\n        \"priority\": 0,\n        \"content\": {\n            \"offerendDate\": \"2017-06-25T14:34:34+05:30\",\n            \"linkUrl\": \"asdfas\",\n            \"promoCode\": \"BIGSAVE8\",\n            \"disclaimer\": \"sdas <strong> sdafsdf </strong> 2017-05-09 - 2017-05-10 f sfasf\",\n            \"offers\": [\n                {\n                    \"barCode\": \"nitesh\",\n                    \"headLine\": \"head123\",\n                    \"bodyCopy\": \"nitin\"\n                },\n                {\n                    \"barCode\": \"kart\",\n                    \"headLine\": \"toe123\",\n                    \"bodyCopy\": \"new\"\n                }\n            ],\n            \"linkText\": \"sdaf\",\n            \"disclaimerTemplate\": \"{'first':'1', 'second':'2'}\",\n            \"offerstartDate\": \"2017-06-15T14:34:34+05:30\",\n            \"linkAppUrl\": \"fsdafa\",\n            \"barcodeUrl\": \"https://e.jcpenney.com/bca/z/image?ct=CODE128&st=N&bh=3&bc=MC4560120002000000016210\"\n        },\n        \"publishingChannelDesktop\": true,\n        \"publishingChannelMobile\": true,\n        \"validated\": false,\n        \"active\": false,\n        \"deprecated\": false,\n        \"surrogate\": false,\n        \"evergreen\": false\n    },\n    {\n        \"id\": \"d205ca02-8f3d-4f4d-94db-8d95064f4385\",\n        \"path\": \"/content/en_US/JCPenney.com/Coupons/Assets/Content/COUPONINDEX2\",\n        \"parent\": \"/content/en_US/JCPenney.com/Coupons/Assets/Content\",\n        \"type\": \"content\",\n        \"name\": \"COUPONINDEX2\",\n        \"createdOn\": \"2017-10-12T19:05:44+05:30\",\n        \"createdBy\": \"admin\",\n        \"lastModifiedBy\": \"admin\",\n        \"publishable\": true,\n        \"publishingStartDate\": \"2017-06-20T23:30:00+05:30\",\n        \"publishingEndDate\": \"2017-06-22T01:30:00+05:30\",\n        \"publishingChannels\": [\n            \"xlarge\",\n            \"large\",\n            \"medium\",\n            \"small\",\n            \"app\"\n        ],\n        \"publishingChannelLarge\": true,\n        \"publishingChannelSmall\": true,\n        \"publishingChannelApp\": true,\n        \"priority\": 0,\n        \"content\": {\n            \"offerendDate\": \"2017-06-25T14:34:34+05:30\",\n            \"linkUrl\": \"asdfas\",\n            \"promoCode\": \"BIGSAVE8\",\n            \"disclaimer\": \"sdas <strong> sdafsdf </strong> 2017-05-09 - 2017-05-10 f sfasf\",\n            \"offers\": [\n                {\n                    \"barCode\": \"nitesh\",\n                    \"headLine\": \"head234\",\n                    \"bodyCopy\": \"nitin\"\n                },\n                {\n                    \"barCode\": \"kart\",\n                    \"headLine\": \"toe123\",\n                    \"bodyCopy\": \"new\"\n                }\n            ],\n            \"linkText\": \"sdaf\",\n            \"disclaimerTemplate\": \"{'first':'1', 'second':'2'}\",\n            \"offerstartDate\": \"2017-06-15T14:34:34+05:30\",\n            \"linkAppUrl\": \"fsdafa\",\n            \"barcodeUrl\": \"https://e.jcpenney.com/bca/z/image?ct=CODE128&st=N&bh=3&bc=MC4560120002000000016210\"\n        },\n        \"publishingChannelDesktop\": true,\n        \"publishingChannelMobile\": true,\n        \"validated\": false,\n        \"active\": false,\n        \"deprecated\": false,\n        \"surrogate\": false,\n        \"evergreen\": false\n    },\n    {\n        \"id\": \"bc32968d-bf88-4da3-b50a-e469fbbd6c07\",\n        \"path\": \"/content/en_US/JCPenney.com/Coupons/Assets/Content/COUPONINDEX3\",\n        \"parent\": \"/content/en_US/JCPenney.com/Coupons/Assets/Content\",\n        \"type\": \"content\",\n        \"name\": \"COUPONINDEX3\",\n        \"createdOn\": \"2017-10-12T19:05:58+05:30\",\n        \"createdBy\": \"admin\",\n        \"lastModifiedBy\": \"admin\",\n        \"publishable\": true,\n        \"publishingStartDate\": \"2017-06-20T23:30:00+05:30\",\n        \"publishingEndDate\": \"2017-06-22T01:30:00+05:30\",\n        \"publishingChannels\": [\n            \"xlarge\",\n            \"large\",\n            \"medium\",\n            \"small\",\n            \"app\"\n        ],\n        \"publishingChannelLarge\": true,\n        \"publishingChannelSmall\": true,\n        \"publishingChannelApp\": true,\n        \"priority\": 0,\n        \"content\": {\n            \"offerendDate\": \"2017-06-25T14:34:34+05:30\",\n            \"linkUrl\": \"asdfas\",\n            \"promoCode\": \"BIGSAVE8\",\n            \"disclaimer\": \"sdas <strong> sdafsdf </strong> 2017-05-09 - 2017-05-10 f sfasf\",\n            \"offers\": [\n                {\n                    \"barCode\": \"nitesh\",\n                    \"headLine\": \"head456\",\n                    \"bodyCopy\": \"nitin\"\n                },\n                {\n                    \"barCode\": \"kart\",\n                    \"headLine\": \"toe234\",\n                    \"bodyCopy\": \"new\"\n                }\n            ],\n            \"linkText\": \"sdaf\",\n            \"disclaimerTemplate\": \"{'first':'1', 'second':'2'}\",\n            \"offerstartDate\": \"2017-06-15T14:34:34+05:30\",\n            \"linkAppUrl\": \"fsdafa\",\n            \"barcodeUrl\": \"https://e.jcpenney.com/bca/z/image?ct=CODE128&st=N&bh=3&bc=MC4560120002000000016210\"\n        },\n        \"publishingChannelDesktop\": true,\n        \"publishingChannelMobile\": true,\n        \"validated\": false,\n        \"active\": false,\n        \"deprecated\": false,\n        \"surrogate\": false,\n        \"evergreen\": false\n    },\n    {\n        \"id\": \"95b8bd8f-9066-45ea-8d3f-8f4d94348625\",\n        \"path\": \"/content/en_US/JCPenney.com/Coupons/Assets/Content/COUPONINDEX4\",\n        \"parent\": \"/content/en_US/JCPenney.com/Coupons/Assets/Content\",\n        \"type\": \"content\",\n        \"name\": \"COUPONINDEX4\",\n        \"createdOn\": \"2017-10-12T19:06:10+05:30\",\n        \"createdBy\": \"admin\",\n        \"lastModifiedBy\": \"admin\",\n        \"publishable\": true,\n        \"publishingStartDate\": \"2017-06-20T23:30:00+05:30\",\n        \"publishingEndDate\": \"2017-06-22T01:30:00+05:30\",\n        \"publishingChannels\": [\n            \"xlarge\",\n            \"large\",\n            \"medium\",\n            \"small\",\n            \"app\"\n        ],\n        \"publishingChannelLarge\": true,\n        \"publishingChannelSmall\": true,\n        \"publishingChannelApp\": true,\n        \"priority\": 0,\n        \"content\": {\n            \"offerendDate\": \"2017-06-25T14:34:34+05:30\",\n            \"linkUrl\": \"asdfas\",\n            \"promoCode\": \"BIGSAVE8\",\n            \"disclaimer\": \"sdas <strong> sdafsdf </strong> 2017-05-09 - 2017-05-10 f sfasf\",\n            \"offers\": [\n                {\n                    \"barCode\": \"nitesh\",\n                    \"headLine\": \"head4567\",\n                    \"bodyCopy\": \"nitin\"\n                },\n                {\n                    \"barCode\": \"kart\",\n                    \"headLine\": \"toe234\",\n                    \"bodyCopy\": \"new\"\n                }\n            ],\n            \"linkText\": \"sdaf\",\n            \"disclaimerTemplate\": \"{'first':'1', 'second':'2'}\",\n            \"offerstartDate\": \"2017-06-15T14:34:34+05:30\",\n            \"linkAppUrl\": \"fsdafa\",\n            \"barcodeUrl\": \"https://e.jcpenney.com/bca/z/image?ct=CODE128&st=N&bh=3&bc=MC4560120002000000016210\"\n        },\n        \"publishingChannelDesktop\": true,\n        \"publishingChannelMobile\": true,\n        \"validated\": false,\n        \"active\": false,\n        \"deprecated\": false,\n        \"surrogate\": false,\n        \"evergreen\": false\n    },\n    {\n        \"id\": \"0f620dad-daa0-49bd-be76-8a99569d9095\",\n        \"path\": \"/content/en_US/JCPenney.com/Coupons/Assets/Content/COUPONINDEX5\",\n        \"parent\": \"/content/en_US/JCPenney.com/Coupons/Assets/Content\",\n        \"type\": \"content\",\n        \"name\": \"COUPONINDEX5\",\n        \"createdOn\": \"2017-10-19T10:35:44+05:30\",\n        \"createdBy\": \"admin\",\n        \"lastModifiedBy\": \"admin\",\n        \"publishable\": true,\n        \"publishingStartDate\": \"2017-06-20T23:30:00+05:30\",\n        \"publishingEndDate\": \"2017-06-22T01:30:00+05:30\",\n        \"publishingChannels\": [\n            \"xlarge\",\n            \"large\",\n            \"medium\",\n            \"small\",\n            \"app\"\n        ],\n        \"publishingChannelLarge\": true,\n        \"publishingChannelSmall\": true,\n        \"publishingChannelApp\": true,\n        \"priority\": 0,\n        \"content\": {\n            \"offerendDate\": \"2017-06-25T14:34:34+05:30\",\n            \"linkUrl\": \"asdfas\",\n            \"promoCode\": \"BIGSAVE8\",\n            \"disclaimer\": \"sdas <strong> sdafsdf </strong> 2017-05-09 - 2017-05-10 f sfasf\",\n            \"offers\": [\n                {\n                    \"barCode\": \"nitesh\",\n                    \"headLine\": \"head4567\",\n                    \"bodyCopy\": \"nitin\"\n                },\n                {\n                    \"barCode\": \"kart\",\n                    \"headLine\": \"foot234\",\n                    \"bodyCopy\": \"new\"\n                }\n            ],\n            \"linkText\": \"sdaf\",\n            \"disclaimerTemplate\": \"{'first':'1', 'second':'2'}\",\n            \"offerstartDate\": \"2017-06-15T14:34:34+05:30\",\n            \"linkAppUrl\": \"fsdafa\",\n            \"barcodeUrl\": \"https://e.jcpenney.com/bca/z/image?ct=CODE128&st=N&bh=3&bc=MC4560120002000000016210\"\n        },\n        \"publishingChannelDesktop\": true,\n        \"publishingChannelMobile\": true,\n        \"validated\": false,\n        \"active\": false,\n        \"deprecated\": false,\n        \"surrogate\": false,\n        \"evergreen\": false\n    },\n    {\n        \"id\": \"39ae550d-8364-4b59-9133-aa5607a2a9e8\",\n        \"path\": \"/content/en_US/JCPenney.com/Coupons/Assets/Content/COUPONINDEX6\",\n        \"parent\": \"/content/en_US/JCPenney.com/Coupons/Assets/Content\",\n        \"type\": \"content\",\n        \"name\": \"COUPONINDEX6\",\n        \"createdOn\": \"2017-10-19T10:39:40+05:30\",\n        \"createdBy\": \"admin\",\n        \"lastModifiedBy\": \"admin\",\n        \"publishable\": true,\n        \"publishingStartDate\": \"2017-06-20T23:30:00+05:30\",\n        \"publishingEndDate\": \"2017-06-22T01:30:00+05:30\",\n        \"publishingChannels\": [\n            \"xlarge\",\n            \"large\",\n            \"medium\",\n            \"small\",\n            \"app\"\n        ],\n        \"publishingChannelLarge\": true,\n        \"publishingChannelSmall\": true,\n        \"publishingChannelApp\": true,\n        \"priority\": 0,\n        \"content\": {\n            \"offerendDate\": \"2017-06-25T14:34:34+05:30\",\n            \"linkUrl\": \"asdfas\",\n            \"promoCode\": \"BIGSAVE8\",\n            \"disclaimer\": \"sdas <strong> sdafsdf </strong> 2017-05-09 - 2017-05-10 f sfasf\",\n            \"offers\": [\n                {\n                    \"barCode\": \"nitesh\",\n                    \"headLine\": \"head4567\",\n                    \"bodyCopy\": \"nitin\"\n                },\n                {\n                    \"barCode\": \"kart\",\n                    \"headLine\": \"foot234\",\n                    \"bodyCopy\": \"new\"\n                }\n            ],\n            \"linkText\": \"sdaf\",\n            \"disclaimerTemplate\": \"{'first':'1', 'second':'2'}\",\n            \"offerstartDate\": \"2017-06-15T14:34:34+05:30\",\n            \"linkAppUrl\": \"fsdafa\",\n            \"barcodeUrl\": \"https://e.jcpenney.com/bca/z/image?ct=CODE128&st=N&bh=3&bc=MC4560120002000000016210\"\n        },\n        \"publishingChannelDesktop\": true,\n        \"publishingChannelMobile\": true,\n        \"validated\": false,\n        \"active\": false,\n        \"deprecated\": false,\n        \"surrogate\": false,\n        \"evergreen\": false\n    },\n    {\n        \"id\": \"f8600144-e6b6-475b-9357-524328e49ad8\",\n        \"path\": \"/content/en_US/JCPenney.com/Coupons/Assets/Content/COUPONINDEX7\",\n        \"parent\": \"/content/en_US/JCPenney.com/Coupons/Assets/Content\",\n        \"type\": \"content\",\n        \"name\": \"COUPONINDEX7\",\n        \"createdOn\": \"2017-10-19T14:30:41+05:30\",\n        \"createdBy\": \"admin\",\n        \"lastModifiedBy\": \"admin\",\n        \"publishable\": true,\n        \"publishingStartDate\": \"2017-06-20T23:30:00+05:30\",\n        \"publishingEndDate\": \"2017-06-22T01:30:00+05:30\",\n        \"publishingChannels\": [\n            \"xlarge\",\n            \"large\",\n            \"medium\",\n            \"small\",\n            \"app\"\n        ],\n        \"publishingChannelLarge\": true,\n        \"publishingChannelSmall\": true,\n        \"publishingChannelApp\": true,\n        \"priority\": 0,\n        \"content\": {\n            \"offerendDate\": \"2017-06-25T14:34:34+05:30\",\n            \"linkUrl\": \"asdfas\",\n            \"promoCode\": \"BIGSAVE8\",\n            \"disclaimer\": \"sdas <strong> sdafsdf </strong> 2017-05-09 - 2017-05-10 f sfasf\",\n            \"offers\": [\n                {\n                    \"barCode\": \"nitesh\",\n                    \"headLine\": \"head4567\",\n                    \"bodyCopy\": \"nitin\"\n                },\n                {\n                    \"barCode\": \"kart\",\n                    \"headLine\": \"foot234\",\n                    \"bodyCopy\": \"new\"\n                }\n            ],\n            \"linkText\": \"sdaf\",\n            \"disclaimerTemplate\": \"{'first':'1', 'second':'2'}\",\n            \"offerstartDate\": \"2017-06-15T14:34:34+05:30\",\n            \"linkAppUrl\": \"fsdafa\",\n            \"barcodeUrl\": \"https://e.jcpenney.com/bca/z/image?ct=CODE128&st=N&bh=3&bc=MC4560120002000000016210\"\n        },\n        \"publishingChannelDesktop\": true,\n        \"publishingChannelMobile\": true,\n        \"validated\": false,\n        \"active\": false,\n        \"deprecated\": false,\n        \"surrogate\": false,\n        \"evergreen\": false\n    },\n    {\n        \"id\": \"5fc6ada4-670a-4630-a7c9-8d06d8109091\",\n        \"path\": \"/content/en_US/JCPenney.com/Coupons/Assets/Content/COUPONINDEX8\",\n        \"parent\": \"/content/en_US/JCPenney.com/Coupons/Assets/Content\",\n        \"type\": \"content\",\n        \"name\": \"COUPONINDEX8\",\n        \"createdOn\": \"2017-10-19T14:34:02+05:30\",\n        \"createdBy\": \"admin\",\n        \"lastModifiedBy\": \"admin\",\n        \"publishable\": true,\n        \"publishingStartDate\": \"2017-06-20T23:30:00+05:30\",\n        \"publishingEndDate\": \"2017-06-22T01:30:00+05:30\",\n        \"publishingChannels\": [\n            \"xlarge\",\n            \"large\",\n            \"medium\",\n            \"small\",\n            \"app\"\n        ],\n        \"publishingChannelLarge\": true,\n        \"publishingChannelSmall\": true,\n        \"publishingChannelApp\": true,\n        \"priority\": 0,\n        \"content\": {\n            \"offerendDate\": \"2017-06-25T14:34:34+05:30\",\n            \"linkUrl\": \"asdfas\",\n            \"promoCode\": \"BIGSAVE8\",\n            \"disclaimer\": \"sdas <strong> sdafsdf </strong> 2017-05-09 - 2017-05-10 f sfasf\",\n            \"offers\": [\n                {\n                    \"barCode\": \"nitesh\",\n                    \"headLine\": \"head4567\",\n                    \"bodyCopy\": \"nitin\"\n                },\n                {\n                    \"barCode\": \"kart\",\n                    \"headLine\": \"foot234\",\n                    \"bodyCopy\": \"new\"\n                }\n            ],\n            \"linkText\": \"sdaf\",\n            \"disclaimerTemplate\": \"{'first':'1', 'second':'2'}\",\n            \"offerstartDate\": \"2017-06-15T14:34:34+05:30\",\n            \"linkAppUrl\": \"fsdafa\",\n            \"barcodeUrl\": \"https://e.jcpenney.com/bca/z/image?ct=CODE128&st=N&bh=3&bc=MC4560120002000000016210\"\n        },\n        \"publishingChannelDesktop\": true,\n        \"publishingChannelMobile\": true,\n        \"validated\": false,\n        \"active\": false,\n        \"deprecated\": false,\n        \"surrogate\": false,\n        \"evergreen\": false\n    },\n    {\n        \"id\": \"1fa8f8d4-5cec-46fe-845f-0cf00ed8150d\",\n        \"path\": \"/content/en_US/JCPenney.com/Coupons/Assets/Content/COUPONINDEX9\",\n        \"parent\": \"/content/en_US/JCPenney.com/Coupons/Assets/Content\",\n        \"type\": \"content\",\n        \"name\": \"COUPONINDEX9\",\n        \"createdOn\": \"2017-10-19T14:38:36+05:30\",\n        \"createdBy\": \"admin\",\n        \"lastModifiedBy\": \"admin\",\n        \"publishable\": true,\n        \"publishingStartDate\": \"2017-06-20T23:30:00+05:30\",\n        \"publishingEndDate\": \"2017-06-22T01:30:00+05:30\",\n        \"publishingChannels\": [\n            \"xlarge\",\n            \"large\",\n            \"medium\",\n            \"small\",\n            \"app\"\n        ],\n        \"publishingChannelLarge\": true,\n        \"publishingChannelSmall\": true,\n        \"publishingChannelApp\": true,\n        \"priority\": 0,\n        \"content\": {\n            \"offerendDate\": \"2017-06-25T14:34:34+05:30\",\n            \"linkUrl\": \"asdfas\",\n            \"promoCode\": \"BIGSAVE8\",\n            \"disclaimer\": \"sdas <strong> sdafsdf </strong> 2017-05-09 - 2017-05-10 f sfasf\",\n            \"offers\": [\n                {\n                    \"barCode\": \"nitesh\",\n                    \"headLine\": \"head4567\",\n                    \"bodyCopy\": \"nitin\"\n                },\n                {\n                    \"barCode\": \"kart\",\n                    \"headLine\": \"foot234\",\n                    \"bodyCopy\": \"new\"\n                }\n            ],\n            \"linkText\": \"sdaf\",\n            \"disclaimerTemplate\": \"{'first':'1', 'second':'2'}\",\n            \"offerstartDate\": \"2017-06-15T14:34:34+05:30\",\n            \"linkAppUrl\": \"fsdafa\",\n            \"barcodeUrl\": \"https://e.jcpenney.com/bca/z/image?ct=CODE128&st=N&bh=3&bc=MC4560120002000000016210\"\n        },\n        \"publishingChannelDesktop\": true,\n        \"publishingChannelMobile\": true,\n        \"validated\": false,\n        \"active\": false,\n        \"deprecated\": false,\n        \"surrogate\": false,\n        \"evergreen\": false\n    },\n    {\n        \"id\": \"c8a3376e-6c0e-449c-b153-66806c21f4a7\",\n        \"path\": \"/content/en_US/JCPenney.com/Coupons/Assets/Content/COUPONINDEX10\",\n        \"parent\": \"/content/en_US/JCPenney.com/Coupons/Assets/Content\",\n        \"type\": \"content\",\n        \"name\": \"COUPONINDEX10\",\n        \"createdOn\": \"2017-10-19T15:45:25+05:30\",\n        \"createdBy\": \"admin\",\n        \"lastModifiedBy\": \"admin\",\n        \"publishable\": true,\n        \"publishingStartDate\": \"2017-06-20T23:30:00+05:30\",\n        \"publishingEndDate\": \"2017-06-22T01:30:00+05:30\",\n        \"publishingChannels\": [\n            \"xlarge\",\n            \"large\",\n            \"medium\",\n            \"small\",\n            \"app\"\n        ],\n        \"publishingChannelLarge\": true,\n        \"publishingChannelSmall\": true,\n        \"publishingChannelApp\": true,\n        \"priority\": 0,\n        \"content\": {\n            \"offerendDate\": \"2017-06-25T14:34:34+05:30\",\n            \"linkUrl\": \"asdfas\",\n            \"promoCode\": \"BIGSAVE8\",\n            \"disclaimer\": \"sdas <strong> sdafsdf </strong> 2017-05-09 - 2017-05-10 f sfasf\",\n            \"offers\": [\n                {\n                    \"barCode\": \"nitesh\",\n                    \"headLine\": \"head4567\",\n                    \"bodyCopy\": \"nitin\"\n                },\n                {\n                    \"barCode\": \"kart\",\n                    \"headLine\": \"foot234\",\n                    \"bodyCopy\": \"new\"\n                }\n            ],\n            \"linkText\": \"sdaf\",\n            \"disclaimerTemplate\": \"{'first':'1', 'second':'2'}\",\n            \"offerstartDate\": \"2017-06-15T14:34:34+05:30\",\n            \"linkAppUrl\": \"fsdafa\",\n            \"barcodeUrl\": \"https://e.jcpenney.com/bca/z/image?ct=CODE128&st=N&bh=3&bc=MC4560120002000000016210\"\n        },\n        \"publishingChannelDesktop\": true,\n        \"publishingChannelMobile\": true,\n        \"validated\": false,\n        \"active\": false,\n        \"deprecated\": false,\n        \"surrogate\": false,\n        \"evergreen\": false\n    },\n    {\n        \"id\": \"dd062f49-0dbc-478b-adac-0306d3f74366\",\n        \"path\": \"/content/en_US/JCPenney.com/Coupons/Assets/Content/COUPONINDEX11\",\n        \"parent\": \"/content/en_US/JCPenney.com/Coupons/Assets/Content\",\n        \"type\": \"content\",\n        \"name\": \"COUPONINDEX11\",\n        \"createdOn\": \"2017-10-19T15:47:24+05:30\",\n        \"createdBy\": \"admin\",\n        \"lastModifiedBy\": \"admin\",\n        \"publishable\": true,\n        \"publishingStartDate\": \"2017-06-20T23:30:00+05:30\",\n        \"publishingEndDate\": \"2017-06-22T01:30:00+05:30\",\n        \"publishingChannels\": [\n            \"xlarge\",\n            \"large\",\n            \"medium\",\n            \"small\",\n            \"app\"\n        ],\n        \"publishingChannelLarge\": true,\n        \"publishingChannelSmall\": true,\n        \"publishingChannelApp\": true,\n        \"priority\": 0,\n        \"content\": {\n            \"offerendDate\": \"2017-06-25T14:34:34+05:30\",\n            \"linkUrl\": \"asdfas\",\n            \"promoCode\": \"BIGSAVE8\",\n            \"disclaimer\": \"sdas <strong> sdafsdf </strong> 2017-05-09 - 2017-05-10 f sfasf\",\n            \"offers\": [\n                {\n                    \"barCode\": \"nitesh\",\n                    \"headLine\": \"head4567\",\n                    \"bodyCopy\": \"nitin\"\n                },\n                {\n                    \"barCode\": \"kart\",\n                    \"headLine\": \"foot234\",\n                    \"bodyCopy\": \"new\"\n                }\n            ],\n            \"linkText\": \"sdaf\",\n            \"disclaimerTemplate\": \"{'first':'1', 'second':'2'}\",\n            \"offerstartDate\": \"2017-06-15T14:34:34+05:30\",\n            \"linkAppUrl\": \"fsdafa\",\n            \"barcodeUrl\": \"https://e.jcpenney.com/bca/z/image?ct=CODE128&st=N&bh=3&bc=MC4560120002000000016210\"\n        },\n        \"publishingChannelDesktop\": true,\n        \"publishingChannelMobile\": true,\n        \"validated\": false,\n        \"active\": false,\n        \"deprecated\": false,\n        \"surrogate\": false,\n        \"evergreen\": false\n    },\n    {\n        \"id\": \"c8385742-d886-4c52-bad5-e20df7277d27\",\n        \"path\": \"/content/en_US/JCPenney.com/Coupons/Assets/Content/COUPONINDEX12\",\n        \"parent\": \"/content/en_US/JCPenney.com/Coupons/Assets/Content\",\n        \"type\": \"content\",\n        \"name\": \"COUPONINDEX12\",\n        \"createdOn\": \"2017-10-19T15:49:55+05:30\",\n        \"createdBy\": \"admin\",\n        \"lastModifiedBy\": \"admin\",\n        \"publishable\": true,\n        \"publishingStartDate\": \"2017-06-20T23:30:00+05:30\",\n        \"publishingEndDate\": \"2017-06-22T01:30:00+05:30\",\n        \"publishingChannels\": [\n            \"xlarge\",\n            \"large\",\n            \"medium\",\n            \"small\",\n            \"app\"\n        ],\n        \"publishingChannelLarge\": true,\n        \"publishingChannelSmall\": true,\n        \"publishingChannelApp\": true,\n        \"priority\": 0,\n        \"content\": {\n            \"offerendDate\": \"2017-06-25T14:34:34+05:30\",\n            \"linkUrl\": \"asdfas\",\n            \"promoCode\": \"BIGSAVE8\",\n            \"disclaimer\": \"sdas <strong> sdafsdf </strong> 2017-05-09 - 2017-05-10 f sfasf\",\n            \"offers\": [\n                {\n                    \"barCode\": \"nitesh\",\n                    \"headLine\": \"head4567\",\n                    \"bodyCopy\": \"nitin\"\n                },\n                {\n                    \"barCode\": \"kart\",\n                    \"headLine\": \"foot234\",\n                    \"bodyCopy\": \"new\"\n                }\n            ],\n            \"linkText\": \"sdaf\",\n            \"disclaimerTemplate\": \"{'first':'1', 'second':'2'}\",\n            \"offerstartDate\": \"2017-06-15T14:34:34+05:30\",\n            \"linkAppUrl\": \"fsdafa\",\n            \"barcodeUrl\": \"https://e.jcpenney.com/bca/z/image?ct=CODE128&st=N&bh=3&bc=MC4560120002000000016210\"\n        },\n        \"publishingChannelDesktop\": true,\n        \"publishingChannelMobile\": true,\n        \"validated\": false,\n        \"active\": false,\n        \"deprecated\": false,\n        \"surrogate\": false,\n        \"evergreen\": false\n    },\n    {\n        \"id\": \"38b9b339-21c6-4264-9ad9-08184d7373d0\",\n        \"path\": \"/content/en_US/JCPenney.com/Coupons/Assets/Content/COUPONINDEX13\",\n        \"parent\": \"/content/en_US/JCPenney.com/Coupons/Assets/Content\",\n        \"type\": \"content\",\n        \"name\": \"COUPONINDEX13\",\n        \"createdOn\": \"2017-10-20T10:51:56+05:30\",\n        \"createdBy\": \"admin\",\n        \"lastModifiedBy\": \"admin\",\n        \"publishable\": true,\n        \"publishingStartDate\": \"2017-06-20T23:30:00+05:30\",\n        \"publishingEndDate\": \"2017-06-22T01:30:00+05:30\",\n        \"publishingChannels\": [\n            \"xlarge\",\n            \"large\",\n            \"medium\",\n            \"small\",\n            \"app\"\n        ],\n        \"publishingChannelLarge\": true,\n        \"publishingChannelSmall\": true,\n        \"publishingChannelApp\": true,\n        \"priority\": 0,\n        \"content\": {\n            \"offerendDate\": \"2017-06-25T14:34:34+05:30\",\n            \"linkUrl\": \"asdfas\",\n            \"promoCode\": \"BIGSAVE8\",\n            \"disclaimer\": \"sdas <strong> sdafsdf </strong> 2017-05-09 - 2017-05-10 f sfasf\",\n            \"offers\": [\n                {\n                    \"barCode\": \"nitesh\",\n                    \"headLine\": \"head4567\",\n                    \"bodyCopy\": \"nitin\"\n                },\n                {\n                    \"barCode\": \"kart\",\n                    \"headLine\": \"foot234\",\n                    \"bodyCopy\": \"new\"\n                }\n            ],\n            \"linkText\": \"sdaf\",\n            \"disclaimerTemplate\": \"{'first':'1', 'second':'2'}\",\n            \"offerstartDate\": \"2017-06-15T14:34:34+05:30\",\n            \"linkAppUrl\": \"fsdafa\",\n            \"barcodeUrl\": \"https://e.jcpenney.com/bca/z/image?ct=CODE128&st=N&bh=3&bc=MC4560120002000000016210\"\n        },\n        \"publishingChannelDesktop\": true,\n        \"publishingChannelMobile\": true,\n        \"validated\": false,\n        \"active\": false,\n        \"deprecated\": false,\n        \"surrogate\": false,\n        \"evergreen\": false\n    },\n    {\n        \"id\": \"b5aada15-ae12-4e95-a878-9fab54115a67\",\n        \"path\": \"/content/en_US/JCPenney.com/Coupons/Assets/Content/COUPONINDEX15\",\n        \"parent\": \"/content/en_US/JCPenney.com/Coupons/Assets/Content\",\n        \"type\": \"content\",\n        \"name\": \"COUPONINDEX15\",\n        \"createdOn\": \"2017-10-20T11:09:19+05:30\",\n        \"createdBy\": \"admin\",\n        \"lastModifiedBy\": \"admin\",\n        \"publishable\": true,\n        \"publishingStartDate\": \"2017-06-20T23:30:00+05:30\",\n        \"publishingEndDate\": \"2017-06-22T01:30:00+05:30\",\n        \"publishingChannels\": [\n            \"xlarge\",\n            \"large\",\n            \"medium\",\n            \"small\",\n            \"app\"\n        ],\n        \"publishingChannelLarge\": true,\n        \"publishingChannelSmall\": true,\n        \"publishingChannelApp\": true,\n        \"priority\": 0,\n        \"content\": {\n            \"offerendDate\": \"2017-06-25T14:34:34+05:30\",\n            \"linkUrl\": \"asdfas\",\n            \"promoCode\": \"BIGSAVE8\",\n            \"disclaimer\": \"sdas <strong> sdafsdf </strong> 2017-05-09 - 2017-05-10 f sfasf\",\n            \"offers\": [\n                {\n                    \"barCode\": \"nitesh\",\n                    \"headLine\": \"head4567\",\n                    \"bodyCopy\": \"nitin\"\n                },\n                {\n                    \"barCode\": \"kart\",\n                    \"headLine\": \"foot234\",\n                    \"bodyCopy\": \"new\"\n                }\n            ],\n            \"linkText\": \"sdaf\",\n            \"disclaimerTemplate\": \"{'first':'1', 'second':'2'}\",\n            \"offerstartDate\": \"2017-06-15T14:34:34+05:30\",\n            \"linkAppUrl\": \"fsdafa\",\n            \"barcodeUrl\": \"https://e.jcpenney.com/bca/z/image?ct=CODE128&st=N&bh=3&bc=MC4560120002000000016210\"\n        },\n        \"publishingChannelDesktop\": true,\n        \"publishingChannelMobile\": true,\n        \"validated\": false,\n        \"active\": false,\n        \"deprecated\": false,\n        \"surrogate\": false,\n        \"evergreen\": false\n    },\n    {\n        \"id\": \"6a97a7c7-de23-4e80-8c73-0b046259c41f\",\n        \"path\": \"/content/en_US/JCPenney.com/Coupons/Assets/Content/COUPONINDEX15_1\",\n        \"parent\": \"/content/en_US/JCPenney.com/Coupons/Assets/Content\",\n        \"type\": \"content\",\n        \"name\": \"COUPONINDEX15_1\",\n        \"createdOn\": \"2017-10-20T11:30:47+05:30\",\n        \"createdBy\": \"admin\",\n        \"lastModifiedBy\": \"admin\",\n        \"publishable\": true,\n        \"publishingStartDate\": \"2017-06-20T23:30:00+05:30\",\n        \"publishingEndDate\": \"2017-06-22T01:30:00+05:30\",\n        \"publishingChannels\": [\n            \"xlarge\",\n            \"large\",\n            \"medium\",\n            \"small\",\n            \"app\"\n        ],\n        \"publishingChannelLarge\": true,\n        \"publishingChannelSmall\": true,\n        \"publishingChannelApp\": true,\n        \"priority\": 0,\n        \"content\": {\n            \"offerendDate\": \"2017-06-25T14:34:34+05:30\",\n            \"linkUrl\": \"asdfas\",\n            \"promoCode\": \"BIGSAVE8\",\n            \"disclaimer\": \"sdas <strong> sdafsdf </strong> 2017-05-09 - 2017-05-10 f sfasf\",\n            \"offers\": [\n                {\n                    \"barCode\": \"nitesh\",\n                    \"headLine\": \"head4567\",\n                    \"bodyCopy\": \"nitin\"\n                },\n                {\n                    \"barCode\": \"kart\",\n                    \"headLine\": \"foot234\",\n                    \"bodyCopy\": \"new\"\n                }\n            ],\n            \"linkText\": \"sdaf\",\n            \"disclaimerTemplate\": \"{'first':'1', 'second':'2'}\",\n            \"offerstartDate\": \"2017-06-15T14:34:34+05:30\",\n            \"linkAppUrl\": \"fsdafa\",\n            \"barcodeUrl\": \"https://e.jcpenney.com/bca/z/image?ct=CODE128&st=N&bh=3&bc=MC4560120002000000016210\"\n        },\n        \"publishingChannelDesktop\": true,\n        \"publishingChannelMobile\": true,\n        \"validated\": false,\n        \"active\": false,\n        \"deprecated\": false,\n        \"surrogate\": false,\n        \"evergreen\": false\n    },\n    {\n        \"id\": \"4e2cd549-7c40-4026-80a5-1f89979c924a\",\n        \"path\": \"/content/en_US/JCPenney.com/Coupons/Assets/Content/COUPONINDEX15_1_2\",\n        \"parent\": \"/content/en_US/JCPenney.com/Coupons/Assets/Content\",\n        \"type\": \"content\",\n        \"name\": \"COUPONINDEX15_1_2\",\n        \"createdOn\": \"2017-10-20T11:36:16+05:30\",\n        \"createdBy\": \"admin\",\n        \"lastModifiedBy\": \"admin\",\n        \"publishable\": true,\n        \"publishingStartDate\": \"2017-06-20T23:30:00+05:30\",\n        \"publishingEndDate\": \"2017-06-22T01:30:00+05:30\",\n        \"publishingChannels\": [\n            \"xlarge\",\n            \"large\",\n            \"medium\",\n            \"small\",\n            \"app\"\n        ],\n        \"publishingChannelLarge\": true,\n        \"publishingChannelSmall\": true,\n        \"publishingChannelApp\": true,\n        \"priority\": 0,\n        \"content\": {\n            \"offerendDate\": \"2017-06-25T14:34:34+05:30\",\n            \"linkUrl\": \"asdfas\",\n            \"promoCode\": \"BIGSAVE8\",\n            \"disclaimer\": \"sdas <strong> sdafsdf </strong> 2017-05-09 - 2017-05-10 f sfasf\",\n            \"offers\": [\n                {\n                    \"barCode\": \"nitesh\",\n                    \"headLine\": \"head4567\",\n                    \"bodyCopy\": \"nitin\"\n                },\n                {\n                    \"barCode\": \"kart\",\n                    \"headLine\": \"foot234\",\n                    \"bodyCopy\": \"new\"\n                }\n            ],\n            \"linkText\": \"sdaf\",\n            \"disclaimerTemplate\": \"{'first':'1', 'second':'2'}\",\n            \"offerstartDate\": \"2017-06-15T14:34:34+05:30\",\n            \"linkAppUrl\": \"fsdafa\",\n            \"barcodeUrl\": \"https://e.jcpenney.com/bca/z/image?ct=CODE128&st=N&bh=3&bc=MC4560120002000000016210\"\n        },\n        \"publishingChannelDesktop\": true,\n        \"publishingChannelMobile\": true,\n        \"validated\": false,\n        \"active\": false,\n        \"deprecated\": false,\n        \"surrogate\": false,\n        \"evergreen\": false\n    },\n    {\n        \"id\": \"7bef5d06-46d3-4d38-9192-8ec3f77698d9\",\n        \"path\": \"/content/en_US/JCPenney.com/Coupons/Assets/Content/COUPONINDEX15_1_2_3\",\n        \"parent\": \"/content/en_US/JCPenney.com/Coupons/Assets/Content\",\n        \"type\": \"content\",\n        \"name\": \"COUPONINDEX15_1_2_3\",\n        \"createdOn\": \"2017-10-20T11:41:23+05:30\",\n        \"createdBy\": \"admin\",\n        \"lastModifiedBy\": \"admin\",\n        \"publishable\": true,\n        \"publishingStartDate\": \"2017-06-20T23:30:00+05:30\",\n        \"publishingEndDate\": \"2017-06-22T01:30:00+05:30\",\n        \"publishingChannels\": [\n            \"xlarge\",\n            \"large\",\n            \"medium\",\n            \"small\",\n            \"app\"\n        ],\n        \"publishingChannelLarge\": true,\n        \"publishingChannelSmall\": true,\n        \"publishingChannelApp\": true,\n        \"priority\": 0,\n        \"content\": {\n            \"offerendDate\": \"2017-06-25T14:34:34+05:30\",\n            \"linkUrl\": \"asdfas\",\n            \"promoCode\": \"BIGSAVE8\",\n            \"disclaimer\": \"sdas <strong> sdafsdf </strong> 2017-05-09 - 2017-05-10 f sfasf\",\n            \"offers\": [\n                {\n                    \"barCode\": \"nitesh\",\n                    \"headLine\": \"head4567\",\n                    \"bodyCopy\": \"nitin\"\n                },\n                {\n                    \"barCode\": \"kart\",\n                    \"headLine\": \"foot234\",\n                    \"bodyCopy\": \"new\"\n                }\n            ],\n            \"linkText\": \"sdaf\",\n            \"disclaimerTemplate\": \"{'first':'1', 'second':'2'}\",\n            \"offerstartDate\": \"2017-06-15T14:34:34+05:30\",\n            \"linkAppUrl\": \"fsdafa\",\n            \"barcodeUrl\": \"https://e.jcpenney.com/bca/z/image?ct=CODE128&st=N&bh=3&bc=MC4560120002000000016210\"\n        },\n        \"publishingChannelDesktop\": true,\n        \"publishingChannelMobile\": true,\n        \"validated\": false,\n        \"active\": false,\n        \"deprecated\": false,\n        \"surrogate\": false,\n        \"evergreen\": false\n    },\n    {\n        \"id\": \"311c727d-0d96-48cb-a73a-77900399561e\",\n        \"path\": \"/content/en_US/JCPenney.com/Coupons/Assets/Content/COUPONINDEX15_1_2_3_4\",\n        \"parent\": \"/content/en_US/JCPenney.com/Coupons/Assets/Content\",\n        \"type\": \"content\",\n        \"name\": \"COUPONINDEX15_1_2_3_4\",\n        \"createdOn\": \"2017-10-20T11:52:18+05:30\",\n        \"createdBy\": \"admin\",\n        \"lastModifiedBy\": \"admin\",\n        \"publishable\": true,\n        \"publishingStartDate\": \"2017-06-20T23:30:00+05:30\",\n        \"publishingEndDate\": \"2017-06-22T01:30:00+05:30\",\n        \"publishingChannels\": [\n            \"xlarge\",\n            \"large\",\n            \"medium\",\n            \"small\",\n            \"app\"\n        ],\n        \"publishingChannelLarge\": true,\n        \"publishingChannelSmall\": true,\n        \"publishingChannelApp\": true,\n        \"priority\": 0,\n        \"content\": {\n            \"offerendDate\": \"2017-06-25T14:34:34+05:30\",\n            \"linkUrl\": \"asdfas\",\n            \"promoCode\": \"BIGSAVE8\",\n            \"disclaimer\": \"sdas <strong> sdafsdf </strong> 2017-05-09 - 2017-05-10 f sfasf\",\n            \"offers\": [\n                {\n                    \"barCode\": \"nitesh\",\n                    \"headLine\": \"head4567\",\n                    \"bodyCopy\": \"nitin\"\n                },\n                {\n                    \"barCode\": \"kart\",\n                    \"headLine\": \"foot234\",\n                    \"bodyCopy\": \"new\"\n                }\n            ],\n            \"linkText\": \"sdaf\",\n            \"disclaimerTemplate\": \"{'first':'1', 'second':'2'}\",\n            \"offerstartDate\": \"2017-06-15T14:34:34+05:30\",\n            \"linkAppUrl\": \"fsdafa\",\n            \"barcodeUrl\": \"https://e.jcpenney.com/bca/z/image?ct=CODE128&st=N&bh=3&bc=MC4560120002000000016210\"\n        },\n        \"publishingChannelDesktop\": true,\n        \"publishingChannelMobile\": true,\n        \"validated\": false,\n        \"active\": false,\n        \"deprecated\": false,\n        \"surrogate\": false,\n        \"evergreen\": false\n    },\n    {\n        \"id\": \"c9f0f072-59a5-4132-a96c-2ff42059262a\",\n        \"path\": \"/content/en_US/JCPenney.com/Coupons/Assets/Content/COUPONINDEX20\",\n        \"parent\": \"/content/en_US/JCPenney.com/Coupons/Assets/Content\",\n        \"type\": \"content\",\n        \"name\": \"COUPONINDEX20\",\n        \"createdOn\": \"2017-10-23T17:25:55+05:30\",\n        \"createdBy\": \"admin\",\n        \"lastModifiedBy\": \"admin\",\n        \"publishable\": true,\n        \"publishingStartDate\": \"2017-06-20T23:30:00+05:30\",\n        \"publishingEndDate\": \"2017-06-22T01:30:00+05:30\",\n        \"publishingChannels\": [\n            \"xlarge\",\n            \"large\",\n            \"medium\",\n            \"small\",\n            \"app\"\n        ],\n        \"publishingChannelLarge\": true,\n        \"publishingChannelSmall\": true,\n        \"publishingChannelApp\": true,\n        \"priority\": 0,\n        \"content\": {\n            \"linkText\": \"sdaf\",\n            \"disclaimerTemplate\": \"{'first':'1', 'second':'2'}\",\n            \"offerstartDate\": \"2017-06-15T14:34:34+05:30\",\n            \"offerendDate\": \"2017-06-25T14:34:34+05:30\",\n            \"linkUrl\": \"asdfas\",\n            \"promoCode\": \"BIGSAVE8\",\n            \"linkAppUrl\": \"fsdafa\",\n            \"barcodeUrl\": \"https://e.jcpenney.com/bca/z/image?ct=CODE128&st=N&bh=3&bc=MC4560120002000000016210\",\n            \"disclaimer\": \"sdas <strong> sdafsdf </strong> 2017-05-09 - 2017-05-10 f sfasf\",\n            \"offers\": [\n                {\n                    \"bodyCopy\": \"nitin\",\n                    \"barCode\": \"nitesh\",\n                    \"headLine\": \"head4567\"\n                },\n                {\n                    \"bodyCopy\": \"new\",\n                    \"barCode\": \"kart\",\n                    \"headLine\": \"foot234\"\n                }\n            ]\n        },\n        \"publishingChannelDesktop\": true,\n        \"publishingChannelMobile\": true,\n        \"validated\": false,\n        \"active\": false,\n        \"deprecated\": false,\n        \"surrogate\": false,\n        \"evergreen\": false\n    }\n]"
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "NONE",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": true,
+              "headers": {}
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "UpdateAllCoupons",
             "x-testDescription": "TODO: Add Description"
           }
         ],
@@ -1497,6 +1575,81 @@
         }
       }
     },
+    "/content-authoring/schema": {
+      "post": {
+        "description": "TODO: Add Description",
+        "summary": "Create Schema JSON",
+        "tags": [
+          "Schema"
+        ],
+        "operationId": "Create Schema JSON",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/CreateSchemaJsonrequest"
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [],
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "POST",
+              "uri": "/content-authoring/schema",
+              "headers": {
+                "Content-Type": "application/json",
+                "Authorization": "Basic YWRtaW46YWRtaW4="
+              },
+              "body": "{  \n   \"parent\":\"/content/en_US/schema\",\n   \"contentType\":\"couponTile\",\n   \"schemaContent\":\"{ \\\"notnull\\\":{\\\"name\\\":\\\"Name is Mandatory\\\",\\\"content.offerstartDate\\\":\\\"Offer Start Date is Mandatory\\\",\\\"content.offerendDate\\\":\\\"Offer End Date is Mandatory\\\",\\\"publishingStartDate\\\":\\\"Publishing Start Date is Mandatory\\\",\\\"publishingEndDate\\\":\\\"Publishing End Date is Mandatory\\\",\\\"content.offers0.headLine\\\":\\\"Headline is Mandatory\\\"},\\\"functional\\\":{\\\"content.offerstartDate\\\":[ {\\\"condition\\\":\\\"lessThan\\\",\\\"compareWith\\\":\\\"content.offerendDate\\\",\\\"failureMessage\\\":\\\"Offer Start Date should be less than Offer End Date\\\" }],\\\"publishingStartDate\\\":[ {\\\"condition\\\":\\\"lessThan\\\",\\\"compareWith\\\":\\\"content.offerendDate\\\",\\\"failureMessage\\\":\\\"Publishing Start Date should be less than Offer End Date\\\" }],\\\"content.offerendDate\\\":[ {\\\"condition\\\":\\\"greaterThan\\\",\\\"compareWith\\\":\\\"content.offerstartDate\\\",\\\"failureMessage\\\":\\\"Offer End Date should be greater than Offer Start Date\\\" }],\\\"publishingEndDate\\\":[ {\\\"condition\\\":\\\"greaterThan\\\",\\\"compareWith\\\":\\\"content.offerstartDate\\\",\\\"failureMessage\\\":\\\"Publishing End Date should be greater than Offer Start Date\\\" }, {\\\"condition\\\":\\\"greaterThan\\\",\\\"compareWith\\\":\\\"publishingStartDate\\\",\\\"failureMessage\\\":\\\"Publishing End Date should be greater than Publishing Start Date\\\"}]}}\"\n}"
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "NONE",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": true,
+              "headers": {}
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "Create Schema JSON",
+            "x-testDescription": "TODO: Add Description"
+          }
+        ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    },
     "/content-authoring/getAllUsers": {
       "post": {
         "description": "TODO: Add Description",
@@ -1979,81 +2132,6 @@
           "IsMultiContentStreaming": false
         }
       }
-    },
-    "/content-authoring/schema": {
-      "post": {
-        "description": "TODO: Add Description",
-        "summary": "Create Schema JSON",
-        "tags": [
-          "Misc"
-        ],
-        "operationId": "Create Schema JSON",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "name": "Body",
-            "in": "body",
-            "required": true,
-            "description": "",
-            "schema": {
-              "$ref": "#/definitions/CreateSchemaJsonrequest"
-            }
-          },
-          {
-            "name": "Authorization",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
-          },
-          {
-            "name": "Content-Type",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": ""
-          }
-        },
-        "security": [],
-        "x-unitTests": [
-          {
-            "request": {
-              "method": "POST",
-              "uri": "/content-authoring/schema",
-              "headers": {
-                "Content-Type": "application/json",
-                "Authorization": "Basic YWRtaW46YWRtaW4="
-              },
-              "body": "{  \n   \"parent\":\"/content/en_US/schema\",\n   \"contentType\":\"couponTile\",\n   \"schemaContent\":\"{ \\\"notnull\\\":{\\\"name\\\":\\\"Name is Mandatory\\\",\\\"content.offerstartDate\\\":\\\"Offer Start Date is Mandatory\\\",\\\"content.offerendDate\\\":\\\"Offer End Date is Mandatory\\\",\\\"publishingStartDate\\\":\\\"Publishing Start Date is Mandatory\\\",\\\"publishingEndDate\\\":\\\"Publishing End Date is Mandatory\\\",\\\"content.offers0.headLine\\\":\\\"Headline is Mandatory\\\"},\\\"functional\\\":{\\\"content.offerstartDate\\\":[ {\\\"condition\\\":\\\"lessThan\\\",\\\"compareWith\\\":\\\"content.offerendDate\\\",\\\"failureMessage\\\":\\\"Offer Start Date should be less than Offer End Date\\\" }],\\\"publishingStartDate\\\":[ {\\\"condition\\\":\\\"lessThan\\\",\\\"compareWith\\\":\\\"content.offerendDate\\\",\\\"failureMessage\\\":\\\"Publishing Start Date should be less than Offer End Date\\\" }],\\\"content.offerendDate\\\":[ {\\\"condition\\\":\\\"greaterThan\\\",\\\"compareWith\\\":\\\"content.offerstartDate\\\",\\\"failureMessage\\\":\\\"Offer End Date should be greater than Offer Start Date\\\" }],\\\"publishingEndDate\\\":[ {\\\"condition\\\":\\\"greaterThan\\\",\\\"compareWith\\\":\\\"content.offerstartDate\\\",\\\"failureMessage\\\":\\\"Publishing End Date should be greater than Offer Start Date\\\" }, {\\\"condition\\\":\\\"greaterThan\\\",\\\"compareWith\\\":\\\"publishingStartDate\\\",\\\"failureMessage\\\":\\\"Publishing End Date should be greater than Publishing Start Date\\\"}]}}\"\n}"
-            },
-            "expectedResponse": {
-              "x-allowExtraHeaders": true,
-              "x-bodyMatchMode": "NONE",
-              "x-arrayOrderedMatching": false,
-              "x-arrayCheckCount": false,
-              "x-matchResponseSchema": true,
-              "headers": {}
-            },
-            "x-testShouldPass": true,
-            "x-testEnabled": true,
-            "x-testName": "Create Schema JSON",
-            "x-testDescription": "TODO: Add Description"
-          }
-        ],
-        "x-operation-settings": {
-          "CollectParameters": false,
-          "AllowDynamicQueryParameters": false,
-          "AllowDynamicFormParameters": false,
-          "IsMultiContentStreaming": false
-        }
-      }
     }
   },
   "definitions": {
@@ -2062,7 +2140,7 @@
       "example": {
         "parent": "/content/en_US/JCPenney.com/Coupons/Assets/Content",
         "contentType": "couponTile",
-        "name": "COUPONINDEX20",
+        "name": "COUPONINDEX24",
         "publishingStartDate": "2017-06-20T18:00:00+00:00",
         "publishingEndDate": "2017-06-21T20:00:00+00:00",
         "publishingChannelLarge": true,
@@ -2554,6 +2632,191 @@
         "content"
       ]
     },
+    "UpdateAllCouponsRequest": {
+      "title": "UpdateAllCouponsRequest",
+      "example": {
+        "id": "60698ac5-9dde-4a7a-a387-485a2c21184a",
+        "path": "/content/en_US/JCPenney.com/Coupons/Assets/Content/COUPONINDEX1",
+        "parent": "/content/en_US/JCPenney.com/Coupons/Assets/Content",
+        "type": "content",
+        "name": "COUPONINDEX1",
+        "createdOn": "2017-10-12T13:32:28+00:00",
+        "createdBy": "admin",
+        "lastModifiedBy": "admin",
+        "publishable": true,
+        "publishingStartDate": "2017-06-20T18:00:00+00:00",
+        "publishingEndDate": "2017-06-21T20:00:00+00:00",
+        "publishingChannels": [
+          "xlarge",
+          "large",
+          "medium",
+          "small",
+          "app"
+        ],
+        "publishingChannelLarge": true,
+        "publishingChannelSmall": true,
+        "publishingChannelApp": true,
+        "priority": 0,
+        "content": {
+          "offerendDate": "2017-06-25T09:04:34+00:00",
+          "linkUrl": "asdfas",
+          "promoCode": "BIGSAVE8",
+          "disclaimer": "sdas <strong> sdafsdf </strong> 2017-05-09 - 2017-05-10 f sfasf",
+          "offers": [
+            {
+              "barCode": "nitesh",
+              "headLine": "head123",
+              "bodyCopy": "nitin"
+            },
+            {
+              "barCode": "kart",
+              "headLine": "toe123",
+              "bodyCopy": "new"
+            }
+          ],
+          "linkText": "sdaf",
+          "disclaimerTemplate": "{'first':'1', 'second':'2'}",
+          "offerstartDate": "2017-06-15T09:04:34+00:00",
+          "linkAppUrl": "fsdafa",
+          "barcodeUrl": "https://e.jcpenney.com/bca/z/image?ct=CODE128&st=N&bh=3&bc=MC4560120002000000016210"
+        },
+        "publishingChannelDesktop": true,
+        "publishingChannelMobile": true,
+        "validated": false,
+        "active": false,
+        "deprecated": false,
+        "surrogate": false,
+        "evergreen": false
+      },
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "",
+          "type": "string"
+        },
+        "path": {
+          "description": "",
+          "type": "string"
+        },
+        "parent": {
+          "description": "",
+          "type": "string"
+        },
+        "type": {
+          "description": "",
+          "type": "string"
+        },
+        "name": {
+          "description": "",
+          "type": "string"
+        },
+        "createdOn": {
+          "description": "",
+          "type": "string"
+        },
+        "createdBy": {
+          "description": "",
+          "type": "string"
+        },
+        "lastModifiedBy": {
+          "description": "",
+          "type": "string"
+        },
+        "publishable": {
+          "description": "",
+          "type": "boolean"
+        },
+        "publishingStartDate": {
+          "description": "",
+          "type": "string"
+        },
+        "publishingEndDate": {
+          "description": "",
+          "type": "string"
+        },
+        "publishingChannels": {
+          "description": "",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "publishingChannelLarge": {
+          "description": "",
+          "type": "boolean"
+        },
+        "publishingChannelSmall": {
+          "description": "",
+          "type": "boolean"
+        },
+        "publishingChannelApp": {
+          "description": "",
+          "type": "boolean"
+        },
+        "priority": {
+          "description": "",
+          "type": "integer",
+          "format": "int32"
+        },
+        "content": {
+          "$ref": "#/definitions/Content"
+        },
+        "publishingChannelDesktop": {
+          "description": "",
+          "type": "boolean"
+        },
+        "publishingChannelMobile": {
+          "description": "",
+          "type": "boolean"
+        },
+        "validated": {
+          "description": "",
+          "type": "boolean"
+        },
+        "active": {
+          "description": "",
+          "type": "boolean"
+        },
+        "deprecated": {
+          "description": "",
+          "type": "boolean"
+        },
+        "surrogate": {
+          "description": "",
+          "type": "boolean"
+        },
+        "evergreen": {
+          "description": "",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "id",
+        "path",
+        "parent",
+        "type",
+        "name",
+        "createdOn",
+        "createdBy",
+        "lastModifiedBy",
+        "publishable",
+        "publishingStartDate",
+        "publishingEndDate",
+        "publishingChannels",
+        "publishingChannelLarge",
+        "publishingChannelSmall",
+        "publishingChannelApp",
+        "priority",
+        "content",
+        "publishingChannelDesktop",
+        "publishingChannelMobile",
+        "validated",
+        "active",
+        "deprecated",
+        "surrogate",
+        "evergreen"
+      ]
+    },
     "CreateFolderrequest": {
       "title": "Create FolderRequest",
       "example": {
@@ -2718,7 +2981,7 @@
           "description": "",
           "type": "array",
           "items": {
-            "$ref": "#/definitions/ContentItem15"
+            "$ref": "#/definitions/ContentItem18"
           }
         }
       },
@@ -2733,8 +2996,8 @@
         "ContentItem"
       ]
     },
-    "ContentItem15": {
-      "title": "ContentItem15",
+    "ContentItem18": {
+      "title": "ContentItem18",
       "type": "object",
       "properties": {
         "name": {
@@ -2765,7 +3028,7 @@
           "description": "",
           "type": "array",
           "items": {
-            "$ref": "#/definitions/ContentItem16"
+            "$ref": "#/definitions/ContentItem19"
           }
         }
       },
@@ -2779,8 +3042,8 @@
         "ContentItem"
       ]
     },
-    "ContentItem16": {
-      "title": "ContentItem16",
+    "ContentItem19": {
+      "title": "ContentItem19",
       "type": "object",
       "properties": {
         "name": {
@@ -2863,7 +3126,7 @@
           "type": "string"
         },
         "ContentItem": {
-          "$ref": "#/definitions/ContentItem22"
+          "$ref": "#/definitions/ContentItem25"
         }
       },
       "required": [
@@ -2871,8 +3134,8 @@
         "ContentItem"
       ]
     },
-    "ContentItem22": {
-      "title": "ContentItem22",
+    "ContentItem25": {
+      "title": "ContentItem25",
       "type": "object",
       "properties": {
         "name": {
@@ -2910,7 +3173,7 @@
           "description": "",
           "type": "array",
           "items": {
-            "$ref": "#/definitions/ContentItem23"
+            "$ref": "#/definitions/ContentItem26"
           }
         }
       },
@@ -2925,8 +3188,8 @@
         "ContentItem"
       ]
     },
-    "ContentItem23": {
-      "title": "ContentItem23",
+    "ContentItem26": {
+      "title": "ContentItem26",
       "type": "object",
       "properties": {
         "name": {
@@ -2953,7 +3216,7 @@
           "description": "",
           "type": "array",
           "items": {
-            "$ref": "#/definitions/ContentItem24"
+            "$ref": "#/definitions/ContentItem27"
           }
         }
       },
@@ -2966,8 +3229,8 @@
         "ContentItem"
       ]
     },
-    "ContentItem24": {
-      "title": "ContentItem24",
+    "ContentItem27": {
+      "title": "ContentItem27",
       "type": "object",
       "properties": {
         "name": {
@@ -3023,7 +3286,7 @@
           "type": "string"
         },
         "ContentItem": {
-          "$ref": "#/definitions/ContentItem22"
+          "$ref": "#/definitions/ContentItem25"
         }
       },
       "required": [
@@ -3457,6 +3720,34 @@
         "couponDetailURL"
       ]
     },
+    "CreateSchemaJsonrequest": {
+      "title": "Create Schema JSONRequest",
+      "example": {
+        "parent": "/content/en_US/schema",
+        "contentType": "couponTile",
+        "schemaContent": "{ \"notnull\":{\"name\":\"Name is Mandatory\",\"content.offerstartDate\":\"Offer Start Date is Mandatory\",\"content.offerendDate\":\"Offer End Date is Mandatory\",\"publishingStartDate\":\"Publishing Start Date is Mandatory\",\"publishingEndDate\":\"Publishing End Date is Mandatory\",\"content.offers0.headLine\":\"Headline is Mandatory\"},\"functional\":{\"content.offerstartDate\":[ {\"condition\":\"lessThan\",\"compareWith\":\"content.offerendDate\",\"failureMessage\":\"Offer Start Date should be less than Offer End Date\" }],\"publishingStartDate\":[ {\"condition\":\"lessThan\",\"compareWith\":\"content.offerendDate\",\"failureMessage\":\"Publishing Start Date should be less than Offer End Date\" }],\"content.offerendDate\":[ {\"condition\":\"greaterThan\",\"compareWith\":\"content.offerstartDate\",\"failureMessage\":\"Offer End Date should be greater than Offer Start Date\" }],\"publishingEndDate\":[ {\"condition\":\"greaterThan\",\"compareWith\":\"content.offerstartDate\",\"failureMessage\":\"Publishing End Date should be greater than Offer Start Date\" }, {\"condition\":\"greaterThan\",\"compareWith\":\"publishingStartDate\",\"failureMessage\":\"Publishing End Date should be greater than Publishing Start Date\"}]}}"
+      },
+      "type": "object",
+      "properties": {
+        "parent": {
+          "description": "",
+          "type": "string"
+        },
+        "contentType": {
+          "description": "",
+          "type": "string"
+        },
+        "schemaContent": {
+          "description": "",
+          "type": "string"
+        }
+      },
+      "required": [
+        "parent",
+        "contentType",
+        "schemaContent"
+      ]
+    },
     "CreateSchemaFilerequest": {
       "title": "Create Schema FileRequest",
       "example": {
@@ -3651,34 +3942,6 @@
       "required": [
         "path",
         "pathPrivileges"
-      ]
-    },
-    "CreateSchemaJsonrequest": {
-      "title": "Create Schema JSONRequest",
-      "example": {
-        "parent": "/content/en_US/schema",
-        "contentType": "couponTile",
-        "schemaContent": "{ \"notnull\":{\"name\":\"Name is Mandatory\",\"content.offerstartDate\":\"Offer Start Date is Mandatory\",\"content.offerendDate\":\"Offer End Date is Mandatory\",\"publishingStartDate\":\"Publishing Start Date is Mandatory\",\"publishingEndDate\":\"Publishing End Date is Mandatory\",\"content.offers0.headLine\":\"Headline is Mandatory\"},\"functional\":{\"content.offerstartDate\":[ {\"condition\":\"lessThan\",\"compareWith\":\"content.offerendDate\",\"failureMessage\":\"Offer Start Date should be less than Offer End Date\" }],\"publishingStartDate\":[ {\"condition\":\"lessThan\",\"compareWith\":\"content.offerendDate\",\"failureMessage\":\"Publishing Start Date should be less than Offer End Date\" }],\"content.offerendDate\":[ {\"condition\":\"greaterThan\",\"compareWith\":\"content.offerstartDate\",\"failureMessage\":\"Offer End Date should be greater than Offer Start Date\" }],\"publishingEndDate\":[ {\"condition\":\"greaterThan\",\"compareWith\":\"content.offerstartDate\",\"failureMessage\":\"Publishing End Date should be greater than Offer Start Date\" }, {\"condition\":\"greaterThan\",\"compareWith\":\"publishingStartDate\",\"failureMessage\":\"Publishing End Date should be greater than Publishing Start Date\"}]}}"
-      },
-      "type": "object",
-      "properties": {
-        "parent": {
-          "description": "",
-          "type": "string"
-        },
-        "contentType": {
-          "description": "",
-          "type": "string"
-        },
-        "schemaContent": {
-          "description": "",
-          "type": "string"
-        }
-      },
-      "required": [
-        "parent",
-        "contentType",
-        "schemaContent"
       ]
     }
   }
