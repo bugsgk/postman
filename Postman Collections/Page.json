@@ -29,7 +29,7 @@
   "paths": {
     "/pages": {
       "post": {
-        "description": "TODO: Add Description",
+        "description": "Create Page",
         "summary": "Create Page",
         "tags": [
           "Misc"
@@ -95,7 +95,7 @@
             "x-testShouldPass": true,
             "x-testEnabled": true,
             "x-testName": "Create Page",
-            "x-testDescription": "TODO: Add Description"
+            "x-testDescription": "Create Page"
           }
         ],
         "x-operation-settings": {
