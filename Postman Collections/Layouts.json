@@ -29,7 +29,7 @@
   "paths": {
     "/layouts": {
       "post": {
-        "description": "TODO: Add Description",
+        "description": "",
         "summary": "Create Layout",
         "tags": [
           "Misc"
