@@ -29,7 +29,7 @@
   "paths": {
     "/content/components": {
       "post": {
-        "description": "TODO: Add Description",
+        "description": "Create Coupon",
         "summary": "Create Coupon",
         "tags": [
           "Misc"
@@ -95,7 +95,7 @@
             "x-testShouldPass": true,
             "x-testEnabled": true,
             "x-testName": "Create Coupon",
-            "x-testDescription": "TODO: Add Description"
+            "x-testDescription": "Create Coupon"
           }
         ],
         "x-operation-settings": {
@@ -108,7 +108,7 @@
     },
     "/content-authoring/content/updateCouponAssets": {
       "put": {
-        "description": "TODO: Add Description",
+        "description": "",
         "summary": "UpdateAllCoupons",
         "tags": [
           "Misc"
@@ -173,7 +173,7 @@
             "x-testShouldPass": true,
             "x-testEnabled": true,
             "x-testName": "UpdateAllCoupons",
-            "x-testDescription": "TODO: Add Description"
+            "x-testDescription": ""
           }
         ],
         "x-operation-settings": {
