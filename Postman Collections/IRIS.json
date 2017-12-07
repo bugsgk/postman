@@ -35,7 +35,7 @@
         "tags": [
           "Coupon"
         ],
-        "operationId": "Get All Coupons - Date Filter",
+        "operationId": "ContentAuthoringContentCouponTileGet2",
         "produces": [
           "application/json"
         ],
@@ -95,7 +95,7 @@
         "tags": [
           "Coupon"
         ],
-        "operationId": "Create Coupon",
+        "operationId": "ContentAuthoringContentCouponTilePost",
         "produces": [
           "application/json"
         ],
@@ -174,7 +174,7 @@
         "tags": [
           "Coupon"
         ],
-        "operationId": "Edit Coupon",
+        "operationId": "ContentAuthoringContentEnUSJCPenneyComCouponsAssetsContentCOUPON1005Put",
         "produces": [
           "application/json"
         ],
@@ -249,7 +249,7 @@
         "tags": [
           "Coupon"
         ],
-        "operationId": "Get Coupon",
+        "operationId": "ContentAuthoringContent0f331f0cB4ca48c5B4cfE77e09fbacb4Get",
         "produces": [
           "application/json"
         ],
@@ -306,7 +306,7 @@
         "tags": [
           "Coupon"
         ],
-        "operationId": "Delete Coupon",
+        "operationId": "ContentAuthoringContentEnUSJCPenneyComCouponsAssetsContentCOUPON1001Delete",
         "produces": [
           "application/json"
         ],
@@ -367,7 +367,7 @@
         "tags": [
           "Coupon"
         ],
-        "operationId": "Create Page Instance",
+        "operationId": "ContentAuthoringContentEnUSJCPenneyComCouponsAssetsContentPost",
         "produces": [
           "application/json"
         ],
@@ -442,7 +442,7 @@
         "tags": [
           "Coupon"
         ],
-        "operationId": "UpdateAllCoupons",
+        "operationId": "ContentAuthoringContentUpdateCouponAssetsPut",
         "produces": [
           "application/json"
         ],
@@ -520,7 +520,7 @@
         "tags": [
           "Folder"
         ],
-        "operationId": "Move Folder",
+        "operationId": "ContentAuthoringFolderPut2",
         "produces": [
           "application/json"
         ],
@@ -597,7 +597,7 @@
         "tags": [
           "Folder"
         ],
-        "operationId": "Create Folder",
+        "operationId": "ContentAuthoringFolderPost",
         "produces": [
           "application/json"
         ],
@@ -674,7 +674,7 @@
         "tags": [
           "Folder"
         ],
-        "operationId": "Delete Folder",
+        "operationId": "ContentAuthoringFolderDelete",
         "produces": [
           "application/json"
         ],
@@ -753,7 +753,7 @@
         "tags": [
           "Instance"
         ],
-        "operationId": "Create Instances",
+        "operationId": "IriscontentEnInstancesPost",
         "produces": [
           "application/json"
         ],
@@ -804,7 +804,7 @@
         "tags": [
           "Instance"
         ],
-        "operationId": "Edit Instances",
+        "operationId": "ContentInstancesCouponPagePut",
         "produces": [
           "application/json"
         ],
@@ -855,7 +855,7 @@
         "tags": [
           "Instance"
         ],
-        "operationId": "Get Instance",
+        "operationId": "IriscontentEnInstancesCouponPageGet",
         "produces": [
           "application/json"
         ],
@@ -910,7 +910,7 @@
         "tags": [
           "Layout"
         ],
-        "operationId": "Create Layout",
+        "operationId": "ContentLayoutsPut",
         "produces": [
           "application/json"
         ],
@@ -959,7 +959,7 @@
         "tags": [
           "Layout"
         ],
-        "operationId": "Edit Layout",
+        "operationId": "ContentLayoutsPost",
         "produces": [
           "application/json"
         ],
@@ -1010,7 +1010,7 @@
         "tags": [
           "Layout"
         ],
-        "operationId": "Get Layout",
+        "operationId": "IriscontentEnLayoutsCouponPageCouponPageLayoutHarrayInfinityJsonGet",
         "produces": [
           "application/json"
         ],
@@ -1056,7 +1056,7 @@
         "tags": [
           "Page"
         ],
-        "operationId": "Create Page",
+        "operationId": "ContentPagesPut",
         "produces": [
           "application/json"
         ],
@@ -1129,7 +1129,7 @@
         "tags": [
           "Page"
         ],
-        "operationId": "Edit Page",
+        "operationId": "ContentPagesPost",
         "produces": [
           "application/json"
         ],
@@ -1204,7 +1204,7 @@
         "tags": [
           "Page"
         ],
-        "operationId": "Get Page",
+        "operationId": "IriscontentEnPagesCouponCouponPageJsonGet",
         "produces": [
           "application/json"
         ],
@@ -1250,7 +1250,7 @@
         "tags": [
           "SEO"
         ],
-        "operationId": "Create SEO",
+        "operationId": "ContentComponentsPut",
         "produces": [
           "application/json"
         ],
@@ -1327,7 +1327,7 @@
         "tags": [
           "SEO"
         ],
-        "operationId": "Edit SEO",
+        "operationId": "ContentComponentsPost",
         "produces": [
           "application/json"
         ],
@@ -1406,7 +1406,7 @@
         "tags": [
           "SEO"
         ],
-        "operationId": "Get SEO",
+        "operationId": "IriscontentEnComponentsSeoSEO1JsonGet",
         "produces": [
           "application/json"
         ],
@@ -1452,7 +1452,7 @@
         "tags": [
           "Schema"
         ],
-        "operationId": "Get Schema File",
+        "operationId": "ContentAuthoringFileGet",
         "produces": [
           "application/json"
         ],
@@ -1504,7 +1504,7 @@
         "tags": [
           "Schema"
         ],
-        "operationId": "Create Schema File",
+        "operationId": "ContentAuthoringFilePost",
         "produces": [
           "application/json"
         ],
@@ -1583,7 +1583,7 @@
         "tags": [
           "Schema"
         ],
-        "operationId": "Create Schema JSON",
+        "operationId": "ContentAuthoringSchemaPost",
         "produces": [
           "application/json"
         ],
@@ -1658,7 +1658,7 @@
         "tags": [
           "Users"
         ],
-        "operationId": "Get All Users",
+        "operationId": "ContentAuthoringGetAllUsersPost",
         "produces": [
           "application/json"
         ],
@@ -1704,7 +1704,7 @@
         "tags": [
           "Users"
         ],
-        "operationId": "Logout",
+        "operationId": "ContentAuthoringLogoutPost",
         "produces": [
           "application/json"
         ],
@@ -1772,7 +1772,7 @@
         "tags": [
           "Users"
         ],
-        "operationId": "SSO Login",
+        "operationId": "ContentAuthoringLoginPost",
         "produces": [
           "application/json"
         ],
@@ -1839,7 +1839,7 @@
         "tags": [
           "Users"
         ],
-        "operationId": "Get All Groups",
+        "operationId": "ContentAuthoringGetAllGroupPost",
         "produces": [
           "application/json"
         ],
@@ -1885,7 +1885,7 @@
         "tags": [
           "Users"
         ],
-        "operationId": "Admin Login",
+        "operationId": "ContentAuthoringAdminloginPost",
         "produces": [
           "application/json"
         ],
@@ -1953,7 +1953,7 @@
         "tags": [
           "Users"
         ],
-        "operationId": "CreateUsersAndGroupsAndPrivileges",
+        "operationId": "ContentAuthoringSetUserGroupAndNodesWithAclPost",
         "produces": [
           "application/json"
         ],
@@ -2020,7 +2020,7 @@
         "tags": [
           "Users"
         ],
-        "operationId": "Apply ACL to Node",
+        "operationId": "ContentAuthoringApplyAclToNodePost",
         "produces": [
           "application/json"
         ],
@@ -2095,7 +2095,7 @@
         "tags": [
           "Search"
         ],
-        "operationId": "Search Content",
+        "operationId": "ContentAuthoringContentSearchPromoCodeBIGSAVE9Get",
         "produces": [
           "application/json"
         ],
