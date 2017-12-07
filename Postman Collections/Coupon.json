@@ -35,7 +35,7 @@
         "tags": [
           "Misc"
         ],
-        "operationId": "Create Coupon",
+        "operationId": "ContentComponentsPost",
         "produces": [
           "application/json"
         ],
@@ -114,7 +114,7 @@
         "tags": [
           "Misc"
         ],
-        "operationId": "UpdateAllCoupons",
+        "operationId": "ContentAuthoringContentUpdateCouponAssetsPut",
         "produces": [
           "application/json"
         ],
