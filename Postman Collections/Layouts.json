@@ -35,7 +35,7 @@
         "tags": [
           "Misc"
         ],
-        "operationId": "Create Layout",
+        "operationId": "LayoutsPost",
         "produces": [
           "application/json"
         ],
