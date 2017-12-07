@@ -35,7 +35,7 @@
         "tags": [
           "Misc"
         ],
-        "operationId": "Create Page",
+        "operationId": "PagesPost",
         "produces": [
           "application/json"
         ],
