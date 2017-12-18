@@ -125,18 +125,26 @@
       "properties": {
         "assetName": {
           "description": "",
+          "example": "CouponPage",
           "type": "string"
         },
         "assetType": {
           "description": "",
+          "example": "Page",
           "type": "string"
         },
         "parentFolder": {
           "description": "",
+          "example": "/iriscontent/en/pages/coupon",
           "type": "string"
         },
         "layouts": {
           "description": "",
+          "example": [
+            "/iriscontent/en/layouts/CouponPage/CouponPageLayout1",
+            "/iriscontent/en/layouts/CouponPage/CouponPageLayout2",
+            "/iriscontent/en/layouts/CouponPage/CouponPageLayout3"
+          ],
           "type": "array",
           "items": {
             "type": "string"
