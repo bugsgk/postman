@@ -143,42 +143,52 @@
       "properties": {
         "assetName": {
           "description": "",
+          "example": "SEO2",
           "type": "string"
         },
         "parentFolder": {
           "description": "",
+          "example": "/content/jcp/en/seo",
           "type": "string"
         },
         "couponStartDate": {
           "description": "",
+          "example": "03/09/2017 12:00:00 AM",
           "type": "string"
         },
         "couponEndDate": {
           "description": "",
+          "example": "03/30/2017 12:00:00 AM",
           "type": "string"
         },
         "categoryPage": {
           "description": "",
+          "example": "Category Page",
           "type": "string"
         },
         "Channel": {
           "description": "",
+          "example": "InStore",
           "type": "string"
         },
         "Active": {
           "description": "",
+          "example": "Yes",
           "type": "string"
         },
         "offer1Name": {
           "description": "",
+          "example": "EXTRA 20% OFF",
           "type": "string"
         },
         "offer1Description": {
           "description": "",
+          "example": "*20% with your JCPenney credit card, 15% with paypal ad 10% with any method of payment",
           "type": "string"
         },
         "offer2Name": {
           "description": "",
+          "example": "EXTRA 15% OFF",
           "type": "string"
         },
         "offer2Description": {
@@ -203,6 +213,7 @@
         },
         "validName": {
           "description": "",
+          "example": "VALID THROUGH MARCH 22, 2017",
           "type": "string"
         },
         "shopTitle": {
@@ -211,18 +222,22 @@
         },
         "codeValue": {
           "description": "",
+          "example": "48SHOP",
           "type": "string"
         },
         "codeSelect": {
           "description": "",
+          "example": "codeAvailable",
           "type": "string"
         },
         "detailTitle": {
           "description": "",
+          "example": "Get Details Only",
           "type": "string"
         },
         "displayWithProduct": {
           "description": "",
+          "example": "No",
           "type": "string"
         },
         "barCode1": {
