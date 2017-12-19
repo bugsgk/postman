@@ -103,30 +103,37 @@
       "properties": {
         "name": {
           "description": "",
+          "example": "CouponPageLayout",
           "type": "string"
         },
         "type": {
           "description": "",
+          "example": "Page",
           "type": "string"
         },
         "path": {
           "description": "",
+          "example": "CouponPageLayout",
           "type": "string"
         },
         "templatePath": {
           "description": "",
+          "example": "/content/jcp/en/templates/pages/CouponPage",
           "type": "string"
         },
         "description": {
           "description": "",
+          "example": "Page template for Coupon Page",
           "type": "string"
         },
         "contentItemStartDate": {
           "description": "",
+          "example": "02/25/2017 12:00:00",
           "type": "string"
         },
         "contentItemEndDate": {
           "description": "",
+          "example": "03/25/2017 12:00:00",
           "type": "string"
         },
         "ContentItem": {
@@ -154,30 +161,49 @@
       "properties": {
         "name": {
           "description": "",
+          "example": "HeaderSection",
           "type": "string"
         },
         "type": {
           "description": "",
+          "example": "Section",
           "type": "string"
         },
         "path": {
           "description": "",
+          "example": "CouponPageLayout/HeaderSection",
           "type": "string"
         },
         "templatePath": {
           "description": "",
+          "example": "/content/jcp/en/templates/Sections/Header/HeaderSection",
           "type": "string"
         },
         "contentItemStartDate": {
           "description": "",
+          "example": "02/25/2017 12:00:00",
           "type": "string"
         },
         "contentItemEndDate": {
           "description": "",
+          "example": "03/25/2017 12:00:00",
           "type": "string"
         },
         "ContentItem": {
           "description": "",
+          "example": [
+            {
+              "name": "HeaderContent",
+              "type": "item",
+              "itemtype": "HeaderContent",
+              "path": "CouponPageLayout/HeaderSection/HeaderContent",
+              "templatePath": "/content/jcp/en/header/HeaderContent",
+              "contentItemStartDate": "02/25/2017 12:00:00",
+              "contentItemEndDate": "03/25/2017 12:00:00",
+              "position-x": "1",
+              "position-y": "1"
+            }
+          ],
           "type": "array",
           "items": {
             "$ref": "#/definitions/ContentItem3"
@@ -196,42 +222,62 @@
     },
     "ContentItem3": {
       "title": "ContentItem3",
+      "example": {
+        "name": "HeaderContent",
+        "type": "item",
+        "itemtype": "HeaderContent",
+        "path": "CouponPageLayout/HeaderSection/HeaderContent",
+        "templatePath": "/content/jcp/en/header/HeaderContent",
+        "contentItemStartDate": "02/25/2017 12:00:00",
+        "contentItemEndDate": "03/25/2017 12:00:00",
+        "position-x": "1",
+        "position-y": "1"
+      },
       "type": "object",
       "properties": {
         "name": {
           "description": "",
+          "example": "HeaderContent",
           "type": "string"
         },
         "type": {
           "description": "",
+          "example": "item",
           "type": "string"
         },
         "itemtype": {
           "description": "",
+          "example": "HeaderContent",
           "type": "string"
         },
         "path": {
           "description": "",
+          "example": "CouponPageLayout/HeaderSection/HeaderContent",
           "type": "string"
         },
         "templatePath": {
           "description": "",
+          "example": "/content/jcp/en/header/HeaderContent",
           "type": "string"
         },
         "contentItemStartDate": {
           "description": "",
+          "example": "02/25/2017 12:00:00",
           "type": "string"
         },
         "contentItemEndDate": {
           "description": "",
+          "example": "03/25/2017 12:00:00",
           "type": "string"
         },
         "position-x": {
           "description": "",
+          "example": "1",
           "type": "string"
         },
         "position-y": {
           "description": "",
+          "example": "1",
           "type": "string"
         }
       },
