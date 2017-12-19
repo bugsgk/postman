@@ -2179,55 +2179,90 @@
       "properties": {
         "parent": {
           "description": "",
+          "example": "/content/en_US/JCPenney.com/Coupons/Assets/Content",
           "type": "string"
         },
         "contentType": {
           "description": "",
+          "example": "couponTile",
           "type": "string"
         },
         "name": {
           "description": "",
+          "example": "COUPONINDEX24",
           "type": "string"
         },
         "publishingStartDate": {
           "description": "",
+          "example": "6/20/2017 6:00:00 PM",
           "type": "string"
         },
         "publishingEndDate": {
           "description": "",
+          "example": "6/21/2017 8:00:00 PM",
           "type": "string"
         },
         "publishingChannelLarge": {
           "description": "",
+          "example": true,
           "type": "boolean"
         },
         "publishingChannelSmall": {
           "description": "",
+          "example": true,
           "type": "boolean"
         },
         "publishingChannelApp": {
           "description": "",
+          "example": true,
           "type": "boolean"
         },
         "publishable": {
           "description": "",
+          "example": false,
           "type": "boolean"
         },
         "active": {
           "description": "",
+          "example": false,
           "type": "boolean"
         },
         "validated": {
           "description": "",
+          "example": true,
           "type": "boolean"
         },
         "priority": {
           "description": "",
+          "example": 5,
           "type": "integer",
           "format": "int32"
         },
         "content": {
-          "$ref": "#/definitions/Content"
+          "$ref": "#/definitions/Content",
+          "example": {
+            "offerstartDate": "2017-06-15T09:04:34+00:00",
+            "offerendDate": "2017-06-25T09:04:34+00:00",
+            "promoCode": "BIGSAVE8",
+            "barcodeUrl": "https://e.jcpenney.com/bca/z/image?ct=CODE128&st=N&bh=3&bc=MC4560120002000000016210",
+            "disclaimerTemplate": "{'first':'1', 'second':'2'}",
+            "disclaimer": "sdas <strong> sdafsdf </strong> 2017-05-09 - 2017-05-10 f sfasf",
+            "linkText": "sdaf",
+            "linkUrl": "asdfas",
+            "linkAppUrl": "fsdafa",
+            "offers": [
+              {
+                "barCode": "nitesh",
+                "headLine": "head4567",
+                "bodyCopy": "nitin"
+              },
+              {
+                "barCode": "kart",
+                "headLine": "foot234",
+                "bodyCopy": "new"
+              }
+            ]
+          }
         }
       },
       "required": [
@@ -2248,46 +2283,90 @@
     },
     "Content": {
       "title": "Content",
+      "example": {
+        "offerstartDate": "2017-06-15T09:04:34+00:00",
+        "offerendDate": "2017-06-25T09:04:34+00:00",
+        "promoCode": "BIGSAVE8",
+        "barcodeUrl": "https://e.jcpenney.com/bca/z/image?ct=CODE128&st=N&bh=3&bc=MC4560120002000000016210",
+        "disclaimerTemplate": "{'first':'1', 'second':'2'}",
+        "disclaimer": "sdas <strong> sdafsdf </strong> 2017-05-09 - 2017-05-10 f sfasf",
+        "linkText": "sdaf",
+        "linkUrl": "asdfas",
+        "linkAppUrl": "fsdafa",
+        "offers": [
+          {
+            "barCode": "nitesh",
+            "headLine": "head4567",
+            "bodyCopy": "nitin"
+          },
+          {
+            "barCode": "kart",
+            "headLine": "foot234",
+            "bodyCopy": "new"
+          }
+        ]
+      },
       "type": "object",
       "properties": {
         "offerstartDate": {
           "description": "",
+          "example": "6/15/2017 9:04:34 AM",
           "type": "string"
         },
         "offerendDate": {
           "description": "",
+          "example": "6/25/2017 9:04:34 AM",
           "type": "string"
         },
         "promoCode": {
           "description": "",
+          "example": "BIGSAVE8",
           "type": "string"
         },
         "barcodeUrl": {
           "description": "",
+          "example": "https://e.jcpenney.com/bca/z/image?ct=CODE128&st=N&bh=3&bc=MC4560120002000000016210",
           "type": "string"
         },
         "disclaimerTemplate": {
           "description": "",
+          "example": "{'first':'1', 'second':'2'}",
           "type": "string"
         },
         "disclaimer": {
           "description": "",
+          "example": "sdas <strong> sdafsdf </strong> 2017-05-09 - 2017-05-10 f sfasf",
           "type": "string"
         },
         "linkText": {
           "description": "",
+          "example": "sdaf",
           "type": "string"
         },
         "linkUrl": {
           "description": "",
+          "example": "asdfas",
           "type": "string"
         },
         "linkAppUrl": {
           "description": "",
+          "example": "fsdafa",
           "type": "string"
         },
         "offers": {
           "description": "",
+          "example": [
+            {
+              "barCode": "nitesh",
+              "headLine": "head4567",
+              "bodyCopy": "nitin"
+            },
+            {
+              "barCode": "kart",
+              "headLine": "foot234",
+              "bodyCopy": "new"
+            }
+          ],
           "type": "array",
           "items": {
             "$ref": "#/definitions/Offer"
@@ -2309,18 +2388,26 @@
     },
     "Offer": {
       "title": "Offer",
+      "example": {
+        "barCode": "nitesh",
+        "headLine": "head4567",
+        "bodyCopy": "nitin"
+      },
       "type": "object",
       "properties": {
         "barCode": {
           "description": "",
+          "example": "nitesh",
           "type": "string"
         },
         "headLine": {
           "description": "",
+          "example": "head4567",
           "type": "string"
         },
         "bodyCopy": {
           "description": "",
+          "example": "nitin",
           "type": "string"
         }
       },
@@ -2377,38 +2464,77 @@
       "properties": {
         "path": {
           "description": "",
+          "example": "/iriscontent/en/components/coupon",
           "type": "string"
         },
         "assetType": {
           "description": "",
+          "example": "couponTile",
           "type": "string"
         },
         "lastPublishedBy": {
           "description": "",
+          "example": "admin",
           "type": "string"
         },
         "lastModifiedBy": {
           "description": "",
+          "example": "admin",
           "type": "string"
         },
         "createdBy": {
           "description": "",
+          "example": "admin",
           "type": "string"
         },
         "name": {
           "description": "",
+          "example": "COUPON1005",
           "type": "string"
         },
         "publishStartDate": {
           "description": "",
+          "example": "5/15/2017 9:04:34 AM",
           "type": "string"
         },
         "publishEndDate": {
           "description": "",
+          "example": "6/28/2017 9:04:34 AM",
           "type": "string"
         },
         "content": {
-          "$ref": "#/definitions/Content4"
+          "$ref": "#/definitions/Content4",
+          "example": {
+            "name": "coupon1",
+            "redeemingChannel": "all",
+            "pubchannelsDesktop": true,
+            "pubchannelMobile": false,
+            "pubchannelApp": true,
+            "publish": true,
+            "offerstartDate": "2017-05-28T09:04:34.325+00:00",
+            "offerendDate": "2017-10-28T09:04:34.325+00:00",
+            "promoCode": "adsfa",
+            "barcodeUrl": "dsfa",
+            "disclaimerTemplate": "sdas <strong> sdafsdf </strong> [@offerstartdate - @offerenddate]f sfasf",
+            "disclaimer": "sdas <strong> sdafsdf </strong> 2017-05-09 - 2017-05-10 f sfasf",
+            "linkText": "sdaf",
+            "linkUrl": "asdfas",
+            "linkAppUrl": "fsdafa",
+            "offers": [
+              {
+                "name": "offer1",
+                "barCode": "ascfac",
+                "headLine": "fasas",
+                "bodyCopy": "asfa"
+              },
+              {
+                "name": "offer2",
+                "barCode": "afa",
+                "headLine": "afasf",
+                "bodyCopy": "asdfasf"
+              }
+            ]
+          }
         }
       },
       "required": [
@@ -2425,70 +2551,130 @@
     },
     "Content4": {
       "title": "Content4",
+      "example": {
+        "name": "coupon1",
+        "redeemingChannel": "all",
+        "pubchannelsDesktop": true,
+        "pubchannelMobile": false,
+        "pubchannelApp": true,
+        "publish": true,
+        "offerstartDate": "2017-05-28T09:04:34.325+00:00",
+        "offerendDate": "2017-10-28T09:04:34.325+00:00",
+        "promoCode": "adsfa",
+        "barcodeUrl": "dsfa",
+        "disclaimerTemplate": "sdas <strong> sdafsdf </strong> [@offerstartdate - @offerenddate]f sfasf",
+        "disclaimer": "sdas <strong> sdafsdf </strong> 2017-05-09 - 2017-05-10 f sfasf",
+        "linkText": "sdaf",
+        "linkUrl": "asdfas",
+        "linkAppUrl": "fsdafa",
+        "offers": [
+          {
+            "name": "offer1",
+            "barCode": "ascfac",
+            "headLine": "fasas",
+            "bodyCopy": "asfa"
+          },
+          {
+            "name": "offer2",
+            "barCode": "afa",
+            "headLine": "afasf",
+            "bodyCopy": "asdfasf"
+          }
+        ]
+      },
       "type": "object",
       "properties": {
         "name": {
           "description": "",
+          "example": "coupon1",
           "type": "string"
         },
         "redeemingChannel": {
           "description": "",
+          "example": "all",
           "type": "string"
         },
         "pubchannelsDesktop": {
           "description": "",
+          "example": true,
           "type": "boolean"
         },
         "pubchannelMobile": {
           "description": "",
+          "example": false,
           "type": "boolean"
         },
         "pubchannelApp": {
           "description": "",
+          "example": true,
           "type": "boolean"
         },
         "publish": {
           "description": "",
+          "example": true,
           "type": "boolean"
         },
         "offerstartDate": {
           "description": "",
+          "example": "5/28/2017 9:04:34 AM",
           "type": "string"
         },
         "offerendDate": {
           "description": "",
+          "example": "10/28/2017 9:04:34 AM",
           "type": "string"
         },
         "promoCode": {
           "description": "",
+          "example": "adsfa",
           "type": "string"
         },
         "barcodeUrl": {
           "description": "",
+          "example": "dsfa",
           "type": "string"
         },
         "disclaimerTemplate": {
           "description": "",
+          "example": "sdas <strong> sdafsdf </strong> [@offerstartdate - @offerenddate]f sfasf",
           "type": "string"
         },
         "disclaimer": {
           "description": "",
+          "example": "sdas <strong> sdafsdf </strong> 2017-05-09 - 2017-05-10 f sfasf",
           "type": "string"
         },
         "linkText": {
           "description": "",
+          "example": "sdaf",
           "type": "string"
         },
         "linkUrl": {
           "description": "",
+          "example": "asdfas",
           "type": "string"
         },
         "linkAppUrl": {
           "description": "",
+          "example": "fsdafa",
           "type": "string"
         },
         "offers": {
           "description": "",
+          "example": [
+            {
+              "name": "offer1",
+              "barCode": "ascfac",
+              "headLine": "fasas",
+              "bodyCopy": "asfa"
+            },
+            {
+              "name": "offer2",
+              "barCode": "afa",
+              "headLine": "afasf",
+              "bodyCopy": "asdfasf"
+            }
+          ],
           "type": "array",
           "items": {
             "$ref": "#/definitions/Offer5"
@@ -2516,22 +2702,32 @@
     },
     "Offer5": {
       "title": "Offer5",
+      "example": {
+        "name": "offer1",
+        "barCode": "ascfac",
+        "headLine": "fasas",
+        "bodyCopy": "asfa"
+      },
       "type": "object",
       "properties": {
         "name": {
           "description": "",
+          "example": "offer1",
           "type": "string"
         },
         "barCode": {
           "description": "",
+          "example": "ascfac",
           "type": "string"
         },
         "headLine": {
           "description": "",
+          "example": "fasas",
           "type": "string"
         },
         "bodyCopy": {
           "description": "",
+          "example": "asfa",
           "type": "string"
         }
       },
@@ -2582,42 +2778,74 @@
       "properties": {
         "assetType": {
           "description": "",
+          "example": "couponTile",
           "type": "string"
         },
         "name": {
           "description": "",
+          "example": "COUPON1005",
           "type": "string"
         },
         "publishingStartDate": {
           "description": "",
+          "example": "5/25/2017 9:04:34 AM",
           "type": "string"
         },
         "publishingEndDate": {
           "description": "",
+          "example": "12/28/2017 9:04:34 AM",
           "type": "string"
         },
         "publishingChannelLarge": {
           "description": "",
+          "example": true,
           "type": "boolean"
         },
         "publishingChannelSmall": {
           "description": "",
+          "example": true,
           "type": "boolean"
         },
         "publishingChannelApp": {
           "description": "",
+          "example": true,
           "type": "boolean"
         },
         "publishable": {
           "description": "",
+          "example": true,
           "type": "boolean"
         },
         "active": {
           "description": "",
+          "example": true,
           "type": "boolean"
         },
         "content": {
-          "$ref": "#/definitions/Content"
+          "$ref": "#/definitions/Content",
+          "example": {
+            "offerstartDate": "2017-05-28T09:04:34+00:00",
+            "offerendDate": "2017-10-28T09:04:34+00:00",
+            "promoCode": "adsfa",
+            "barcodeUrl": "dsfa",
+            "disclaimerTemplate": "sdas <strong> sdafsdf </strong> [@offerstartdate - @offerenddate]f sfasf",
+            "disclaimer": "sdas <strong> sdafsdf </strong> 2017-05-09 - 2017-05-10 f sfasf",
+            "linkText": "sdaf",
+            "linkUrl": "asdfas",
+            "linkAppUrl": "fsdafa",
+            "offers": [
+              {
+                "barCode": "ascfac",
+                "headLine": "fasas",
+                "bodyCopy": "asfa"
+              },
+              {
+                "barCode": "bfa",
+                "headLine": "bfasf",
+                "bodyCopy": "bsdfasf"
+              }
+            ]
+          }
         }
       },
       "required": [
@@ -2693,50 +2921,68 @@
       "properties": {
         "id": {
           "description": "",
+          "example": "60698ac5-9dde-4a7a-a387-485a2c21184a",
           "type": "string"
         },
         "path": {
           "description": "",
+          "example": "/content/en_US/JCPenney.com/Coupons/Assets/Content/COUPONINDEX1",
           "type": "string"
         },
         "parent": {
           "description": "",
+          "example": "/content/en_US/JCPenney.com/Coupons/Assets/Content",
           "type": "string"
         },
         "type": {
           "description": "",
+          "example": "content",
           "type": "string"
         },
         "name": {
           "description": "",
+          "example": "COUPONINDEX1",
           "type": "string"
         },
         "createdOn": {
           "description": "",
+          "example": "10/12/2017 1:32:28 PM",
           "type": "string"
         },
         "createdBy": {
           "description": "",
+          "example": "admin",
           "type": "string"
         },
         "lastModifiedBy": {
           "description": "",
+          "example": "admin",
           "type": "string"
         },
         "publishable": {
           "description": "",
+          "example": true,
           "type": "boolean"
         },
         "publishingStartDate": {
           "description": "",
+          "example": "6/20/2017 6:00:00 PM",
           "type": "string"
         },
         "publishingEndDate": {
           "description": "",
+          "example": "6/21/2017 8:00:00 PM",
           "type": "string"
         },
         "publishingChannels": {
           "description": "",
+          "example": [
+            "xlarge",
+            "large",
+            "medium",
+            "small",
+            "app"
+          ],
           "type": "array",
           "items": {
             "type": "string"
@@ -2744,50 +2990,84 @@
         },
         "publishingChannelLarge": {
           "description": "",
+          "example": true,
           "type": "boolean"
         },
         "publishingChannelSmall": {
           "description": "",
+          "example": true,
           "type": "boolean"
         },
         "publishingChannelApp": {
           "description": "",
+          "example": true,
           "type": "boolean"
         },
         "priority": {
           "description": "",
+          "example": 0,
           "type": "integer",
           "format": "int32"
         },
         "content": {
-          "$ref": "#/definitions/Content"
+          "$ref": "#/definitions/Content",
+          "example": {
+            "offerendDate": "2017-06-25T09:04:34+00:00",
+            "linkUrl": "asdfas",
+            "promoCode": "BIGSAVE8",
+            "disclaimer": "sdas <strong> sdafsdf </strong> 2017-05-09 - 2017-05-10 f sfasf",
+            "offers": [
+              {
+                "barCode": "nitesh",
+                "headLine": "head123",
+                "bodyCopy": "nitin"
+              },
+              {
+                "barCode": "kart",
+                "headLine": "toe123",
+                "bodyCopy": "new"
+              }
+            ],
+            "linkText": "sdaf",
+            "disclaimerTemplate": "{'first':'1', 'second':'2'}",
+            "offerstartDate": "2017-06-15T09:04:34+00:00",
+            "linkAppUrl": "fsdafa",
+            "barcodeUrl": "https://e.jcpenney.com/bca/z/image?ct=CODE128&st=N&bh=3&bc=MC4560120002000000016210"
+          }
         },
         "publishingChannelDesktop": {
           "description": "",
+          "example": true,
           "type": "boolean"
         },
         "publishingChannelMobile": {
           "description": "",
+          "example": true,
           "type": "boolean"
         },
         "validated": {
           "description": "",
+          "example": false,
           "type": "boolean"
         },
         "active": {
           "description": "",
+          "example": false,
           "type": "boolean"
         },
         "deprecated": {
           "description": "",
+          "example": false,
           "type": "boolean"
         },
         "surrogate": {
           "description": "",
+          "example": false,
           "type": "boolean"
         },
         "evergreen": {
           "description": "",
+          "example": false,
           "type": "boolean"
         }
       },
@@ -2828,10 +3108,12 @@
       "properties": {
         "folderName": {
           "description": "",
+          "example": "Content",
           "type": "string"
         },
         "parentFolder": {
           "description": "",
+          "example": "/content-authoring/content/en_US/JCPenney.com/Coupons/Assets/",
           "type": "string"
         }
       },
@@ -2852,18 +3134,22 @@
       "properties": {
         "sourceFolder": {
           "description": "",
+          "example": "/iriscontent/en/sample1/",
           "type": "string"
         },
         "destinationFolder": {
           "description": "",
+          "example": "/iriscontent/en/sample/",
           "type": "string"
         },
         "operation": {
           "description": "",
+          "example": "COPY",
           "type": "string"
         },
         "removeExisting": {
           "description": "",
+          "example": "false",
           "type": "string"
         }
       },
@@ -2885,14 +3171,17 @@
       "properties": {
         "sourceFolder": {
           "description": "",
+          "example": "/iriscontent/en/sample/innerfolder",
           "type": "string"
         },
         "destinationFolder": {
           "description": "",
+          "example": "/iriscontent/en/sample1/innerfolder",
           "type": "string"
         },
         "operation": {
           "description": "",
+          "example": "MOVE",
           "type": "string"
         }
       },
@@ -2912,10 +3201,12 @@
       "properties": {
         "folderName": {
           "description": "",
+          "example": "innerfolder",
           "type": "string"
         },
         "parentFolder": {
           "description": "",
+          "example": "/iriscontent/en/sample/",
           "type": "string"
         }
       },
@@ -2930,10 +3221,12 @@
       "properties": {
         "parentFolder": {
           "description": "",
+          "example": "/iriscontent/en/instances/",
           "type": "string"
         },
         "name": {
           "description": "",
+          "example": "CouponPage",
           "type": "string"
         },
         "ContentItem": {
@@ -2952,30 +3245,37 @@
       "properties": {
         "name": {
           "description": "",
+          "example": "CouponPageInstance",
           "type": "string"
         },
         "type": {
           "description": "",
+          "example": "Page",
           "type": "string"
         },
         "path": {
           "description": "",
+          "example": "CouponPageInstance",
           "type": "string"
         },
         "templatePath": {
           "description": "",
+          "example": "/content/jcp/en/html/pages/CouponPage",
           "type": "string"
         },
         "description": {
           "description": "",
+          "example": "Page template for Coupon Page",
           "type": "string"
         },
         "contentItemStartDate": {
           "description": "",
+          "example": "02/25/2017 12:00:00",
           "type": "string"
         },
         "contentItemEndDate": {
           "description": "",
+          "example": "03/25/2017 12:00:00",
           "type": "string"
         },
         "ContentItem": {
@@ -3003,30 +3303,49 @@
       "properties": {
         "name": {
           "description": "",
+          "example": "HeaderSection",
           "type": "string"
         },
         "type": {
           "description": "",
+          "example": "Section",
           "type": "string"
         },
         "path": {
           "description": "",
+          "example": "CouponPageInstance/HeaderSection",
           "type": "string"
         },
         "templatePath": {
           "description": "",
+          "example": "/content/jcp/en/html/Sections/Header/HeaderSection",
           "type": "string"
         },
         "contentItemStartDate": {
           "description": "",
+          "example": "02/25/2017 12:00:00",
           "type": "string"
         },
         "contentItemEndDate": {
           "description": "",
+          "example": "03/25/2017 12:00:00",
           "type": "string"
         },
         "ContentItem": {
           "description": "",
+          "example": [
+            {
+              "name": "HeaderContent",
+              "type": "item",
+              "itemtype": "HeaderContent",
+              "path": "CouponPageInstance/HeaderSection/HeaderContent",
+              "templatePath": "/content/jcp/en/header/HeaderContent",
+              "contentItemStartDate": "02/25/2017 12:00:00",
+              "contentItemEndDate": "03/25/2017 12:00:00",
+              "position-x": "1",
+              "position-y": "1"
+            }
+          ],
           "type": "array",
           "items": {
             "$ref": "#/definitions/ContentItem19"
@@ -3045,42 +3364,62 @@
     },
     "ContentItem19": {
       "title": "ContentItem19",
+      "example": {
+        "name": "HeaderContent",
+        "type": "item",
+        "itemtype": "HeaderContent",
+        "path": "CouponPageInstance/HeaderSection/HeaderContent",
+        "templatePath": "/content/jcp/en/header/HeaderContent",
+        "contentItemStartDate": "02/25/2017 12:00:00",
+        "contentItemEndDate": "03/25/2017 12:00:00",
+        "position-x": "1",
+        "position-y": "1"
+      },
       "type": "object",
       "properties": {
         "name": {
           "description": "",
+          "example": "HeaderContent",
           "type": "string"
         },
         "type": {
           "description": "",
+          "example": "item",
           "type": "string"
         },
         "itemtype": {
           "description": "",
+          "example": "HeaderContent",
           "type": "string"
         },
         "path": {
           "description": "",
+          "example": "CouponPageInstance/HeaderSection/HeaderContent",
           "type": "string"
         },
         "templatePath": {
           "description": "",
+          "example": "/content/jcp/en/header/HeaderContent",
           "type": "string"
         },
         "contentItemStartDate": {
           "description": "",
+          "example": "02/25/2017 12:00:00",
           "type": "string"
         },
         "contentItemEndDate": {
           "description": "",
+          "example": "03/25/2017 12:00:00",
           "type": "string"
         },
         "position-x": {
           "description": "",
+          "example": "1",
           "type": "string"
         },
         "position-y": {
           "description": "",
+          "example": "1",
           "type": "string"
         }
       },
@@ -3102,10 +3441,12 @@
       "properties": {
         "parentFolder": {
           "description": "",
+          "example": "/iriscontent/en/instances/",
           "type": "string"
         },
         "name": {
           "description": "",
+          "example": "CouponPage",
           "type": "string"
         },
         "ContentItem": {
@@ -3124,6 +3465,7 @@
       "properties": {
         "parentFolder": {
           "description": "",
+          "example": "/iriscontent/en/layouts/CouponPage/",
           "type": "string"
         },
         "ContentItem": {
@@ -3141,30 +3483,41 @@
       "properties": {
         "name": {
           "description": "",
+          "example": "CouponPageLayout",
           "type": "string"
         },
         "type": {
           "description": "",
+          "example": "Page",
           "type": "string"
         },
         "path": {
           "description": "",
+          "example": "CouponPageLayout",
           "type": "string"
         },
         "description": {
           "description": "",
+          "example": "Page Layout for Coupon Page",
           "type": "string"
         },
         "contentItemStartDate": {
           "description": "",
+          "example": "02/25/2017 12:00:00",
           "type": "string"
         },
         "contentItemEndDate": {
           "description": "",
+          "example": "03/25/2017 12:00:00",
           "type": "string"
         },
         "instances": {
           "description": "",
+          "example": [
+            "/iriscontent/en/instance/CouponHoliday2017",
+            "/iriscontent/en/instance/CouponSummer2017",
+            "/iriscontent/en/instance/CouponFall2017"
+          ],
           "type": "array",
           "items": {
             "type": "string"
@@ -3195,26 +3548,43 @@
       "properties": {
         "name": {
           "description": "",
+          "example": "HeaderSection",
           "type": "string"
         },
         "type": {
           "description": "",
+          "example": "Section",
           "type": "string"
         },
         "path": {
           "description": "",
+          "example": "CouponPageLayout/HeaderSection",
           "type": "string"
         },
         "contentItemStartDate": {
           "description": "",
+          "example": "02/25/2017 12:00:00",
           "type": "string"
         },
         "contentItemEndDate": {
           "description": "",
+          "example": "03/25/2017 12:00:00",
           "type": "string"
         },
         "ContentItem": {
           "description": "",
+          "example": [
+            {
+              "name": "HeaderContent",
+              "type": "item",
+              "itemtype": "HeaderContent",
+              "path": "CouponPageLayout/HeaderSection/HeaderContent",
+              "contentItemStartDate": "02/25/2017 12:00:00",
+              "contentItemEndDate": "03/25/2017 12:00:00",
+              "position-x": "1",
+              "position-y": "1"
+            }
+          ],
           "type": "array",
           "items": {
             "$ref": "#/definitions/ContentItem27"
@@ -3232,38 +3602,56 @@
     },
     "ContentItem27": {
       "title": "ContentItem27",
+      "example": {
+        "name": "HeaderContent",
+        "type": "item",
+        "itemtype": "HeaderContent",
+        "path": "CouponPageLayout/HeaderSection/HeaderContent",
+        "contentItemStartDate": "02/25/2017 12:00:00",
+        "contentItemEndDate": "03/25/2017 12:00:00",
+        "position-x": "1",
+        "position-y": "1"
+      },
       "type": "object",
       "properties": {
         "name": {
           "description": "",
+          "example": "HeaderContent",
           "type": "string"
         },
         "type": {
           "description": "",
+          "example": "item",
           "type": "string"
         },
         "itemtype": {
           "description": "",
+          "example": "HeaderContent",
           "type": "string"
         },
         "path": {
           "description": "",
+          "example": "CouponPageLayout/HeaderSection/HeaderContent",
           "type": "string"
         },
         "contentItemStartDate": {
           "description": "",
+          "example": "02/25/2017 12:00:00",
           "type": "string"
         },
         "contentItemEndDate": {
           "description": "",
+          "example": "03/25/2017 12:00:00",
           "type": "string"
         },
         "position-x": {
           "description": "",
+          "example": "1",
           "type": "string"
         },
         "position-y": {
           "description": "",
+          "example": "1",
           "type": "string"
         }
       },
@@ -3284,6 +3672,7 @@
       "properties": {
         "parentFolder": {
           "description": "",
+          "example": "/iriscontent/en/layouts/CouponPage/",
           "type": "string"
         },
         "ContentItem": {
@@ -3311,18 +3700,26 @@
       "properties": {
         "assetName": {
           "description": "",
+          "example": "CouponPage",
           "type": "string"
         },
         "assetType": {
           "description": "",
+          "example": "Page",
           "type": "string"
         },
         "parentFolder": {
           "description": "",
+          "example": "/iriscontent/en/pages/coupon",
           "type": "string"
         },
         "layouts": {
           "description": "",
+          "example": [
+            "/iriscontent/en/layouts/CouponPage/CouponPageLayout1",
+            "/iriscontent/en/layouts/CouponPage/CouponPageLayout2",
+            "/iriscontent/en/layouts/CouponPage/CouponPageLayout3"
+          ],
           "type": "array",
           "items": {
             "type": "string"
@@ -3352,18 +3749,26 @@
       "properties": {
         "assetName": {
           "description": "",
+          "example": "CouponPage",
           "type": "string"
         },
         "assetType": {
           "description": "",
+          "example": "Page",
           "type": "string"
         },
         "parentFolder": {
           "description": "",
+          "example": "/iriscontent/en/pages/coupon",
           "type": "string"
         },
         "layouts": {
           "description": "",
+          "example": [
+            "/iriscontent/en/layouts/CouponPage/CouponPageLayout1",
+            "/iriscontent/en/layouts/CouponPage/CouponPageLayout2",
+            "/iriscontent/en/layouts/CouponPage/CouponPageLayout3"
+          ],
           "type": "array",
           "items": {
             "type": "string"
@@ -3412,46 +3817,57 @@
       "properties": {
         "assetName": {
           "description": "",
+          "example": "SEO2",
           "type": "string"
         },
         "assetType": {
           "description": "",
+          "example": "SEO",
           "type": "string"
         },
         "parentFolder": {
           "description": "",
+          "example": "/iriscontent/en/components/seo",
           "type": "string"
         },
         "couponStartDate": {
           "description": "",
+          "example": "03/09/2017 12:00:00 AM",
           "type": "string"
         },
         "couponEndDate": {
           "description": "",
+          "example": "03/30/2017 12:00:00 AM",
           "type": "string"
         },
         "categoryPage": {
           "description": "",
+          "example": "Category Page",
           "type": "string"
         },
         "Channel": {
           "description": "",
+          "example": "InStore",
           "type": "string"
         },
         "Active": {
           "description": "",
+          "example": "Yes",
           "type": "string"
         },
         "offer1Name": {
           "description": "",
+          "example": "EXTRA 20% OFF",
           "type": "string"
         },
         "offer1Description": {
           "description": "",
+          "example": "*20% with your JCPenney credit card, 15% with paypal ad 10% with any method of payment",
           "type": "string"
         },
         "offer2Name": {
           "description": "",
+          "example": "EXTRA 15% OFF",
           "type": "string"
         },
         "offer2Description": {
@@ -3476,6 +3892,7 @@
         },
         "validName": {
           "description": "",
+          "example": "VALID THROUGH MARCH 22, 2017",
           "type": "string"
         },
         "shopTitle": {
@@ -3484,18 +3901,22 @@
         },
         "codeValue": {
           "description": "",
+          "example": "48SHOP",
           "type": "string"
         },
         "codeSelect": {
           "description": "",
+          "example": "codeAvailable",
           "type": "string"
         },
         "detailTitle": {
           "description": "",
+          "example": "Get Details Only",
           "type": "string"
         },
         "displayWithProduct": {
           "description": "",
+          "example": "No",
           "type": "string"
         },
         "barCode1": {
@@ -3584,46 +4005,57 @@
       "properties": {
         "assetName": {
           "description": "",
+          "example": "SEO1",
           "type": "string"
         },
         "assetType": {
           "description": "",
+          "example": "SEO",
           "type": "string"
         },
         "parentFolder": {
           "description": "",
+          "example": "/iriscontent/en/components/seo",
           "type": "string"
         },
         "couponStartDate": {
           "description": "",
+          "example": "03/09/2017 12:00:00 AM",
           "type": "string"
         },
         "couponEndDate": {
           "description": "",
+          "example": "03/30/2017 12:00:00 AM",
           "type": "string"
         },
         "categoryPage": {
           "description": "",
+          "example": "Category Page",
           "type": "string"
         },
         "Channel": {
           "description": "",
+          "example": "InStore",
           "type": "string"
         },
         "Active": {
           "description": "",
+          "example": "Yes",
           "type": "string"
         },
         "offer1Name": {
           "description": "",
+          "example": "EXTRA 20% OFF",
           "type": "string"
         },
         "offer1Description": {
           "description": "",
+          "example": "*20% with your JCPenney credit card, 15% with paypal ad 10% with any method of payment",
           "type": "string"
         },
         "offer2Name": {
           "description": "",
+          "example": "EXTRA 15% OFF",
           "type": "string"
         },
         "offer2Description": {
@@ -3648,6 +4080,7 @@
         },
         "validName": {
           "description": "",
+          "example": "VALID THROUGH MARCH 22, 2017",
           "type": "string"
         },
         "shopTitle": {
@@ -3656,18 +4089,22 @@
         },
         "codeValue": {
           "description": "",
+          "example": "48SHOP",
           "type": "string"
         },
         "codeSelect": {
           "description": "",
+          "example": "codeAvailable",
           "type": "string"
         },
         "detailTitle": {
           "description": "",
+          "example": "Get Details Only",
           "type": "string"
         },
         "displayWithProduct": {
           "description": "",
+          "example": "No",
           "type": "string"
         },
         "barCode1": {
@@ -3732,14 +4169,17 @@
       "properties": {
         "parent": {
           "description": "",
+          "example": "/content/en_US/schema",
           "type": "string"
         },
         "contentType": {
           "description": "",
+          "example": "couponTile",
           "type": "string"
         },
         "schemaContent": {
           "description": "",
+          "example": "{ \"notnull\":{\"name\":\"Name is Mandatory\",\"content.offerstartDate\":\"Offer Start Date is Mandatory\",\"content.offerendDate\":\"Offer End Date is Mandatory\",\"publishingStartDate\":\"Publishing Start Date is Mandatory\",\"publishingEndDate\":\"Publishing End Date is Mandatory\",\"content.offers0.headLine\":\"Headline is Mandatory\"},\"functional\":{\"content.offerstartDate\":[ {\"condition\":\"lessThan\",\"compareWith\":\"content.offerendDate\",\"failureMessage\":\"Offer Start Date should be less than Offer End Date\" }],\"publishingStartDate\":[ {\"condition\":\"lessThan\",\"compareWith\":\"content.offerendDate\",\"failureMessage\":\"Publishing Start Date should be less than Offer End Date\" }],\"content.offerendDate\":[ {\"condition\":\"greaterThan\",\"compareWith\":\"content.offerstartDate\",\"failureMessage\":\"Offer End Date should be greater than Offer Start Date\" }],\"publishingEndDate\":[ {\"condition\":\"greaterThan\",\"compareWith\":\"content.offerstartDate\",\"failureMessage\":\"Publishing End Date should be greater than Offer Start Date\" }, {\"condition\":\"greaterThan\",\"compareWith\":\"publishingStartDate\",\"failureMessage\":\"Publishing End Date should be greater than Publishing Start Date\"}]}}",
           "type": "string"
         }
       },
@@ -3761,18 +4201,22 @@
       "properties": {
         "name": {
           "description": "",
+          "example": "couponTile",
           "type": "string"
         },
         "parentFolder": {
           "description": "",
+          "example": "/content/en_US/schema",
           "type": "string"
         },
         "mimeType": {
           "description": "",
+          "example": "application/json",
           "type": "string"
         },
         "templateContent": {
           "description": "",
+          "example": "path:/Users/karthikeyangirijanandan/Documents/Karthik/work/JCP/IRIS/couponSchema.json",
           "type": "string"
         }
       },
@@ -3795,10 +4239,14 @@
       "properties": {
         "j_username": {
           "description": "",
+          "example": "karthik",
           "type": "string"
         },
         "groupnames": {
           "description": "",
+          "example": [
+            "couponGroup"
+          ],
           "type": "array",
           "items": {
             "type": "string"
@@ -3877,6 +4325,65 @@
       "properties": {
         "groupList": {
           "description": "",
+          "example": [
+            {
+              "groupname": "couponGroup",
+              "users": [
+                "karthik",
+                "remi",
+                "ajit"
+              ],
+              "groupPrivilege": [
+                "all"
+              ],
+              "groupPaths": [
+                {
+                  "path": "/content/en_US/JCPenney.com/Coupons",
+                  "pathPrivileges": [
+                    "read",
+                    "write"
+                  ]
+                },
+                {
+                  "path": "/content/en_US/JCPenney.com/Seo",
+                  "pathPrivileges": [
+                    "read"
+                  ]
+                },
+                {
+                  "path": "/content/en_US/JCPenney.com/Coupons/Assets/Content",
+                  "pathPrivileges": [
+                    "all"
+                  ]
+                }
+              ]
+            },
+            {
+              "groupname": "seogroup",
+              "users": [
+                "vajpai",
+                "raja"
+              ],
+              "groupPrivilege": [
+                "read",
+                "write"
+              ],
+              "groupPaths": [
+                {
+                  "path": "/content/en_US/JCPenney.com/Coupons",
+                  "pathPrivileges": [
+                    "read"
+                  ]
+                },
+                {
+                  "path": "/content/en_US/JCPenney.com/Seo",
+                  "pathPrivileges": [
+                    "all"
+                  ]
+                }
+              ]
+            }
+          ],
           "type": "array",
           "items": {
             "$ref": "#/definitions/GroupList"
@@ -3889,14 +4396,52 @@
     },
     "GroupList": {
       "title": "GroupList",
+      "example": {
+        "groupname": "couponGroup",
+        "users": [
+          "karthik",
+          "remi",
+          "ajit"
+        ],
+        "groupPrivilege": [
+          "all"
+        ],
+        "groupPaths": [
+          {
+            "path": "/content/en_US/JCPenney.com/Coupons",
+            "pathPrivileges": [
+              "read",
+              "write"
+            ]
+          },
+          {
+            "path": "/content/en_US/JCPenney.com/Seo",
+            "pathPrivileges": [
+              "read"
+            ]
+          },
+          {
+            "path": "/content/en_US/JCPenney.com/Coupons/Assets/Content",
+            "pathPrivileges": [
+              "all"
+            ]
+          }
+        ]
+      },
       "type": "object",
       "properties": {
         "groupname": {
           "description": "",
+          "example": "couponGroup",
           "type": "string"
         },
         "users": {
           "description": "",
+          "example": [
+            "karthik",
+            "remi",
+            "ajit"
+          ],
           "type": "array",
           "items": {
             "type": "string"
@@ -3904,6 +4449,9 @@
         },
         "groupPrivilege": {
           "description": "",
+          "example": [
+            "all"
+          ],
           "type": "array",
           "items": {
             "type": "string"
@@ -3911,6 +4459,27 @@
         },
         "groupPaths": {
           "description": "",
+          "example": [
+            {
+              "path": "/content/en_US/JCPenney.com/Coupons",
+              "pathPrivileges": [
+                "read",
+                "write"
+              ]
+            },
+            {
+              "path": "/content/en_US/JCPenney.com/Seo",
+              "pathPrivileges": [
+                "read"
+              ]
+            },
+            {
+              "path": "/content/en_US/JCPenney.com/Coupons/Assets/Content",
+              "pathPrivileges": [
+                "all"
+              ]
+            }
+          ],
           "type": "array",
           "items": {
             "$ref": "#/definitions/GroupPath"
@@ -3926,14 +4495,26 @@
     },
     "GroupPath": {
       "title": "GroupPath",
+      "example": {
+        "path": "/content/en_US/JCPenney.com/Coupons",
+        "pathPrivileges": [
+          "read",
+          "write"
+        ]
+      },
       "type": "object",
       "properties": {
         "path": {
           "description": "",
+          "example": "/content/en_US/JCPenney.com/Coupons",
           "type": "string"
         },
         "pathPrivileges": {
           "description": "",
+          "example": [
+            "read",
+            "write"
+          ],
           "type": "array",
           "items": {
             "type": "string"
