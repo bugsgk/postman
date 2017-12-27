@@ -182,14 +182,14 @@
         }
       }
     },
-    "/content-authoring/content/59b15f9f-a723-4071-bd5e-c05558aa627a": {
+    "/content-authoring/content/1758cf3c-cbfc-434a-97a8-ef351230228f": {
       "get": {
         "description": "Get Coupon",
         "summary": "Get Coupon",
         "tags": [
           "Coupon"
         ],
-        "operationId": "ContentAuthoringContent59b15f9fA7234071Bd5eC05558aa627aGet",
+        "operationId": "ContentAuthoringContent1758cf3cCbfc434a97a8Ef351230228fGet",
         "produces": [
           "application/json"
         ],
@@ -212,7 +212,7 @@
           {
             "request": {
               "method": "GET",
-              "uri": "/content-authoring/content/59b15f9f-a723-4071-bd5e-c05558aa627a",
+              "uri": "/content-authoring/content/1758cf3c-cbfc-434a-97a8-ef351230228f",
               "headers": {
                 "Authorization": "Basic YWRtaW46YWRtaW4="
               }
