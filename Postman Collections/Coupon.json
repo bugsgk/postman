@@ -516,30 +516,7 @@
           "format": "int32"
         },
         "content": {
-          "$ref": "#/definitions/Content",
-          "example": {
-            "offerendDate": "2017-06-25T09:04:34+00:00",
-            "linkUrl": "asdfas",
-            "promoCode": "BIGSAVE8",
-            "disclaimer": "sdas <strong> sdafsdf </strong> 2017-05-09 - 2017-05-10 f sfasf",
-            "offers": [
-              {
-                "barCode": "nitesh",
-                "headLine": "head123",
-                "bodyCopy": "nitin"
-              },
-              {
-                "barCode": "kart",
-                "headLine": "toe123",
-                "bodyCopy": "new"
-              }
-            ],
-            "linkText": "sdaf",
-            "disclaimerTemplate": "{'first':'1', 'second':'2'}",
-            "offerstartDate": "2017-06-15T09:04:34+00:00",
-            "linkAppUrl": "fsdafa",
-            "barcodeUrl": "https://e.jcpenney.com/bca/z/image?ct=CODE128&st=N&bh=3&bc=MC4560120002000000016210"
-          }
+          "$ref": "#/definitions/Content"
         },
         "publishingChannelDesktop": {
           "description": "",
