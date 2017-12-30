@@ -1,34 +1,162 @@
 {
+  "swagger": "2.0",
   "info": {
-    "name": "Page",
-    "_postman_id": "1932546-20336d1b-3fd3-8617-647c-7fa508dd677a",
-    "description": "",
-    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+    "version": "1.0",
+    "title": "Page",
+    "description": "TODO: Add Description",
+    "license": {
+      "name": "MIT",
+      "url": "http://github.com/gruntjs/grunt/blob/master/LICENSE-MIT"
+    }
   },
-  "item": [
-    {
-      "_postman_id": "1932546-52a919c9-a226-34e3-c0ae-7fabae9eac20",
-      "name": "Create Page",
-      "request": {
-        "method": "POST",
-        "header": [
+  "host": "localhost:8080",
+  "basePath": "/content",
+  "securityDefinitions": {
+    "auth": {
+      "type": "basic",
+      "x-testValue": [],
+      "x-skip-client-authentication": false
+    }
+  },
+  "schemes": [
+    "http"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/pages": {
+      "post": {
+        "description": "Create Page",
+        "summary": "Create Page",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "PagesPost",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
           {
-            "key": "Authorization",
-            "value": "Basic YWRtaW46YWRtaW4="
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/CreatePagerequest"
+            }
           },
           {
-            "key": "Content-Type",
-            "value": "application/json"
+            "name": "Authorization",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
           }
         ],
-        "body": {
-          "mode": "raw",
-          "raw": "{\n  \"assetName\": \"CouponPage\",\n  \"assetType\": \"Page\",\n  \"parentFolder\":\"/iriscontent/en/pages/coupon\",\n  \"layouts\": [\"/iriscontent/en/layouts/CouponPage/CouponPageLayout1\", \"/iriscontent/en/layouts/CouponPage/CouponPageLayout2\", \"/iriscontent/en/layouts/CouponPage/CouponPageLayout3\"]\n}"
+        "responses": {
+          "200": {
+            "description": ""
+          }
         },
-        "url": "http://localhost:8080/content/pages",
-        "description": "Create Page"
-      },
-      "response": []
+        "security": [
+          {
+            "auth": []
+          }
+        ],
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "POST",
+              "uri": "/pages",
+              "headers": {
+                "Content-Type": "application/json",
+                "Authorization": "Basic YWRtaW46YWRtaW4="
+              },
+              "body": "{\n  \"assetName\": \"CouponPage\",\n  \"assetType\": \"Page\",\n  \"parentFolder\":\"/iriscontent/en/pages/coupon\",\n  \"layouts\": [\"/iriscontent/en/layouts/CouponPage/CouponPageLayout1\", \"/iriscontent/en/layouts/CouponPage/CouponPageLayout2\", \"/iriscontent/en/layouts/CouponPage/CouponPageLayout3\"]\n}"
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "NONE",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": true,
+              "headers": {}
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "Create Page",
+            "x-testDescription": "Create Page"
+          }
+        ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
     }
-  ]
+  },
+  "definitions": {
+    "CreatePagerequest": {
+      "title": "Create PageRequest",
+      "example": {
+        "assetName": "CouponPage",
+        "assetType": "Page",
+        "parentFolder": "/iriscontent/en/pages/coupon",
+        "layouts": [
+          "/iriscontent/en/layouts/CouponPage/CouponPageLayout1",
+          "/iriscontent/en/layouts/CouponPage/CouponPageLayout2",
+          "/iriscontent/en/layouts/CouponPage/CouponPageLayout3"
+        ]
+      },
+      "type": "object",
+      "properties": {
+        "assetName": {
+          "description": "",
+          "example": "CouponPage",
+          "type": "string"
+        },
+        "assetType": {
+          "description": "",
+          "example": "Page",
+          "type": "string"
+        },
+        "parentFolder": {
+          "description": "",
+          "example": "/iriscontent/en/pages/coupon",
+          "type": "string"
+        },
+        "layouts": {
+          "description": "",
+          "example": [
+            "/iriscontent/en/layouts/CouponPage/CouponPageLayout1",
+            "/iriscontent/en/layouts/CouponPage/CouponPageLayout2",
+            "/iriscontent/en/layouts/CouponPage/CouponPageLayout3"
+          ],
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "assetName",
+        "assetType",
+        "parentFolder",
+        "layouts"
+      ]
+    }
+  }
 }
