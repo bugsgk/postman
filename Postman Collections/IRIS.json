@@ -2223,30 +2223,7 @@
           "format": "int32"
         },
         "content": {
-          "$ref": "#/definitions/Content",
-          "example": {
-            "offerstartDate": "2017-06-15T09:04:34+00:00",
-            "offerendDate": "2018-06-25T09:04:34+00:00",
-            "promoCode": "BIGSAVE1234",
-            "barcodeUrl": "https://e.jcpenney.com/bca/z/image?ct=CODE128&st=N&bh=3&bc=MC4560120002000000016210",
-            "disclaimerTemplate": "{'first':'1', 'second':'2'}",
-            "disclaimer": "sdas <strong> sdafsdf </strong> 2017-05-09 - 2017-05-10 f sfasf",
-            "linkText": "sdaf",
-            "linkUrl": "asdfas",
-            "linkAppUrl": "fsdafa",
-            "offers": [
-              {
-                "barCode": "nitesh",
-                "headLine": "head4567",
-                "bodyCopy": "nitin"
-              },
-              {
-                "barCode": "kart",
-                "headLine": "foot234",
-                "bodyCopy": "new"
-              }
-            ]
-          }
+          "$ref": "#/definitions/Content"
         }
       },
       "required": [
@@ -2484,38 +2461,7 @@
           "type": "string"
         },
         "content": {
-          "$ref": "#/definitions/Content4",
-          "example": {
-            "name": "coupon1",
-            "redeemingChannel": "all",
-            "pubchannelsDesktop": true,
-            "pubchannelMobile": false,
-            "pubchannelApp": true,
-            "publish": true,
-            "offerstartDate": "2017-05-28T09:04:34.325+00:00",
-            "offerendDate": "2017-10-28T09:04:34.325+00:00",
-            "promoCode": "adsfa",
-            "barcodeUrl": "dsfa",
-            "disclaimerTemplate": "sdas <strong> sdafsdf </strong> [@offerstartdate - @offerenddate]f sfasf",
-            "disclaimer": "sdas <strong> sdafsdf </strong> 2017-05-09 - 2017-05-10 f sfasf",
-            "linkText": "sdaf",
-            "linkUrl": "asdfas",
-            "linkAppUrl": "fsdafa",
-            "offers": [
-              {
-                "name": "offer1",
-                "barCode": "ascfac",
-                "headLine": "fasas",
-                "bodyCopy": "asfa"
-              },
-              {
-                "name": "offer2",
-                "barCode": "afa",
-                "headLine": "afasf",
-                "bodyCopy": "asdfasf"
-              }
-            ]
-          }
+          "$ref": "#/definitions/Content4"
         }
       },
       "required": [
@@ -2803,30 +2749,7 @@
           "type": "boolean"
         },
         "content": {
-          "$ref": "#/definitions/Content",
-          "example": {
-            "offerstartDate": "2017-05-28T09:04:34+00:00",
-            "offerendDate": "2017-10-28T09:04:34+00:00",
-            "promoCode": "adsfa",
-            "barcodeUrl": "dsfa",
-            "disclaimerTemplate": "sdas <strong> sdafsdf </strong> [@offerstartdate - @offerenddate]f sfasf",
-            "disclaimer": "sdas <strong> sdafsdf </strong> 2017-05-09 - 2017-05-10 f sfasf",
-            "linkText": "sdaf",
-            "linkUrl": "asdfas",
-            "linkAppUrl": "fsdafa",
-            "offers": [
-              {
-                "barCode": "ascfac",
-                "headLine": "fasas",
-                "bodyCopy": "asfa"
-              },
-              {
-                "barCode": "bfa",
-                "headLine": "bfasf",
-                "bodyCopy": "bsdfasf"
-              }
-            ]
-          }
+          "$ref": "#/definitions/Content"
         }
       },
       "required": [
@@ -2991,30 +2914,7 @@
           "format": "int32"
         },
         "content": {
-          "$ref": "#/definitions/Content",
-          "example": {
-            "offerendDate": "2017-06-25T09:04:34+00:00",
-            "linkUrl": "asdfas",
-            "promoCode": "BIGSAVE8",
-            "disclaimer": "sdas <strong> sdafsdf </strong> 2017-05-09 - 2017-05-10 f sfasf",
-            "offers": [
-              {
-                "barCode": "nitesh",
-                "headLine": "head123",
-                "bodyCopy": "nitin"
-              },
-              {
-                "barCode": "kart",
-                "headLine": "toe123",
-                "bodyCopy": "new"
-              }
-            ],
-            "linkText": "sdaf",
-            "disclaimerTemplate": "{'first':'1', 'second':'2'}",
-            "offerstartDate": "2017-06-15T09:04:34+00:00",
-            "linkAppUrl": "fsdafa",
-            "barcodeUrl": "https://e.jcpenney.com/bca/z/image?ct=CODE128&st=N&bh=3&bc=MC4560120002000000016210"
-          }
+          "$ref": "#/definitions/Content"
         },
         "publishingChannelDesktop": {
           "description": "",
