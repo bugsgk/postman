@@ -83,7 +83,7 @@
                 "Content-Type": "application/json",
                 "Authorization": "Basic YWRtaW46YWRtaW4="
               },
-              "body": "{\n  \"parent\": \"/content/en_US/JCPenney.com/Coupons/Assets/Content\",\n  \"contentType\": \"couponTile\",\n  \"name\": \"COUPONNEW12\",\n  \"publishingStartDate\": \"2018-01-01T18:00:00+00:00\",\n  \"publishingEndDate\": \"2018-01-12T20:00:00+00:00\",\n  \"publishable\": false,\n  \"active\": true,\n  \"validated\":true,\n  \"priority\": 5,\n  \"content\": {\n    \"offerstartDate\": \"2017-06-15T14:34:34+05:30\",\n    \"offerendDate\": \"2018-06-25T14:34:34+05:30\",\n    \"promoCode\": \"BIGSAVENEW\",\n    \"barcodeUrl\": \"https://e.jcpenney.com/bca/z/image?ct=CODE128&st=N&bh=3&bc=MC4560120002000000016210\",\n    \"disclaimerTemplate\": \"{'first':'1', 'second':'2'}\",\n    \"disclaimer\": \"sdas <strong> sdafsdf </strong> 2017-05-09 - 2017-05-10 f sfasf\",\n    \"linkText\": \"sdaf\",\n    \"linkUrl\": \"asdfas\",\n    \"linkAppUrl\": \"fsdafa\",\n    \"offers\": [\n      {\n        \"barCode\": \"nitesh\",\n        \"headLine\": \"head4567\",\n        \"bodyCopy\": \"nitin\"\n      },\n      {\n        \"barCode\": \"kart\",\n        \"headLine\": \"foot234\",\n        \"bodyCopy\": \"new\"\n      }\n    ]       \n  }\n}"
+              "body": "{\n  \"parent\": \"/content/en_US/JCPenney.com/Coupons/Assets/Content\",\n  \"contentType\": \"couponTile\",\n  \"name\": \"COUPONNEW14\",\n  \"publishingStartDate\": \"2018-01-01T18:00:00+00:00\",\n  \"publishingEndDate\": \"2018-01-12T20:00:00+00:00\",\n  \"publishable\": false,\n  \"active\": true,\n  \"validated\":true,\n  \"priority\": 5,\n  \"content\": {\n    \"offerstartDate\": \"2017-06-15T14:34:34+05:30\",\n    \"offerendDate\": \"2018-06-25T14:34:34+05:30\",\n    \"promoCode\": \"BIGSAVENEW\",\n    \"barcodeUrl\": \"https://e.jcpenney.com/bca/z/image?ct=CODE128&st=N&bh=3&bc=MC4560120002000000016210\",\n    \"disclaimerTemplate\": \"{'first':'1', 'second':'2'}\",\n    \"disclaimer\": \"sdas <strong> sdafsdf </strong> 2017-05-09 - 2017-05-10 f sfasf\",\n    \"linkText\": \"sdaf\",\n    \"linkUrl\": \"asdfas\",\n    \"linkAppUrl\": \"fsdafa\",\n    \"offers\": [\n      {\n        \"barCode\": \"nitesh\",\n        \"headLine\": \"head4567\",\n        \"bodyCopy\": \"nitin\"\n      },\n      {\n        \"barCode\": \"kart\",\n        \"headLine\": \"foot234\",\n        \"bodyCopy\": \"new\"\n      }\n    ]       \n  }\n}"
             },
             "expectedResponse": {
               "x-allowExtraHeaders": true,
@@ -2218,7 +2218,7 @@
       "example": {
         "parent": "/content/en_US/JCPenney.com/Coupons/Assets/Content",
         "contentType": "couponTile",
-        "name": "COUPONNEW12",
+        "name": "COUPONNEW14",
         "publishingStartDate": "2018-01-01T18:00:00+00:00",
         "publishingEndDate": "2018-01-12T20:00:00+00:00",
         "publishable": false,
@@ -2263,7 +2263,7 @@
         },
         "name": {
           "description": "",
-          "example": "COUPONNEW12",
+          "example": "COUPONNEW14",
           "type": "string"
         },
         "publishingStartDate": {
