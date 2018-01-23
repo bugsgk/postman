@@ -542,7 +542,31 @@
             "auth": []
           }
         ],
-        "x-unitTests": [],
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "POST",
+              "uri": "/media/asset",
+              "headers": {
+                "Content-Type": "application/x-www-form-urlencoded",
+                "Authorization": "Basic YWRtaW5AamNwLmNvbTphZG1pbg=="
+              },
+              "body": "altText=alt feb&displayName=Holiday February&file=&parentId=57181c03-9bca-4ec3-8006-1d525d816867&tags=valentines"
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "NONE",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": true,
+              "headers": {}
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "asset1",
+            "x-testDescription": "TODO: Add Description"
+          }
+        ],
         "x-operation-settings": {
           "CollectParameters": false,
           "AllowDynamicQueryParameters": false,
@@ -653,7 +677,7 @@
             },
             "x-testShouldPass": true,
             "x-testEnabled": true,
-            "x-testName": "asset1",
+            "x-testName": "asset2",
             "x-testDescription": "TODO: Add Description"
           }
         ],
