@@ -1508,7 +1508,7 @@
     },
     "/content-authoring/content/en_US/JCPenney.com/Coupons/Assets/Content/COUPON1001": {
       "delete": {
-        "description": "",
+        "description": "TODO: Add Description",
         "summary": "Delete Coupon",
         "tags": [
           "Coupon"
@@ -1556,7 +1556,7 @@
             "x-testShouldPass": true,
             "x-testEnabled": true,
             "x-testName": "Delete Coupon",
-            "x-testDescription": ""
+            "x-testDescription": "TODO: Add Description"
           }
         ],
         "x-operation-settings": {
@@ -1714,7 +1714,7 @@
     },
     "/content-authoring/content/updateCouponAssets": {
       "put": {
-        "description": "",
+        "description": "TODO: Add Description",
         "summary": "UpdateAllCoupons",
         "tags": [
           "Coupon"
@@ -1779,7 +1779,7 @@
             "x-testShouldPass": true,
             "x-testEnabled": true,
             "x-testName": "UpdateAllCoupons",
-            "x-testDescription": ""
+            "x-testDescription": "TODO: Add Description"
           }
         ],
         "x-operation-settings": {
@@ -1859,7 +1859,7 @@
     },
     "/content-authoring/content/search/promoCode/BIGSAVE9": {
       "get": {
-        "description": "",
+        "description": "TODO: Add Description",
         "summary": "Search Content",
         "tags": [
           "Search"
@@ -1892,7 +1892,7 @@
             "x-testShouldPass": true,
             "x-testEnabled": true,
             "x-testName": "Search Content",
-            "x-testDescription": ""
+            "x-testDescription": "TODO: Add Description"
           }
         ],
         "x-operation-settings": {
@@ -1905,7 +1905,7 @@
     },
     "/content-authoring/getAllUsers": {
       "post": {
-        "description": "",
+        "description": "TODO: Add Description",
         "summary": "Get All Users",
         "tags": [
           "Users"
@@ -1938,7 +1938,7 @@
             "x-testShouldPass": true,
             "x-testEnabled": true,
             "x-testName": "Get All Users",
-            "x-testDescription": ""
+            "x-testDescription": "TODO: Add Description"
           }
         ],
         "x-operation-settings": {
@@ -1951,7 +1951,7 @@
     },
     "/content-authoring/logout": {
       "post": {
-        "description": "",
+        "description": "TODO: Add Description",
         "summary": "Logout",
         "tags": [
           "Users"
@@ -2006,7 +2006,7 @@
             "x-testShouldPass": true,
             "x-testEnabled": true,
             "x-testName": "Logout",
-            "x-testDescription": ""
+            "x-testDescription": "TODO: Add Description"
           }
         ],
         "x-operation-settings": {
@@ -2019,7 +2019,7 @@
     },
     "/content-authoring/login": {
       "post": {
-        "description": "",
+        "description": "TODO: Add Description",
         "summary": "SSO Login",
         "tags": [
           "Users"
@@ -2073,7 +2073,7 @@
             "x-testShouldPass": true,
             "x-testEnabled": true,
             "x-testName": "SSO Login",
-            "x-testDescription": ""
+            "x-testDescription": "TODO: Add Description"
           }
         ],
         "x-operation-settings": {
@@ -2086,7 +2086,7 @@
     },
     "/content-authoring/getAllGroup": {
       "post": {
-        "description": "",
+        "description": "TODO: Add Description",
         "summary": "Get All Groups",
         "tags": [
           "Users"
@@ -2119,7 +2119,7 @@
             "x-testShouldPass": true,
             "x-testEnabled": true,
             "x-testName": "Get All Groups",
-            "x-testDescription": ""
+            "x-testDescription": "TODO: Add Description"
           }
         ],
         "x-operation-settings": {
@@ -2132,7 +2132,7 @@
     },
     "/content-authoring/adminlogin": {
       "post": {
-        "description": "",
+        "description": "TODO: Add Description",
         "summary": "Admin Login",
         "tags": [
           "Users"
@@ -2187,7 +2187,7 @@
             "x-testShouldPass": true,
             "x-testEnabled": true,
             "x-testName": "Admin Login",
-            "x-testDescription": ""
+            "x-testDescription": "TODO: Add Description"
           }
         ],
         "x-operation-settings": {
@@ -2200,7 +2200,7 @@
     },
     "/content-authoring/setUserGroupAndNodesWithAcl": {
       "post": {
-        "description": "",
+        "description": "TODO: Add Description",
         "summary": "CreateUsersAndGroupsAndPrivileges",
         "tags": [
           "Users"
@@ -2254,7 +2254,7 @@
             "x-testShouldPass": true,
             "x-testEnabled": true,
             "x-testName": "CreateUsersAndGroupsAndPrivileges",
-            "x-testDescription": ""
+            "x-testDescription": "TODO: Add Description"
           }
         ],
         "x-operation-settings": {
@@ -2267,7 +2267,7 @@
     },
     "/content-authoring/applyAclToNode": {
       "post": {
-        "description": "",
+        "description": "TODO: Add Description",
         "summary": "Apply ACL to Node",
         "tags": [
           "Users"
@@ -2329,7 +2329,7 @@
             "x-testShouldPass": true,
             "x-testEnabled": true,
             "x-testName": "Apply ACL to Node",
-            "x-testDescription": ""
+            "x-testDescription": "TODO: Add Description"
           }
         ],
         "x-operation-settings": {
@@ -2342,7 +2342,7 @@
     },
     "/content-authoring/file": {
       "get": {
-        "description": "",
+        "description": "TODO: Add Description",
         "summary": "Get Schema File",
         "tags": [
           "Schema"
@@ -2383,7 +2383,7 @@
             "x-testShouldPass": true,
             "x-testEnabled": true,
             "x-testName": "Get Schema File",
-            "x-testDescription": ""
+            "x-testDescription": "TODO: Add Description"
           }
         ],
         "x-operation-settings": {
@@ -2548,7 +2548,7 @@
     },
     "/content/components": {
       "put": {
-        "description": "",
+        "description": "TODO: Add Description",
         "summary": "Create SEO",
         "tags": [
           "SEO"
@@ -2614,7 +2614,7 @@
             "x-testShouldPass": true,
             "x-testEnabled": true,
             "x-testName": "Create SEO",
-            "x-testDescription": ""
+            "x-testDescription": "TODO: Add Description"
           }
         ],
         "x-operation-settings": {
@@ -2625,7 +2625,7 @@
         }
       },
       "post": {
-        "description": "",
+        "description": "TODO: Add Description",
         "summary": "Edit SEO",
         "tags": [
           "SEO"
@@ -2691,7 +2691,7 @@
             "x-testShouldPass": true,
             "x-testEnabled": true,
             "x-testName": "Edit SEO",
-            "x-testDescription": ""
+            "x-testDescription": "TODO: Add Description"
           }
         ],
         "x-operation-settings": {
@@ -2944,7 +2944,7 @@
     },
     "/content/layouts": {
       "put": {
-        "description": "",
+        "description": "TODO: Add Description",
         "summary": "Create Layout",
         "tags": [
           "Layout"
@@ -2993,7 +2993,7 @@
         }
       },
       "post": {
-        "description": "",
+        "description": "TODO: Add Description",
         "summary": "Edit Layout",
         "tags": [
           "Layout"
@@ -3090,7 +3090,7 @@
     },
     "/iriscontent/en/instances/": {
       "post": {
-        "description": "",
+        "description": "TODO: Add Description",
         "summary": "Create Instances",
         "tags": [
           "Instance"
@@ -3141,7 +3141,7 @@
     },
     "/content/instances/CouponPage": {
       "put": {
-        "description": "",
+        "description": "TODO: Add Description",
         "summary": "Edit Instances",
         "tags": [
           "Instance"
@@ -3247,7 +3247,7 @@
     },
     "/content-authoring/folder": {
       "put": {
-        "description": "",
+        "description": "TODO: Add Description",
         "summary": "Move Folder",
         "tags": [
           "Folder"
@@ -3313,7 +3313,7 @@
             "x-testShouldPass": true,
             "x-testEnabled": true,
             "x-testName": "Move Folder",
-            "x-testDescription": ""
+            "x-testDescription": "TODO: Add Description"
           }
         ],
         "x-operation-settings": {
@@ -3324,7 +3324,7 @@
         }
       },
       "post": {
-        "description": "",
+        "description": "TODO: Add Description",
         "summary": "Create Folder",
         "tags": [
           "Folder"
@@ -3390,7 +3390,7 @@
             "x-testShouldPass": true,
             "x-testEnabled": true,
             "x-testName": "Create Folder",
-            "x-testDescription": ""
+            "x-testDescription": "TODO: Add Description"
           }
         ],
         "x-operation-settings": {
@@ -3401,7 +3401,7 @@
         }
       },
       "delete": {
-        "description": "",
+        "description": "TODO: Add Description",
         "summary": "Delete Folder",
         "tags": [
           "Folder"
@@ -3467,7 +3467,7 @@
             "x-testShouldPass": true,
             "x-testEnabled": true,
             "x-testName": "Delete Folder",
-            "x-testDescription": ""
+            "x-testDescription": "TODO: Add Description"
           }
         ],
         "x-operation-settings": {
