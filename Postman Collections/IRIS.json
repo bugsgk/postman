@@ -237,6 +237,13 @@
         ],
         "parameters": [
           {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
             "name": "Body",
             "in": "body",
             "required": true,
@@ -244,13 +251,6 @@
             "schema": {
               "$ref": "#/definitions/SubFolderrequest"
             }
-          },
-          {
-            "name": "Content-Type",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
           }
         ],
         "responses": {
@@ -308,6 +308,13 @@
         ],
         "parameters": [
           {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
             "name": "Body",
             "in": "body",
             "required": true,
@@ -315,13 +322,6 @@
             "schema": {
               "$ref": "#/definitions/FolderRequest"
             }
-          },
-          {
-            "name": "Content-Type",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
           }
         ],
         "responses": {
@@ -432,6 +432,13 @@
         ],
         "parameters": [
           {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
             "name": "altText",
             "in": "formData",
             "required": true,
@@ -462,13 +469,6 @@
           {
             "name": "tags",
             "in": "formData",
-            "required": true,
-            "type": "string",
-            "description": ""
-          },
-          {
-            "name": "Content-Type",
-            "in": "header",
             "required": true,
             "type": "string",
             "description": ""
@@ -1260,6 +1260,13 @@
         ],
         "parameters": [
           {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
             "name": "Body",
             "in": "body",
             "required": true,
@@ -1267,13 +1274,6 @@
             "schema": {
               "$ref": "#/definitions/CreateCouponrequest"
             }
-          },
-          {
-            "name": "Content-Type",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
           }
         ],
         "responses": {
@@ -1331,6 +1331,13 @@
         ],
         "parameters": [
           {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
             "name": "Body",
             "in": "body",
             "required": true,
@@ -1338,13 +1345,6 @@
             "schema": {
               "$ref": "#/definitions/EditCouponrequest"
             }
-          },
-          {
-            "name": "Content-Type",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
           }
         ],
         "responses": {
@@ -1576,6 +1576,13 @@
         ],
         "parameters": [
           {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
             "name": "Body",
             "in": "body",
             "required": true,
@@ -1583,13 +1590,6 @@
             "schema": {
               "$ref": "#/definitions/CreatePageInstancerequest"
             }
-          },
-          {
-            "name": "Content-Type",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
           }
         ],
         "responses": {
@@ -1647,6 +1647,13 @@
         ],
         "parameters": [
           {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
             "name": "Body",
             "in": "body",
             "required": true,
@@ -1657,13 +1664,6 @@
                 "$ref": "#/definitions/UpdateAllCouponsRequest"
               }
             }
-          },
-          {
-            "name": "Content-Type",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
           }
         ],
         "responses": {
@@ -1721,6 +1721,13 @@
         ],
         "parameters": [
           {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
             "name": "Body",
             "in": "body",
             "required": true,
@@ -1728,13 +1735,6 @@
             "schema": {
               "$ref": "#/definitions/ActivateCouponrequest"
             }
-          },
-          {
-            "name": "Content-Type",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
           }
         ],
         "responses": {
@@ -1964,6 +1964,13 @@
         ],
         "parameters": [
           {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
             "name": "Body",
             "in": "body",
             "required": true,
@@ -1971,13 +1978,6 @@
             "schema": {
               "$ref": "#/definitions/SsoLoginrequest"
             }
-          },
-          {
-            "name": "Content-Type",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
           }
         ],
         "responses": {
@@ -2157,6 +2157,13 @@
         ],
         "parameters": [
           {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
             "name": "Body",
             "in": "body",
             "required": true,
@@ -2164,13 +2171,6 @@
             "schema": {
               "$ref": "#/definitions/CreateUsersAndGroupsAndPrivilegesRequest"
             }
-          },
-          {
-            "name": "Content-Type",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
           }
         ],
         "responses": {
@@ -2363,6 +2363,13 @@
         ],
         "parameters": [
           {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
             "name": "Body",
             "in": "body",
             "required": true,
@@ -2370,13 +2377,6 @@
             "schema": {
               "$ref": "#/definitions/CreateSchemaFilerequest"
             }
-          },
-          {
-            "name": "Content-Type",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
           }
         ],
         "responses": {
@@ -2434,6 +2434,13 @@
         ],
         "parameters": [
           {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
             "name": "Body",
             "in": "body",
             "required": true,
@@ -2441,13 +2448,6 @@
             "schema": {
               "$ref": "#/definitions/CreateSchemaJsonrequest"
             }
-          },
-          {
-            "name": "Content-Type",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
           }
         ],
         "responses": {
@@ -2505,6 +2505,13 @@
         ],
         "parameters": [
           {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
             "name": "Body",
             "in": "body",
             "required": true,
@@ -2512,13 +2519,6 @@
             "schema": {
               "$ref": "#/definitions/CreateSeorequest"
             }
-          },
-          {
-            "name": "Content-Type",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
           }
         ],
         "responses": {
@@ -2574,6 +2574,13 @@
         ],
         "parameters": [
           {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
             "name": "Body",
             "in": "body",
             "required": true,
@@ -2581,13 +2588,6 @@
             "schema": {
               "$ref": "#/definitions/EditSeorequest"
             }
-          },
-          {
-            "name": "Content-Type",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
           }
         ],
         "responses": {
@@ -2695,6 +2695,13 @@
         ],
         "parameters": [
           {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
             "name": "Body",
             "in": "body",
             "required": true,
@@ -2702,13 +2709,6 @@
             "schema": {
               "$ref": "#/definitions/CreatePagerequest"
             }
-          },
-          {
-            "name": "Content-Type",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
           }
         ],
         "responses": {
@@ -2764,6 +2764,13 @@
         ],
         "parameters": [
           {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
             "name": "Body",
             "in": "body",
             "required": true,
@@ -2771,13 +2778,6 @@
             "schema": {
               "$ref": "#/definitions/EditPagerequest"
             }
-          },
-          {
-            "name": "Content-Type",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
           }
         ],
         "responses": {
@@ -2885,6 +2885,13 @@
         ],
         "parameters": [
           {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
             "name": "Body",
             "in": "body",
             "required": true,
@@ -2892,13 +2899,6 @@
             "schema": {
               "$ref": "#/definitions/CreateLayoutrequest"
             }
-          },
-          {
-            "name": "Content-Type",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
           }
         ],
         "responses": {
@@ -2931,6 +2931,13 @@
         ],
         "parameters": [
           {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
             "name": "Body",
             "in": "body",
             "required": true,
@@ -2938,13 +2945,6 @@
             "schema": {
               "$ref": "#/definitions/EditLayoutrequest"
             }
-          },
-          {
-            "name": "Content-Type",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
           }
         ],
         "responses": {
@@ -3029,6 +3029,13 @@
         ],
         "parameters": [
           {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
             "name": "Body",
             "in": "body",
             "required": true,
@@ -3036,13 +3043,6 @@
             "schema": {
               "$ref": "#/definitions/CreateInstancesrequest"
             }
-          },
-          {
-            "name": "Content-Type",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
           }
         ],
         "responses": {
@@ -3077,6 +3077,13 @@
         ],
         "parameters": [
           {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
             "name": "Body",
             "in": "body",
             "required": true,
@@ -3084,13 +3091,6 @@
             "schema": {
               "$ref": "#/definitions/EditInstancesrequest"
             }
-          },
-          {
-            "name": "Content-Type",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
           }
         ],
         "responses": {
@@ -3184,6 +3184,13 @@
         ],
         "parameters": [
           {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
             "name": "Body",
             "in": "body",
             "required": true,
@@ -3191,13 +3198,6 @@
             "schema": {
               "$ref": "#/definitions/MoveFolderrequest"
             }
-          },
-          {
-            "name": "Content-Type",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
           }
         ],
         "responses": {
@@ -3253,6 +3253,13 @@
         ],
         "parameters": [
           {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
             "name": "Body",
             "in": "body",
             "required": true,
@@ -3260,13 +3267,6 @@
             "schema": {
               "$ref": "#/definitions/CreateFolderrequest"
             }
-          },
-          {
-            "name": "Content-Type",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
           }
         ],
         "responses": {
@@ -3322,6 +3322,13 @@
         ],
         "parameters": [
           {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
             "name": "Body",
             "in": "body",
             "required": true,
@@ -3329,13 +3336,6 @@
             "schema": {
               "$ref": "#/definitions/DeleteFolderrequest"
             }
-          },
-          {
-            "name": "Content-Type",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
           }
         ],
         "responses": {
