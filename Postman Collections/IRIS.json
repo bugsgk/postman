@@ -1588,7 +1588,7 @@
             "required": true,
             "description": "",
             "schema": {
-              "type": "object"
+              "$ref": "#/definitions/CreatePageInstancerequest"
             }
           }
         ],
@@ -2897,7 +2897,7 @@
             "required": true,
             "description": "",
             "schema": {
-              "type": "object"
+              "$ref": "#/definitions/CreateLayoutrequest"
             }
           }
         ],
@@ -2911,30 +2911,7 @@
             "auth": []
           }
         ],
-        "x-unitTests": [
-          {
-            "request": {
-              "method": "PUT",
-              "uri": "/content/layouts",
-              "headers": {
-                "Content-Type": "application/json"
-              },
-              "body": "{\"parentFolder\":\"/iriscontent/en/layouts/CouponPage/\",\"ContentItem\":{\"name\":\"CouponPageLayout\",\"type\":\"Page\",\"path\":\"CouponPageLayout\",\"description\":\"Page Layout for Coupon Page\",\"contentItemStartDate\":\"02/25/2017 12:00:00\",\"contentItemEndDate\":\"03/25/2017 12:00:00\",\"instances\":[\"/iriscontent/en/instance/CouponHoliday2017\",\"/iriscontent/en/instance/CouponSummer2017\",\"/iriscontent/en/instance/CouponFall2017\"],\"ContentItem\":[{\"name\":\"HeaderSection\",\"type\":\"Section\",\"path\":\"CouponPageLayout/HeaderSection\",\"contentItemStartDate\":\"02/25/2017 12:00:00\",\"contentItemEndDate\":\"03/25/2017 12:00:00\",\"ContentItem\":[{\"name\":\"HeaderContent\",\"type\":\"item\",\"itemtype\":\"HeaderContent\",\"path\":\"CouponPageLayout/HeaderSection/HeaderContent\",\"contentItemStartDate\":\"02/25/2017 12:00:00\",\"contentItemEndDate\":\"03/25/2017 12:00:00\",\"position-x\":\"1\",\"position-y\":\"1\"}]},{\"name\":\"BodySection\",\"type\":\"Section\",\"path\":\"CouponPageLayout/BodySection\",\"contentItemStartDate\":\"02/25/2017 12:00:00\",\"contentItemEndDate\":\"03/25/2017 12:00:00\",\"ContentItem\":[{\"name\":\"ColumnLayout1\",\"type\":\"ColumnLayout\",\"path\":\"CouponPageLayout/BodySection/ColumnLayout1\",\"contentItemStartDate\":\"02/25/2017 12:00:00\",\"contentItemEndDate\":\"03/25/2017 12:00:00\",\"position-x\":\"1\",\"position-y\":\"1\",\"ContentItem\":[{\"name\":\"RowLayout1\",\"type\":\"RowLayout\",\"path\":\"CouponPageLayout/BodySection/ColumnLayout1/RowLayout1\",\"contentItemStartDate\":\"02/25/2017 12:00:00\",\"contentItemEndDate\":\"03/25/2017 12:00:00\",\"position-x\":\"1\",\"position-y\":\"3\",\"ContentItem\":[{\"name\":\"CouponContent1\",\"type\":\"item\",\"itemtype\":\"CouponContent\",\"path\":\"CouponPageLayout/BodySection/ColumnLayout1/RowLayout1/CouponContent1\",\"contentItemStartDate\":\"02/25/2017 12:00:00\",\"contentItemEndDate\":\"03/25/2017 12:00:00\",\"position-x\":\"1\",\"position-y\":\"1\"},{\"name\":\"CouponContent2\",\"type\":\"item\",\"itemtype\":\"CouponContent\",\"path\":\"CouponPageLayout/BodySection/ColumnLayout1/RowLayout1/CouponContent2\",\"contentItemStartDate\":\"02/25/2017 12:00:00\",\"contentItemEndDate\":\"03/25/2017 12:00:00\",\"position-x\":\"2\",\"position-y\":\"1\"},{\"name\":\"CouponContent3\",\"type\":\"item\",\"itemtype\":\"CouponContent\",\"path\":\"CouponPageLayout/BodySection/ColumnLayout1/RowLayout1/CouponContent3\",\"contentItemStartDate\":\"02/25/2017 12:00:00\",\"contentItemEndDate\":\"03/25/2017 12:00:00\",\"position-x\":\"3\",\"position-y\":\"1\"}]},{\"name\":\"RowLayout2\",\"type\":\"RowLayout\",\"path\":\"CouponPageLayout/BodySection/ColumnLayout1/RowLayout2\",\"contentItemStartDate\":\"02/25/2017 12:00:00\",\"contentItemEndDate\":\"03/25/2017 12:00:00\",\"position-x\":\"1\",\"position-y\":\"2\",\"ContentItem\":[{\"name\":\"CouponContent4\",\"type\":\"item\",\"itemtype\":\"CouponContent\",\"path\":\"CouponPageLayout/BodySection/ColumnLayout1/RowLayout2/CouponContent4\",\"contentItemStartDate\":\"02/25/2017 12:00:00\",\"contentItemEndDate\":\"03/25/2017 12:00:00\",\"position-x\":\"1\",\"position-y\":\"1\"},{\"name\":\"CouponContent5\",\"type\":\"item\",\"itemtype\":\"CouponContent\",\"path\":\"CouponPageLayout/BodySection/ColumnLayout1/RowLayout2/CouponContent5\",\"contentItemStartDate\":\"02/25/2017 12:00:00\",\"contentItemEndDate\":\"03/25/2017 12:00:00\",\"position-x\":\"2\",\"position-y\":\"1\"},{\"name\":\"CouponContent6\",\"type\":\"item\",\"itemtype\":\"CouponContent\",\"path\":\"CouponPageLayout/BodySection/ColumnLayout1/RowLayout2/CouponContent6\",\"contentItemStartDate\":\"02/25/2017 12:00:00\",\"contentItemEndDate\":\"03/25/2017 12:00:00\",\"position-x\":\"3\",\"position-y\":\"1\"}]},{\"name\":\"RowLayout3\",\"type\":\"RowLayout\",\"path\":\"CouponPageLayout/BodySection/ColumnLayout1/RowLayout3\",\"contentItemStartDate\":\"02/25/2017 12:00:00\",\"contentItemEndDate\":\"03/25/2017 12:00:00\",\"position-x\":\"1\",\"position-y\":\"1\",\"ContentItem\":[{\"name\":\"CouponContent7\",\"type\":\"item\",\"itemtype\":\"CouponContent\",\"path\":\"CouponPageLayout/BodySection/ColumnLayout1/RowLayout3/CouponContent7\",\"contentItemStartDate\":\"02/25/2017 12:00:00\",\"contentItemEndDate\":\"03/25/2017 12:00:00\",\"position-x\":\"1\",\"position-y\":\"1\"},{\"name\":\"CouponContent8\",\"type\":\"item\",\"itemtype\":\"CouponContent\",\"path\":\"CouponPageLayout/BodySection/ColumnLayout1/RowLayout3/CouponContent8\",\"contentItemStartDate\":\"02/25/2017 12:00:00\",\"contentItemEndDate\":\"03/25/2017 12:00:00\",\"position-x\":\"2\",\"position-y\":\"1\"},{\"name\":\"CouponContent9\",\"type\":\"item\",\"itemtype\":\"CouponContent\",\"path\":\"CouponPageLayout/BodySection/ColumnLayout1/RowLayout3/CouponContent9\",\"contentItemStartDate\":\"02/25/2017 12:00:00\",\"contentItemEndDate\":\"03/25/2017 12:00:00\",\"position-x\":\"3\",\"position-y\":\"1\"}]}]}]},{\"name\":\"FooterSection\",\"type\":\"Section\",\"path\":\"CouponPageLayout/FooterSection\",\"contentItemStartDate\":\"02/25/2017 12:00:00\",\"contentItemEndDate\":\"03/25/2017 12:00:00\",\"ContentItem\":[{\"name\":\"FooterContent\",\"type\":\"item\",\"itemtype\":\"FooterContent\",\"path\":\"CouponPageLayout/FooterSection/FooterContent\",\"contentItemStartDate\":\"02/25/2017 12:00:00\",\"contentItemEndDate\":\"03/25/2017 12:00:00\",\"position-x\":\"1\",\"position-y\":\"1\"}]}]}}"
-            },
-            "expectedResponse": {
-              "x-allowExtraHeaders": true,
-              "x-bodyMatchMode": "NONE",
-              "x-arrayOrderedMatching": false,
-              "x-arrayCheckCount": false,
-              "x-matchResponseSchema": true,
-              "headers": {}
-            },
-            "x-testShouldPass": true,
-            "x-testEnabled": true,
-            "x-testName": "Create Layout",
-            "x-testDescription": "TODO: Add Description"
-          }
-        ],
+        "x-unitTests": [],
         "x-operation-settings": {
           "CollectParameters": false,
           "AllowDynamicQueryParameters": false,
@@ -3989,6 +3966,40 @@
     },
     "CreatePageInstancerequest": {
       "title": "Create Page InstanceRequest",
+      "example": {
+        "assetType": "couponTile",
+        "name": "COUPON1005",
+        "publishingStartDate": "2017-05-25T09:04:34+00:00",
+        "publishingEndDate": "2017-12-28T09:04:34+00:00",
+        "publishingChannelLarge": true,
+        "publishingChannelSmall": true,
+        "publishingChannelApp": true,
+        "publishable": true,
+        "active": true,
+        "content": {
+          "offerstartDate": "2017-05-28T09:04:34+00:00",
+          "offerendDate": "2017-10-28T09:04:34+00:00",
+          "promoCode": "adsfa",
+          "barcodeUrl": "dsfa",
+          "disclaimerTemplate": "sdas <strong> sdafsdf </strong> [@offerstartdate - @offerenddate]f sfasf",
+          "disclaimer": "sdas <strong> sdafsdf </strong> 2017-05-09 - 2017-05-10 f sfasf",
+          "linkText": "sdaf",
+          "linkUrl": "asdfas",
+          "linkAppUrl": "fsdafa",
+          "offers": [
+            {
+              "barCode": "ascfac",
+              "headLine": "fasas",
+              "bodyCopy": "asfa"
+            },
+            {
+              "barCode": "bfa",
+              "headLine": "bfasf",
+              "bodyCopy": "bsdfasf"
+            }
+          ]
+        }
+      },
       "type": "object",
       "properties": {
         "assetType": {
@@ -4035,6 +4046,9 @@
           "description": "",
           "example": true,
           "type": "boolean"
+        },
+        "content": {
+          "$ref": "#/definitions/Content9"
         }
       },
       "required": [
@@ -4046,7 +4060,113 @@
         "publishingChannelSmall",
         "publishingChannelApp",
         "publishable",
-        "active"
+        "active",
+        "content"
+      ]
+    },
+    "Content9": {
+      "title": "Content9",
+      "example": {
+        "offerstartDate": "2017-05-28T09:04:34+00:00",
+        "offerendDate": "2017-10-28T09:04:34+00:00",
+        "promoCode": "adsfa",
+        "barcodeUrl": "dsfa",
+        "disclaimerTemplate": "sdas <strong> sdafsdf </strong> [@offerstartdate - @offerenddate]f sfasf",
+        "disclaimer": "sdas <strong> sdafsdf </strong> 2017-05-09 - 2017-05-10 f sfasf",
+        "linkText": "sdaf",
+        "linkUrl": "asdfas",
+        "linkAppUrl": "fsdafa",
+        "offers": [
+          {
+            "barCode": "ascfac",
+            "headLine": "fasas",
+            "bodyCopy": "asfa"
+          },
+          {
+            "barCode": "bfa",
+            "headLine": "bfasf",
+            "bodyCopy": "bsdfasf"
+          }
+        ]
+      },
+      "type": "object",
+      "properties": {
+        "offerstartDate": {
+          "description": "",
+          "example": "5/28/2017 9:04:34 AM",
+          "type": "string"
+        },
+        "offerendDate": {
+          "description": "",
+          "example": "10/28/2017 9:04:34 AM",
+          "type": "string"
+        },
+        "promoCode": {
+          "description": "",
+          "example": "adsfa",
+          "type": "string"
+        },
+        "barcodeUrl": {
+          "description": "",
+          "example": "dsfa",
+          "type": "string"
+        },
+        "disclaimerTemplate": {
+          "description": "",
+          "example": "sdas <strong> sdafsdf </strong> [@offerstartdate - @offerenddate]f sfasf",
+          "type": "string"
+        },
+        "disclaimer": {
+          "description": "",
+          "example": "sdas <strong> sdafsdf </strong> 2017-05-09 - 2017-05-10 f sfasf",
+          "type": "string"
+        },
+        "linkText": {
+          "description": "",
+          "example": "sdaf",
+          "type": "string"
+        },
+        "linkUrl": {
+          "description": "",
+          "example": "asdfas",
+          "type": "string"
+        },
+        "linkAppUrl": {
+          "description": "",
+          "example": "fsdafa",
+          "type": "string"
+        },
+        "offers": {
+          "description": "",
+          "example": [
+            {
+              "barCode": "ascfac",
+              "headLine": "fasas",
+              "bodyCopy": "asfa"
+            },
+            {
+              "barCode": "bfa",
+              "headLine": "bfasf",
+              "bodyCopy": "bsdfasf"
+            }
+          ],
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Offer"
+          }
+        }
+      },
+      "required": [
+        "offerstartDate",
+        "offerendDate",
+        "promoCode",
+        "barcodeUrl",
+        "disclaimerTemplate",
+        "disclaimer",
+        "linkText",
+        "linkUrl",
+        "linkAppUrl",
+        "offers"
       ]
     },
     "UpdateAllCouponsRequest": {
@@ -4198,7 +4318,7 @@
           "format": "int32"
         },
         "content": {
-          "$ref": "#/definitions/Content10"
+          "$ref": "#/definitions/Content9"
         },
         "publishingChannelDesktop": {
           "description": "",
@@ -4261,111 +4381,6 @@
         "deprecated",
         "surrogate",
         "evergreen"
-      ]
-    },
-    "Content10": {
-      "title": "Content10",
-      "example": {
-        "offerendDate": "2017-06-25T09:04:34+00:00",
-        "linkUrl": "asdfas",
-        "promoCode": "BIGSAVE8",
-        "disclaimer": "sdas <strong> sdafsdf </strong> 2017-05-09 - 2017-05-10 f sfasf",
-        "offers": [
-          {
-            "barCode": "nitesh",
-            "headLine": "head123",
-            "bodyCopy": "nitin"
-          },
-          {
-            "barCode": "kart",
-            "headLine": "toe123",
-            "bodyCopy": "new"
-          }
-        ],
-        "linkText": "sdaf",
-        "disclaimerTemplate": "{'first':'1', 'second':'2'}",
-        "offerstartDate": "2017-06-15T09:04:34+00:00",
-        "linkAppUrl": "fsdafa",
-        "barcodeUrl": "https://e.jcpenney.com/bca/z/image?ct=CODE128&st=N&bh=3&bc=MC4560120002000000016210"
-      },
-      "type": "object",
-      "properties": {
-        "offerendDate": {
-          "description": "",
-          "example": "6/25/2017 9:04:34 AM",
-          "type": "string"
-        },
-        "linkUrl": {
-          "description": "",
-          "example": "asdfas",
-          "type": "string"
-        },
-        "promoCode": {
-          "description": "",
-          "example": "BIGSAVE8",
-          "type": "string"
-        },
-        "disclaimer": {
-          "description": "",
-          "example": "sdas <strong> sdafsdf </strong> 2017-05-09 - 2017-05-10 f sfasf",
-          "type": "string"
-        },
-        "offers": {
-          "description": "",
-          "example": [
-            {
-              "barCode": "nitesh",
-              "headLine": "head123",
-              "bodyCopy": "nitin"
-            },
-            {
-              "barCode": "kart",
-              "headLine": "toe123",
-              "bodyCopy": "new"
-            }
-          ],
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/Offer"
-          }
-        },
-        "linkText": {
-          "description": "",
-          "example": "sdaf",
-          "type": "string"
-        },
-        "disclaimerTemplate": {
-          "description": "",
-          "example": "{'first':'1', 'second':'2'}",
-          "type": "string"
-        },
-        "offerstartDate": {
-          "description": "",
-          "example": "6/15/2017 9:04:34 AM",
-          "type": "string"
-        },
-        "linkAppUrl": {
-          "description": "",
-          "example": "fsdafa",
-          "type": "string"
-        },
-        "barcodeUrl": {
-          "description": "",
-          "example": "https://e.jcpenney.com/bca/z/image?ct=CODE128&st=N&bh=3&bc=MC4560120002000000016210",
-          "type": "string"
-        }
-      },
-      "required": [
-        "offerendDate",
-        "linkUrl",
-        "promoCode",
-        "disclaimer",
-        "offers",
-        "linkText",
-        "disclaimerTemplate",
-        "offerstartDate",
-        "linkAppUrl",
-        "barcodeUrl"
       ]
     },
     "ActivateCouponrequest": {
@@ -4513,7 +4528,7 @@
           "type": "string"
         },
         "content": {
-          "$ref": "#/definitions/Content13"
+          "$ref": "#/definitions/Content15"
         },
         "validated": {
           "description": "",
@@ -4568,8 +4583,8 @@
         "evergreen"
       ]
     },
-    "Content13": {
-      "title": "Content13",
+    "Content15": {
+      "title": "Content15",
       "example": {
         "offerendDate": "2018-06-25T09:04:34+00:00",
         "linkUrl": "asdfas",
@@ -5530,302 +5545,9 @@
           "description": "",
           "example": "/iriscontent/en/layouts/CouponPage/",
           "type": "string"
-        }
-      },
-      "required": [
-        "parentFolder"
-      ]
-    },
-    "ContentItem": {
-      "title": "ContentItem",
-      "example": {
-        "name": "CouponPageLayout",
-        "type": "Page",
-        "path": "CouponPageLayout",
-        "description": "Page Layout for Coupon Page",
-        "contentItemStartDate": "02/25/2017 12:00:00",
-        "contentItemEndDate": "03/25/2017 12:00:00",
-        "instances": [
-          "/iriscontent/en/instance/CouponHoliday2017",
-          "/iriscontent/en/instance/CouponSummer2017",
-          "/iriscontent/en/instance/CouponFall2017"
-        ],
-        "ContentItem": [
-          {
-            "name": "HeaderSection",
-            "type": "Section",
-            "path": "CouponPageLayout/HeaderSection",
-            "contentItemStartDate": "02/25/2017 12:00:00",
-            "contentItemEndDate": "03/25/2017 12:00:00",
-            "ContentItem": [
-              {
-                "name": "HeaderContent",
-                "type": "item",
-                "itemtype": "HeaderContent",
-                "path": "CouponPageLayout/HeaderSection/HeaderContent",
-                "contentItemStartDate": "02/25/2017 12:00:00",
-                "contentItemEndDate": "03/25/2017 12:00:00",
-                "position-x": "1",
-                "position-y": "1"
-              }
-            ]
-          },
-          {
-            "name": "BodySection",
-            "type": "Section",
-            "path": "CouponPageLayout/BodySection",
-            "contentItemStartDate": "02/25/2017 12:00:00",
-            "contentItemEndDate": "03/25/2017 12:00:00",
-            "ContentItem": [
-              {
-                "name": "ColumnLayout1",
-                "type": "ColumnLayout",
-                "path": "CouponPageLayout/BodySection/ColumnLayout1",
-                "contentItemStartDate": "02/25/2017 12:00:00",
-                "contentItemEndDate": "03/25/2017 12:00:00",
-                "position-x": "1",
-                "position-y": "1",
-                "ContentItem": [
-                  {
-                    "name": "RowLayout1",
-                    "type": "RowLayout",
-                    "path": "CouponPageLayout/BodySection/ColumnLayout1/RowLayout1",
-                    "contentItemStartDate": "02/25/2017 12:00:00",
-                    "contentItemEndDate": "03/25/2017 12:00:00",
-                    "position-x": "1",
-                    "position-y": "3",
-                    "ContentItem": [
-                      {
-                        "name": "CouponContent1",
-                        "type": "item",
-                        "itemtype": "CouponContent",
-                        "path": "CouponPageLayout/BodySection/ColumnLayout1/RowLayout1/CouponContent1",
-                        "contentItemStartDate": "02/25/2017 12:00:00",
-                        "contentItemEndDate": "03/25/2017 12:00:00",
-                        "position-x": "1",
-                        "position-y": "1"
-                      },
-                      {
-                        "name": "CouponContent2",
-                        "type": "item",
-                        "itemtype": "CouponContent",
-                        "path": "CouponPageLayout/BodySection/ColumnLayout1/RowLayout1/CouponContent2",
-                        "contentItemStartDate": "02/25/2017 12:00:00",
-                        "contentItemEndDate": "03/25/2017 12:00:00",
-                        "position-x": "2",
-                        "position-y": "1"
-                      },
-                      {
-                        "name": "CouponContent3",
-                        "type": "item",
-                        "itemtype": "CouponContent",
-                        "path": "CouponPageLayout/BodySection/ColumnLayout1/RowLayout1/CouponContent3",
-                        "contentItemStartDate": "02/25/2017 12:00:00",
-                        "contentItemEndDate": "03/25/2017 12:00:00",
-                        "position-x": "3",
-                        "position-y": "1"
-                      }
-                    ]
-                  },
-                  {
-                    "name": "RowLayout2",
-                    "type": "RowLayout",
-                    "path": "CouponPageLayout/BodySection/ColumnLayout1/RowLayout2",
-                    "contentItemStartDate": "02/25/2017 12:00:00",
-                    "contentItemEndDate": "03/25/2017 12:00:00",
-                    "position-x": "1",
-                    "position-y": "2",
-                    "ContentItem": [
-                      {
-                        "name": "CouponContent4",
-                        "type": "item",
-                        "itemtype": "CouponContent",
-                        "path": "CouponPageLayout/BodySection/ColumnLayout1/RowLayout2/CouponContent4",
-                        "contentItemStartDate": "02/25/2017 12:00:00",
-                        "contentItemEndDate": "03/25/2017 12:00:00",
-                        "position-x": "1",
-                        "position-y": "1"
-                      },
-                      {
-                        "name": "CouponContent5",
-                        "type": "item",
-                        "itemtype": "CouponContent",
-                        "path": "CouponPageLayout/BodySection/ColumnLayout1/RowLayout2/CouponContent5",
-                        "contentItemStartDate": "02/25/2017 12:00:00",
-                        "contentItemEndDate": "03/25/2017 12:00:00",
-                        "position-x": "2",
-                        "position-y": "1"
-                      },
-                      {
-                        "name": "CouponContent6",
-                        "type": "item",
-                        "itemtype": "CouponContent",
-                        "path": "CouponPageLayout/BodySection/ColumnLayout1/RowLayout2/CouponContent6",
-                        "contentItemStartDate": "02/25/2017 12:00:00",
-                        "contentItemEndDate": "03/25/2017 12:00:00",
-                        "position-x": "3",
-                        "position-y": "1"
-                      }
-                    ]
-                  },
-                  {
-                    "name": "RowLayout3",
-                    "type": "RowLayout",
-                    "path": "CouponPageLayout/BodySection/ColumnLayout1/RowLayout3",
-                    "contentItemStartDate": "02/25/2017 12:00:00",
-                    "contentItemEndDate": "03/25/2017 12:00:00",
-                    "position-x": "1",
-                    "position-y": "1",
-                    "ContentItem": [
-                      {
-                        "name": "CouponContent7",
-                        "type": "item",
-                        "itemtype": "CouponContent",
-                        "path": "CouponPageLayout/BodySection/ColumnLayout1/RowLayout3/CouponContent7",
-                        "contentItemStartDate": "02/25/2017 12:00:00",
-                        "contentItemEndDate": "03/25/2017 12:00:00",
-                        "position-x": "1",
-                        "position-y": "1"
-                      },
-                      {
-                        "name": "CouponContent8",
-                        "type": "item",
-                        "itemtype": "CouponContent",
-                        "path": "CouponPageLayout/BodySection/ColumnLayout1/RowLayout3/CouponContent8",
-                        "contentItemStartDate": "02/25/2017 12:00:00",
-                        "contentItemEndDate": "03/25/2017 12:00:00",
-                        "position-x": "2",
-                        "position-y": "1"
-                      },
-                      {
-                        "name": "CouponContent9",
-                        "type": "item",
-                        "itemtype": "CouponContent",
-                        "path": "CouponPageLayout/BodySection/ColumnLayout1/RowLayout3/CouponContent9",
-                        "contentItemStartDate": "02/25/2017 12:00:00",
-                        "contentItemEndDate": "03/25/2017 12:00:00",
-                        "position-x": "3",
-                        "position-y": "1"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "name": "FooterSection",
-            "type": "Section",
-            "path": "CouponPageLayout/FooterSection",
-            "contentItemStartDate": "02/25/2017 12:00:00",
-            "contentItemEndDate": "03/25/2017 12:00:00",
-            "ContentItem": [
-              {
-                "name": "FooterContent",
-                "type": "item",
-                "itemtype": "FooterContent",
-                "path": "CouponPageLayout/FooterSection/FooterContent",
-                "contentItemStartDate": "02/25/2017 12:00:00",
-                "contentItemEndDate": "03/25/2017 12:00:00",
-                "position-x": "1",
-                "position-y": "1"
-              }
-            ]
-          }
-        ]
-      },
-      "type": "object",
-      "properties": {
-        "name": {
-          "description": "",
-          "example": "CouponPageLayout",
-          "type": "string"
-        },
-        "type": {
-          "description": "",
-          "example": "Page",
-          "type": "string"
-        },
-        "path": {
-          "description": "",
-          "example": "CouponPageLayout",
-          "type": "string"
-        },
-        "description": {
-          "description": "",
-          "example": "Page Layout for Coupon Page",
-          "type": "string"
-        },
-        "contentItemStartDate": {
-          "description": "",
-          "example": "02/25/2017 12:00:00",
-          "type": "string"
-        },
-        "contentItemEndDate": {
-          "description": "",
-          "example": "03/25/2017 12:00:00",
-          "type": "string"
-        },
-        "instances": {
-          "description": "",
-          "example": [
-            "/iriscontent/en/instance/CouponHoliday2017",
-            "/iriscontent/en/instance/CouponSummer2017",
-            "/iriscontent/en/instance/CouponFall2017"
-          ],
-          "type": "array",
-          "items": {
-            "type": "string"
-          }
-        }
-      },
-      "required": [
-        "name",
-        "type",
-        "path",
-        "description",
-        "contentItemStartDate",
-        "contentItemEndDate",
-        "instances"
-      ]
-    },
-    "ContentItem27": {
-      "title": "ContentItem27",
-      "type": "object",
-      "properties": {
-        "name": {
-          "description": "",
-          "example": "HeaderSection",
-          "type": "string"
-        },
-        "type": {
-          "description": "",
-          "example": "Section",
-          "type": "string"
-        },
-        "path": {
-          "description": "",
-          "example": "CouponPageLayout/HeaderSection",
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "type",
-        "path"
-      ]
-    },
-    "EditLayoutrequest": {
-      "title": "Edit LayoutRequest",
-      "type": "object",
-      "properties": {
-        "parentFolder": {
-          "description": "",
-          "example": "/iriscontent/en/layouts/CouponPage/",
-          "type": "string"
         },
         "ContentItem": {
-          "$ref": "#/definitions/ContentItem29"
+          "$ref": "#/definitions/ContentItem"
         }
       },
       "required": [
@@ -5833,8 +5555,8 @@
         "ContentItem"
       ]
     },
-    "ContentItem29": {
-      "title": "ContentItem29",
+    "ContentItem": {
+      "title": "ContentItem",
       "type": "object",
       "properties": {
         "name": {
@@ -5883,7 +5605,7 @@
           "description": "",
           "type": "array",
           "items": {
-            "$ref": "#/definitions/ContentItem30"
+            "$ref": "#/definitions/ContentItem29"
           }
         }
       },
@@ -5898,8 +5620,8 @@
         "ContentItem"
       ]
     },
-    "ContentItem30": {
-      "title": "ContentItem30",
+    "ContentItem29": {
+      "title": "ContentItem29",
       "type": "object",
       "properties": {
         "name": {
@@ -5943,7 +5665,7 @@
           ],
           "type": "array",
           "items": {
-            "$ref": "#/definitions/ContentItem31"
+            "$ref": "#/definitions/ContentItem30"
           }
         }
       },
@@ -5956,8 +5678,8 @@
         "ContentItem"
       ]
     },
-    "ContentItem31": {
-      "title": "ContentItem31",
+    "ContentItem30": {
+      "title": "ContentItem30",
       "example": {
         "name": "HeaderContent",
         "type": "item",
@@ -6022,6 +5744,24 @@
         "position-y"
       ]
     },
+    "EditLayoutrequest": {
+      "title": "Edit LayoutRequest",
+      "type": "object",
+      "properties": {
+        "parentFolder": {
+          "description": "",
+          "example": "/iriscontent/en/layouts/CouponPage/",
+          "type": "string"
+        },
+        "ContentItem": {
+          "$ref": "#/definitions/ContentItem"
+        }
+      },
+      "required": [
+        "parentFolder",
+        "ContentItem"
+      ]
+    },
     "CreateInstancesrequest": {
       "title": "Create InstancesRequest",
       "type": "object",
@@ -6037,7 +5777,7 @@
           "type": "string"
         },
         "ContentItem": {
-          "$ref": "#/definitions/ContentItem33"
+          "$ref": "#/definitions/ContentItem36"
         }
       },
       "required": [
@@ -6046,8 +5786,8 @@
         "ContentItem"
       ]
     },
-    "ContentItem33": {
-      "title": "ContentItem33",
+    "ContentItem36": {
+      "title": "ContentItem36",
       "type": "object",
       "properties": {
         "name": {
@@ -6089,7 +5829,7 @@
           "description": "",
           "type": "array",
           "items": {
-            "$ref": "#/definitions/ContentItem34"
+            "$ref": "#/definitions/ContentItem37"
           }
         }
       },
@@ -6104,8 +5844,8 @@
         "ContentItem"
       ]
     },
-    "ContentItem34": {
-      "title": "ContentItem34",
+    "ContentItem37": {
+      "title": "ContentItem37",
       "type": "object",
       "properties": {
         "name": {
@@ -6155,7 +5895,7 @@
           ],
           "type": "array",
           "items": {
-            "$ref": "#/definitions/ContentItem35"
+            "$ref": "#/definitions/ContentItem38"
           }
         }
       },
@@ -6169,8 +5909,8 @@
         "ContentItem"
       ]
     },
-    "ContentItem35": {
-      "title": "ContentItem35",
+    "ContentItem38": {
+      "title": "ContentItem38",
       "example": {
         "name": "HeaderContent",
         "type": "item",
@@ -6257,7 +5997,7 @@
           "type": "string"
         },
         "ContentItem": {
-          "$ref": "#/definitions/ContentItem33"
+          "$ref": "#/definitions/ContentItem36"
         }
       },
       "required": [
