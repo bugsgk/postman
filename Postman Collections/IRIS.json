@@ -6,18 +6,14 @@
   },
   "item": [
     {
-      "_postman_id": "1932546-e7e8e584-596a-7b3f-ffe3-217af8eb540e",
       "name": "Media",
-      "description": "",
       "item": [
         {
-          "_postman_id": "1932546-b9a34bce-2790-903d-110b-90dabff44f6b",
           "name": "Bitstreams",
-          "description": "",
           "item": [
             {
-              "_postman_id": "1932546-0b60fa9c-93a6-61bb-88c2-ad709f74663e",
               "name": "GET bitstreams",
+              "_postman_id": "1932546-0b60fa9c-93a6-61bb-88c2-ad709f74663e",
               "request": {
                 "method": "GET",
                 "header": [
@@ -26,25 +22,20 @@
                     "value": "Basic YWRtaW5AamNwLmNvbTphZG1pbg=="
                   }
                 ],
-                "body": {
-                  "mode": "raw",
-                  "raw": ""
-                },
                 "url": "http://localhost:9090/bitstreams/3565d384-5391-4c6a-8edd-f9d6c1816844"
               },
               "response": []
             }
           ],
+          "_postman_id": "1932546-b9a34bce-2790-903d-110b-90dabff44f6b",
           "_postman_isSubFolder": true
         },
         {
-          "_postman_id": "1932546-4db41373-c40e-51b4-1e13-eb0fd17a72da",
           "name": "Folder",
-          "description": "",
           "item": [
             {
-              "_postman_id": "1932546-bfdc45c2-3065-da3c-660d-f294b389a13c",
               "name": "foldertree",
+              "_postman_id": "1932546-bfdc45c2-3065-da3c-660d-f294b389a13c",
               "request": {
                 "method": "GET",
                 "header": [
@@ -53,17 +44,13 @@
                     "value": "Basic YWRtaW5AamNwLmNvbTphZG1pbg=="
                   }
                 ],
-                "body": {
-                  "mode": "raw",
-                  "raw": ""
-                },
                 "url": "http://localhost:9090/assets/folder/tree"
               },
               "response": []
             },
             {
-              "_postman_id": "1932546-dc7cbf7a-cfde-102f-f7de-449df6c6ef22",
               "name": "folder",
+              "_postman_id": "1932546-dc7cbf7a-cfde-102f-f7de-449df6c6ef22",
               "request": {
                 "method": "GET",
                 "header": [
@@ -72,17 +59,13 @@
                     "value": "Basic YWRtaW5AamNwLmNvbTphZG1pbg=="
                   }
                 ],
-                "body": {
-                  "mode": "raw",
-                  "raw": ""
-                },
                 "url": "http://localhost:9090/assets/folder/3a4b03e9-f313-4eb9-80c2-ab96a48bdaef"
               },
               "response": []
             },
             {
-              "_postman_id": "1932546-ce041a91-c436-a9e4-cba8-0225c4bc0477",
               "name": "folder",
+              "_postman_id": "1932546-ce041a91-c436-a9e4-cba8-0225c4bc0477",
               "request": {
                 "method": "DELETE",
                 "header": [
@@ -91,17 +74,13 @@
                     "value": "Basic YWRtaW5AamNwLmNvbTphZG1pbg=="
                   }
                 ],
-                "body": {
-                  "mode": "raw",
-                  "raw": ""
-                },
                 "url": "http://localhost:9090/assets/folder/d45ee18b-22a0-4bea-8cb8-7b9c7d8c9adf"
               },
               "response": []
             },
             {
-              "_postman_id": "1932546-a9fb1acc-2b01-c0a8-3c7e-3e0687e4afca",
               "name": "sub folder ",
+              "_postman_id": "1932546-a9fb1acc-2b01-c0a8-3c7e-3e0687e4afca",
               "request": {
                 "method": "POST",
                 "header": [
@@ -123,8 +102,8 @@
               "response": []
             },
             {
-              "_postman_id": "1932546-c01c66a2-8bb8-4e33-b2ee-6017ec4ee146",
               "name": "folder",
+              "_postman_id": "1932546-c01c66a2-8bb8-4e33-b2ee-6017ec4ee146",
               "request": {
                 "method": "POST",
                 "header": [
@@ -146,16 +125,15 @@
               "response": []
             }
           ],
+          "_postman_id": "1932546-4db41373-c40e-51b4-1e13-eb0fd17a72da",
           "_postman_isSubFolder": true
         },
         {
-          "_postman_id": "1932546-c215d653-b275-8c8a-bb51-5a6f74d8fae0",
           "name": "Asset",
-          "description": "",
           "item": [
             {
-              "_postman_id": "1932546-d951de0c-5f97-7aaa-bdbd-df55ff803858",
               "name": "asset",
+              "_postman_id": "1932546-d951de0c-5f97-7aaa-bdbd-df55ff803858",
               "request": {
                 "method": "GET",
                 "header": [
@@ -164,14 +142,17 @@
                     "value": "Basic YWRtaW5AamNwLmNvbTphZG1pbg=="
                   }
                 ],
-                "body": {},
+                "body": {
+                  "mode": "formdata",
+                  "formdata": []
+                },
                 "url": "http://localhost:9090/media/asset/4016d908-509e-4767-911b-093cf543947f/"
               },
               "response": []
             },
             {
-              "_postman_id": "1932546-599b3fe0-ed46-be0a-fa2c-2f1dfcc042a9",
               "name": "asset",
+              "_postman_id": "1932546-599b3fe0-ed46-be0a-fa2c-2f1dfcc042a9",
               "request": {
                 "auth": {
                   "type": "basic",
@@ -227,8 +208,8 @@
               "response": []
             },
             {
-              "_postman_id": "1932546-b339913d-b81c-cbf1-bd8b-1b361ebfb0b7",
               "name": "asset/original",
+              "_postman_id": "1932546-b339913d-b81c-cbf1-bd8b-1b361ebfb0b7",
               "request": {
                 "method": "GET",
                 "header": [
@@ -237,17 +218,13 @@
                     "value": "Basic YWRtaW5AamNwLmNvbTphZG1pbg=="
                   }
                 ],
-                "body": {
-                  "mode": "raw",
-                  "raw": ""
-                },
                 "url": "http://localhost:9090/asset/61d83b25-5564-46ae-a4a4-f959d397fd89/original"
               },
               "response": []
             },
             {
-              "_postman_id": "1932546-69358f9c-57c4-b50e-f3a0-b41126f97665",
               "name": "asset",
+              "_postman_id": "1932546-69358f9c-57c4-b50e-f3a0-b41126f97665",
               "request": {
                 "method": "GET",
                 "header": [
@@ -256,40 +233,41 @@
                     "value": "Basic YWRtaW5AamNwLmNvbTphZG1pbg=="
                   }
                 ],
-                "body": {
-                  "mode": "raw",
-                  "raw": ""
-                },
                 "url": "http://localhost:9090/media/asset/59a06523-4caa-4a6b-9f60-3cc0665d7560"
               },
               "response": []
             }
           ],
+          "_postman_id": "1932546-c215d653-b275-8c8a-bb51-5a6f74d8fae0",
           "_postman_isSubFolder": true
         },
         {
-          "_postman_id": "1932546-5614634b-95d0-13c8-6960-adbd28611c7c",
           "name": "Search",
-          "description": "",
           "item": [
             {
-              "_postman_id": "1932546-d8b50c99-3272-d401-ab69-176453443dbf",
               "name": "SearchByName",
+              "_postman_id": "1932546-d8b50c99-3272-d401-ab69-176453443dbf",
               "request": {
                 "method": "GET",
                 "header": [],
-                "body": {},
+                "body": {
+                  "mode": "formdata",
+                  "formdata": []
+                },
                 "url": "http://localhost:9090/media/search/jcp-name:item*"
               },
               "response": []
             },
             {
-              "_postman_id": "1932546-3acec7c6-133f-1a78-63cf-788320e878bb",
               "name": "SearchByTags",
+              "_postman_id": "1932546-3acec7c6-133f-1a78-63cf-788320e878bb",
               "request": {
                 "method": "GET",
                 "header": [],
-                "body": {},
+                "body": {
+                  "mode": "formdata",
+                  "formdata": []
+                },
                 "url": {
                   "raw": "http://localhost:9090/media/search/jcp-tags:outdoor/?start=0&end=3&sortField=jcp-name&sortOrder=desc",
                   "protocol": "http",
@@ -306,23 +284,19 @@
                   "query": [
                     {
                       "key": "start",
-                      "value": "0",
-                      "equals": true
+                      "value": "0"
                     },
                     {
                       "key": "end",
-                      "value": "3",
-                      "equals": true
+                      "value": "3"
                     },
                     {
                       "key": "sortField",
-                      "value": "jcp-name",
-                      "equals": true
+                      "value": "jcp-name"
                     },
                     {
                       "key": "sortOrder",
-                      "value": "desc",
-                      "equals": true
+                      "value": "desc"
                     }
                   ]
                 }
@@ -330,23 +304,29 @@
               "response": []
             },
             {
-              "_postman_id": "1932546-ca8d6eff-d7fb-146d-0f9a-fbe33903cb30",
               "name": "SearchByTitle",
+              "_postman_id": "1932546-ca8d6eff-d7fb-146d-0f9a-fbe33903cb30",
               "request": {
                 "method": "GET",
                 "header": [],
-                "body": {},
+                "body": {
+                  "mode": "formdata",
+                  "formdata": []
+                },
                 "url": "http://localhost:9090/media/search/dc-title:sample item"
               },
               "response": []
             },
             {
-              "_postman_id": "1932546-436e2bff-31a0-30cd-46d6-91c1ba508e9d",
               "name": "SearchAll",
+              "_postman_id": "1932546-436e2bff-31a0-30cd-46d6-91c1ba508e9d",
               "request": {
                 "method": "GET",
                 "header": [],
-                "body": {},
+                "body": {
+                  "mode": "formdata",
+                  "formdata": []
+                },
                 "url": {
                   "raw": "http://localhost:9090/media/search/all/?start=0&end=5&sortField=jcp-name&sortOrder=desc",
                   "protocol": "http",
@@ -363,23 +343,19 @@
                   "query": [
                     {
                       "key": "start",
-                      "value": "0",
-                      "equals": true
+                      "value": "0"
                     },
                     {
                       "key": "end",
-                      "value": "5",
-                      "equals": true
+                      "value": "5"
                     },
                     {
                       "key": "sortField",
-                      "value": "jcp-name",
-                      "equals": true
+                      "value": "jcp-name"
                     },
                     {
                       "key": "sortOrder",
-                      "value": "desc",
-                      "equals": true
+                      "value": "desc"
                     }
                   ]
                 }
@@ -387,7 +363,6 @@
               "response": []
             },
             {
-              "_postman_id": "1932546-b9f68f11-5617-0883-f860-6701e60fac3e",
               "name": "Full Text Search",
               "event": [
                 {
@@ -409,10 +384,14 @@
                   }
                 }
               ],
+              "_postman_id": "1932546-b9f68f11-5617-0883-f860-6701e60fac3e",
               "request": {
                 "method": "GET",
                 "header": [],
-                "body": {},
+                "body": {
+                  "mode": "formdata",
+                  "formdata": []
+                },
                 "url": {
                   "raw": "http://localhost:9090/media/search/?searchText=solr&start=0&end=4&sortField=jcp-name&sortOrder=asc",
                   "protocol": "http",
@@ -428,28 +407,23 @@
                   "query": [
                     {
                       "key": "searchText",
-                      "value": "solr",
-                      "equals": true
+                      "value": "solr"
                     },
                     {
                       "key": "start",
-                      "value": "0",
-                      "equals": true
+                      "value": "0"
                     },
                     {
                       "key": "end",
-                      "value": "4",
-                      "equals": true
+                      "value": "4"
                     },
                     {
                       "key": "sortField",
-                      "value": "jcp-name",
-                      "equals": true
+                      "value": "jcp-name"
                     },
                     {
                       "key": "sortOrder",
-                      "value": "asc",
-                      "equals": true
+                      "value": "asc"
                     }
                   ]
                 }
@@ -457,12 +431,15 @@
               "response": []
             },
             {
-              "_postman_id": "1932546-65716393-e2c7-698a-5d37-9b0b43d17684",
               "name": "Full Text Search With Filters",
+              "_postman_id": "1932546-65716393-e2c7-698a-5d37-9b0b43d17684",
               "request": {
                 "method": "GET",
                 "header": [],
-                "body": {},
+                "body": {
+                  "mode": "formdata",
+                  "formdata": []
+                },
                 "url": {
                   "raw": "http://localhost:9090/media/search/jcp-tags:outdoor/?searchText=*solr",
                   "protocol": "http",
@@ -479,8 +456,7 @@
                   "query": [
                     {
                       "key": "searchText",
-                      "value": "*solr",
-                      "equals": true
+                      "value": "*solr"
                     }
                   ]
                 }
@@ -488,16 +464,15 @@
               "response": []
             }
           ],
+          "_postman_id": "1932546-5614634b-95d0-13c8-6960-adbd28611c7c",
           "_postman_isSubFolder": true
         },
         {
-          "_postman_id": "1932546-861d60a6-4e20-bf59-bad7-b679e0c604a9",
           "name": "Metatags",
-          "description": "",
           "item": [
             {
-              "_postman_id": "1932546-84b88b97-3039-2e2c-f3ee-5979cd7d122a",
               "name": "TagBasedFilter",
+              "_postman_id": "1932546-84b88b97-3039-2e2c-f3ee-5979cd7d122a",
               "request": {
                 "auth": {
                   "type": "basic",
@@ -514,7 +489,10 @@
                     "value": "application/json"
                   }
                 ],
-                "body": {},
+                "body": {
+                  "mode": "formdata",
+                  "formdata": []
+                },
                 "url": {
                   "raw": "http://localhost:9090/assets/filtered-items/?query_field[]=tags&query_op[]=contains&query_val[]=mens",
                   "protocol": "http",
@@ -530,18 +508,15 @@
                   "query": [
                     {
                       "key": "query_field[]",
-                      "value": "tags",
-                      "equals": true
+                      "value": "tags"
                     },
                     {
                       "key": "query_op[]",
-                      "value": "contains",
-                      "equals": true
+                      "value": "contains"
                     },
                     {
                       "key": "query_val[]",
-                      "value": "mens",
-                      "equals": true
+                      "value": "mens"
                     }
                   ]
                 }
@@ -549,8 +524,8 @@
               "response": []
             },
             {
-              "_postman_id": "1932546-6ff8d4b4-2688-13e7-b4ac-639c665796d8",
               "name": "TagBasedFilter copy",
+              "_postman_id": "1932546-6ff8d4b4-2688-13e7-b4ac-639c665796d8",
               "request": {
                 "auth": {
                   "type": "basic",
@@ -567,7 +542,10 @@
                     "value": "application/json"
                   }
                 ],
-                "body": {},
+                "body": {
+                  "mode": "formdata",
+                  "formdata": []
+                },
                 "url": {
                   "raw": "http://localhost:9090/assets/filtered-items/?query_field[]=tags&query_op[]=contains&query_val[]=mens",
                   "protocol": "http",
@@ -583,18 +561,15 @@
                   "query": [
                     {
                       "key": "query_field[]",
-                      "value": "tags",
-                      "equals": true
+                      "value": "tags"
                     },
                     {
                       "key": "query_op[]",
-                      "value": "contains",
-                      "equals": true
+                      "value": "contains"
                     },
                     {
                       "key": "query_val[]",
-                      "value": "mens",
-                      "equals": true
+                      "value": "mens"
                     }
                   ]
                 }
@@ -602,11 +577,12 @@
               "response": []
             }
           ],
+          "_postman_id": "1932546-861d60a6-4e20-bf59-bad7-b679e0c604a9",
           "_postman_isSubFolder": true
         },
         {
-          "_postman_id": "1932546-ac577e4d-f616-4e4f-54a8-3bcb7fb9a41a",
           "name": "Documentation",
+          "_postman_id": "1932546-ac577e4d-f616-4e4f-54a8-3bcb7fb9a41a",
           "request": {
             "method": "GET",
             "header": [
@@ -615,46 +591,47 @@
                 "value": "Basic YWRtaW5AamNwLmNvbTphZG1pbg=="
               }
             ],
-            "body": {
-              "mode": "raw",
-              "raw": ""
-            },
             "url": "http://localhost:9090/assets/"
           },
           "response": []
         }
-      ]
+      ],
+      "_postman_id": "1932546-e7e8e584-596a-7b3f-ffe3-217af8eb540e"
     },
     {
-      "_postman_id": "1932546-32a068e5-4d04-5401-4077-19911dd4b3ae",
       "name": "Site Content Api",
-      "description": "",
       "item": [
         {
-          "_postman_id": "1932546-a9aa4cfb-33c4-0c56-dfc0-81524379e8e3",
           "name": "Get Content By Id",
+          "_postman_id": "1932546-a9aa4cfb-33c4-0c56-dfc0-81524379e8e3",
           "request": {
             "method": "GET",
             "header": [],
-            "body": {},
+            "body": {
+              "mode": "formdata",
+              "formdata": []
+            },
             "url": "http://localhost:8282/content-api/content/7ed67a88-9011-44ca-91b6-8ff5b62c2b9e"
           },
           "response": []
         },
         {
-          "_postman_id": "1932546-908bd131-a3f4-0f45-4618-170d787b3f87",
           "name": "Get Content By Id in Preview",
+          "_postman_id": "1932546-908bd131-a3f4-0f45-4618-170d787b3f87",
           "request": {
             "method": "GET",
             "header": [],
-            "body": {},
+            "body": {
+              "mode": "formdata",
+              "formdata": []
+            },
             "url": "http://localhost:8282/content-api/content/7ed67a88-9011-44ca-91b6-8ff5b62c2b9e"
           },
           "response": []
         },
         {
-          "_postman_id": "1932546-ee7cc99e-d036-7741-26e0-ebe8787b48ad",
           "name": "Get Aggregate Page",
+          "_postman_id": "1932546-ee7cc99e-d036-7741-26e0-ebe8787b48ad",
           "request": {
             "auth": {
               "type": "basic",
@@ -671,14 +648,17 @@
                 "value": "app"
               }
             ],
-            "body": {},
+            "body": {
+              "mode": "formdata",
+              "formdata": []
+            },
             "url": "http://localhost:8282/content-api/aggregate-pages/m/jcpenney-coupons/N-mpi6e5"
           },
           "response": []
         },
         {
-          "_postman_id": "1932546-4a678ea7-f453-a726-a352-04c5125afcd0",
           "name": "Get Aggregate Page in Preview",
+          "_postman_id": "1932546-4a678ea7-f453-a726-a352-04c5125afcd0",
           "request": {
             "auth": {
               "type": "basic",
@@ -695,26 +675,26 @@
                 "value": "app"
               }
             ],
-            "body": {},
+            "body": {
+              "mode": "formdata",
+              "formdata": []
+            },
             "url": "http://localhost:8283/prvcontent-api/aggregate-pages/m/jcpenney-coupons/N-mpi6e5"
           },
           "response": []
         }
-      ]
+      ],
+      "_postman_id": "1932546-32a068e5-4d04-5401-4077-19911dd4b3ae"
     },
     {
-      "_postman_id": "1932546-ab4fe8c6-0483-2041-43b5-0f790f8d69c4",
       "name": "Authoring",
-      "description": "",
       "item": [
         {
-          "_postman_id": "1932546-85cfd1a1-b277-7ff7-2296-b13a4f6c6460",
           "name": "Coupon",
-          "description": "",
           "item": [
             {
-              "_postman_id": "1932546-2f652e00-3715-e925-7bed-705417ff2a6c",
               "name": "Create Coupon",
+              "_postman_id": "1932546-2f652e00-3715-e925-7bed-705417ff2a6c",
               "request": {
                 "method": "POST",
                 "header": [
@@ -737,8 +717,8 @@
               "response": []
             },
             {
-              "_postman_id": "1932546-be6095a8-1dfb-2cdf-d3e7-dfb1ae26361f",
               "name": "Edit Coupon",
+              "_postman_id": "1932546-be6095a8-1dfb-2cdf-d3e7-dfb1ae26361f",
               "request": {
                 "method": "PUT",
                 "header": [
@@ -761,8 +741,8 @@
               "response": []
             },
             {
-              "_postman_id": "1932546-85dbf391-c300-22a3-c887-d3c38e8ed1a0",
               "name": "Get Coupon",
+              "_postman_id": "1932546-85dbf391-c300-22a3-c887-d3c38e8ed1a0",
               "request": {
                 "method": "GET",
                 "header": [
@@ -771,15 +751,18 @@
                     "value": "Basic YWRtaW46YWRtaW4="
                   }
                 ],
-                "body": {},
+                "body": {
+                  "mode": "formdata",
+                  "formdata": []
+                },
                 "url": "http://localhost:8080/content-authoring/content/1758cf3c-cbfc-434a-97a8-ef351230228f",
                 "description": "Get Coupon"
               },
               "response": []
             },
             {
-              "_postman_id": "1932546-662f0c28-bea6-a9fd-9921-080dd7f41872",
               "name": "Delete Coupon",
+              "_postman_id": "1932546-662f0c28-bea6-a9fd-9921-080dd7f41872",
               "request": {
                 "auth": {
                   "type": "basic",
@@ -797,18 +780,24 @@
                     "value": "Basic YWRtaW46YWRtaW4="
                   }
                 ],
-                "body": {},
+                "body": {
+                  "mode": "formdata",
+                  "formdata": []
+                },
                 "url": "http://localhost:9080/content-authoring/content/en_US/JCPenney.com/Coupons/Assets/Content/COUPON1001"
               },
               "response": []
             },
             {
-              "_postman_id": "1932546-557711cf-048d-6f48-9059-1d4f7f673364",
               "name": "Get All Coupons",
+              "_postman_id": "1932546-557711cf-048d-6f48-9059-1d4f7f673364",
               "request": {
                 "method": "GET",
                 "header": [],
-                "body": {},
+                "body": {
+                  "mode": "formdata",
+                  "formdata": []
+                },
                 "url": {
                   "raw": "http://localhost:8080/content-authoring/content/couponTile?parent=/content/en_US/JCPenney.com/Coupons/Assets/Content",
                   "protocol": "http",
@@ -824,8 +813,7 @@
                   "query": [
                     {
                       "key": "parent",
-                      "value": "/content/en_US/JCPenney.com/Coupons/Assets/Content",
-                      "equals": true
+                      "value": "/content/en_US/JCPenney.com/Coupons/Assets/Content"
                     }
                   ]
                 },
@@ -834,12 +822,15 @@
               "response": []
             },
             {
-              "_postman_id": "1932546-3d6afbe2-baa8-564f-b46c-935cfe26ffe0",
               "name": "Get All Coupons - Date Filter",
+              "_postman_id": "1932546-3d6afbe2-baa8-564f-b46c-935cfe26ffe0",
               "request": {
                 "method": "GET",
                 "header": [],
-                "body": {},
+                "body": {
+                  "mode": "formdata",
+                  "formdata": []
+                },
                 "url": {
                   "raw": "http://localhost:8080/content-authoring/content/couponTile/?parent=/content/en-us/jcpenney-dotcom/content/coupon&startDate=06/22/2018&endDate=07/23/2018",
                   "protocol": "http",
@@ -856,18 +847,15 @@
                   "query": [
                     {
                       "key": "parent",
-                      "value": "/content/en-us/jcpenney-dotcom/content/coupon",
-                      "equals": true
+                      "value": "/content/en-us/jcpenney-dotcom/content/coupon"
                     },
                     {
                       "key": "startDate",
-                      "value": "06/22/2018",
-                      "equals": true
+                      "value": "06/22/2018"
                     },
                     {
                       "key": "endDate",
-                      "value": "07/23/2018",
-                      "equals": true
+                      "value": "07/23/2018"
                     }
                   ]
                 },
@@ -876,8 +864,8 @@
               "response": []
             },
             {
-              "_postman_id": "1932546-7fab07e8-3c19-89a4-a1d7-cc780e7f8303",
               "name": "Create Page Instance",
+              "_postman_id": "1932546-7fab07e8-3c19-89a4-a1d7-cc780e7f8303",
               "request": {
                 "method": "POST",
                 "header": [
@@ -900,8 +888,8 @@
               "response": []
             },
             {
-              "_postman_id": "1932546-fe6df690-6533-df96-aebc-aea3606aac9e",
               "name": "UpdateAllCoupons",
+              "_postman_id": "1932546-fe6df690-6533-df96-aebc-aea3606aac9e",
               "request": {
                 "method": "PUT",
                 "header": [
@@ -923,8 +911,8 @@
               "response": []
             },
             {
-              "_postman_id": "1932546-23385f58-1581-4539-0f36-be2d87dd14d9",
               "name": "Activate Coupon",
+              "_postman_id": "1932546-23385f58-1581-4539-0f36-be2d87dd14d9",
               "request": {
                 "method": "PUT",
                 "header": [
@@ -942,35 +930,36 @@
               "response": []
             }
           ],
+          "_postman_id": "1932546-85cfd1a1-b277-7ff7-2296-b13a4f6c6460",
           "_postman_isSubFolder": true
         },
         {
-          "_postman_id": "1932546-4f94f0b4-9478-11f8-3954-c179ef6f9e9e",
           "name": "Search",
-          "description": "",
           "item": [
             {
-              "_postman_id": "1932546-ca0729c4-fdd7-4b30-099e-f563343fa2e1",
               "name": "Search Content",
+              "_postman_id": "1932546-ca0729c4-fdd7-4b30-099e-f563343fa2e1",
               "request": {
                 "method": "GET",
                 "header": [],
-                "body": {},
+                "body": {
+                  "mode": "formdata",
+                  "formdata": []
+                },
                 "url": "http://localhost:8080/content-authoring/content/search/promoCode/BIGSAVE9"
               },
               "response": []
             }
           ],
+          "_postman_id": "1932546-4f94f0b4-9478-11f8-3954-c179ef6f9e9e",
           "_postman_isSubFolder": true
         },
         {
-          "_postman_id": "1932546-e7401fc0-fbe8-52c8-8644-eb2bd75fa6f8",
           "name": "Users",
-          "description": "",
           "item": [
             {
-              "_postman_id": "1932546-d701144f-7098-60ce-e26b-d4dd9090345b",
               "name": "Get All Users",
+              "_postman_id": "1932546-d701144f-7098-60ce-e26b-d4dd9090345b",
               "request": {
                 "method": "POST",
                 "header": [],
@@ -983,8 +972,8 @@
               "response": []
             },
             {
-              "_postman_id": "1932546-779747f3-ab1f-5048-accd-49c3b0afa6f4",
               "name": "Logout",
+              "_postman_id": "1932546-779747f3-ab1f-5048-accd-49c3b0afa6f4",
               "request": {
                 "method": "POST",
                 "header": [],
@@ -994,13 +983,11 @@
                     {
                       "key": "j_username",
                       "value": "admin",
-                      "description": "",
                       "type": "text"
                     },
                     {
                       "key": "j_password",
                       "value": "admin",
-                      "description": "",
                       "type": "text"
                     }
                   ]
@@ -1010,8 +997,8 @@
               "response": []
             },
             {
-              "_postman_id": "1932546-437c4c01-a3e1-0e6c-5d55-073adf786d1f",
               "name": "SSO Login",
+              "_postman_id": "1932546-437c4c01-a3e1-0e6c-5d55-073adf786d1f",
               "request": {
                 "method": "POST",
                 "header": [
@@ -1029,19 +1016,22 @@
               "response": []
             },
             {
-              "_postman_id": "1932546-304c6475-62e6-b45f-cf4d-de478e856a2f",
               "name": "Get All Groups",
+              "_postman_id": "1932546-304c6475-62e6-b45f-cf4d-de478e856a2f",
               "request": {
                 "method": "POST",
                 "header": [],
-                "body": {},
+                "body": {
+                  "mode": "formdata",
+                  "formdata": []
+                },
                 "url": "http://localhost:8080/content-authoring/getAllGroup"
               },
               "response": []
             },
             {
-              "_postman_id": "1932546-bdfa1352-3c07-c7e8-2357-8615e7d81c87",
               "name": "Admin Login",
+              "_postman_id": "1932546-bdfa1352-3c07-c7e8-2357-8615e7d81c87",
               "request": {
                 "method": "POST",
                 "header": [],
@@ -1051,13 +1041,11 @@
                     {
                       "key": "j_username",
                       "value": "admin",
-                      "description": "",
                       "type": "text"
                     },
                     {
                       "key": "j_password",
                       "value": "admin",
-                      "description": "",
                       "type": "text"
                     }
                   ]
@@ -1067,8 +1055,8 @@
               "response": []
             },
             {
-              "_postman_id": "1932546-c3f733f4-0f1b-53fe-ff36-e1b3bc7808ee",
               "name": "CreateUsersAndGroupsAndPrivileges",
+              "_postman_id": "1932546-c3f733f4-0f1b-53fe-ff36-e1b3bc7808ee",
               "request": {
                 "method": "POST",
                 "header": [
@@ -1086,8 +1074,8 @@
               "response": []
             },
             {
-              "_postman_id": "1932546-45f09168-5a66-6679-1ce1-82998496e776",
               "name": "Apply ACL to Node",
+              "_postman_id": "1932546-45f09168-5a66-6679-1ce1-82998496e776",
               "request": {
                 "method": "POST",
                 "header": [],
@@ -1097,19 +1085,16 @@
                     {
                       "key": "groupname",
                       "value": "seogroup",
-                      "description": "",
                       "type": "text"
                     },
                     {
                       "key": "privileges",
                       "value": "read",
-                      "description": "",
                       "type": "text"
                     },
                     {
                       "key": "path",
                       "value": "/content/en_US/JCPenney.com/Coupons",
-                      "description": "",
                       "type": "text"
                     }
                   ]
@@ -1119,20 +1104,22 @@
               "response": []
             }
           ],
+          "_postman_id": "1932546-e7401fc0-fbe8-52c8-8644-eb2bd75fa6f8",
           "_postman_isSubFolder": true
         },
         {
-          "_postman_id": "1932546-1f7f864d-2c02-ee18-9ad6-af24a4331240",
           "name": "Schema",
-          "description": "",
           "item": [
             {
-              "_postman_id": "1932546-6543333f-e790-9efd-e19f-21dfb10cd476",
               "name": "Get Schema File",
+              "_postman_id": "1932546-6543333f-e790-9efd-e19f-21dfb10cd476",
               "request": {
                 "method": "GET",
                 "header": [],
-                "body": {},
+                "body": {
+                  "mode": "formdata",
+                  "formdata": []
+                },
                 "url": {
                   "raw": "http://localhost:8080/content-authoring/file?path=/content/en_US/schema/couponTile",
                   "protocol": "http",
@@ -1147,8 +1134,7 @@
                   "query": [
                     {
                       "key": "path",
-                      "value": "/content/en_US/schema/couponTile",
-                      "equals": true
+                      "value": "/content/en_US/schema/couponTile"
                     }
                   ]
                 }
@@ -1156,8 +1142,8 @@
               "response": []
             },
             {
-              "_postman_id": "1932546-772acff7-1c1c-14f4-5cc1-bde1796c3a9e",
               "name": "Create Schema JSON",
+              "_postman_id": "1932546-772acff7-1c1c-14f4-5cc1-bde1796c3a9e",
               "request": {
                 "method": "POST",
                 "header": [
@@ -1180,8 +1166,8 @@
               "response": []
             },
             {
-              "_postman_id": "1932546-d502e85d-94a4-e11f-381e-a80be0d1e8fb",
               "name": "Create Schema File",
+              "_postman_id": "1932546-d502e85d-94a4-e11f-381e-a80be0d1e8fb",
               "request": {
                 "auth": {
                   "type": "basic",
@@ -1213,16 +1199,15 @@
               "response": []
             }
           ],
+          "_postman_id": "1932546-1f7f864d-2c02-ee18-9ad6-af24a4331240",
           "_postman_isSubFolder": true
         },
         {
-          "_postman_id": "1932546-a6a578b3-ddc8-3ce4-28ed-4d35d480c09a",
           "name": "SEO",
-          "description": "",
           "item": [
             {
-              "_postman_id": "1932546-e8f40df0-b53e-4e4d-27ea-528cda559e98",
               "name": "Create SEO",
+              "_postman_id": "1932546-e8f40df0-b53e-4e4d-27ea-528cda559e98",
               "request": {
                 "auth": {
                   "type": "basic",
@@ -1253,8 +1238,8 @@
               "response": []
             },
             {
-              "_postman_id": "1932546-e546e62f-fb3e-6829-87f2-8b81e8925e47",
               "name": "Edit SEO",
+              "_postman_id": "1932546-e546e62f-fb3e-6829-87f2-8b81e8925e47",
               "request": {
                 "auth": {
                   "type": "basic",
@@ -1285,28 +1270,30 @@
               "response": []
             },
             {
-              "_postman_id": "1932546-9a8e63d6-5e03-a9d4-09cd-fb96a1d29d4c",
               "name": "Get SEO",
+              "_postman_id": "1932546-9a8e63d6-5e03-a9d4-09cd-fb96a1d29d4c",
               "request": {
                 "method": "GET",
                 "header": [],
-                "body": {},
+                "body": {
+                  "mode": "formdata",
+                  "formdata": []
+                },
                 "url": "http://localhost:8080/iriscontent/en/components/seo/SEO1.json",
                 "description": "Get SEO"
               },
               "response": []
             }
           ],
+          "_postman_id": "1932546-a6a578b3-ddc8-3ce4-28ed-4d35d480c09a",
           "_postman_isSubFolder": true
         },
         {
-          "_postman_id": "1932546-611da3d5-77bf-d018-0220-721d04a23670",
           "name": "Page",
-          "description": "",
           "item": [
             {
-              "_postman_id": "1932546-c3a50841-d4bd-95d6-5306-25f618756276",
               "name": "Create Page",
+              "_postman_id": "1932546-c3a50841-d4bd-95d6-5306-25f618756276",
               "request": {
                 "method": "PUT",
                 "header": [
@@ -1329,8 +1316,8 @@
               "response": []
             },
             {
-              "_postman_id": "1932546-1bebe223-caed-2c96-0739-1f23d33da1e6",
               "name": "Edit Page",
+              "_postman_id": "1932546-1bebe223-caed-2c96-0739-1f23d33da1e6",
               "request": {
                 "method": "POST",
                 "header": [
@@ -1353,28 +1340,30 @@
               "response": []
             },
             {
-              "_postman_id": "1932546-be8fbff6-5480-0641-ebeb-ddb48ded2748",
               "name": "Get Page",
+              "_postman_id": "1932546-be8fbff6-5480-0641-ebeb-ddb48ded2748",
               "request": {
                 "method": "GET",
                 "header": [],
-                "body": {},
+                "body": {
+                  "mode": "formdata",
+                  "formdata": []
+                },
                 "url": "http://localhost:8080/iriscontent/en/pages/coupon/CouponPage.json",
                 "description": "Get Page"
               },
               "response": []
             }
           ],
+          "_postman_id": "1932546-611da3d5-77bf-d018-0220-721d04a23670",
           "_postman_isSubFolder": true
         },
         {
-          "_postman_id": "1932546-507a2bbb-2890-c93d-eabd-206cb7d2afc1",
           "name": "Layout",
-          "description": "",
           "item": [
             {
-              "_postman_id": "1932546-e2ed8622-fbe2-27da-24d5-a04a1efd2487",
               "name": "Create Layout",
+              "_postman_id": "1932546-e2ed8622-fbe2-27da-24d5-a04a1efd2487",
               "request": {
                 "method": "PUT",
                 "header": [
@@ -1396,8 +1385,8 @@
               "response": []
             },
             {
-              "_postman_id": "1932546-eb2d8040-0c63-db2e-d6b6-c23f44f624bd",
               "name": "Edit Layout",
+              "_postman_id": "1932546-eb2d8040-0c63-db2e-d6b6-c23f44f624bd",
               "request": {
                 "method": "POST",
                 "header": [
@@ -1419,28 +1408,30 @@
               "response": []
             },
             {
-              "_postman_id": "1932546-f3c7b4c6-860d-f030-8db4-e10cf3a15ec2",
               "name": "Get Layout",
+              "_postman_id": "1932546-f3c7b4c6-860d-f030-8db4-e10cf3a15ec2",
               "request": {
                 "method": "GET",
                 "header": [],
-                "body": {},
+                "body": {
+                  "mode": "formdata",
+                  "formdata": []
+                },
                 "url": "http://localhost:8080/iriscontent/en/layouts/CouponPage/CouponPageLayout.harray.infinity.json",
                 "description": "Get Layout"
               },
               "response": []
             }
           ],
+          "_postman_id": "1932546-507a2bbb-2890-c93d-eabd-206cb7d2afc1",
           "_postman_isSubFolder": true
         },
         {
-          "_postman_id": "1932546-39cf1f53-6683-89be-779f-b78c84e17a5a",
           "name": "Instance",
-          "description": "",
           "item": [
             {
-              "_postman_id": "1932546-1f39243d-e717-ad92-29e7-cc3d2a48784c",
               "name": "Create Instances",
+              "_postman_id": "1932546-1f39243d-e717-ad92-29e7-cc3d2a48784c",
               "request": {
                 "method": "POST",
                 "header": [
@@ -1462,8 +1453,8 @@
               "response": []
             },
             {
-              "_postman_id": "1932546-c5e1cea2-a9e2-e1bd-9d4c-0e68c1347b88",
               "name": "Edit Instances",
+              "_postman_id": "1932546-c5e1cea2-a9e2-e1bd-9d4c-0e68c1347b88",
               "request": {
                 "method": "PUT",
                 "header": [
@@ -1485,12 +1476,15 @@
               "response": []
             },
             {
-              "_postman_id": "1932546-8c65cac4-35bd-ce22-8935-4bff8b62e724",
               "name": "Get Instance",
+              "_postman_id": "1932546-8c65cac4-35bd-ce22-8935-4bff8b62e724",
               "request": {
                 "method": "GET",
                 "header": [],
-                "body": {},
+                "body": {
+                  "mode": "formdata",
+                  "formdata": []
+                },
                 "url": {
                   "raw": "http://localhost:9080/iriscontent/en/instances/CouponPage/?maxLevel=10",
                   "protocol": "http",
@@ -1508,8 +1502,7 @@
                   "query": [
                     {
                       "key": "maxLevel",
-                      "value": "10",
-                      "equals": true
+                      "value": "10"
                     }
                   ]
                 },
@@ -1518,16 +1511,15 @@
               "response": []
             }
           ],
+          "_postman_id": "1932546-39cf1f53-6683-89be-779f-b78c84e17a5a",
           "_postman_isSubFolder": true
         },
         {
-          "_postman_id": "1932546-8acf45af-6801-3db8-eca8-239366c0e744",
           "name": "Folder",
-          "description": "",
           "item": [
             {
-              "_postman_id": "1932546-fc1b608b-0afa-2dad-d312-0d5bb2b087e4",
               "name": "Create Folder",
+              "_postman_id": "1932546-fc1b608b-0afa-2dad-d312-0d5bb2b087e4",
               "request": {
                 "auth": {
                   "type": "basic",
@@ -1558,8 +1550,8 @@
               "response": []
             },
             {
-              "_postman_id": "1932546-2b4c66e2-b6e9-4700-fed8-68dad336c073",
               "name": "Copy Folder",
+              "_postman_id": "1932546-2b4c66e2-b6e9-4700-fed8-68dad336c073",
               "request": {
                 "auth": {
                   "type": "basic",
@@ -1590,8 +1582,8 @@
               "response": []
             },
             {
-              "_postman_id": "1932546-d880ae07-6bb2-3b07-686f-f5b5ebc361ff",
               "name": "Move Folder",
+              "_postman_id": "1932546-d880ae07-6bb2-3b07-686f-f5b5ebc361ff",
               "request": {
                 "auth": {
                   "type": "basic",
@@ -1622,8 +1614,8 @@
               "response": []
             },
             {
-              "_postman_id": "1932546-b7131276-78ce-4fac-538e-aa6d2256c5a6",
               "name": "Delete Folder",
+              "_postman_id": "1932546-b7131276-78ce-4fac-538e-aa6d2256c5a6",
               "request": {
                 "auth": {
                   "type": "basic",
@@ -1654,9 +1646,11 @@
               "response": []
             }
           ],
+          "_postman_id": "1932546-8acf45af-6801-3db8-eca8-239366c0e744",
           "_postman_isSubFolder": true
         }
-      ]
+      ],
+      "_postman_id": "1932546-ab4fe8c6-0483-2041-43b5-0f790f8d69c4"
     }
   ]
 }
