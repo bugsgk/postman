@@ -41,12 +41,7 @@
             "description": "",
             "headers": {}
           }
-        },
-        "security": [
-          {
-            "auth": []
-          }
-        ]
+        }
       }
     },
     "/assets/folder/tree": {
@@ -61,26 +56,13 @@
         "produces": [
           "application/json"
         ],
-        "parameters": [
-          {
-            "name": "Authorization",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
-          }
-        ],
+        "parameters": [],
         "responses": {
           "200": {
             "description": "",
             "headers": {}
           }
-        },
-        "security": [
-          {
-            "auth": []
-          }
-        ]
+        }
       }
     },
     "/assets/folder/3a4b03e9-f313-4eb9-80c2-ab96a48bdaef": {
@@ -95,26 +77,13 @@
         "produces": [
           "application/json"
         ],
-        "parameters": [
-          {
-            "name": "Authorization",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
-          }
-        ],
+        "parameters": [],
         "responses": {
           "200": {
             "description": "",
             "headers": {}
           }
-        },
-        "security": [
-          {
-            "auth": []
-          }
-        ]
+        }
       }
     },
     "/assets/folder/d45ee18b-22a0-4bea-8cb8-7b9c7d8c9adf": {
@@ -129,26 +98,13 @@
         "produces": [
           "application/json"
         ],
-        "parameters": [
-          {
-            "name": "Authorization",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
-          }
-        ],
+        "parameters": [],
         "responses": {
           "200": {
             "description": "",
             "headers": {}
           }
-        },
-        "security": [
-          {
-            "auth": []
-          }
-        ]
+        }
       }
     },
     "/folder/72d9fc47-4d98-4238-9e15-ef6aa27eef86": {
@@ -164,13 +120,6 @@
           "application/json"
         ],
         "parameters": [
-          {
-            "name": "Authorization",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
-          },
           {
             "name": "Content-Type",
             "in": "header",
@@ -193,12 +142,7 @@
             "description": "",
             "headers": {}
           }
-        },
-        "security": [
-          {
-            "auth": []
-          }
-        ]
+        }
       }
     },
     "/media/folder/": {
@@ -214,13 +158,6 @@
           "application/json"
         ],
         "parameters": [
-          {
-            "name": "Authorization",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
-          },
           {
             "name": "Content-Type",
             "in": "header",
@@ -243,12 +180,7 @@
             "description": "",
             "headers": {}
           }
-        },
-        "security": [
-          {
-            "auth": []
-          }
-        ]
+        }
       }
     },
     "/content-authoring/folder": {
@@ -264,13 +196,6 @@
           "application/json"
         ],
         "parameters": [
-          {
-            "name": "Authorization",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
-          },
           {
             "name": "Content-Type",
             "in": "header",
@@ -293,12 +218,7 @@
             "description": "",
             "headers": {}
           }
-        },
-        "security": [
-          {
-            "auth": []
-          }
-        ]
+        }
       },
       "put": {
         "description": "TODO: Add Description",
@@ -320,13 +240,6 @@
             "description": ""
           },
           {
-            "name": "Authorization",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
-          },
-          {
             "name": "Body",
             "in": "body",
             "required": true,
@@ -341,12 +254,7 @@
             "description": "",
             "headers": {}
           }
-        },
-        "security": [
-          {
-            "auth": []
-          }
-        ]
+        }
       },
       "delete": {
         "description": "TODO: Add Description",
@@ -360,13 +268,6 @@
           "application/json"
         ],
         "parameters": [
-          {
-            "name": "Authorization",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
-          },
           {
             "name": "Content-Type",
             "in": "header",
@@ -389,12 +290,7 @@
             "description": "",
             "headers": {}
           }
-        },
-        "security": [
-          {
-            "auth": []
-          }
-        ]
+        }
       }
     },
     "/media/asset/4016d908-509e-4767-911b-093cf543947f/": {
@@ -409,26 +305,13 @@
         "produces": [
           "application/json"
         ],
-        "parameters": [
-          {
-            "name": "Authorization",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
-          }
-        ],
+        "parameters": [],
         "responses": {
           "200": {
             "description": "",
             "headers": {}
           }
-        },
-        "security": [
-          {
-            "auth": []
-          }
-        ]
+        }
       }
     },
     "/media/asset": {
@@ -447,13 +330,6 @@
           "application/x-www-form-urlencoded"
         ],
         "parameters": [
-          {
-            "name": "Authorization",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
-          },
           {
             "name": "Content-Type",
             "in": "header",
@@ -502,12 +378,7 @@
             "description": "",
             "headers": {}
           }
-        },
-        "security": [
-          {
-            "auth": []
-          }
-        ]
+        }
       }
     },
     "/asset/61d83b25-5564-46ae-a4a4-f959d397fd89/original": {
@@ -522,26 +393,13 @@
         "produces": [
           "application/json"
         ],
-        "parameters": [
-          {
-            "name": "Authorization",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
-          }
-        ],
+        "parameters": [],
         "responses": {
           "200": {
             "description": "",
             "headers": {}
           }
-        },
-        "security": [
-          {
-            "auth": []
-          }
-        ]
+        }
       }
     },
     "/media/asset/59a06523-4caa-4a6b-9f60-3cc0665d7560": {
@@ -556,26 +414,13 @@
         "produces": [
           "application/json"
         ],
-        "parameters": [
-          {
-            "name": "Authorization",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
-          }
-        ],
+        "parameters": [],
         "responses": {
           "200": {
             "description": "",
             "headers": {}
           }
-        },
-        "security": [
-          {
-            "auth": []
-          }
-        ]
+        }
       }
     },
     "/media/search/jcp-name:item*": {
@@ -596,12 +441,7 @@
             "description": "",
             "headers": {}
           }
-        },
-        "security": [
-          {
-            "auth": []
-          }
-        ]
+        }
       }
     },
     "/media/search/jcp-tags:outdoor": {
@@ -653,12 +493,7 @@
             "description": "",
             "headers": {}
           }
-        },
-        "security": [
-          {
-            "auth": []
-          }
-        ]
+        }
       }
     },
     "/media/search/dc-title:sample item": {
@@ -679,12 +514,7 @@
             "description": "",
             "headers": {}
           }
-        },
-        "security": [
-          {
-            "auth": []
-          }
-        ]
+        }
       }
     },
     "/media/search/all": {
@@ -736,12 +566,7 @@
             "description": "",
             "headers": {}
           }
-        },
-        "security": [
-          {
-            "auth": []
-          }
-        ]
+        }
       }
     },
     "/media/search": {
@@ -800,12 +625,7 @@
             "description": "",
             "headers": {}
           }
-        },
-        "security": [
-          {
-            "auth": []
-          }
-        ]
+        }
       }
     },
     "/content-authoring/content/search/promoCode/BIGSAVE9": {
@@ -826,12 +646,7 @@
             "description": "",
             "headers": {}
           }
-        },
-        "security": [
-          {
-            "auth": []
-          }
-        ]
+        }
       }
     },
     "/assets/filtered-items": {
@@ -881,12 +696,7 @@
             "description": "",
             "headers": {}
           }
-        },
-        "security": [
-          {
-            "auth": []
-          }
-        ]
+        }
       }
     },
     "/assets/": {
@@ -901,26 +711,13 @@
         "produces": [
           "application/json"
         ],
-        "parameters": [
-          {
-            "name": "Authorization",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
-          }
-        ],
+        "parameters": [],
         "responses": {
           "200": {
             "description": "",
             "headers": {}
           }
-        },
-        "security": [
-          {
-            "auth": []
-          }
-        ]
+        }
       }
     },
     "/content/7ed67a88-9011-44ca-91b6-8ff5b62c2b9e": {
@@ -941,12 +738,7 @@
             "description": "",
             "headers": {}
           }
-        },
-        "security": [
-          {
-            "auth": []
-          }
-        ]
+        }
       }
     },
     "/aggregate-pages/m/jcpenney-coupons/N-mpi6e5": {
@@ -975,12 +767,7 @@
             "description": "",
             "headers": {}
           }
-        },
-        "security": [
-          {
-            "auth": []
-          }
-        ]
+        }
       }
     },
     "/N-mpi6e5": {
@@ -1009,12 +796,7 @@
             "description": "",
             "headers": {}
           }
-        },
-        "security": [
-          {
-            "auth": []
-          }
-        ]
+        }
       }
     },
     "/content-authoring/content": {
@@ -1030,13 +812,6 @@
           "application/json"
         ],
         "parameters": [
-          {
-            "name": "Authorization",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
-          },
           {
             "name": "Content-Type",
             "in": "header",
@@ -1059,12 +834,7 @@
             "description": "",
             "headers": {}
           }
-        },
-        "security": [
-          {
-            "auth": []
-          }
-        ]
+        }
       }
     },
     "/content-authoring/content/en_US/JCPenney.com/Coupons/Assets/Content/COUPON1005": {
@@ -1080,13 +850,6 @@
           "application/json"
         ],
         "parameters": [
-          {
-            "name": "Authorization",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
-          },
           {
             "name": "Content-Type",
             "in": "header",
@@ -1109,12 +872,7 @@
             "description": "",
             "headers": {}
           }
-        },
-        "security": [
-          {
-            "auth": []
-          }
-        ]
+        }
       }
     },
     "/content-authoring/content/1758cf3c-cbfc-434a-97a8-ef351230228f": {
@@ -1129,26 +887,13 @@
         "produces": [
           "application/json"
         ],
-        "parameters": [
-          {
-            "name": "Authorization",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
-          }
-        ],
+        "parameters": [],
         "responses": {
           "200": {
             "description": "",
             "headers": {}
           }
-        },
-        "security": [
-          {
-            "auth": []
-          }
-        ]
+        }
       }
     },
     "/content-authoring/content/en_US/JCPenney.com/Coupons/Assets/Content/COUPON1001": {
@@ -1163,26 +908,13 @@
         "produces": [
           "application/json"
         ],
-        "parameters": [
-          {
-            "name": "Authorization",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
-          }
-        ],
+        "parameters": [],
         "responses": {
           "200": {
             "description": "",
             "headers": {}
           }
-        },
-        "security": [
-          {
-            "auth": []
-          }
-        ]
+        }
       }
     },
     "/content-authoring/content/couponTile": {
@@ -1211,12 +943,7 @@
             "description": "",
             "headers": {}
           }
-        },
-        "security": [
-          {
-            "auth": []
-          }
-        ]
+        }
       }
     },
     "/content-authoring/content/en_US/JCPenney.com/Coupons/Assets/Content/": {
@@ -1232,13 +959,6 @@
           "application/json"
         ],
         "parameters": [
-          {
-            "name": "Authorization",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
-          },
           {
             "name": "Content-Type",
             "in": "header",
@@ -1261,12 +981,7 @@
             "description": "",
             "headers": {}
           }
-        },
-        "security": [
-          {
-            "auth": []
-          }
-        ]
+        }
       }
     },
     "/content-authoring/content/updateCouponAssets": {
@@ -1282,13 +997,6 @@
           "application/json"
         ],
         "parameters": [
-          {
-            "name": "Authorization",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
-          },
           {
             "name": "Content-Type",
             "in": "header",
@@ -1314,12 +1022,7 @@
             "description": "",
             "headers": {}
           }
-        },
-        "security": [
-          {
-            "auth": []
-          }
-        ]
+        }
       }
     },
     "/content-authoring/content/activate/1758cf3c-cbfc-434a-97a8-ef351230228f": {
@@ -1357,12 +1060,7 @@
             "description": "",
             "headers": {}
           }
-        },
-        "security": [
-          {
-            "auth": []
-          }
-        ]
+        }
       }
     },
     "/content-authoring/getAllUsers": {
@@ -1383,12 +1081,7 @@
             "description": "",
             "headers": {}
           }
-        },
-        "security": [
-          {
-            "auth": []
-          }
-        ]
+        }
       }
     },
     "/content-authoring/logout": {
@@ -1427,12 +1120,7 @@
             "description": "",
             "headers": {}
           }
-        },
-        "security": [
-          {
-            "auth": []
-          }
-        ]
+        }
       }
     },
     "/content-authoring/login": {
@@ -1470,12 +1158,7 @@
             "description": "",
             "headers": {}
           }
-        },
-        "security": [
-          {
-            "auth": []
-          }
-        ]
+        }
       }
     },
     "/content-authoring/getAllGroup": {
@@ -1496,12 +1179,7 @@
             "description": "",
             "headers": {}
           }
-        },
-        "security": [
-          {
-            "auth": []
-          }
-        ]
+        }
       }
     },
     "/content-authoring/adminlogin": {
@@ -1540,12 +1218,7 @@
             "description": "",
             "headers": {}
           }
-        },
-        "security": [
-          {
-            "auth": []
-          }
-        ]
+        }
       }
     },
     "/content-authoring/setUserGroupAndNodesWithAcl": {
@@ -1583,12 +1256,7 @@
             "description": "",
             "headers": {}
           }
-        },
-        "security": [
-          {
-            "auth": []
-          }
-        ]
+        }
       }
     },
     "/content-authoring/applyAclToNode": {
@@ -1634,12 +1302,7 @@
             "description": "",
             "headers": {}
           }
-        },
-        "security": [
-          {
-            "auth": []
-          }
-        ]
+        }
       }
     },
     "/content-authoring/file": {
@@ -1668,12 +1331,7 @@
             "description": "",
             "headers": {}
           }
-        },
-        "security": [
-          {
-            "auth": []
-          }
-        ]
+        }
       },
       "post": {
         "description": "Schema File",
@@ -1687,13 +1345,6 @@
           "application/json"
         ],
         "parameters": [
-          {
-            "name": "Authorization",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
-          },
           {
             "name": "Content-Type",
             "in": "header",
@@ -1716,12 +1367,7 @@
             "description": "",
             "headers": {}
           }
-        },
-        "security": [
-          {
-            "auth": []
-          }
-        ]
+        }
       }
     },
     "/content-authoring/schema": {
@@ -1737,13 +1383,6 @@
           "application/json"
         ],
         "parameters": [
-          {
-            "name": "Authorization",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
-          },
           {
             "name": "Content-Type",
             "in": "header",
@@ -1766,12 +1405,7 @@
             "description": "",
             "headers": {}
           }
-        },
-        "security": [
-          {
-            "auth": []
-          }
-        ]
+        }
       }
     },
     "/content/components": {
@@ -1787,13 +1421,6 @@
           "application/json"
         ],
         "parameters": [
-          {
-            "name": "Authorization",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
-          },
           {
             "name": "Content-Type",
             "in": "header",
@@ -1816,12 +1443,7 @@
             "description": "",
             "headers": {}
           }
-        },
-        "security": [
-          {
-            "auth": []
-          }
-        ]
+        }
       },
       "post": {
         "description": "TODO: Add Description",
@@ -1835,13 +1457,6 @@
           "application/json"
         ],
         "parameters": [
-          {
-            "name": "Authorization",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
-          },
           {
             "name": "Content-Type",
             "in": "header",
@@ -1864,12 +1479,7 @@
             "description": "",
             "headers": {}
           }
-        },
-        "security": [
-          {
-            "auth": []
-          }
-        ]
+        }
       }
     },
     "/iriscontent/en/components/seo/SEO1.json": {
@@ -1890,12 +1500,7 @@
             "description": "",
             "headers": {}
           }
-        },
-        "security": [
-          {
-            "auth": []
-          }
-        ]
+        }
       }
     },
     "/content/pages": {
@@ -1911,13 +1516,6 @@
           "application/json"
         ],
         "parameters": [
-          {
-            "name": "Authorization",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
-          },
           {
             "name": "Content-Type",
             "in": "header",
@@ -1940,12 +1538,7 @@
             "description": "",
             "headers": {}
           }
-        },
-        "security": [
-          {
-            "auth": []
-          }
-        ]
+        }
       },
       "post": {
         "description": "Edit Page",
@@ -1959,13 +1552,6 @@
           "application/json"
         ],
         "parameters": [
-          {
-            "name": "Authorization",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
-          },
           {
             "name": "Content-Type",
             "in": "header",
@@ -1988,12 +1574,7 @@
             "description": "",
             "headers": {}
           }
-        },
-        "security": [
-          {
-            "auth": []
-          }
-        ]
+        }
       }
     },
     "/iriscontent/en/pages/coupon/CouponPage.json": {
@@ -2014,12 +1595,7 @@
             "description": "",
             "headers": {}
           }
-        },
-        "security": [
-          {
-            "auth": []
-          }
-        ]
+        }
       }
     },
     "/content/layouts": {
@@ -2043,13 +1619,6 @@
             "description": ""
           },
           {
-            "name": "Authorization",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
-          },
-          {
             "name": "Body",
             "in": "body",
             "required": true,
@@ -2064,12 +1633,7 @@
             "description": "",
             "headers": {}
           }
-        },
-        "security": [
-          {
-            "auth": []
-          }
-        ]
+        }
       },
       "post": {
         "description": "TODO: Add Description",
@@ -2091,13 +1655,6 @@
             "description": ""
           },
           {
-            "name": "Authorization",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
-          },
-          {
             "name": "Body",
             "in": "body",
             "required": true,
@@ -2112,12 +1669,7 @@
             "description": "",
             "headers": {}
           }
-        },
-        "security": [
-          {
-            "auth": []
-          }
-        ]
+        }
       }
     },
     "/iriscontent/en/layouts/CouponPage/CouponPageLayout.harray.infinity.json": {
@@ -2138,12 +1690,7 @@
             "description": "",
             "headers": {}
           }
-        },
-        "security": [
-          {
-            "auth": []
-          }
-        ]
+        }
       }
     },
     "/iriscontent/en/instances/": {
@@ -2167,13 +1714,6 @@
             "description": ""
           },
           {
-            "name": "Authorization",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
-          },
-          {
             "name": "Body",
             "in": "body",
             "required": true,
@@ -2188,12 +1728,7 @@
             "description": "",
             "headers": {}
           }
-        },
-        "security": [
-          {
-            "auth": []
-          }
-        ]
+        }
       }
     },
     "/content/instances/CouponPage": {
@@ -2217,13 +1752,6 @@
             "description": ""
           },
           {
-            "name": "Authorization",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
-          },
-          {
             "name": "Body",
             "in": "body",
             "required": true,
@@ -2238,12 +1766,7 @@
             "description": "",
             "headers": {}
           }
-        },
-        "security": [
-          {
-            "auth": []
-          }
-        ]
+        }
       }
     },
     "/iriscontent/en/instances/CouponPage": {
@@ -2273,12 +1796,7 @@
             "description": "",
             "headers": {}
           }
-        },
-        "security": [
-          {
-            "auth": []
-          }
-        ]
+        }
       }
     }
   },
@@ -5927,6 +5445,11 @@
       ]
     }
   },
+  "security": [
+    {
+      "auth": []
+    }
+  ],
   "tags": [
     {
       "name": "Bitstreams"
