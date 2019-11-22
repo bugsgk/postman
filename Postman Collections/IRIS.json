@@ -30,7 +30,7 @@
         "tags": [
           "Bitstreams"
         ],
-        "operationId": "Bitstreams3565d38453914c6a8eddF9d6c1816844Get",
+        "operationId": "GETbitstreams",
         "deprecated": false,
         "produces": [
           "application/json"
@@ -51,7 +51,7 @@
         "tags": [
           "Folder"
         ],
-        "operationId": "AssetsFolderTreeGet",
+        "operationId": "foldertree",
         "deprecated": false,
         "produces": [
           "application/json"
@@ -72,7 +72,7 @@
         "tags": [
           "Folder"
         ],
-        "operationId": "AssetsFolder3a4b03e9F3134eb980c2Ab96a48bdaefGet",
+        "operationId": "folder",
         "deprecated": false,
         "produces": [
           "application/json"
@@ -93,7 +93,7 @@
         "tags": [
           "Folder"
         ],
-        "operationId": "AssetsFolderD45ee18b22a04bea8cb87b9c7d8c9adfDelete",
+        "operationId": "Deletefolder",
         "deprecated": false,
         "produces": [
           "application/json"
@@ -114,7 +114,7 @@
         "tags": [
           "Folder"
         ],
-        "operationId": "Folder72d9fc474d9842389e15Ef6aa27eef86Post",
+        "operationId": "subfolder",
         "deprecated": false,
         "produces": [
           "application/json"
@@ -152,7 +152,7 @@
         "tags": [
           "Folder"
         ],
-        "operationId": "MediaFolderPost",
+        "operationId": "Postfolder",
         "deprecated": false,
         "produces": [
           "application/json"
@@ -190,7 +190,7 @@
         "tags": [
           "Folder"
         ],
-        "operationId": "ContentAuthoringFolderPost",
+        "operationId": "CreateFolder",
         "deprecated": false,
         "produces": [
           "application/json"
@@ -226,7 +226,7 @@
         "tags": [
           "Folder"
         ],
-        "operationId": "ContentAuthoringFolderPut",
+        "operationId": "CopyFolder",
         "deprecated": false,
         "produces": [
           "application/json"
@@ -262,7 +262,7 @@
         "tags": [
           "Folder"
         ],
-        "operationId": "ContentAuthoringFolderDelete",
+        "operationId": "DeleteFolder",
         "deprecated": false,
         "produces": [
           "application/json"
@@ -300,7 +300,7 @@
         "tags": [
           "Asset"
         ],
-        "operationId": "MediaAsset4016d908509e4767911b093cf543947fGet",
+        "operationId": "asset",
         "deprecated": false,
         "produces": [
           "application/json"
@@ -321,7 +321,7 @@
         "tags": [
           "Asset"
         ],
-        "operationId": "MediaAssetPost",
+        "operationId": "Postasset",
         "deprecated": false,
         "produces": [
           "application/json"
@@ -388,7 +388,7 @@
         "tags": [
           "Asset"
         ],
-        "operationId": "Asset61d83b25556446aeA4a4F959d397fd89OriginalGet",
+        "operationId": "asset/original",
         "deprecated": false,
         "produces": [
           "application/json"
@@ -409,7 +409,7 @@
         "tags": [
           "Asset"
         ],
-        "operationId": "MediaAsset59a065234caa4a6b9f603cc0665d7560Get",
+        "operationId": "asset1",
         "deprecated": false,
         "produces": [
           "application/json"
@@ -430,7 +430,7 @@
         "tags": [
           "Search"
         ],
-        "operationId": "MediaSearchJcpNameItemGet",
+        "operationId": "SearchByName",
         "deprecated": false,
         "produces": [
           "application/json"
@@ -451,7 +451,7 @@
         "tags": [
           "Search"
         ],
-        "operationId": "MediaSearchJcpTagsOutdoorGet",
+        "operationId": "SearchByTags",
         "deprecated": false,
         "produces": [
           "application/json"
@@ -503,7 +503,7 @@
         "tags": [
           "Search"
         ],
-        "operationId": "MediaSearchDcTitleSampleItemGet",
+        "operationId": "SearchByTitle",
         "deprecated": false,
         "produces": [
           "application/json"
@@ -524,7 +524,7 @@
         "tags": [
           "Search"
         ],
-        "operationId": "MediaSearchAllGet",
+        "operationId": "SearchAll",
         "deprecated": false,
         "produces": [
           "application/json"
@@ -576,7 +576,7 @@
         "tags": [
           "Search"
         ],
-        "operationId": "MediaSearchGet",
+        "operationId": "FullTextSearch",
         "deprecated": false,
         "produces": [
           "application/json"
@@ -635,7 +635,7 @@
         "tags": [
           "Search"
         ],
-        "operationId": "ContentAuthoringContentSearchPromoCodeBIGSAVE9Get",
+        "operationId": "SearchContent",
         "deprecated": false,
         "produces": [
           "application/json"
@@ -656,7 +656,7 @@
         "tags": [
           "Metatags"
         ],
-        "operationId": "AssetsFilteredItemsGet",
+        "operationId": "TagBasedFilter",
         "deprecated": false,
         "produces": [
           "application/json"
@@ -706,7 +706,7 @@
         "tags": [
           "Media"
         ],
-        "operationId": "AssetsGet",
+        "operationId": "Documentation",
         "deprecated": false,
         "produces": [
           "application/json"
@@ -727,7 +727,7 @@
         "tags": [
           "Site Content Api"
         ],
-        "operationId": "Content7ed67a88901144ca91b68ff5b62c2b9eGet",
+        "operationId": "GetContentById",
         "deprecated": false,
         "produces": [
           "application/json"
@@ -748,7 +748,7 @@
         "tags": [
           "Site Content Api"
         ],
-        "operationId": "AggregatePagesMJcpenneyCouponsNMpi6e5Get",
+        "operationId": "GetAggregatePage",
         "deprecated": false,
         "produces": [
           "application/json"
@@ -777,7 +777,7 @@
         "tags": [
           "Site Content Api"
         ],
-        "operationId": "NMpi6e5Get",
+        "operationId": "GetAggregatePageinPreview",
         "deprecated": false,
         "produces": [
           "application/json"
@@ -806,7 +806,7 @@
         "tags": [
           "Coupon"
         ],
-        "operationId": "ContentAuthoringContentPost",
+        "operationId": "CreateCoupon",
         "deprecated": false,
         "produces": [
           "application/json"
@@ -844,7 +844,7 @@
         "tags": [
           "Coupon"
         ],
-        "operationId": "ContentAuthoringContentEnUSJCPenneyComCouponsAssetsContentCOUPON1005Put",
+        "operationId": "EditCoupon",
         "deprecated": false,
         "produces": [
           "application/json"
@@ -882,7 +882,7 @@
         "tags": [
           "Coupon"
         ],
-        "operationId": "ContentAuthoringContent1758cf3cCbfc434a97a8Ef351230228fGet",
+        "operationId": "GetCoupon",
         "deprecated": false,
         "produces": [
           "application/json"
@@ -903,7 +903,7 @@
         "tags": [
           "Coupon"
         ],
-        "operationId": "ContentAuthoringContentEnUSJCPenneyComCouponsAssetsContentCOUPON1001Delete",
+        "operationId": "DeleteCoupon",
         "deprecated": false,
         "produces": [
           "application/json"
@@ -924,7 +924,7 @@
         "tags": [
           "Coupon"
         ],
-        "operationId": "ContentAuthoringContentCouponTileGet",
+        "operationId": "GetAllCoupons",
         "deprecated": false,
         "produces": [
           "application/json"
@@ -953,7 +953,7 @@
         "tags": [
           "Coupon"
         ],
-        "operationId": "ContentAuthoringContentEnUSJCPenneyComCouponsAssetsContentPost",
+        "operationId": "CreatePageInstance",
         "deprecated": false,
         "produces": [
           "application/json"
@@ -991,7 +991,7 @@
         "tags": [
           "Coupon"
         ],
-        "operationId": "ContentAuthoringContentUpdateCouponAssetsPut",
+        "operationId": "UpdateAllCoupons",
         "deprecated": false,
         "produces": [
           "application/json"
@@ -1032,7 +1032,7 @@
         "tags": [
           "Coupon"
         ],
-        "operationId": "ContentAuthoringContentActivate1758cf3cCbfc434a97a8Ef351230228fPut",
+        "operationId": "ActivateCoupon",
         "deprecated": false,
         "produces": [
           "application/json"
@@ -1070,7 +1070,7 @@
         "tags": [
           "Users"
         ],
-        "operationId": "ContentAuthoringGetAllUsersPost",
+        "operationId": "GetAllUsers",
         "deprecated": false,
         "produces": [
           "application/json"
@@ -1091,7 +1091,7 @@
         "tags": [
           "Users"
         ],
-        "operationId": "ContentAuthoringLogoutPost",
+        "operationId": "Logout",
         "deprecated": false,
         "produces": [
           "application/json"
@@ -1130,7 +1130,7 @@
         "tags": [
           "Users"
         ],
-        "operationId": "ContentAuthoringLoginPost",
+        "operationId": "SSOLogin",
         "deprecated": false,
         "produces": [
           "application/json"
@@ -1168,7 +1168,7 @@
         "tags": [
           "Users"
         ],
-        "operationId": "ContentAuthoringGetAllGroupPost",
+        "operationId": "GetAllGroups",
         "deprecated": false,
         "produces": [
           "application/json"
@@ -1189,7 +1189,7 @@
         "tags": [
           "Users"
         ],
-        "operationId": "ContentAuthoringAdminloginPost",
+        "operationId": "AdminLogin",
         "deprecated": false,
         "produces": [
           "application/json"
@@ -1228,7 +1228,7 @@
         "tags": [
           "Users"
         ],
-        "operationId": "ContentAuthoringSetUserGroupAndNodesWithAclPost",
+        "operationId": "CreateUsersAndGroupsAndPrivileges",
         "deprecated": false,
         "produces": [
           "application/json"
@@ -1266,7 +1266,7 @@
         "tags": [
           "Users"
         ],
-        "operationId": "ContentAuthoringApplyAclToNodePost",
+        "operationId": "ApplyACLtoNode",
         "deprecated": false,
         "produces": [
           "application/json"
@@ -1312,7 +1312,7 @@
         "tags": [
           "Schema"
         ],
-        "operationId": "ContentAuthoringFileGet",
+        "operationId": "GetSchemaFile",
         "deprecated": false,
         "produces": [
           "application/json"
@@ -1339,7 +1339,7 @@
         "tags": [
           "Schema"
         ],
-        "operationId": "ContentAuthoringFilePost",
+        "operationId": "CreateSchemaFile",
         "deprecated": false,
         "produces": [
           "application/json"
@@ -1377,7 +1377,7 @@
         "tags": [
           "Schema"
         ],
-        "operationId": "ContentAuthoringSchemaPost",
+        "operationId": "CreateSchemaJSON",
         "deprecated": false,
         "produces": [
           "application/json"
@@ -1415,7 +1415,7 @@
         "tags": [
           "SEO"
         ],
-        "operationId": "ContentComponentsPut",
+        "operationId": "CreateSEO",
         "deprecated": false,
         "produces": [
           "application/json"
@@ -1451,7 +1451,7 @@
         "tags": [
           "SEO"
         ],
-        "operationId": "ContentComponentsPost",
+        "operationId": "EditSEO",
         "deprecated": false,
         "produces": [
           "application/json"
@@ -1489,7 +1489,7 @@
         "tags": [
           "SEO"
         ],
-        "operationId": "IriscontentEnComponentsSeoSEO1JsonGet",
+        "operationId": "GetSEO",
         "deprecated": false,
         "produces": [
           "application/json"
@@ -1510,7 +1510,7 @@
         "tags": [
           "Page"
         ],
-        "operationId": "ContentPagesPut",
+        "operationId": "CreatePage",
         "deprecated": false,
         "produces": [
           "application/json"
@@ -1546,7 +1546,7 @@
         "tags": [
           "Page"
         ],
-        "operationId": "ContentPagesPost",
+        "operationId": "EditPage",
         "deprecated": false,
         "produces": [
           "application/json"
@@ -1584,7 +1584,7 @@
         "tags": [
           "Page"
         ],
-        "operationId": "IriscontentEnPagesCouponCouponPageJsonGet",
+        "operationId": "GetPage",
         "deprecated": false,
         "produces": [
           "application/json"
@@ -1605,7 +1605,7 @@
         "tags": [
           "Layout"
         ],
-        "operationId": "ContentLayoutsPut",
+        "operationId": "CreateLayout",
         "deprecated": false,
         "produces": [
           "application/json"
@@ -1641,7 +1641,7 @@
         "tags": [
           "Layout"
         ],
-        "operationId": "ContentLayoutsPost",
+        "operationId": "EditLayout",
         "deprecated": false,
         "produces": [
           "application/json"
@@ -1679,7 +1679,7 @@
         "tags": [
           "Layout"
         ],
-        "operationId": "IriscontentEnLayoutsCouponPageCouponPageLayoutHarrayInfinityJsonGet",
+        "operationId": "GetLayout",
         "deprecated": false,
         "produces": [
           "application/json"
@@ -1700,7 +1700,7 @@
         "tags": [
           "Instance"
         ],
-        "operationId": "IriscontentEnInstancesPost",
+        "operationId": "CreateInstances",
         "deprecated": false,
         "produces": [
           "application/json"
@@ -1738,7 +1738,7 @@
         "tags": [
           "Instance"
         ],
-        "operationId": "ContentInstancesCouponPagePut",
+        "operationId": "EditInstances",
         "deprecated": false,
         "produces": [
           "application/json"
@@ -1776,7 +1776,7 @@
         "tags": [
           "Instance"
         ],
-        "operationId": "IriscontentEnInstancesCouponPageGet",
+        "operationId": "GetInstance",
         "deprecated": false,
         "produces": [
           "application/json"
