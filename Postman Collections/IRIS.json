@@ -84,11 +84,11 @@
     },
     "/assets/folder/d45ee18b-22a0-4bea-8cb8-7b9c7d8c9adf": {
       "delete": {
-        "summary": "folder",
+        "summary": "folder1",
         "tags": [
           "Folder"
         ],
-        "operationId": "Deletefolder",
+        "operationId": "folder1",
         "deprecated": false,
         "produces": [
           "application/json"
