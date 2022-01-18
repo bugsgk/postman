@@ -8,7 +8,7 @@
   "host": "localhost:9090",
   "basePath": "/",
   "securityDefinitions": {
-    "auth": {
+    "basic": {
       "type": "basic"
     }
   },
@@ -228,7 +228,12 @@
             "description": "",
             "headers": {}
           }
-        }
+        },
+        "security": [
+          {
+            "basic": []
+          }
+        ]
       },
       "put": {
         "summary": "Copy Folder",
@@ -269,7 +274,12 @@
             "description": "",
             "headers": {}
           }
-        }
+        },
+        "security": [
+          {
+            "basic": []
+          }
+        ]
       },
       "delete": {
         "summary": "Delete Folder",
@@ -310,7 +320,12 @@
             "description": "",
             "headers": {}
           }
-        }
+        },
+        "security": [
+          {
+            "basic": []
+          }
+        ]
       }
     },
     "/media/asset/4016d908-509e-4767-911b-093cf543947f/": {
@@ -399,7 +414,12 @@
             "description": "",
             "headers": {}
           }
-        }
+        },
+        "security": [
+          {
+            "basic": []
+          }
+        ]
       }
     },
     "/asset/61d83b25-5564-46ae-a4a4-f959d397fd89/original": {
@@ -708,7 +728,12 @@
             "description": "",
             "headers": {}
           }
-        }
+        },
+        "security": [
+          {
+            "basic": []
+          }
+        ]
       }
     },
     "/assets/": {
@@ -776,7 +801,12 @@
             "description": "",
             "headers": {}
           }
-        }
+        },
+        "security": [
+          {
+            "basic": []
+          }
+        ]
       }
     },
     "/N-mpi6e5": {
@@ -804,7 +834,12 @@
             "description": "",
             "headers": {}
           }
-        }
+        },
+        "security": [
+          {
+            "basic": []
+          }
+        ]
       }
     },
     "/content-authoring/content": {
@@ -933,7 +968,12 @@
             "description": "",
             "headers": {}
           }
-        }
+        },
+        "security": [
+          {
+            "basic": []
+          }
+        ]
       }
     },
     "/content-authoring/content/couponTile": {
@@ -2440,7 +2480,12 @@
             "description": "",
             "headers": {}
           }
-        }
+        },
+        "security": [
+          {
+            "basic": []
+          }
+        ]
       }
     },
     "/content-authoring/schema": {
@@ -2527,7 +2572,12 @@
             "description": "",
             "headers": {}
           }
-        }
+        },
+        "security": [
+          {
+            "basic": []
+          }
+        ]
       },
       "post": {
         "summary": "Edit SEO",
@@ -2568,7 +2618,12 @@
             "description": "",
             "headers": {}
           }
-        }
+        },
+        "security": [
+          {
+            "basic": []
+          }
+        ]
       }
     },
     "/iriscontent/en/components/seo/SEO1.json": {
@@ -6566,11 +6621,7 @@
       ]
     }
   },
-  "security": [
-    {
-      "auth": []
-    }
-  ],
+  "security": [],
   "tags": [
     {
       "name": "Bitstreams"
